@@ -15,3 +15,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/login', function () {
+    return view('admin.layouts.login');
+});
+
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware'=>'auth'],function () {
+    Route::get('/', function (){
+        return view('admin.dashboard');
+    })->name('dashboard');
+});
+
+//auth routes
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

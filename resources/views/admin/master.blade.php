@@ -9,7 +9,7 @@
   <meta name="author" content="">
   <title>SB Admin - Start Bootstrap Template</title>
   <!-- Bootstrap core CSS-->
-  <link href="{{asset('css//bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
   <!-- Custom fonts for this template-->
   <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
@@ -17,7 +17,7 @@
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-
+@include('admin.navigation')
 <div class="content-wrapper">
   <div class="container-fluid">
     @yield('content')
@@ -27,7 +27,7 @@
   <footer class="sticky-footer">
     <div class="container">
       <div class="text-center">
-        <small>Copyright © Your Website 2017</small>
+        <small>Copyright © <a href="http://webbooster.pl" target="_blank">webooster</a> 2017</small>
       </div>
     </div>
   </footer>
@@ -40,15 +40,15 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Naprawdę wychodzisz?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-body">Wybierz "Wyloguj" jeśli naprawdę chcesz zakończyć bierzącą sesję.</div>
         <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Anuluj</button>
+          <a class="btn btn-primary" href="login.html">Wyloguj</a>
         </div>
       </div>
     </div>
@@ -63,10 +63,10 @@
   <script src="{{asset('js/jquery.dataTables.js')}}"></script>
   <script src="{{asset('js/dataTables.bootstrap4.js')}}"></script>
   <!-- Custom scripts for all pages-->
-  <script src="{{asset('js/sb-admin.min.js')}}"></script>
+  <script src="{{asset('js/sbadmin/sb-admin.min.js')}}"></script>
   <!-- Custom scripts for this page-->
-  <script src="{{asset('js/sb-admin-datatables.min.js')}}"></script>
-  <script src="{{asset('js/sb-admin-charts.min.js')}}"></script>
+  <script src="{{asset('js/sbadmin/sb-admin-datatables.min.js')}}"></script>
+  <script src="{{asset('js/sbadmin/sb-admin-charts.min.js')}}"></script>
 
 </div>
 <script></script>

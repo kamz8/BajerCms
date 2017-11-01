@@ -53,7 +53,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::middleware('Procfile')
              ->namespace($this->namespace)
-             ->group(base_path('routes/Procfile.php'));
+             ->group(base_path('routes/web.php'));
     }
 
     /**
