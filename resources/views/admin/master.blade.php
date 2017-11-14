@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="{{ app()->getLocale() }}">
 
 <head>
   <meta charset="utf-8">
@@ -48,7 +48,7 @@
         <div class="modal-body">Wybierz "Wyloguj" jeśli naprawdę chcesz zakończyć bierzącą sesję.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Anuluj</button>
-          <a class="btn btn-primary" href="login.html">Wyloguj</a>
+          <a class="btn btn-primary" href="{{route('logout')}}">Wyloguj</a>
         </div>
       </div>
     </div>

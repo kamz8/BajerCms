@@ -1,39 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>SB Admin - Start Bootstrap Template</title>
-    <!-- Bootstrap core CSS-->
-    <link href="{{asset('css//bootstrap.min.css')}}" rel="stylesheet">
-    <!-- Custom fonts for this template-->
-    <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
-    <!-- Custom styles for this template-->
-    <link href="{{asset('css/sb-admin.css')}}" rel="stylesheet">
-</head>
-
-<body class="bg-dark">
+@extends('admin.layouts.app')
 <div class="container">
     <div class="card card-login mx-auto mt-5">
         <div class="card-header">Login</div>
         <div class="card-body">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Adres Email</label>
-                    <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Email">
+            <form class="form-horizontal" method="POST" action="{{ route('login') }}>
+            {{ csrf_field() }}
+                <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                    <label for="InputEmail1" class="control-label">Adres Email</label>
+                    <input class="form-control" id="InputEmail1" type="email" aria-describedby="emailHelp" placeholder="Email" value="{{ old('email') }}" required autofocus>
+                    @if ($errors->has('email'))
+                        <span class="help-block">
+                                                <strong>{{ $errors->first('email') }}</strong>
+                                            </span>
+                    @endif
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Hasło">
+                <div class="form-group {{ $errors->has('password') ? ' has-error' : '' }}">
+                    <label for="InputPassword1">Hasło</label>
+                    <input class="form-control label-info" id="InputPassword1" type="password" placeholder="Hasło" required>
+                    @if ($errors->has('password'))
+                        <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                    @endif
                 </div>
                 <div class="form-group">
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox"> Zapamiętaj Hasło</label>
+                            <input class="form-check-input" type="checkbox" {{ old('remember') ? 'checked' : '' }}> Zapamiętaj Mnie</label>
                     </div>
                 </div>
                 <a class="btn btn-primary btn-block" href="index.html">Zaloguj</a>
@@ -50,6 +43,4 @@
 <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
 <!-- Core plugin JavaScript-->
 <script src="{{asset('js/jquery.easing.min.js')}}"></script>
-</body>
 
-</html>

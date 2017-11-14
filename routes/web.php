@@ -16,10 +16,10 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('admin.layouts.login');
+    return view('admin.layouts.login')->name('login');
 });
 
-Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware'=>'auth'],function () {
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'],function () {
     Route::get('/', function (){
         return view('admin.dashboard');
     })->name('dashboard');
@@ -28,8 +28,4 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware'=>'auth']
 //auth routes
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
