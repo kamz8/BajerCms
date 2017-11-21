@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>SB Admin - Start Bootstrap Template</title>
+  <title>BajerCms - Kokpit</title>
   <!-- Bootstrap core CSS-->
   <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -47,8 +47,9 @@
         </div>
         <div class="modal-body">Wybierz "Wyloguj" jeśli naprawdę chcesz zakończyć bierzącą sesję.</div>
         <div class="modal-footer">
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Anuluj</button>
-          <a class="btn btn-primary" href="{{route('logout')}}">Wyloguj</a>
+          <a class="btn btn-primary" href="{{route('logout')}}" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Wyloguj</a>
         </div>
       </div>
     </div>

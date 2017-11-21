@@ -18,7 +18,7 @@
               <div class="mr-5">26 Nowych wiadomości!</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
+              <span class="float-left">Zobacz szczegóły</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
               </span>
@@ -34,7 +34,7 @@
               <div class="mr-5">11 Nowych zadań!</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
+              <span class="float-left">Zobacz szczegóły</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
               </span>
@@ -45,12 +45,12 @@
           <div class="card text-white bg-success o-hidden h-100">
             <div class="card-body">
               <div class="card-body-icon">
-                <i class="fa fa-fw fa-shopping-cart"></i>
+                <i class="fa fa-fw fa-spotify"></i>
               </div>
-              <div class="mr-5">123 New Orders!</div>
+              <div class="mr-5">10 nowych piosenek!</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
+              <span class="float-left">Zobacz szczegóły</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
               </span>
@@ -58,15 +58,15 @@
           </div>
         </div>
         <div class="col-xl-3 col-sm-6 mb-3">
-          <div class="card text-white bg-danger o-hidden h-100">
+          <div class="card text-white bg-info o-hidden h-100">
             <div class="card-body">
               <div class="card-body-icon">
-                <i class="fa fa-fw fa-support"></i>
+                <i class="fa fa-fw fa-calendar"></i>
               </div>
-              <div class="mr-5">13 New Tickets!</div>
+              <div class="mr-5">13 Nowych Rezerwacji!</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
+              <span class="float-left">Zobacz szczegóły</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
               </span>

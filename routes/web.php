@@ -14,18 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/login', function () {
-    return view('admin.layouts.login')->name('login');
-});
-
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'],function () {
     Route::get('/', function (){
         return view('admin.dashboard');
     })->name('dashboard');
 });
-
 //auth routes
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', function (){
+    return view('welcome');
+})->name('home');
