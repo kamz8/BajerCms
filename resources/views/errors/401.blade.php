@@ -8,9 +8,11 @@
             </div>
         </div>
         <div class="row align-items-start" style="min-height: 100%">
-            <h2 class="text-uppercase">404-Strona nie znaleziona</h2>
+
+        </div>
+            <h2 class="text-uppercase">401 - brak uprawnień</h2>
             <br>
-            <p class="text-center col-sm-12" style="font-size: 24px;">Chyba zabłądziłeś kolego..? <a class="btn btn-xs btn-outline-light" href="{{redirect()->getUrlGenerator()->previous()}}">wróć!</a></p>
+            <p class="text-center col-sm-12" style="font-size: 24px;">Nie masz uprawnień do wyświetenia tej strony. <a class="btn btn-xs btn-outline-light" href="{{redirect()->getUrlGenerator()->previous()}}">powrót do poprzedniej strony</a></p>
         </div>
     </div>
 </div>
