@@ -38,7 +38,7 @@
                                 {{$role->name}}
                             @endforeach
                             </td>
-                        <td>{{$user->createt_at}}</td>
+                        <td>{{ $users->last()->created_at->diffForHumans()}}</td>
                         <td>
                             <button class="btn btn-outline-primary"><i class="fa fa-edit fa-lg"></i> Edytuj</button>&nbsp;
                             <button class="btn btn-outline-danger"><i class="fa fa-trash fa-lg"></i>Usuń</button>
@@ -50,6 +50,6 @@
                 </table>
             </div>
         </div>
-        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        <div class="card-footer small text-muted">Ostatnia edycja {{$users->last()->updated_at->diffForHumans()}}</div>
     </div>
 @endsection
