@@ -15,5 +15,17 @@ class RolesTableSeeder extends Seeder
         $role->name = 'Admin';
         $role->save();
 
+        $role = new \App\Roles();
+        $role->name = 'Moderator';
+        $role->save();
+
+        $role = new \App\Roles();
+        $role->name = 'Employer';
+        $role->save();
+
+        $role = new \App\Roles();
+        $role->name = 'Castomer';
+        $role->save();
+
     }
 }

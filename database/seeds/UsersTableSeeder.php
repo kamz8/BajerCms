@@ -14,7 +14,7 @@ class UsersTableSeeder extends Seeder
     {
         $user = new User();
         $role = Roles::where('name','Admin')->first();
-        $user->name = "Super Admin"
+        $user->name = "Super Admin";
         $user->email = "admin@admin.com";
         $user->password = bcrypt('admin123');
         $user->save();

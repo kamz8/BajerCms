@@ -15,10 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['middleware'=>'roles','roles'=>['Admin'],'prefix' => 'admin', 'namespace' => 'Admin'],function () {
+Route::group(['middleware'=>'roles','roles'=>['Admin','moderator'],'prefix' => 'admin', 'namespace' => 'Admin'],function () {
     Route::get('/', function (){
         return view('admin.dashboard');
     })->name('dashboard');
+
+    Route::resource('users','UsersController');
 });
 //auth routes
 Auth::routes();

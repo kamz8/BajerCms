@@ -70,7 +70,7 @@
   <script src="{{asset('js/sbadmin/sb-admin-charts.min.js')}}"></script>
 
 </div>
-<script></script>
+
 </body>
 
 </html>

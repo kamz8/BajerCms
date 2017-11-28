@@ -28,7 +28,7 @@ class User extends Authenticatable
     ];
 
     public function roles(){
-        return $this->belongsToMany(Roles::class, 'roles_has_users', 'user_id', 'roles_id')->withTimestamps();
+        return $this->belongsToMany(Roles::class, 'roles_has_users', 'users_id', 'roles_id')->withTimestamps();
     }
 
     public function hasAnyRole($roles){
