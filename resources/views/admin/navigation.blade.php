@@ -13,7 +13,7 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="użytkownicy">
-                <a class="nav-link" href="{{url('admin/users'}}">
+                <a class="nav-link" href="{{url('admin/users')}}">
                     <i class="fa fa-fw fa-users"></i>
                     <span class="nav-link-text">użytkownicy</span>
                 </a>
