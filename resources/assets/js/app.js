@@ -8,11 +8,8 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-import AddToTable from 'components/AddToTable.vue'
-import BootstrapVue from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-Vue.use(BootstrapVue);
+import DataTable from './components/DataTable.vue';
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -20,10 +17,10 @@ Vue.use(BootstrapVue);
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
+Vue.component('data-table', require('./components/DataTable.vue'));
 const app = new Vue({
-    el: '#app'
+    el: '#app',
     components: {
-        AddToTable
+        DataTable
     }
 });
