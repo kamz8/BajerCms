@@ -42904,7 +42904,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['items']
+    name: 'dataTable',
+    data: function data() {
+        return {
+            items: [],
+            sortKey: 'name',
+            reverse: false,
+            search: ''
+        };
+    },
+    props: ['items'],
+    computed: {},
+    methods: {
+        sortBy: function sortBy(sortKey) {
+            this.reverse = this.sortKey == sortKey ? !this.reverse : false;
+
+            this.sortKey = sortKey;
+        }
+    }
 
 });
 
@@ -42922,25 +42939,119 @@ var render = function() {
     _c(
       "table",
       {
-        staticClass: "table table-bordered",
+        staticClass: "table table-bordered text-center",
         attrs: { id: "dataTable", width: "100%", cellspacing: "0" }
       },
       [
-        _vm._m(1, false, false),
+        _c("thead", [
+          _c("tr", [
+            _c("th", [_vm._v("#")]),
+            _vm._v(" "),
+            _c("th", [
+              _vm._v("Nazwa "),
+              _c(
+                "a",
+                {
+                  staticClass: "pull-right",
+                  attrs: { href: "#" },
+                  on: {
+                    click: function($event) {
+                      _vm.sortBy("name")
+                    }
+                  }
+                },
+                [_c("i", { staticClass: "fa fa-sort" })]
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "th",
+              {
+                on: {
+                  click: function($event) {
+                    _vm.sortBy()
+                  }
+                }
+              },
+              [
+                _vm._v("Email "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "pull-right",
+                    attrs: { href: "#" },
+                    on: {
+                      click: function($event) {
+                        _vm.sortBy("name")
+                      }
+                    }
+                  },
+                  [_c("i", { staticClass: "fa fa-sort" })]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "th",
+              {
+                on: {
+                  click: function($event) {
+                    _vm.sortBy()
+                  }
+                }
+              },
+              [_vm._v("Rola ")]
+            ),
+            _vm._v(" "),
+            _c(
+              "th",
+              {
+                on: {
+                  click: function($event) {
+                    _vm.sortBy()
+                  }
+                }
+              },
+              [
+                _vm._v("Utworzono "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "pull-right",
+                    attrs: { href: "#" },
+                    on: {
+                      click: function($event) {
+                        _vm.sortBy("name")
+                      }
+                    }
+                  },
+                  [_c("i", { staticClass: "fa fa-sort" })]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _vm._m(1, false, false)
+          ])
+        ]),
         _vm._v(" "),
         _vm._m(2, false, false),
         _vm._v(" "),
         _c(
           "tbody",
-          _vm._l(_vm.items, function(item) {
+          _vm._l(_vm.items, function(item, index) {
             return _c("tr", { key: item.id }, [
-              _c("td", [_vm._v(_vm._s(item.id))]),
+              _c("td", [_vm._v(_vm._s(index))]),
               _vm._v(" "),
               _c("td", [_vm._v(_vm._s(item.name))]),
               _vm._v(" "),
               _c("td", [_vm._v(_vm._s(item.email))]),
               _vm._v(" "),
-              _c("td", [_vm._v(_vm._s(item.roles.name))]),
+              _c(
+                "td",
+                _vm._l(item.roles, function(role) {
+                  return _c("span", [_vm._v(_vm._s(role.name))])
+                })
+              ),
               _vm._v(" "),
               _c("td", [_vm._v(_vm._s(item.created_at))]),
               _vm._v(" "),
@@ -42977,21 +43088,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", [_vm._v("#")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Nazwa")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Email")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Rola")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Utworzono")]),
-        _vm._v(" "),
-        _c("th", [_c("i", { staticClass: "fa fa-gear" })])
-      ])
-    ])
+    return _c("th", [_c("i", { staticClass: "fa fa-gear" })])
   },
   function() {
     var _vm = this

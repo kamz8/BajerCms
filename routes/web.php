@@ -28,3 +28,10 @@ Auth::routes();
 Route::get('/', function (){
     return view('welcome');
 })->name('home');
+
+
+Route::prefix('api')->group(function () {
+    Route::get('users', function () {
+        return \App\User::with('roles')->get();
+    });
+});

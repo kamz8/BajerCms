@@ -13,6 +13,7 @@ class CreateRolesHasUsersTable extends Migration
      */
     public function up()
     {
+
         Schema::create('roles_has_users', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('users_id')->unsigned();
