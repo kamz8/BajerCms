@@ -1,12 +1,20 @@
 <template>
 
-<button class="btn btn-success" @onclick="addToTable(item.id)"><i class="fa fa-pu fa-lg"></i> Edytuj</button>&nbsp;
+    <!-- the modal -->
+    <b-modal id="addUser">
+        <input type="text">
+    </b-modal>
 
 </template>
 
 <script>
     export default {
-        props: ['item'],
+    data: function () {
+        return {
+            user: [],
+            id: '',
+        }
+    },
         methods: {
             addToTable(id){
                 console.log(`add to table ${id}`);
