@@ -1,13 +1,19 @@
 @extends('admin.master')
 @section('content')
-
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#">Kokpit</a>
+        </li>
+        <li class="breadcrumb-item active">Urzytkownicy</li>
+    </ol>
     <!-- User CRUD DataTables Card-->
     <div class="card mb-3">
         <div class="card-header">
             <i class="fa fa-table"></i> Urzytkowicy</div>
         <div class="card-body">
             <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <table class="table table-bordered table-sortable" width="100%" cellspacing="0">
                     <thead>
                     <tr>
                         <th>#</th>
@@ -40,8 +46,8 @@
                             </td>
                         <td>{{ $users->last()->created_at->diffForHumans()}}</td>
                         <td>
-                            <button class="btn btn-outline-primary"><i class="fa fa-edit fa-lg"></i> Edytuj</button>&nbsp;
-                            <button class="btn btn-outline-danger"><i class="fa fa-trash fa-lg"></i>Usuń</button>
+                            <button class="btn btn-outline-primary"><i class="fa fa-edit fa-lg"></i>n&nbsp;Edytuj</button>
+                            <button class="btn btn-outline-danger"><i class="fa fa-trash fa-lg"></i>&nbsp;Usuń</button>
                         </td>
                     </tr>
                     @endforeach
