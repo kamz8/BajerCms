@@ -11,6 +11,7 @@ window.Vue = require('vue');
 import DataTable from './components/DataTable.vue';
 import BootstrapVue from 'bootstrap-vue';
 import VueResource from 'vue-resource';
+import store from './store';
 
 Vue.use(BootstrapVue);
 Vue.use(VueResource);
@@ -24,6 +25,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 Vue.component('data-table', require('./components/DataTable.vue'));
 const app = new Vue({
     el: '#app',
+    store,
     components: {
         DataTable
     }

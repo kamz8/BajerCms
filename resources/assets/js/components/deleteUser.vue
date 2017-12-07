@@ -8,12 +8,7 @@
 
 <script>
     export default {
-        name: "delete-user",
-        methods: {
-            delete: function (id) {
-                console.log(`delete user`)
-            }
-        }
+        name: "delete-user"
     }
 </script>
 

@@ -84,10 +84,13 @@
         props: ['items','columns'],
         computed: {
             filteredItems: function(){
-                return this.items.filter(item => {
+                return this.getUsers.filter(item => {
                     return item.name.match(this.search);
                 })
-            }
+            },
+            getUsers: function(){
+                return this.$store.state.users;
+            },
         },
         methods:{
             sortBy: function(sortKey) {
@@ -96,8 +99,10 @@
                 this.sortKey = sortKey;
             },
 
+        },
+        created: function(){
+            this.$store.state.users = this.items
         }
-
     }
 </script>
 <style>
