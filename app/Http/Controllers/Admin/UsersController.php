@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
+use App\Roles;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
@@ -33,7 +34,9 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        $roles = Roles::all();
+
+        return $roles;
     }
 
     /**
@@ -49,6 +52,7 @@ class UsersController extends Controller
                 'email' => 'required|email|unique:users,email',
                 'password' => 'required|between:5,20',
                 'password_confirmation' => 'required|same:password',
+                'roles' => 'required'
 
             ]);
 
@@ -59,7 +63,6 @@ class UsersController extends Controller
                     'errors' => $validator->getMessageBag()->toArray()
                 ), 400); // 400 being the HTTP code for an invalid request.
             }else{
-                $request->only(['name','email','password','role']);
                 $user = User::create($request->all());
                 return Response::json($user, 200);
             }
@@ -72,9 +75,12 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Request $request, $id)
     {
-        //
+//        if ($request->ajax()){
+            return User::with('roles')->find($id);
+//        }
+//        else return \response("Nie masz dostępu do tego zasobu", 403);
     }
 
     /**

@@ -13,6 +13,7 @@ class CreateRolesHasUsersTable extends Migration
      */
     public function up()
     {
+
         Schema::create('roles_has_users', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('users_id')->unsigned();
@@ -20,12 +21,12 @@ class CreateRolesHasUsersTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('rolles_has_users', function (Blueprint $table){
+        Schema::table('roles_has_users', function (Blueprint $table){
            $table->foreign('users_id')
                ->references('id')
                ->on('user');
         });
-        Schema::table('rolles_has_users', function (Blueprint $table){
+        Schema::table('roles_has_users', function (Blueprint $table){
             $table->foreign('roles_id')
                 ->references('id')
                 ->on('roles');
