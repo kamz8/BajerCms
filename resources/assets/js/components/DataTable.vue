@@ -27,7 +27,7 @@
             <tr>
                 <th>#</th>
                 <th v-for="column in columns">{{column}} <a href="#" class="pull-right" v-on:click.stop.prevent="sortBy(column)" ><i class="fa fa-sort" ></i></a>  </th>
-                <th ><i class="fa fa-gear"></i> </th>>
+                <th><i class="fa fa-gear"></i> </th>
             </tr>
             </tfoot>
             <tbody>
@@ -65,7 +65,8 @@
                 sortKey: 'name',
                 reverse: false,
                 search: '',
-                currentPage: 1
+                currentPage: 1,
+                visibleItems: []
             }
         },
         props: ['items','columns'],
@@ -74,7 +75,8 @@
                 return this.items.filter(item => {
                     return item.name.match(this.search);
                 })
-            }
+            },
+
         },
         methods:{
             sortBy: function(sortKey) {
