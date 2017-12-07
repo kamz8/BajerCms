@@ -7761,6 +7761,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_DataTable_vue__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_DataTable_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_DataTable_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_vue__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_resource__ = __webpack_require__(267);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -7774,7 +7775,9 @@ window.Vue = __webpack_require__(82);
 
 
 
+
 Vue.use(__WEBPACK_IMPORTED_MODULE_1_bootstrap_vue__["a" /* default */]);
+Vue.use(__WEBPACK_IMPORTED_MODULE_2_vue_resource__["a" /* default */]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -49632,8 +49635,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             sortKey: 'name',
             reverse: false,
             search: '',
-            currentPage: 1,
-            visibleItems: []
+            currentPage: 1
         };
     },
     props: ['items', 'columns'],
@@ -49645,7 +49647,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 return item.name.match(_this.search);
             });
         }
-
     },
     methods: {
         sortBy: function sortBy(sortKey) {
@@ -49881,43 +49882,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            user: {
-                name: '',
-                email: '',
-                password: '',
-                roles: ''
-            },
+            user: [],
             id: ''
         };
     },
     methods: {
         addToTable: function addToTable(id) {
             console.log('add to table ' + id);
-        },
-        clearForm: function clearForm() {
-            this.name = '';
-        },
-        handleOk: function handleOk(evt) {
-            // Prevent modal from closing
-            evt.preventDefault();
-            if (!this.name) {
-                alert('Please enter your name');
-            } else {
-                this.handleSubmit();
-            }
-        },
-        handleSubmit: function handleSubmit() {
-            this.names.push(this.user);
-            this.clearForm();
-            this.$refs.modal.hide();
         }
     }
 });
@@ -49931,31 +49906,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("b-modal", { attrs: { id: "addUser" } }, [
-    _c(
-      "form",
-      {
-        on: {
-          submit: function($event) {
-            $event.stopPropagation()
-            $event.preventDefault()
-            _vm.handleSubmit($event)
-          }
-        }
-      },
-      [
-        _c("b-form-input", {
-          attrs: { type: "text", placeholder: "Enter your name" },
-          model: {
-            value: _vm.User.name,
-            callback: function($$v) {
-              _vm.$set(_vm.User, "name", $$v)
-            },
-            expression: "User.name"
-          }
-        })
-      ],
-      1
-    )
+    _c("input", { attrs: { type: "text" } })
   ])
 }
 var staticRenderFns = []
@@ -50055,7 +50006,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -50076,12 +50027,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "delete-user",
-    methods: {
-        delete: function _delete(id) {
-            console.log("delete user");
-        }
-    }
+    name: "delete-user"
 });
 
 /***/ }),
@@ -50244,7 +50190,8 @@ var render = function() {
                   ])
                 }),
                 _vm._v(" "),
-                _vm._m(2, false, false)
+                _vm._m(2, false, false),
+                _vm._v(">\n        ")
               ],
               2
             )

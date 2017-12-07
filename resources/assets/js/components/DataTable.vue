@@ -1,11 +1,11 @@
 <template>
 
     <div class="table-responsive">
-        <div class="d-flex flex-row-reverse mx-auto" style="padding-bottom: 1em;">
-            <div class="p-2">
+        <div class="d-flex flex-row-reverse flex-sm-wrap mx-auto" style="padding-bottom: 1em;">
+            <div class="d-flex p-2">
                 <a class="btn btn-success text-white" v-b-modal="'addUser'"><i class="fa fa-plus"></i> Dodaj </a>
             </div>
-            <div class="p-2">
+            <div class="flex-sm-column p-2">
                 <div class="input-group add-on">
                     <input class="form-control" placeholder="Szukaj..." id="SearchBox" type="text" v-model="search">
                     <div class="input-group-btn">
@@ -13,25 +13,34 @@
                     </div>
                 </div>
             </div>
+            <div class="d-flex p-2 align-self-start">
+                <select class="form-control">
+                    <option value="10">10</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option :value="items.length">200</option>
+                    <option>wszytko</option>
+                </select>
+            </div>
         </div>
 
         <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
             <thead>
             <tr>
                 <th>#</th>
-                <th v-for="column in columns">{{column}} <a href="#" class="pull-right" v-on:click.stop.prevent="sortBy(column)" ><i class="fa fa-sort" ></i></a>  </th>
+                <th v-for="column in columns">{{column}} <a href="#" class="pull-right" v-on:click.stop="sortBy(column)" ><i class="fa fa-sort" ></i></a>  </th>
                 <th ><i class="fa fa-gear"></i> </th>
             </tr>
             </thead>
             <tfoot>
             <tr>
                 <th>#</th>
-                <th v-for="column in columns">{{column}} <a href="#" class="pull-right" v-on:click.stop.prevent="sortBy(column)" ><i class="fa fa-sort" ></i></a>  </th>
-                <th><i class="fa fa-gear"></i> </th>
+                <th v-for="column in columns">{{column}} <a href="#" class="pull-right" v-on:click.stop="sortBy(column)" ><i class="fa fa-sort" ></i></a>  </th>
+                <th ><i class="fa fa-gear"></i> </th>
             </tr>
             </tfoot>
             <tbody>
-            <tr v-for="(item, index) in filteredItems" :key="item.id">
+            <tr v-for="(item, index) in filteredItems " :key="item.id">
                 <td>{{index+1}}</td>
                 <td>{{item.name}}</td>
                 <td>{{item.email}}</td>
@@ -42,12 +51,15 @@
                     <button class="btn btn-outline-danger" title="usuń" v-b-modal="'deleteUser'"><i class="fa fa-trash fa-lg"></i></button>
                 </td>
             </tr>
+            <tr v-if="!filteredItems.length ">
+                <td class="text-center info" colspan="6">Brak dopasowań</td>
+            </tr>
 
             </tbody>
         </table>
         <add-user></add-user>
         <delete-user></delete-user>
-        <b-pagination size="md" :total-rows="10" v-model="currentPage" :per-page="10">
+        <b-pagination size="md" :total-rows="items.length" v-model="currentPage" :per-page="10">
         </b-pagination>
     </div>
 
@@ -65,8 +77,8 @@
                 sortKey: 'name',
                 reverse: false,
                 search: '',
-                currentPage: 1,
-                visibleItems: []
+                sortKey: '',
+                currentPage: 1
             }
         },
         props: ['items','columns'],
@@ -75,12 +87,11 @@
                 return this.items.filter(item => {
                     return item.name.match(this.search);
                 })
-            },
-
+            }
         },
         methods:{
             sortBy: function(sortKey) {
-                this.items = (this.sortKey == sortKey) ? ! this.items : false;
+                this.reverse= (this.sortKey == sortKey) ? ! this.reverse : false;
 
                 this.sortKey = sortKey;
             },
