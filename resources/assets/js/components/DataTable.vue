@@ -68,7 +68,7 @@
 <script>
     import SearchBox from './SearchBox.vue'
     import AddUser from  './AddUser.vue'
-    import DeleteUser from  './deleteUser.vue'
+    import DeleteUser from  './DeleteUser.vue'
     export default {
         name: 'dataTable',
         components: { SearchBox, AddUser, DeleteUser},
@@ -84,18 +84,23 @@
         props: ['items','columns'],
         computed: {
             filteredItems: function(){
-                return this.items.filter(item => {
+                return this.getUsers.filter(item => {
                     return item.name.match(this.search);
                 })
-            }
+            },
+            getUsers: function(){
+                return this.$store.state.users;
+            },
         },
         methods:{
             sortBy: function(sortKey) {
-                this.reverse= (this.sortKey == sortKey) ? ! this.reverse : false;
+                this.reverse = (this.sortKey == sortKey) ? ! this.reverse : false;
 
                 this.sortKey = sortKey;
             },
-
+        },
+        created: function(){
+            this.$store.state.users = this.items
         }
 
     }
