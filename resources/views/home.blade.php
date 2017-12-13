@@ -17,6 +17,10 @@
                     You are logged in!
                 </div>
             </div>
+            <div class="panel-body">
+                <facbook-events></facbook-events>
+            </div>
+        </div>
         </div>
     </div>
 </div>
