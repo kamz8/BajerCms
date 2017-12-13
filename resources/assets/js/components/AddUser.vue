@@ -23,7 +23,7 @@
             </div>
             <div class="form-group">
                 <label for="roles">Role</label>
-                <select multiple class="form-control" id="roles" v-model="user.roles" placeholder="Wprowadź email użytkownika">
+                <select multiple class="form-control" id="roles" v-model="user.roles" >
                     <option v-for="role in roles" v-bind="role.index" :value="role.id">{{role.name}}</option>
                 </select>
                 <small id="roleHelp" class="form-text text-muted">Karzdy urzytkownik posiada jakąś rolę.</small>
@@ -54,8 +54,7 @@
     },
         methods: {
             fetchRoles(){
-                var self = this;
-                 this.$http.get('/admin/users/create')
+                this.$http.get('/admin/users/create')
                     .then(response => response.json())
                      .then(result => this.roles = result)
             },
@@ -78,9 +77,9 @@
                 }
             },
             handleSubmit () {
-                var self = this;
                 axios.post('/admin/users', this.user)
                     .then(function (response) {
+                        console.log(response);
                         this.$store.state.users.push(this.user);
                         this.clearName();
                         this.$refs.modal.hide()
