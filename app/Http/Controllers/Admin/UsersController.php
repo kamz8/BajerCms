@@ -64,9 +64,11 @@ class UsersController extends Controller
                 ), 400); // 400 being the HTTP code for an invalid request.
             }else{
                 $user = User::create($request->all());
+                $user->roles()->attach($request->roles);
                 return Response::json($user, 200);
             }
         }
+        return \response("Nie masz dostępu do tego zasobu", 403);
     }
 
     /**
@@ -77,10 +79,10 @@ class UsersController extends Controller
      */
     public function show(Request $request, $id)
     {
-//        if ($request->ajax()){
+        if ($request->ajax()){
             return User::with('roles')->find($id);
-//        }
-//        else return \response("Nie masz dostępu do tego zasobu", 403);
+        }
+        else return \response("Nie masz dostępu do tego zasobu", 403);
     }
 
     /**

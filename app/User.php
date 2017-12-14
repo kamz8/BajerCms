@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Hash as Hash;
 
 class User extends Authenticatable
 {
@@ -27,26 +28,35 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function roles(){
+    public function roles()
+    {
         return $this->belongsToMany(Roles::class, 'roles_has_users', 'users_id', 'roles_id')->withTimestamps();
     }
 
-    public function hasAnyRole($roles){
-        if(is_array($roles)){
-            foreach ($roles as $role){
-                if($this->hasRole($role)) return true;
+    public function hasAnyRole($roles)
+    {
+        if (is_array($roles)) {
+            foreach ($roles as $role) {
+                if ($this->hasRole($role)) return true;
             }
-        }else{
-            if($this->hasRole($role)){
+        } else {
+            if ($this->hasRole($role)) {
                 return true;
             }
         }
     }
 
-    public function hasRole($role){
-        if($this->roles()->where('name',$role)->first()){
+    public function hasRole($role)
+    {
+        if ($this->roles()->where('name', $role)->first()) {
             return true;
         }
         return false;
+    }
+
+    public function setPasswordAttribute($pass){
+
+        $this->attributes['password'] = Hash::make($pass);
+
     }
 }

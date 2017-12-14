@@ -49,7 +49,6 @@
                 email: '',
                 roles: []
             },
-            roles: [],
             fetchErrors: {
                 status:"false",
                 message: []
@@ -85,7 +84,7 @@
             },
             handleSubmit () {
                 let self = this;
-                axios.post('/admin/users', this.user)
+                axios.put(`/admin/users/{$id}`, this.user)
                     .then(function (response){
                         self.$store.state.users.push(response.data);
                         self.clearForm();
@@ -94,7 +93,7 @@
                     .catch(function (error) {
                         if(error.response){
                             if(error.response.status == 400){
-                                self.attemptSubmit = true;
+                                self.attemptSubmit = true
                                 self.fetchErrors = error.response.data.errors
 
                             }else if(error.response.status == 500){
