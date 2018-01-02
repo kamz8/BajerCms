@@ -94,11 +94,11 @@
                     .catch(function (error) {
                         if(error.response){
                             if(error.response.status == 400){
-                                self.attemptSubmit = true
+                                self.attemptSubmit = true;
                                 self.fetchErrors = error.response.data.errors
 
                             }else if(error.response.status == 500){
-                                self.errorMessage = "Błąd 500 - server zaliczył zgona! Postaray się go jak najszybciej ogarnąć."
+                                self.errorMessage = "Błąd 500 - server zaliczył zgona! Postaramy się go jak najszybciej ogarnąć."
                             }
                         }
 
