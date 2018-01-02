@@ -1,0 +1,36 @@
+{
+  "name": "BajerCms",
+  "description": "",
+  "scripts": {
+  },
+  "env": {
+    "APP_DEBUG": {
+      "required": true
+    },
+    "APP_ENV": {
+      "required": true
+    },
+    "APP_KEY": {
+      "required": true
+    },
+    "APP_LOG": {
+      "required": true
+    },
+    "APP_LOG_LEVEL": {
+      "required": true
+    },
+    "CLEARDB_DATABASE_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "cleardb"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
