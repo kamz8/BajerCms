@@ -43,18 +43,19 @@
             }
         },
         methods: {
-/*            fetchEvents: function () {
+            fetchEvents: function () {
                 axios('https://graph.facebook.com/Klub.Studencki.Bajer/events?fields=cover,description,start_time&time_filter=upcoming',{
                     headers: {
                         Authorization: 'Bearer ' + this.fbAccessToken
                     }})
                     .then(resault => {
                         console.log(resault);
+                        console.log(this.$store.state.fbEvents);
                         this.$store.state.fbEvents = resault.data;
                     }).catch(e => {
                     this.errors.push(e)
                 })
-            }*/
+            }
         },
         computed:{
           getEvents: function(){
@@ -64,7 +65,7 @@
         filters:{
             formatDate: function(value){
                 if (value) {
-                    return moment(String(value)).format('LLLL')
+                    return moment(String(value)).format('Do MMM')
                 }
             }
         },
