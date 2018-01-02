@@ -30,4 +30,8 @@ class Roles extends Model
         }
     }
 
+    public function getIds(){
+
+    }
+
 }

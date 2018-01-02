@@ -50,7 +50,7 @@ class UsersController extends Controller
             $validator = Validator::make($request->all(), [
                 'name' => 'required|min:5',
                 'email' => 'required|email|unique:users,email',
-                'password' => 'required|between:5,20',
+                'password' => 'required|between:6,20',
                 'password_confirmation' => 'required|same:password',
                 'roles' => 'required'
 
@@ -93,8 +93,17 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
-        $user = User::findOrFail($id);
-        return Response::json($user);
+        $user = User::with('roles')->findOrFail($id);
+        $rolesIds = new Collection();
+        $user->roles->map(function ($value) use ($rolesIds){
+            $rolesIds->push($value['id']);
+        });
+        return Response::json([
+            'id' => $user->id,
+            'name' => $user->name,
+            'email' => $user->email,
+            'roles' => $rolesIds
+        ]);
     }
 
     /**
@@ -106,15 +115,15 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $user = User::findOrFail($id);
+        $user = User::with('roles')->findOrFail($id);
         if ($request->ajax()){
 
             $validator = Validator::make($request->all(), [
                 'name' => 'required|min:5',
                 'email'=>'required|email|unique:users,email,'.$id,
-                'password' => 'between:5,20',
+                'password' => 'between:6,20',
                 'password_confirmation' => 'same:password',
-                'role' => 'required'
+                'roles' => 'required'
             ]);
             if ($validator->fails())
             {
@@ -123,12 +132,13 @@ class UsersController extends Controller
                     'errors' => $validator->getMessageBag()->toArray(),
                 ), 400); // 400 being the HTTP code for an invalid request.
             }else{
-                if(!isEmptyString($request->password)){
+                if(!empty($request->password)){
                     $user->setPasswordAttribute($request->passwort);
                     $user->update($request->except('password'));
                 }
                 else{
                     $user->update($request->all());
+                    $user->roles()->sync($request->roles);
                 }
                 return Response::json($user, 200);
             }
@@ -144,6 +154,15 @@ class UsersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::findOrFail($id);
+        // prevent delete self-deleting or super admin
+        if(Auth::user()->id != $user->id || Auth::user()->id === 1){
+            return response([
+                'status'=> 'success',
+                'message'=> 'Użytkownik został usunęty!',
+                'user' => $user
+            ]);
+        }else return response(['status'=>'warning','message'=>'Nie możesz usunąć samego siebie!'],400);
+
     }
 }
