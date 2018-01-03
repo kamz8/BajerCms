@@ -91,18 +91,18 @@
             },
             handleSubmit () {
                 let self = this;
-                var index = _.findIndex(this.$store.state.users, user => user.id === this.id);
-                console.log(index, self.$store.state.users[index]);
+                let index = self.$store.state.users.map(item => item.id).indexOf(this.id);
+
                 axios.put(`/admin/users/${this.id}`, this.user)
                     .then(function (response){
-                        self.$store.state.users[index] = response.data;
+                        Vue.set(self.$store.state.users, index, response.data);
                         self.clearForm();
                         self.$refs.modal.hide();
                     })
                     .catch(function (error) {
                         if(error.response){
                             if(error.response.status == 400){
-                                self.attemptSubmit = true
+                                self.attemptSubmit = true;
                                 self.fetchErrors = error.response.data.errors
 
                             }else if(error.response.status == 500){
@@ -110,9 +110,7 @@
                             }
                         }
 
-
                     });
-
             },
             /* Validation statement
             *  @param key - json object key represent field id
@@ -123,7 +121,7 @@
                 if(this.fetchErrors.hasOwnProperty(key)) status = true;
                 else status = false;
                 return status;
-            }
+            },
         },
         mounted: function(){
             this.fetchRoles();
