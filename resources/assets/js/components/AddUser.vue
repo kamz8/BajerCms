@@ -63,7 +63,7 @@
         methods: {
             fetchRoles(){
                 var self = this;
-                 this.$http.get('http://localhost:8000/admin/users/create')
+                 this.$http.get('/admin/users/create')
                     .then(response => response.json())
                      .then(result => this.roles = result)
             },
