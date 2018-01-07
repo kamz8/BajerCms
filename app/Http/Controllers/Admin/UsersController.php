@@ -139,8 +139,9 @@ class UsersController extends Controller
                 else{
                     $user->update($request->all());
                     $user->roles()->sync($request->roles);
+                    $updatedUser = $user->fresh(['roles']);
                 }
-                return Response::json($user, 200);
+                return Response::json($updatedUser->jsonSerialize(), 200);
             }
 
         }

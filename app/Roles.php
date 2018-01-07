@@ -12,7 +12,7 @@ class Roles extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name',
     ];
 
     /**
@@ -24,14 +24,5 @@ class Roles extends Model
         'pivot','created_at','updated_at'
     ];
 
-    private function getRoles(){
-        foreach ($this->roles as $role) {
-            return $role;
-        }
-    }
-
-    public function getIds(){
-
-    }
 
 }
