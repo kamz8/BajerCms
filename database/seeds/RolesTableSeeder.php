@@ -1,9 +1,12 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use App\Role;
 class RolesTableSeeder extends Seeder
 {
+    protected $roles = [
+        'super_admin', 'admin', 'moderator', 'consultant', 'customer'
+        ];
     /**
      * Run the database seeds.
      *
@@ -11,21 +14,9 @@ class RolesTableSeeder extends Seeder
      */
     public function run()
     {
-        $role = new \App\Roles();
-        $role->name = 'Admin';
-        $role->save();
-
-        $role = new \App\Roles();
-        $role->name = 'Moderator';
-        $role->save();
-
-        $role = new \App\Roles();
-        $role->name = 'Employer';
-        $role->save();
-
-        $role = new \App\Roles();
-        $role->name = 'Castomer';
-        $role->save();
-
+        $role = new Role();
+        foreach ($this->roles as $roleName){
+            $role->create(['name'=>$roleName]);
+        }
     }
 }

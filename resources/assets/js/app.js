@@ -23,9 +23,6 @@ Vue.use(VueResource,lodash);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-Vue.component('data-table', require('./components/DataTable.vue'));
-Vue.component('fb-events', require('./components/FacbookEvents.vue'));
 Object.defineProperty(Vue.prototype, '$lodash', { value: lodash });
 const app = new Vue({
     el: '#app',

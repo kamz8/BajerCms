@@ -42,11 +42,16 @@ if (token) {
  * allows your team to easily build robust real-time Procfile applications.
  */
 
-// import Echo from 'laravel-echo'
+window.Pusher = require('pusher-js');
+// Enable pusher logging - don't include this in production
+Pusher.logToConsole = true;
 
-// window.Pusher = require('pusher-js');
+var pusher = new Pusher('edc1bc9f069121af7ea2', {
+    cluster: 'eu',
+    encrypted: true
+});
 
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: 'your-pusher-key'
-// });
+var channel = pusher.subscribe('my-channel');
+channel.bind('my-event', function(data) {
+    alert(data.message);
+});

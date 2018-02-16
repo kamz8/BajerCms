@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
         // Your Seed Code goes here ...
         $this->call(RolesTableSeeder::class);
         $this->call(UsersTableSeeder::class);
+        $this->call(EventsTableSeeder::class);
 
         Model::reguard();
     }

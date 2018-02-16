@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use App\Roles;
+use App\Role;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
@@ -30,11 +30,11 @@ class UsersController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Role[]|\Illuminate\Database\Eloquent\Collection
      */
     public function create()
     {
-        $roles = Roles::all();
+        $roles = Role::all();
 
         return $roles;
     }
