@@ -21,7 +21,7 @@ class EventDuration implements Rule
      * @param $end_time
      * @return void
      */
-    public function __construct($end_time)
+    public function __construct($end_time = null)
     {
         $this->interval = 1;
         $this->maxDration = 8;

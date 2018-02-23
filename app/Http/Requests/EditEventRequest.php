@@ -2,7 +2,8 @@
 
 namespace App\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
+use App\Rules\EventDuration;
+use App\Rules\withoutOverlapping;
 
 class EditEventRequest extends FormRequest
 {
@@ -13,18 +14,22 @@ class EditEventRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
      * Get the validation rules that apply to the request.
-     *
+     * @link withoutOverlapping
+     * @param EventDuration
      * @return array
      */
     public function rules()
     {
+        $id = $this->route('event');
         return [
-            //
+            'description' => 'required',
+            'start_date' => ['required','date_format:Y-m-d H:i:s','before:end_date', new EventDuration($this->end_date )],
+            'end_date' => ['required','date_format:Y-m-d H:i:s','after:start_date', new withoutOverlapping($this->start_date,$id)]
         ];
     }
 }

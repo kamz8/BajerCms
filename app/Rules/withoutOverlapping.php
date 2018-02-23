@@ -8,14 +8,16 @@ use Illuminate\Contracts\Validation\Rule;
 class withoutOverlapping implements Rule
 {
     protected $start_date;
+    protected $id;
     /**
      * Create a new rule instance.
      *
      * @return void
      */
-    public function __construct($start_date)
+    public function __construct($start_date, $id = null)
     {
         $this->start_date = $start_date;
+        $this->id = $id;
     }
 
     /**
@@ -27,7 +29,7 @@ class withoutOverlapping implements Rule
      */
     public function passes($attribute, $value)
     {
-        return ($this->check($this->start_date, $value) === 0 ) ? true : false ;
+        return ($this->check($this->start_date, $value, $this->id) === 0 ) ? true : false ;
     }
 
     /**
@@ -51,7 +53,7 @@ class withoutOverlapping implements Rule
         return $event
             ->where('start_date', '<=', $endDate)
             ->where('end_date', '>=', $startDate)
-            ->where('id', '!=', $id)
+            ->where('id', '<>', $id)
             ->count();
     }
 }

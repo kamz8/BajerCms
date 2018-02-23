@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Event;
 use App\Http\Requests\CreateEventRequest;
+use App\Http\Requests\EditEventRequest;
 use App\User;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -48,13 +49,13 @@ class EventsController extends Controller
     public function store(CreateEventRequest $request){
         $user = User::find($request->user_id);
         $event =  new Event();
-            $event->title = $user->firstname.' '.$user->lastname;
+            $event->title = "Rezerwacja ".$user->firstname.' '.$user->lastname;
             $event->description = $request->description;
             $event->start_date = $request->start_date;
             $event->end_date = $request->end_date;
             $event->save();
             $event->user()->attach($user->id);
-        return response()->json($event);
+        return response()->json($event,201);
     }
 
     /**
@@ -84,15 +85,23 @@ class EventsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\EditEventRequest  $request
      * @param  int  $id
-     * @class \App\Events
+     * @uses \App\Event
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-        $event = Event::findOrFail($id);
-        $event->update($request->all());
+    public function update(EditEventRequest $request, $id){
+
+        $event = Event::find($id);
+        $event->description = $request->description;
+        $event->start_date = $request->start_date;
+        $event->end_date = $request->end_date;
+        $event->accepted = $request->accepted;
+        $event->save();
+        return response()->json([
+            'message' => 'Event updated.',
+            'data' => $event
+        ]);
     }
 
     /**
@@ -107,12 +116,16 @@ class EventsController extends Controller
         return response()->json([
             'message' => 'Event deleted.',
             'deleted' => $deleted,
-        ]);
+        ],204);
     }
 
     public function restore($id){
         $restore = Event::withTrashed()
             ->where('id', $id)
             ->restore();
+        return response()->json([
+            'message' => 'Event restored.',
+            'restore' => $restore,
+        ]);
     }
 }

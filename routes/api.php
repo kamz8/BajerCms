@@ -21,7 +21,9 @@ Route::middleware('auth.basic')->get('/role', function (\App\Role $roles) {
 });
 Route::middleware('auth.basic')->namespace('Admin')->resource('/users','Admin\UsersController');
 
+
 Route::get('/users/{userId}/events','EventsController@myEvents');
+Route::put('/events/{id}/restore','EventsController@restore');
 Route::resources( [
     'events' => 'EventsController',
     'notes' => 'NotesController',
