@@ -30,7 +30,11 @@ class Event extends Model
         return $this->belongsToMany(User::class)->withTimestamps();
     }
 
-    public function getEvents($startDate = null, $endDate = null)
+    public function note(){
+        return $this->belongsToMany('Event');
+    }
+
+        public function getEvents($startDate = null, $endDate = null)
     {
         return $this
             ->where('start_date', '>=', $startDate)

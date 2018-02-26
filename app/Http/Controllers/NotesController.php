@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Event;
+use App\Http\Requests\CreateNoteRequest;
+use App\Note;
+use App\User;
 use Illuminate\Http\Request;
 
 class NotesController extends Controller
@@ -13,7 +17,8 @@ class NotesController extends Controller
      */
     public function index()
     {
-        //
+        $notes = Note::all();
+        return response()->json($notes);
     }
 
     /**
@@ -29,12 +34,20 @@ class NotesController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param CreateNoteRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateNoteRequest $request)
     {
-        //
+        $user = User::find($request->user_id);
+        $event = Event::find($request->event_id);
+        $note = new Note();
+        $note->note = $request->note;
+        $note->save();
+        $note->user()->attach($user->id);
+        $note->event()->attach($event->id);
+
+        return response()->json($event,201);
     }
 
     /**
@@ -45,7 +58,8 @@ class NotesController extends Controller
      */
     public function show($id)
     {
-        //
+        $note = Note::find($id);
+        return response()->json($note);
     }
 
     /**
@@ -79,6 +93,10 @@ class NotesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $deleted = Note::destroy($id);
+        return response()->json([
+            'message' => 'Event deleted.',
+            'deleted' => $deleted,
+        ],204);
     }
 }

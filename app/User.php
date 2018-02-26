@@ -41,6 +41,14 @@ class User extends Authenticatable
         return $this->belongsToMany(Role::class)->withTimestamps();
     }
 
+    public function event() {
+        return $this->belongsToMany(Event::class);
+    }
+
+    public function notes() {
+        return $this->belongsToMany(Note::class);
+    }
+
     public function hasAnyRole($roles)
     {
         if (is_array($roles)) {
