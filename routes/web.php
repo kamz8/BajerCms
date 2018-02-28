@@ -35,3 +35,7 @@ Route::prefix('api')->group(function () {
         return \App\User::with('roles')->get();
     });
 });
+
+Route::get('/notification', function () {
+    return view('notify');
+});

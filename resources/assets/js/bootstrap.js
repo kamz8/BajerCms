@@ -1,4 +1,3 @@
-
 window._ = require('lodash');
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -42,11 +41,20 @@ if (token) {
  * allows your team to easily build robust real-time Procfile applications.
  */
 
-// import Echo from 'laravel-echo'
+import Echo from 'laravel-echo'
 
-// window.Pusher = require('pusher-js');
+window.Pusher = require('pusher-js');
 
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: 'your-pusher-key'
-// });
+window.Echo = new Echo({
+    broadcaster: 'pusher',
+    key: 'edc1bc9f069121af7ea2'
+});
+axios.interceptors.request.use(
+    config => {
+        config.headers['X-Socket-ID'] = window.Echo.socketId()
+        return config
+    },
+    error => Promise.reject(error)
+)
+
+window.axios = axios

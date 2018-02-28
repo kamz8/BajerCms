@@ -44,7 +44,7 @@
               <i class="fa fa-fw fa-circle"></i>
             </span>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
                     <h6 class="dropdown-header">New Messages:</h6>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">
@@ -78,7 +78,7 @@
               <i class="fa fa-fw fa-circle"></i>
             </span>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
                     <h6 class="dropdown-header">New Alerts:</h6>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">
