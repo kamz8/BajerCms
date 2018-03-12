@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'BajerFont';
-    src: url('../fonts/BajerFont.ttf') format('truetype');
+    src: url('../fonts/Candice.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 html {
     width: 100%;
@@ -15,7 +17,7 @@ body{
 }
 
 .bajerfont{
-    font-family: "BajerFont", Fallback, sans-serif;
+    font-family: "BajerFont", sans-serif;
 }
 
 .navbar-light .navbar-nav .nav-link {

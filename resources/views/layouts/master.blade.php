@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <title>Klub Studencki Bajer</title>
     <!-- Bootstrap core CSS-->
-    <link href="{{asset('css//bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Custom fonts for this template-->
     <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
