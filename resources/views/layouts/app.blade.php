@@ -8,7 +8,7 @@
     <meta name="description" content="Klub Studencki Bajer - strona logowania">
     <meta name="author" content="Kamil Żmijowski">
     @stack('meta')
-    <title>BajerCMS - logowanie</title>
+    <title>Klub Studencki Bajer</title>
     <!-- Bootstrap core CSS-->
     <link href="{{asset('css//bootstrap.min.css')}}" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -19,9 +19,10 @@
 
 </head>
 
-<body class="bg-dark ">
-@yield('content')
-
+<body>
+<div id="app">
+    @yield('content')
+</div>
 </body>
 
 </html>

@@ -17,7 +17,7 @@ class NotesController extends Controller
      */
     public function index()
     {
-        $notes = Note::all();
+        $notes = Note::with('user','event')->get();
         return response()->json($notes);
     }
 
@@ -58,13 +58,12 @@ class NotesController extends Controller
      */
     public function show($id)
     {
-        $note = Note::find($id);
+        $note = Note::with('user','event')->findOrFail($id);
         return response()->json($note);
     }
 
     /**
      * Show the form for editing the specified resource.
-     *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -80,9 +79,13 @@ class NotesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+//    @TODO add edited by user_id
+    public function update(CreateNoteRequest $request, $id)
     {
-        //
+        $note = Note::findOrFail($id);
+        $note->note = $request->note;
+        $note->save();
+        return response()->json($note, 200);
     }
 
     /**

@@ -24,10 +24,10 @@ Route::middleware('auth.basic')->namespace('Admin')->resource('/users','Admin\Us
 
 Route::get('/users/{userId}/events','EventsController@myEvents');
 Route::put('/events/{id}/restore','EventsController@restore');
-Route::resources( [
+Route::resources([
     'events' => 'EventsController',
     'notes' => 'NotesController',
-] );
+]);
 
 Route::get('roles', function (){
     return App\Role::all();
