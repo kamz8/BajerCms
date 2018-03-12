@@ -131,9 +131,6 @@
             </div>
         </div>
     </section>
-    <section class="spotify">
-
-    </section>
     <section class="content-box bg-image">
         <div class="container">
             <div class="row">
@@ -144,9 +141,12 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="spotify">
         <div class="container">
-
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+            </div>
         </div>
     </section>
     <section class="content-box bg-image">

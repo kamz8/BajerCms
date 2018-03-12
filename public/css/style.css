@@ -136,6 +136,12 @@ figure.member > figcaption > span:first-child{
 figure.member > figcaption > .member-title{
     font-weight: lighter;
 }
+
+.spotify{
+    background-color: #1ed760;
+    height: 100px;
+}
+
 @media only screen and (min-width: 320px){
     .sentence.bajerfont{
         font-family: "BajerFont", Fallback, sans-serif;
