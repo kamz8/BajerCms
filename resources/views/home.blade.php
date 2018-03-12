@@ -131,7 +131,7 @@
             </div>
         </div>
     </section>
-    <section class="content-box bg-image">
+    <section class="content-box">
         <div class="container">
             <div class="row">
                 <article class="col-md-12 text-center">
@@ -149,7 +149,7 @@
             </div>
         </div>
     </section>
-    <section class="content-box bg-image">
+    <section class="content-box bg-image" style="background-image: url('{{asset('img/oferta-bg.jpg')}}')">
         <div class="container">
             <div class="row">
                 <article class="col-md-12 text-center">
@@ -163,4 +163,17 @@
             </div>
         </div>
     </section>
+    <section class="content-box">
+        <div class="container">
+            <div class="row">
+                <article class="col-md-12 text-center">
+                    <h1 class="text-uppercase pb-4">wynajem</h1>
+
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="subfooter"></div>
+    </footer>
 @endsection
