@@ -2,12 +2,11 @@
 @section('content')
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand text-light bajerfont" href="">KS Bajer</a>
+            <a class="navbar-brand text-light text-u bajerfont" href="">Bajer</a>
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
                     data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation">
-                Menu
-                <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto text-uppercase">
@@ -68,14 +67,13 @@
             </div>
         </div>
     </section>
-    <section class="content-box bg-image" style="background-image: url('{{asset('img/zespol.jpg')}}')">
+    <section id="zespol" class="content-box" style="background-image: url('{{asset('img/zespol2.jpg')}}')">
         <div class="container">
             <div class="row">
                 <article class="col-md-12 text-center">
-                    <h1 class="text-uppercase pb-4">członkowie</h1>
-                    <div class="mr-1 text-center text-light" style="font-size: 24px">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h1 class="text-uppercase pb-1">członkowie</h1>
+                    <div class="mb-lg-4 mb-md-3 mb-sm-2 text-center text-light font-weight-light" style="font-size: 24px">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                     <div class="row">
                         <div class="col-md-12 col-xs-12 text-center mb-4">
@@ -126,7 +124,7 @@
                             </figure>
                         </div>
                     </div>
-                    <a href="" class="btn btn-outline-light text-uppercase center-block m-4">zobacz wszytkich</a>
+                    <a href="" class="btn btn-outline-light text-uppercase center-block m-5">zobacz wszytkich</a>
                 </article>
             </div>
         </div>
@@ -136,7 +134,7 @@
             <div class="row">
                 <article class="col-md-12 text-center">
                     <h1 class="text-uppercase pb-4">wydarzenia</h1>
-
+                    <facebook-events></facebook-events>
                 </article>
             </div>
         </div>
@@ -149,14 +147,14 @@
             </div>
         </div>
     </section>
-    <section class="content-box bg-image" style="background-image: url('{{asset('img/oferta-bg.jpg')}}')">
+    <section id="oferta" class="content-box bg-image" style="background-image: url('{{asset('img/oferta-bg.jpg')}}')">
         <div class="container">
             <div class="row">
                 <article class="col-md-12 text-center">
                     <h1 class="text-uppercase pb-4">nasza oferta</h1>
-                    <div class="mr-1 text-center">
+                    <div class="mr-1 text-center ">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare dictum dolor vitae viverra.</p>
+                            Vivamus bibendum nibh at pretium condimentum. Proin consequat, metus at luctus hendrerit, arcu sapien aliquam enim, in elementum purus nibh maximus massa. Quisque ipsum nisl, porttitor quis pretium sed, molestie non est. Pellentesque ac faucibus. </p>
                     </div>
                     <a href="" class="btn btn-outline-light text-uppercase center-block m-4">Czytaj dalej</a>
                 </article>

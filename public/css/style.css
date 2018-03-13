@@ -17,7 +17,7 @@ body{
 }
 
 .bajerfont{
-    font-family: "BajerFont", sans-serif;
+    font-family: "Candice", "Segoe UI", Fallback;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -25,6 +25,9 @@ body{
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 0.7);
+}
+.navbar-light .navbar-toggler{
+    color: #fff;
 }
 .masthead {
     display: table;
@@ -72,7 +75,9 @@ a.btn-circle{
     border-color: #fff;
     border-radius: 100%;
 }
-
+.navbar-brand{
+    font-size: 32px;
+}
 /*login page style*/
 .bg-img-login{
     background-image: url("../img/login_bg.jpg");
@@ -115,20 +120,23 @@ section.content-box h1{
 }
 
 section.content-box{
-    padding: 40px 0px;
+    padding: 50px 0px;
+    min-height: 500px;
 }
 
 .bg-image{
-    background-size: cover;
-    background-position: 0 0;
     background-repeat: no-repeat;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: cover;
+    background-position: center top;
 }
 
 figure.member > figcaption{
     padding: 15px 0px;
 }
 figure.member > figcaption > span{
-    display: inline-block;
+    display: block;
 }
 figure.member > figcaption > span:first-child{
     font-size: 18px;
@@ -141,10 +149,15 @@ figure.member > figcaption > .member-title{
     background-color: #1ed760;
     height: 100px;
 }
-
+#zespol{
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position: center top;
+}
 @media only screen and (min-width: 320px){
     .sentence.bajerfont{
-        font-family: "BajerFont", Fallback, sans-serif;
+        font-family: "Candice", "Segoe UI", sans-serif;
         font-size: 20px;
     }
 }
@@ -162,6 +175,15 @@ figure.member > figcaption > .member-title{
     nav.navbar{
         line-height: 60px;
         font-size: 18px;
+    }
+
+    #oferta{
+        height: 800px;
+    }
+
+    #zespol{
+        min-height: 1000px;
+        background-size: cover;
     }
 }
 
