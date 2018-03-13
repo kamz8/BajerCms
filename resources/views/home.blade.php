@@ -67,7 +67,7 @@
             </div>
         </div>
     </section>
-    <section id="zespol" class="content-box" style="background-image: url('{{asset('img/zespol2.jpg')}}')">
+    <section id="zespol" class="content-box">
         <div class="container">
             <div class="row">
                 <article class="col-md-12 text-center">

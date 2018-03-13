@@ -18,7 +18,7 @@
                                 </span>
                             </div>
                             <div class="col-xs-8 col-md-10 col-lg-10">
-                                <h2 class="title"><a :href="'https://www.facebook.com/events/'+event.id">{{event.name}}</a></h2>
+                                <h2 class="title"><a :href="'https://www.facebook.com/events/'+event.id" target="_blank">{{event.name}}</a></h2>
                                 <div class="row">
                                     <div class="col-xs-4 col-md-2 pl-0">
                                         <time class="hour-start"><i class="fa fa-clock-o"></i>&nbsp;{{hoursFromDate(event.start_time)}}</time>
@@ -38,13 +38,6 @@
                 <div class="clearfix"></div>
 
             </div>
-            <!--            <div class="col-xs-12">
-                            <h1><a :href="'https://www.facebook.com/events/'+event.id">{{event.title}}</a></h1>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="col-md-12"><h1><a v-bind:href="'https://www.facebook.com/events/'+event.id">{{event.title}}</a><small>{{event.start_time | formatDate}}</small></h1></div>
-
-                        <div class="col-md-6">{{event.description}}</div>-->
 
         </div>
     </div>
@@ -52,10 +45,9 @@
 </template>
 
 <script>
-    import Col from "bootstrap-vue/src/components/layout/col";
+    //    @TODO : stała wysokość pola minaturki
     import moment from 'moment'
     export default {
-        components: {Col},
         name: "facbook-events",
         data: function () {
             return {
@@ -80,7 +72,6 @@
             getEventsStore: function () {
                 return this.$store.state.fbEvents
             },
-
         },
         filters: {
             'truncate': function (text, stop, clamp) {
@@ -88,7 +79,7 @@
             }
         },
         created: function () {
-            axios.get('https://graph.facebook.com/Klub.Studencki.Bajer/events?fields=cover,name,description,start_time,place&limit=3', {
+            axios.get('https://graph.facebook.com/Klub.Studencki.Bajer/events?fields=cover,name,description,start_time,place&limit=2', {
                 headers: {
                     Authorization: 'Bearer ' + this.fbAccessToken
                 }
@@ -121,6 +112,9 @@
         color: #13e1ee;
         padding: .5em 0px;
         text-transform: uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .title > a:hover {

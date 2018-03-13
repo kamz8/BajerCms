@@ -167,7 +167,9 @@ figure.member > figcaption > .member-title{
         font-size: 25px;
     }
 }
-
+#zespol{
+    background-image: url('../img/zespol2.jpg')
+}
 @media only screen and (min-width: 1280px){
     .sentence.bajerfont{
         font-size: 28px;
