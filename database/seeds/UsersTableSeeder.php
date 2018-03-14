@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Roles;
+use App\Role;
 use App\User;
 
 class UsersTableSeeder extends Seeder
@@ -13,19 +13,23 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-
         $user = new User();
-        $role = Roles::where('name','Admin')->first();
-        $user->name = "Super Admin";
-        $user->email = "admin@admin.com";
-        $user->password = bcrypt('admin123');
-        $user->save();
+        $user = $user->create([
+            'name' => 'Super Admin',
+            'firstname' => 'admin',
+            'lastname' => 'admin',
+            'email' => 'admin@admin.com',
+            'password' => bcrypt('admin123')
+        ]);
+        $role = Role::where('name','super_admin')->first();
+        $user->roles()->sync($role);
+        $roles = Role::all();
+        $users = factory(\App\User::class, 20)
+            ->create()
+            ->each(function ($u) use ($roles) {
 
-        $user->roles()->attach($role);
-        factory(App\User::class, 50)->create()->each(function ($u) {
-            $u->roles()->sync(
-                factory(App\Roles::all()->random())
-            );
-        });
+                $u->roles()->attach($roles->random());
+            });
+
     }
 }

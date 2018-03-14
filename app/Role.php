@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Roles extends Model
+class Role extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -12,7 +12,7 @@ class Roles extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name'
     ];
 
     /**
@@ -24,14 +24,8 @@ class Roles extends Model
         'pivot','created_at','updated_at'
     ];
 
-    private function getRoles(){
-        foreach ($this->roles as $role) {
-            return $role;
-        }
+    public function users()
+    {
+        return $this->belongsToMany('App\User');
     }
-
-    public function getIds(){
-
-    }
-
 }

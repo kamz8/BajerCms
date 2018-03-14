@@ -41,20 +41,13 @@ if (token) {
  * allows your team to easily build robust real-time Procfile applications.
  */
 
-import Echo from 'laravel-echo'
-
 window.Pusher = require('pusher-js');
+// Enable pusher logging - don't include this in production
+Pusher.logToConsole = true;
 
-window.Echo = new Echo({
-    broadcaster: 'pusher',
-    key: 'edc1bc9f069121af7ea2'
+var channel = pusher.subscribe('my-channel');
+channel.bind('my-event', function(data) {
+    alert(data.message);
 });
-axios.interceptors.request.use(
-    config => {
-        config.headers['X-Socket-ID'] = window.Echo.socketId()
-        return config
-    },
-    error => Promise.reject(error)
-)
 
 window.axios = axios

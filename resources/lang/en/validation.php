@@ -116,6 +116,9 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'start_date' =>'czas rozpoczecia',
+        'end_date' => 'czas zakończenia'
+    ],
 
 ];

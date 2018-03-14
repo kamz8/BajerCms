@@ -16,26 +16,19 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::middleware('auth.basic')->get('/role', function (\App\Roles $roles) {
+Route::middleware('auth.basic')->get('/role', function (\App\Role $roles) {
     return $roles->all();
 });
-Route::middleware('auth.basic')->namespace('Admin')->resource('/users','UsersController');
+Route::middleware('auth.basic')->namespace('Admin')->resource('/users','Admin\UsersController');
 
 
-Route::post('/save-subscription/{id}',function($id, Request $request){
-    $user = \App\User::findOrFail($id);
+Route::get('/users/{userId}/events','EventsController@myEvents');
+Route::put('/events/{id}/restore','EventsController@restore');
+Route::resources( [
+    'events' => 'EventsController',
+    'notes' => 'NotesController',
+] );
 
-    $user->updatePushSubscription($request->input('endpoint'), $request->input('keys.p256dh'), $request->input('keys.auth'));
-    $user->notify(new \App\Notifications\GenericNotification("Welcome To WebPush", "You will now get all of our push notifications"));
-    return response()->json([
-        'success' => true
-    ]);
-});
-
-Route::post('/send-notification/{id}', function($id, Request $request){
-    $user = \App\User::findOrFail($id);
-    $user->notify(new \App\Notifications\GenericNotification($request->title, $request->body));
-    return response()->json([
-        'success' => true
-    ]);
+Route::get('roles', function (){
+    return App\Role::all();
 });

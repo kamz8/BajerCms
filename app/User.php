@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Facades\Hash as Hash;
@@ -9,15 +10,21 @@ use NotificationChannels\WebPush\HasPushSubscriptions;
 
 class User extends Authenticatable
 {
-    use Notifiable, HasPushSubscriptions;
+    use Notifiable, HasPushSubscriptions, SoftDeletes;
 
+    /**
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = ['deleted_at'];
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'firstname', 'lastname', 'phone', 'organization', 'email', 'password'
     ];
 
     /**
@@ -26,12 +33,20 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token', 'provider', 'provider_id'
     ];
 
     public function roles()
     {
-        return $this->belongsToMany(Roles::class, 'roles_has_users', 'users_id', 'roles_id')->withTimestamps();
+        return $this->belongsToMany(Role::class)->withTimestamps();
+    }
+
+    public function event() {
+        return $this->belongsToMany(Event::class);
+    }
+
+    public function notes() {
+        return $this->belongsToMany(Note::class);
     }
 
     public function hasAnyRole($roles)
