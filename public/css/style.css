@@ -1,10 +1,84 @@
-html{
+@font-face {
+    font-family: 'BajerFont';
+    src: url('../fonts/Candice.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    width: 100%;
     height: 100%;
 }
 body{
     position: relative;
     min-height: 100%;
+    font-family: "Raleway", sans-serif;
+    background-color:#222222;
+    color: #fff;
 }
+
+.bajerfont{
+    font-family: "Candice", "Segoe UI", Fallback;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+.navbar-light .navbar-toggler{
+    color: #fff;
+}
+.masthead {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/intro-bg.png) no-repeat bottom center scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: auto auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.overlay{
+    position: relative;
+    z-index: 0;
+}
+.overlay::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #222c;
+    z-index: -1;
+}
+header.sentence{
+    font-family: "BajerFont", Fallback, sans-serif;
+    padding-bottom: 1em;
+
+ }
+header .sentence > span::after{
+    content: ' | ';
+}
+
+header .sentence > span:last-child::after{
+    content: ""
+}
+a.btn-circle{
+    color: #fff;
+    border-color: #fff;
+    border-radius: 100%;
+}
+.navbar-brand{
+    font-size: 32px;
+}
+/*login page style*/
 .bg-img-login{
     background-image: url("../img/login_bg.jpg");
     background-repeat:  no-repeat;
@@ -40,3 +114,89 @@ body{
      color:#333;
  }
 
+section.content-box h1{
+    font-size: 38px;
+    line-height: 1.5em;
+}
+
+section.content-box{
+    padding: 50px 0px;
+    min-height: 500px;
+}
+
+.bg-image{
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: cover;
+    background-position: center top;
+}
+
+figure.member > figcaption{
+    padding: 15px 0px;
+}
+figure.member > figcaption > span{
+    display: block;
+}
+figure.member > figcaption > span:first-child{
+    font-size: 18px;
+}
+figure.member > figcaption > .member-title{
+    font-weight: lighter;
+}
+
+.spotify{
+    background-color: #1ed760;
+    height: 100px;
+}
+#zespol{
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position: center top;
+}
+@media only screen and (min-width: 320px){
+    .sentence.bajerfont{
+        font-family: "Candice", "Segoe UI", sans-serif;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .sentence.bajerfont{
+        font-size: 25px;
+    }
+}
+#zespol{
+    background-image: url('../img/zespol2.jpg')
+}
+@media only screen and (min-width: 1280px){
+    .sentence.bajerfont{
+        font-size: 28px;
+    }
+    nav.navbar{
+        line-height: 60px;
+        font-size: 18px;
+    }
+
+    #oferta{
+        height: 800px;
+    }
+
+    #zespol{
+        min-height: 1000px;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1920px){
+    .sentence.bajerfont{
+        font-size: 30px;
+    }
+
+    figure.avatar {
+        max-width: 200px;
+    }
+
+
+}

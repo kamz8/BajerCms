@@ -353,6 +353,7 @@ footer.sticky-footer {
   font-family: "BajerFont", Fallback, sans-serif;
   font-size: 14px;
 }
-.bajerfont.2\x\{
+.bajerfont.2\x\
+            {
   font-size: 2em;
-             }
+}

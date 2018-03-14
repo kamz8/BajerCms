@@ -1,5 +1,5 @@
 <template>
-    <div class="fb-events container">
+    <div class="fb-events container-fluid">
         <div class="row" v-for="event in data">
             <div class="col-md-12"><h1><a v-bind:href="'https://www.facebook.com/events/'+event.id">{{event.title}}</a><small>{{event.start_time | formatDate}}</small></h1></div>
             <div class="col-md-6"><img class="img-responsive center-block" v-bind:src="event.cover.source" /></div>

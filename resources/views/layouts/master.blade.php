@@ -9,20 +9,16 @@
     <meta name="author" content="">
     <title>Klub Studencki Bajer</title>
     <!-- Bootstrap core CSS-->
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Custom fonts for this template-->
-    <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{secure_asset('css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
-    <link href="{{asset('css/style.css')}}" rel="stylesheet">
-
+    <link href="{{secure_asset('css/style.css')}}" rel="stylesheet">
 </head>
 
 <body style="color: #0b2e13;">
-<div id="app">
-    @yield('content')
-</div>
+@yield('content')
 
-<script src="{{asset('js/app.js')}}"></script>
 </body>
 
 </html>

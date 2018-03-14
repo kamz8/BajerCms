@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function (){
+    return view('home');
+})->name('home');
+
 
 Route::group(['middleware'=>'roles',
     'roles'=>['super_admin','admin','moderator','consultant'],
@@ -28,11 +29,6 @@ Route::group(['middleware'=>'roles',
 });
 //auth routes
 Auth::routes();
-
-Route::get('/', function (){
-    return view('welcome');
-})->name('home');
-
 
 Route::prefix('api')->group(function () {
     Route::get('users', function () {
