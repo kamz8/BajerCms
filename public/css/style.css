@@ -1,3 +1,4 @@
+@import "socialicons.css";
 @font-face {
     font-family: 'BajerFont';
     src: url('../fonts/Candice.ttf') format('truetype');
@@ -155,13 +156,27 @@ figure.member > figcaption > .member-title{
     background-origin: padding-box;
     background-position: center top;
 }
+
+footer.footer{
+    padding: 4rem 0;
+    background-color: #363636;
+}
+
 @media only screen and (min-width: 320px){
     .sentence.bajerfont{
         font-family: "Candice", "Segoe UI", sans-serif;
         font-size: 20px;
     }
 }
-
+.bajerfont.bajer-2x {
+    font-size: 2em;
+}
+.bajerfont.bajer-3x {
+    font-size: 3em;
+}
+.bajerfont.bajer-4x {
+    font-size: 4em;
+}
 @media only screen and (min-width: 768px){
     .sentence.bajerfont{
         font-size: 25px;
