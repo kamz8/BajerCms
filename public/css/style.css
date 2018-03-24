@@ -1,35 +1,41 @@
 @import "socialicons.css";
+
 @font-face {
     font-family: 'BajerFont';
     src: url('../fonts/Candice.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 html {
     width: 100%;
     height: 100%;
 }
-body{
+
+body {
     position: relative;
     min-height: 100%;
     font-family: "Raleway", sans-serif;
-    background-color:#222222;
+    background-color: #222222;
     color: #fff;
 }
 
-.bajerfont{
+.bajerfont {
     font-family: "Candice", "Segoe UI", Fallback;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
 }
+
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 0.7);
 }
-.navbar-light .navbar-toggler{
+
+.navbar-light .navbar-toggler {
     color: #fff;
 }
+
 .masthead {
     display: table;
     width: 100%;
@@ -45,10 +51,12 @@ body{
     -o-background-size: cover;
     background-size: cover;
 }
-.overlay{
+
+.overlay {
     position: relative;
     z-index: 0;
 }
+
 .overlay::before {
     content: "";
     position: absolute;
@@ -59,73 +67,84 @@ body{
     background-color: #222c;
     z-index: -1;
 }
-header.sentence{
+
+header.sentence {
     font-family: "BajerFont", Fallback, sans-serif;
     padding-bottom: 1em;
 
- }
-header .sentence > span::after{
+}
+
+header .sentence > span::after {
     content: ' | ';
 }
 
-header .sentence > span:last-child::after{
+header .sentence > span:last-child::after {
     content: ""
 }
-a.btn-circle{
+
+a.btn-circle {
     color: #fff;
     border-color: #fff;
     border-radius: 100%;
 }
-.navbar-brand{
+
+.navbar-brand {
     font-size: 32px;
 }
+
 /*login page style*/
-.bg-img-login{
+.bg-img-login {
     background-image: url("../img/login_bg.jpg");
-    background-repeat:  no-repeat;
+    background-repeat: no-repeat;
     background-position: 0px -100px;
     background-size: cover;
 
 }
- .logo-xl{
-     width: 200px;
-     height: auto;
- }
 
- .gradient-overlay{
-     position: relative;
+.logo-xl {
+    width: 200px;
+    height: auto;
+}
+
+.gradient-overlay {
+    position: relative;
 
     min-height: 100vh;
     color: #fff;
- }
- .gradient-overlay::before{
-     content: " ";
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/login_bg.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center center;
-     color: #fff;
+}
 
- }
+.gradient-overlay::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/login_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
 
- .card{
-     color:#333;
- }
+}
 
-section.content-box h1{
+.card {
+    color: #333;
+}
+
+.btn-lg-space, .content-box article > a {
+    line-height: 28px;
+}
+
+section.content-box h1 {
     font-size: 38px;
     line-height: 1.5em;
 }
 
-section.content-box{
+section.content-box {
     padding: 50px 0px;
     min-height: 500px;
 }
 
-.bg-image{
+.bg-image {
     background-repeat: no-repeat;
     background-clip: border-box;
     background-origin: padding-box;
@@ -133,85 +152,109 @@ section.content-box{
     background-position: center top;
 }
 
-figure.member > figcaption{
+figure.member > figcaption {
     padding: 15px 0px;
 }
-figure.member > figcaption > span{
+
+figure.member > figcaption > span {
     display: block;
 }
-figure.member > figcaption > span:first-child{
+
+figure.member > figcaption > span:first-child {
     font-size: 18px;
 }
-figure.member > figcaption > .member-title{
+
+figure.member > figcaption > .member-title {
     font-weight: lighter;
 }
 
-.spotify{
+.spotify {
     background-color: #1ed760;
-    height: 100px;
 }
-#zespol{
+
+#zespol {
     background-repeat: no-repeat;
     background-clip: border-box;
     background-origin: padding-box;
     background-position: center top;
 }
 
-footer.footer{
-    padding: 4rem 0;
-    background-color: #363636;
-}
-
-@media only screen and (min-width: 320px){
-    .sentence.bajerfont{
-        font-family: "Candice", "Segoe UI", sans-serif;
-        font-size: 20px;
-    }
-}
 .bajerfont.bajer-2x {
     font-size: 2em;
 }
+
 .bajerfont.bajer-3x {
     font-size: 3em;
 }
+
 .bajerfont.bajer-4x {
     font-size: 4em;
 }
-@media only screen and (min-width: 768px){
-    .sentence.bajerfont{
+
+footer.footer {
+    background-color: #363636;
+}
+
+/*Make all responsive :P */
+@media only screen and (min-width: 320px) {
+    .sentence.bajerfont {
+        font-family: "Candice", "Segoe UI", sans-serif;
+        font-size: 20px;
+    }
+
+    .spotify {
+        height: 135px;
+    }
+
+    footer.footer {
+        padding: 5rem 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .sentence.bajerfont {
         font-size: 25px;
     }
+
+    footer.footer {
+        padding: 4rem 0;
+    }
+    .spotify {
+        height: 100px;
+    }
 }
-#zespol{
+
+#zespol {
     background-image: url('../img/zespol2.jpg')
 }
-@media only screen and (min-width: 1280px){
-    .sentence.bajerfont{
+
+@media only screen and (min-width: 1280px) {
+    .sentence.bajerfont {
         font-size: 28px;
     }
-    nav.navbar{
+
+    nav.navbar {
         line-height: 60px;
         font-size: 18px;
     }
 
-    #oferta{
+    #oferta {
         height: 800px;
     }
 
-    #zespol{
+    #zespol {
         min-height: 1000px;
         background-size: cover;
     }
 }
 
-@media only screen and (min-width: 1920px){
-    .sentence.bajerfont{
+@media only screen and (min-width: 1920px) {
+    .sentence.bajerfont {
         font-size: 30px;
     }
 
     figure.avatar {
         max-width: 200px;
     }
-
 
 }

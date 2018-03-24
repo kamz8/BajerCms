@@ -141,14 +141,14 @@
         </div>
     </section>
     <section class="spotify">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, imperdiet sed consectetur ut, placerat id nunc.Donec tincidunt mollis.</p>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-6 col-md-6 visible-sm-inline-block">
+                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, imperdiet sed consectetur ut, placerat id nunc.Donec tincidunt mollis.</p>
                 </div>
-                <div class="col-md-4 offset-2">
-                    <span class="bajerfont bajer-2x">#AleBajer</span>
-                    <a class="btn btn-md btn-outline-light text-light text-uppercase">zobacz playlistę</a>
+                <div class="col-6 col-md-4 offset-md-2">
+                    <span class="bajerfont bajer-2x mr-2 mb-sm-2 d-sm-block d-md-inline-block mb-md-0">#AleBajer</span>
+                    <a class="btn btn-md btn-outline-light text-light text-uppercase btn-lg-space" style="margin-top: -10px;">zobacz playlistę</a>
                 </div>
             </div>
         </div>
@@ -195,7 +195,7 @@
                     </address>
                 </div>
                 <div class="col-sm-12 col-md-8">
-                    <div class="social-icons">
+                    <div class="social-icons text-center">
                         <ul class="social-network social-circle text-dark">
                             <li><a href="#" class="Facebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#" class="Instagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
@@ -205,7 +205,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-2">
-                    <a class="btn btn-light text-uppercase text-dark btn-block">kontakt</a>
+                    <a class="btn btn-light text-uppercase text-dark btn-block btn-lg-space  mt-5 mt-sm-0">kontakt</a>
                 </div>
             </div>
         </div>

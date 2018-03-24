@@ -44,6 +44,7 @@ ul.social-network li {
 }
 .social-network a.Snapchat:hover {
     background-color:#fffc00;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
 }
 a.socialIcon:hover, .socialHoverClass {
