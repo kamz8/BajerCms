@@ -21,14 +21,14 @@
                             <div class="col-8 col-md-10 col-lg-10">
                                 <h2 class="title d-none d-md-inline"><a :href="'https://www.facebook.com/events/'+event.id" target="_blank">{{event.name}}</a></h2>
                                 <div class="row">
-                                    <div class="col-4 col-md-2 pl-0">
+                                    <div class="col-4 col-md-3 pl-0 pl-md-2">
                                         <time class="hour-start"><i class="fa fa-clock-o"></i>&nbsp;{{hoursFromDate(event.start_time)}}</time>
                                     </div>
-                                    <div class="col-8 col-md-10 pl-0">
+                                    <div class="col-8 col-md-9 pl-0 pl-md-2">
                                         <span class="place"><i class="fa fa-map-marker"></i>&nbsp;{{event.place.name}}</span>
                                     </div>
                                 </div>
-                                <div class="row event-description d-none d-md-block">
+                                <div class="row event-description d-none d-md-block pl-0 pl-md-2">
                                     <p>{{event.description | truncate(200)}}</p>
                                 </div>
                             </div>

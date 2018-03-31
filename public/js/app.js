@@ -51500,6 +51500,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Navbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_Navbar_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_util_ToTop_vue__ = __webpack_require__(409);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_util_ToTop_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_util_ToTop_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue_scrollto__ = __webpack_require__(415);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue_scrollto___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_vue_scrollto__);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -51521,8 +51523,22 @@ window.Vue = __webpack_require__(31);
 
 
 
+
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_bootstrap_vue__["a" /* default */]);
-Vue.use(__WEBPACK_IMPORTED_MODULE_1_vue_resource__["a" /* default */], __WEBPACK_IMPORTED_MODULE_3_lodash___default.a);
+Vue.use(__WEBPACK_IMPORTED_MODULE_1_vue_resource__["a" /* default */], __WEBPACK_IMPORTED_MODULE_3_lodash___default.a, __WEBPACK_IMPORTED_MODULE_8_vue_scrollto___default.a);
+
+Vue.use(__WEBPACK_IMPORTED_MODULE_8_vue_scrollto___default.a, {
+    container: "body",
+    duration: 500,
+    easing: "ease-in",
+    offset: 0,
+    cancelable: true,
+    onStart: false,
+    onDone: false,
+    onCancel: false,
+    x: false,
+    y: true
+});
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -51531,14 +51547,14 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_1_vue_resource__["a" /* default */], __WEBPACK
 
 Object.defineProperty(Vue.prototype, '$lodash', { value: __WEBPACK_IMPORTED_MODULE_3_lodash___default.a });
 var app = new Vue({
-  el: '#app',
-  store: __WEBPACK_IMPORTED_MODULE_2__store__["a" /* default */],
-  components: {
-    DataTable: __WEBPACK_IMPORTED_MODULE_4__components_DataTable_vue___default.a,
-    FacebookEvents: __WEBPACK_IMPORTED_MODULE_5__components_FacbookEvents_vue___default.a,
-    Navbar: __WEBPACK_IMPORTED_MODULE_6__components_Navbar_vue___default.a,
-    ToTop: __WEBPACK_IMPORTED_MODULE_7__components_util_ToTop_vue___default.a
-  }
+    el: '#app',
+    store: __WEBPACK_IMPORTED_MODULE_2__store__["a" /* default */],
+    components: {
+        DataTable: __WEBPACK_IMPORTED_MODULE_4__components_DataTable_vue___default.a,
+        FacebookEvents: __WEBPACK_IMPORTED_MODULE_5__components_FacbookEvents_vue___default.a,
+        Navbar: __WEBPACK_IMPORTED_MODULE_6__components_Navbar_vue___default.a,
+        ToTop: __WEBPACK_IMPORTED_MODULE_7__components_util_ToTop_vue___default.a
+    }
 });
 axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 
@@ -72174,27 +72190,36 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-4 col-md-2 pl-0" }, [
-                        _c("time", { staticClass: "hour-start" }, [
-                          _c("i", { staticClass: "fa fa-clock-o" }),
-                          _vm._v(
-                            " " + _vm._s(_vm.hoursFromDate(event.start_time))
-                          )
-                        ])
-                      ]),
+                      _c(
+                        "div",
+                        { staticClass: "col-4 col-md-3 pl-0 pl-md-2" },
+                        [
+                          _c("time", { staticClass: "hour-start" }, [
+                            _c("i", { staticClass: "fa fa-clock-o" }),
+                            _vm._v(
+                              " " + _vm._s(_vm.hoursFromDate(event.start_time))
+                            )
+                          ])
+                        ]
+                      ),
                       _vm._v(" "),
-                      _c("div", { staticClass: "col-8 col-md-10 pl-0" }, [
-                        _c("span", { staticClass: "place" }, [
-                          _c("i", { staticClass: "fa fa-map-marker" }),
-                          _vm._v(" " + _vm._s(event.place.name))
-                        ])
-                      ])
+                      _c(
+                        "div",
+                        { staticClass: "col-8 col-md-9 pl-0 pl-md-2" },
+                        [
+                          _c("span", { staticClass: "place" }, [
+                            _c("i", { staticClass: "fa fa-map-marker" }),
+                            _vm._v(" " + _vm._s(event.place.name))
+                          ])
+                        ]
+                      )
                     ]),
                     _vm._v(" "),
                     _c(
                       "div",
                       {
-                        staticClass: "row event-description d-none d-md-block"
+                        staticClass:
+                          "row event-description d-none d-md-block pl-0 pl-md-2"
                       },
                       [
                         _c("p", [
@@ -87077,7 +87102,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             scrollPosition: 0,
-            headerHeight: 0
+            headerHeight: 0,
+            colapseIn: 0
         };
     },
     methods: {
@@ -87086,6 +87112,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         calHeight: function calHeight() {
             this.headerHeight = document.getElementById('mainHeader').offsetHeight;
+        },
+        collapseing: function collapseing() {
+            return this.colapseIn = !this.colapseIn;
         }
     },
     created: function created() {
@@ -87131,7 +87160,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, "\nnav .navbar.fixed-top{\r\n    background-color: #1b1e21cc !important;\n}\nnav.sticky{\r\n    z-index: 10;\n}\n#mainHeader{\r\n        margin-top: -92px;\n}\n.bg-gray{\r\n        background-color: rgba(33, 33, 33, 0.8) !important;\n}\r\n", ""]);
+exports.push([module.i, "\nnav .navbar.fixed-top{\r\n    background-color: #1b1e21cc !important;\n}\nnav.sticky{\r\n    z-index: 10;\n}\n#mainHeader{\r\n        margin-top: -92px;\n}\n.bg-gray{\r\n        background-color: rgba(33, 33, 33, 0.8) !important;\n}\nnav.colapse-space{\r\n        margin-bottom: 92px;\n}\r\n", ""]);
 
 // exports
 
@@ -87151,6 +87180,7 @@ var render = function() {
         "sticky bg-transparent": _vm.scrollPosition < _vm.headerHeight,
         "sticky-top bg-gray": _vm.scrollPosition > _vm.headerHeight
       },
+      style: { marginBottom: _vm.colapseIn + "px" },
       attrs: { toggleable: "md", type: "light", id: "mainNav" }
     },
     [
@@ -87178,7 +87208,17 @@ var render = function() {
           _vm._v(" "),
           _c(
             "b-collapse",
-            { attrs: { "is-nav": "", id: "nav_collapse" } },
+            {
+              attrs: { "is-nav": "", id: "nav_collapse" },
+              on: {
+                show: function($event) {
+                  _vm.colapseIn = 92
+                },
+                hide: function($event) {
+                  _vm.colapseIn = 0
+                }
+              }
+            },
             [
               _c(
                 "b-navbar-nav",
@@ -87332,8 +87372,6 @@ exports.push([module.i, "\n.affix-top[data-v-6ea93a12]{\r\n    bottom: -50px;\r\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_infinite_scroll__ = __webpack_require__(414);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_infinite_scroll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_infinite_scroll__);
 //
 //
 //
@@ -87343,14 +87381,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "to-top",
-    directives: {
-        infiniteScroll: __WEBPACK_IMPORTED_MODULE_0_vue_infinite_scroll___default.a
-    },
     data: function data() {
         return {
             scrollPosition: 0,
@@ -87387,22 +87420,28 @@ var render = function() {
       class: {
         "d-block": _vm.scrollPosition > 900,
         "d-none": _vm.scrollPosition < 900
-      },
-      on: { click: _vm.scrollToTop }
+      }
     },
-    [_vm._m(0, false, false)]
+    [
+      _c(
+        "a",
+        {
+          directives: [
+            {
+              name: "scroll-to",
+              rawName: "v-scroll-to",
+              value: "#app",
+              expression: "'#app'"
+            }
+          ],
+          staticClass: "btn btn-sm btn-dark"
+        },
+        [_c("i", { staticClass: "fa fa-chevron-up fa-2x" })]
+      )
+    ]
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("button", { staticClass: "btn btn-sm btn-dark" }, [
-      _c("i", { staticClass: "fa fa-chevron-up fa-2x" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -87413,244 +87452,485 @@ if (false) {
 }
 
 /***/ }),
-/* 414 */
+/* 414 */,
+/* 415 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function (global, factory) {
-   true ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global.infiniteScroll = factory());
-}(this, function () { 'use strict';
+	 true ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global['vue-scrollto'] = factory());
+}(this, (function () { 'use strict';
 
-  var ctx = '@@InfiniteScroll';
+/**
+ * https://github.com/gre/bezier-easing
+ * BezierEasing - use bezier curve for transition easing function
+ * by Gaëtan Renaudeau 2014 - 2015 – MIT License
+ */
 
-  var throttle = function throttle(fn, delay) {
-    var now, lastExec, timer, context, args; //eslint-disable-line
+// These values are established by empiricism with tests (tradeoff: performance VS precision)
+var NEWTON_ITERATIONS = 4;
+var NEWTON_MIN_SLOPE = 0.001;
+var SUBDIVISION_PRECISION = 0.0000001;
+var SUBDIVISION_MAX_ITERATIONS = 10;
 
-    var execute = function execute() {
-      fn.apply(context, args);
-      lastExec = now;
-    };
+var kSplineTableSize = 11;
+var kSampleStepSize = 1.0 / (kSplineTableSize - 1.0);
 
-    return function () {
-      context = this;
-      args = arguments;
+var float32ArraySupported = typeof Float32Array === 'function';
 
-      now = Date.now();
+function A (aA1, aA2) { return 1.0 - 3.0 * aA2 + 3.0 * aA1; }
+function B (aA1, aA2) { return 3.0 * aA2 - 6.0 * aA1; }
+function C (aA1)      { return 3.0 * aA1; }
 
-      if (timer) {
-        clearTimeout(timer);
-        timer = null;
-      }
+// Returns x(t) given t, x1, and x2, or y(t) given t, y1, and y2.
+function calcBezier (aT, aA1, aA2) { return ((A(aA1, aA2) * aT + B(aA1, aA2)) * aT + C(aA1)) * aT; }
 
-      if (lastExec) {
-        var diff = delay - (now - lastExec);
-        if (diff < 0) {
-          execute();
-        } else {
-          timer = setTimeout(function () {
-            execute();
-          }, diff);
-        }
-      } else {
-        execute();
-      }
-    };
-  };
+// Returns dx/dt given t, x1, and x2, or dy/dt given t, y1, and y2.
+function getSlope (aT, aA1, aA2) { return 3.0 * A(aA1, aA2) * aT * aT + 2.0 * B(aA1, aA2) * aT + C(aA1); }
 
-  var getScrollTop = function getScrollTop(element) {
-    if (element === window) {
-      return Math.max(window.pageYOffset || 0, document.documentElement.scrollTop);
-    }
-
-    return element.scrollTop;
-  };
-
-  var getComputedStyle = document.defaultView.getComputedStyle;
-
-  var getScrollEventTarget = function getScrollEventTarget(element) {
-    var currentNode = element;
-    // bugfix, see http://w3help.org/zh-cn/causes/SD9013 and http://stackoverflow.com/questions/17016740/onscroll-function-is-not-working-for-chrome
-    while (currentNode && currentNode.tagName !== 'HTML' && currentNode.tagName !== 'BODY' && currentNode.nodeType === 1) {
-      var overflowY = getComputedStyle(currentNode).overflowY;
-      if (overflowY === 'scroll' || overflowY === 'auto') {
-        return currentNode;
-      }
-      currentNode = currentNode.parentNode;
-    }
-    return window;
-  };
-
-  var getVisibleHeight = function getVisibleHeight(element) {
-    if (element === window) {
-      return document.documentElement.clientHeight;
-    }
-
-    return element.clientHeight;
-  };
-
-  var getElementTop = function getElementTop(element) {
-    if (element === window) {
-      return getScrollTop(window);
-    }
-    return element.getBoundingClientRect().top + getScrollTop(window);
-  };
-
-  var isAttached = function isAttached(element) {
-    var currentNode = element.parentNode;
-    while (currentNode) {
-      if (currentNode.tagName === 'HTML') {
-        return true;
-      }
-      if (currentNode.nodeType === 11) {
-        return false;
-      }
-      currentNode = currentNode.parentNode;
-    }
-    return false;
-  };
-
-  var doBind = function doBind() {
-    if (this.binded) return; // eslint-disable-line
-    this.binded = true;
-
-    var directive = this;
-    var element = directive.el;
-
-    var throttleDelayExpr = element.getAttribute('infinite-scroll-throttle-delay');
-    var throttleDelay = 200;
-    if (throttleDelayExpr) {
-      throttleDelay = Number(directive.vm[throttleDelayExpr] || throttleDelayExpr);
-      if (isNaN(throttleDelay) || throttleDelay < 0) {
-        throttleDelay = 200;
-      }
-    }
-    directive.throttleDelay = throttleDelay;
-
-    directive.scrollEventTarget = getScrollEventTarget(element);
-    directive.scrollListener = throttle(doCheck.bind(directive), directive.throttleDelay);
-    directive.scrollEventTarget.addEventListener('scroll', directive.scrollListener);
-
-    this.vm.$on('hook:beforeDestroy', function () {
-      directive.scrollEventTarget.removeEventListener('scroll', directive.scrollListener);
-    });
-
-    var disabledExpr = element.getAttribute('infinite-scroll-disabled');
-    var disabled = false;
-
-    if (disabledExpr) {
-      this.vm.$watch(disabledExpr, function (value) {
-        directive.disabled = value;
-        if (!value && directive.immediateCheck) {
-          doCheck.call(directive);
-        }
-      });
-      disabled = Boolean(directive.vm[disabledExpr]);
-    }
-    directive.disabled = disabled;
-
-    var distanceExpr = element.getAttribute('infinite-scroll-distance');
-    var distance = 0;
-    if (distanceExpr) {
-      distance = Number(directive.vm[distanceExpr] || distanceExpr);
-      if (isNaN(distance)) {
-        distance = 0;
-      }
-    }
-    directive.distance = distance;
-
-    var immediateCheckExpr = element.getAttribute('infinite-scroll-immediate-check');
-    var immediateCheck = true;
-    if (immediateCheckExpr) {
-      immediateCheck = Boolean(directive.vm[immediateCheckExpr]);
-    }
-    directive.immediateCheck = immediateCheck;
-
-    if (immediateCheck) {
-      doCheck.call(directive);
-    }
-
-    var eventName = element.getAttribute('infinite-scroll-listen-for-event');
-    if (eventName) {
-      directive.vm.$on(eventName, function () {
-        doCheck.call(directive);
-      });
-    }
-  };
-
-  var doCheck = function doCheck(force) {
-    var scrollEventTarget = this.scrollEventTarget;
-    var element = this.el;
-    var distance = this.distance;
-
-    if (force !== true && this.disabled) return; //eslint-disable-line
-    var viewportScrollTop = getScrollTop(scrollEventTarget);
-    var viewportBottom = viewportScrollTop + getVisibleHeight(scrollEventTarget);
-
-    var shouldTrigger = false;
-
-    if (scrollEventTarget === element) {
-      shouldTrigger = scrollEventTarget.scrollHeight - viewportBottom <= distance;
+function binarySubdivide (aX, aA, aB, mX1, mX2) {
+  var currentX, currentT, i = 0;
+  do {
+    currentT = aA + (aB - aA) / 2.0;
+    currentX = calcBezier(currentT, mX1, mX2) - aX;
+    if (currentX > 0.0) {
+      aB = currentT;
     } else {
-      var elementBottom = getElementTop(element) - getElementTop(scrollEventTarget) + element.offsetHeight + viewportScrollTop;
-
-      shouldTrigger = viewportBottom + distance >= elementBottom;
+      aA = currentT;
     }
+  } while (Math.abs(currentX) > SUBDIVISION_PRECISION && ++i < SUBDIVISION_MAX_ITERATIONS);
+  return currentT;
+}
 
-    if (shouldTrigger && this.expression) {
-      this.expression();
-    }
-  };
+function newtonRaphsonIterate (aX, aGuessT, mX1, mX2) {
+ for (var i = 0; i < NEWTON_ITERATIONS; ++i) {
+   var currentSlope = getSlope(aGuessT, mX1, mX2);
+   if (currentSlope === 0.0) {
+     return aGuessT;
+   }
+   var currentX = calcBezier(aGuessT, mX1, mX2) - aX;
+   aGuessT -= currentX / currentSlope;
+ }
+ return aGuessT;
+}
 
-  var InfiniteScroll = {
-    bind: function bind(el, binding, vnode) {
-      el[ctx] = {
-        el: el,
-        vm: vnode.context,
-        expression: binding.value
-      };
-      var args = arguments;
-      el[ctx].vm.$on('hook:mounted', function () {
-        el[ctx].vm.$nextTick(function () {
-          if (isAttached(el)) {
-            doBind.call(el[ctx], args);
-          }
-
-          el[ctx].bindTryCount = 0;
-
-          var tryBind = function tryBind() {
-            if (el[ctx].bindTryCount > 10) return; //eslint-disable-line
-            el[ctx].bindTryCount++;
-            if (isAttached(el)) {
-              doBind.call(el[ctx], args);
-            } else {
-              setTimeout(tryBind, 50);
-            }
-          };
-
-          tryBind();
-        });
-      });
-    },
-    unbind: function unbind(el) {
-      if (el && el[ctx] && el[ctx].scrollEventTarget) el[ctx].scrollEventTarget.removeEventListener('scroll', el[ctx].scrollListener);
-    }
-  };
-
-  var install = function install(Vue) {
-    Vue.directive('InfiniteScroll', InfiniteScroll);
-  };
-
-  if (window.Vue) {
-    window.infiniteScroll = InfiniteScroll;
-    Vue.use(install); // eslint-disable-line
+var src = function bezier (mX1, mY1, mX2, mY2) {
+  if (!(0 <= mX1 && mX1 <= 1 && 0 <= mX2 && mX2 <= 1)) {
+    throw new Error('bezier x values must be in [0, 1] range');
   }
 
-  InfiniteScroll.install = install;
+  // Precompute samples table
+  var sampleValues = float32ArraySupported ? new Float32Array(kSplineTableSize) : new Array(kSplineTableSize);
+  if (mX1 !== mY1 || mX2 !== mY2) {
+    for (var i = 0; i < kSplineTableSize; ++i) {
+      sampleValues[i] = calcBezier(i * kSampleStepSize, mX1, mX2);
+    }
+  }
 
-  return InfiniteScroll;
+  function getTForX (aX) {
+    var intervalStart = 0.0;
+    var currentSample = 1;
+    var lastSample = kSplineTableSize - 1;
 
-}));
+    for (; currentSample !== lastSample && sampleValues[currentSample] <= aX; ++currentSample) {
+      intervalStart += kSampleStepSize;
+    }
+    --currentSample;
+
+    // Interpolate to provide an initial guess for t
+    var dist = (aX - sampleValues[currentSample]) / (sampleValues[currentSample + 1] - sampleValues[currentSample]);
+    var guessForT = intervalStart + dist * kSampleStepSize;
+
+    var initialSlope = getSlope(guessForT, mX1, mX2);
+    if (initialSlope >= NEWTON_MIN_SLOPE) {
+      return newtonRaphsonIterate(aX, guessForT, mX1, mX2);
+    } else if (initialSlope === 0.0) {
+      return guessForT;
+    } else {
+      return binarySubdivide(aX, intervalStart, intervalStart + kSampleStepSize, mX1, mX2);
+    }
+  }
+
+  return function BezierEasing (x) {
+    if (mX1 === mY1 && mX2 === mY2) {
+      return x; // linear
+    }
+    // Because JavaScript number are imprecise, we should guarantee the extremes are right.
+    if (x === 0) {
+      return 0;
+    }
+    if (x === 1) {
+      return 1;
+    }
+    return calcBezier(getTForX(x), mY1, mY2);
+  };
+};
+
+var easings = {
+    ease: [0.25, 0.1, 0.25, 1.0],
+    linear: [0.00, 0.0, 1.00, 1.0],
+    "ease-in": [0.42, 0.0, 1.00, 1.0],
+    "ease-out": [0.00, 0.0, 0.58, 1.0],
+    "ease-in-out": [0.42, 0.0, 0.58, 1.0]
+};
+
+// https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md#feature-detection
+var supportsPassive = false;
+try {
+    var opts = Object.defineProperty({}, "passive", {
+        get: function get() {
+            supportsPassive = true;
+        }
+    });
+    window.addEventListener("test", null, opts);
+} catch (e) {}
+
+var _ = {
+    $: function $(selector) {
+        if (typeof selector !== "string") {
+            return selector;
+        }
+        return document.querySelector(selector);
+    },
+    on: function on(element, events, handler) {
+        var opts = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : { passive: false };
+
+        if (!(events instanceof Array)) {
+            events = [events];
+        }
+        for (var i = 0; i < events.length; i++) {
+            element.addEventListener(events[i], handler, supportsPassive ? opts : false);
+        }
+    },
+    off: function off(element, events, handler) {
+        if (!(events instanceof Array)) {
+            events = [events];
+        }
+        for (var i = 0; i < events.length; i++) {
+            element.removeEventListener(events[i], handler);
+        }
+    },
+    cumulativeOffset: function cumulativeOffset(element) {
+        var top = 0;
+        var left = 0;
+
+        do {
+            top += element.offsetTop || 0;
+            left += element.offsetLeft || 0;
+            element = element.offsetParent;
+        } while (element);
+
+        return {
+            top: top,
+            left: left
+        };
+    }
+};
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+  return typeof obj;
+} : function (obj) {
+  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+
+    for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }
+
+  return target;
+};
+
+var abortEvents = ["mousedown", "wheel", "DOMMouseScroll", "mousewheel", "keyup", "touchmove"];
+
+var defaults$$1 = {
+    container: "body",
+    duration: 500,
+    easing: "ease",
+    offset: 0,
+    cancelable: true,
+    onStart: false,
+    onDone: false,
+    onCancel: false,
+    x: false,
+    y: true
+};
+
+function setDefaults(options) {
+    defaults$$1 = _extends({}, defaults$$1, options);
+}
+
+var scroller = function scroller() {
+    var element = void 0; // element to scroll to
+    var container = void 0; // container to scroll
+    var duration = void 0; // duration of the scrolling
+    var easing = void 0; // easing to be used when scrolling
+    var offset = void 0; // offset to be added (subtracted)
+    var cancelable = void 0; // indicates if user can cancel the scroll or not.
+    var onStart = void 0; // callback when scrolling is started
+    var onDone = void 0; // callback when scrolling is done
+    var onCancel = void 0; // callback when scrolling is canceled / aborted
+    var x = void 0; // scroll on x axis
+    var y = void 0; // scroll on y axis
+
+    var initialX = void 0; // initial X of container
+    var targetX = void 0; // target X of container
+    var initialY = void 0; // initial Y of container
+    var targetY = void 0; // target Y of container
+    var diffX = void 0; // difference
+    var diffY = void 0; // difference
+
+    var abort = void 0; // is scrolling aborted
+
+    var abortEv = void 0; // event that aborted scrolling
+    var abortFn = function abortFn(e) {
+        if (!cancelable) return;
+        abortEv = e;
+        abort = true;
+    };
+    var easingFn = void 0;
+
+    var timeStart = void 0; // time when scrolling started
+    var timeElapsed = void 0; // time elapsed since scrolling started
+
+    var progress = void 0; // progress
+
+    function scrollTop(container) {
+        var scrollTop = container.scrollTop;
+
+        if (container.tagName.toLowerCase() === "body") {
+            // in firefox body.scrollTop always returns 0
+            // thus if we are trying to get scrollTop on a body tag
+            // we need to get it from the documentElement
+            scrollTop = scrollTop || document.documentElement.scrollTop;
+        }
+
+        return scrollTop;
+    }
+
+    function scrollLeft(container) {
+        var scrollLeft = container.scrollLeft;
+
+        if (container.tagName.toLowerCase() === "body") {
+            // in firefox body.scrollLeft always returns 0
+            // thus if we are trying to get scrollLeft on a body tag
+            // we need to get it from the documentElement
+            scrollLeft = scrollLeft || document.documentElement.scrollLeft;
+        }
+
+        return scrollLeft;
+    }
+
+    function step(timestamp) {
+        if (abort) return done();
+        if (!timeStart) timeStart = timestamp;
+
+        timeElapsed = timestamp - timeStart;
+
+        progress = Math.min(timeElapsed / duration, 1);
+        progress = easingFn(progress);
+
+        topLeft(container, initialY + diffY * progress, initialX + diffX * progress);
+
+        timeElapsed < duration ? window.requestAnimationFrame(step) : done();
+    }
+
+    function done() {
+        if (!abort) topLeft(container, targetY, targetX);
+        timeStart = false;
+
+        _.off(container, abortEvents, abortFn);
+        if (abort && onCancel) onCancel(abortEv, element);
+        if (!abort && onDone) onDone(element);
+    }
+
+    function topLeft(element, top, left) {
+        if (y) element.scrollTop = top;
+        if (x) element.scrollLeft = left;
+        if (element.tagName.toLowerCase() === "body") {
+            // in firefox body.scrollTop doesn't scroll the page
+            // thus if we are trying to scrollTop on a body tag
+            // we need to scroll on the documentElement
+            if (y) document.documentElement.scrollTop = top;
+            if (x) document.documentElement.scrollLeft = left;
+        }
+    }
+
+    function scrollTo(target, _duration) {
+        var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+        if ((typeof _duration === "undefined" ? "undefined" : _typeof(_duration)) === "object") {
+            options = _duration;
+        } else if (typeof _duration === "number") {
+            options.duration = _duration;
+        }
+
+        element = _.$(target);
+
+        if (!element) {
+            return console.warn("[vue-scrollto warn]: Trying to scroll to an element that is not on the page: " + target);
+        }
+
+        container = _.$(options.container || defaults$$1.container);
+        duration = options.duration || defaults$$1.duration;
+        easing = options.easing || defaults$$1.easing;
+        offset = options.offset || defaults$$1.offset;
+        cancelable = options.hasOwnProperty("cancelable") ? options.cancelable !== false : defaults$$1.cancelable;
+        onStart = options.onStart || defaults$$1.onStart;
+        onDone = options.onDone || defaults$$1.onDone;
+        onCancel = options.onCancel || defaults$$1.onCancel;
+        x = options.x === undefined ? defaults$$1.x : options.x;
+        y = options.y === undefined ? defaults$$1.y : options.y;
+
+        var cumulativeOffsetContainer = _.cumulativeOffset(container);
+        var cumulativeOffsetElement = _.cumulativeOffset(element);
+
+        if (typeof offset === "function") {
+            offset = offset();
+        }
+
+        initialY = scrollTop(container);
+        targetY = cumulativeOffsetElement.top - cumulativeOffsetContainer.top + offset;
+
+        initialX = scrollLeft(container);
+        targetX = cumulativeOffsetElement.left - cumulativeOffsetContainer.left + offset;
+
+        abort = false;
+
+        diffY = targetY - initialY;
+        diffX = targetX - initialX;
+
+        if (typeof easing === "string") {
+            easing = easings[easing] || easings["ease"];
+        }
+
+        easingFn = src.apply(src, easing);
+
+        if (!diffY && !diffX) return;
+        if (onStart) onStart(element);
+
+        _.on(container, abortEvents, abortFn, { passive: true });
+
+        window.requestAnimationFrame(step);
+
+        return function () {
+            abortEv = null;
+            abort = true;
+        };
+    }
+
+    return scrollTo;
+};
+
+var _scroller = scroller();
+
+var bindings = []; // store binding data
+
+function deleteBinding(el) {
+    for (var i = 0; i < bindings.length; ++i) {
+        if (bindings[i].el === el) {
+            bindings.splice(i, 1);
+            return true;
+        }
+    }
+    return false;
+}
+
+function findBinding(el) {
+    for (var i = 0; i < bindings.length; ++i) {
+        if (bindings[i].el === el) {
+            return bindings[i];
+        }
+    }
+}
+
+function getBinding(el) {
+    var binding = findBinding(el);
+
+    if (binding) {
+        return binding;
+    }
+
+    bindings.push(binding = {
+        el: el,
+        binding: {}
+    });
+
+    return binding;
+}
+
+function handleClick(e) {
+    e.preventDefault();
+    var ctx = getBinding(this).binding;
+
+    if (typeof ctx.value === "string") {
+        return _scroller(ctx.value);
+    }
+    _scroller(ctx.value.el || ctx.value.element, ctx.value);
+}
+
+var VueScrollTo$1 = {
+    bind: function bind(el, binding) {
+        getBinding(el).binding = binding;
+        _.on(el, "click", handleClick);
+    },
+    unbind: function unbind(el) {
+        deleteBinding(el);
+        _.off(el, "click", handleClick);
+    },
+    update: function update(el, binding) {
+        getBinding(el).binding = binding;
+    },
+
+    scrollTo: _scroller,
+    bindings: bindings
+};
+
+var install = function install(Vue, options) {
+    if (options) setDefaults(options);
+    Vue.directive("scroll-to", VueScrollTo$1);
+    Vue.prototype.$scrollTo = VueScrollTo$1.scrollTo;
+};
+
+if (typeof window !== "undefined" && window.Vue) {
+    window.VueScrollTo = VueScrollTo$1;
+    window.VueScrollTo.setDefaults = setDefaults;
+    Vue.use(install);
+}
+
+VueScrollTo$1.install = install;
+
+return VueScrollTo$1;
+
+})));
+
 
 /***/ })
 /******/ ]);

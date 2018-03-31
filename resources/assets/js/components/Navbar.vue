@@ -1,12 +1,12 @@
 <template>
-    <b-navbar toggleable="md" type="light" :class="{'sticky bg-transparent': scrollPosition < headerHeight, 'sticky-top bg-gray': scrollPosition > headerHeight }" id="mainNav">
+    <b-navbar toggleable="md" type="light" :class="{'sticky bg-transparent': scrollPosition < headerHeight, 'sticky-top bg-gray': scrollPosition > headerHeight, }" :style="{marginBottom: colapseIn + 'px'}" id="mainNav">
         <div class="container">
             <a class="navbar-brand text-light text-u bajerfont" href="">Bajer</a>
-            <b-navbar-toggle target="nav_collapse" class="ml-auto navbar-toggler-right">
+            <b-navbar-toggle target="nav_collapse" class="ml-auto navbar-toggler-right" >
                 <i class="fa fa-bars"></i>
             </b-navbar-toggle>
 
-            <b-collapse is-nav id="nav_collapse">
+            <b-collapse is-nav id="nav_collapse" v-on:show="colapseIn = 92" v-on:hide="colapseIn = 0">
                 <b-navbar-nav class="ml-auto text-uppercase">
                     <b-nav-item href="#">o klubie</b-nav-item>
                     <b-nav-item href="#">ekipa</b-nav-item>
@@ -27,7 +27,8 @@
         data: function () {
             return {
                 scrollPosition: 0,
-                headerHeight: 0
+                headerHeight: 0,
+                colapseIn: 0
             }
         },
         methods: {
@@ -36,6 +37,9 @@
             },
             calHeight () {
                 this.headerHeight = document.getElementById('mainHeader').offsetHeight
+            },
+            collapseing() {
+                return this.colapseIn = !this.colapseIn
             }
         },
         created() {
@@ -58,5 +62,8 @@ nav.sticky{
     }
     .bg-gray{
         background-color: rgba(33, 33, 33, 0.8) !important;
+    }
+    nav.colapse-space{
+        margin-bottom: 92px;
     }
 </style>

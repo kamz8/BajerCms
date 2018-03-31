@@ -1,20 +1,15 @@
 <template>
     <div class="affix-top position-fixed"
-         :class="{'d-block': scrollPosition > 900, 'd-none': scrollPosition < 900}"
-    v-on:click="scrollToTop">
-        <button class="btn btn-sm btn-dark">
+         :class="{'d-block': scrollPosition > 900, 'd-none': scrollPosition < 900}">
+    <a class="btn btn-sm btn-dark"  v-scroll-to="'#app'">
             <i class="fa fa-chevron-up fa-2x"></i>
-        </button>
+        </a>
     </div>
 </template>
 
 <script>
-    import infiniteScroll from 'vue-infinite-scroll'
     export default {
         name: "to-top",
-        directives:{
-            infiniteScroll
-        },
         data: function () {
             return {
                 scrollPosition: 0,
