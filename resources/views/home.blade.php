@@ -1,39 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand text-light text-u bajerfont" href="">Bajer</a>
-            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">o klubie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#download">ekipa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#download">oferta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#download">wynajmy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">kontakt</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-buton btn btn-outline-primary btn-sm mt-2" href="#login">Zaloguj</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header id="mainHeader" class="masthead overlay">
+    <navbar></navbar>
+    <header id="mainHeader" class="masthead overlay" ref="mainHeader">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
@@ -182,7 +151,7 @@
         </div>
     </section>
     <footer class="footer">
-        <h2 class="text-uppercase text-center p-2">śledz nas</h2>
+        <h2 class="text-uppercase text-center p-2">śledź nas</h2>
         <div class="container h-100">
             <div class="row align-items-center h-100">
                 <div class="col-sm-6 col-md-2 col-md-offset-1">
@@ -209,6 +178,12 @@
                 </div>
             </div>
         </div>
-        <div class="subfooter"></div>
+
     </footer>
+    <div class="subfooter text-center text-md-right">
+        <div class="container">
+            <span>&copy; Bajer 2018 | Created by Kamil Żmijowski</span>
+        </div>
+    </div>
+    <to-top></to-top>
 @endsection

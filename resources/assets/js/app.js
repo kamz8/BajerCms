@@ -8,12 +8,16 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-import DataTable from './components/DataTable.vue';
-import FacebookEvents from './components/FacbookEvents.vue';
 import BootstrapVue from 'bootstrap-vue';
 import VueResource from 'vue-resource';
 import store from './store';
 import lodash from 'lodash'
+
+/*components import*/
+import DataTable from './components/DataTable.vue';
+import FacebookEvents from './components/FacbookEvents.vue';
+import Navbar from './components/Navbar.vue';
+import ToTop from './components/util/ToTop.vue';
 
 Vue.use(BootstrapVue);
 Vue.use(VueResource,lodash);
@@ -29,7 +33,9 @@ const app = new Vue({
     store,
     components: {
         DataTable,
-        FacebookEvents
-    }
+        FacebookEvents,
+        Navbar,
+        ToTop
+    },
 });
 axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content');

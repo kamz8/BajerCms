@@ -51487,15 +51487,19 @@ module.exports = __webpack_require__(392);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_DataTable_vue__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_DataTable_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_DataTable_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_FacbookEvents_vue__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_FacbookEvents_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_FacbookEvents_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_vue__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_resource__ = __webpack_require__(388);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__store__ = __webpack_require__(390);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_vue__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_resource__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__store__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_DataTable_vue__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_DataTable_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_DataTable_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_FacbookEvents_vue__ = __webpack_require__(230);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_FacbookEvents_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_FacbookEvents_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Navbar_vue__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Navbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_Navbar_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_util_ToTop_vue__ = __webpack_require__(409);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_util_ToTop_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_util_ToTop_vue__);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -51511,23 +51515,29 @@ window.Vue = __webpack_require__(31);
 
 
 
+/*components import*/
 
 
-Vue.use(__WEBPACK_IMPORTED_MODULE_2_bootstrap_vue__["a" /* default */]);
-Vue.use(__WEBPACK_IMPORTED_MODULE_3_vue_resource__["a" /* default */], __WEBPACK_IMPORTED_MODULE_5_lodash___default.a);
+
+
+
+Vue.use(__WEBPACK_IMPORTED_MODULE_0_bootstrap_vue__["a" /* default */]);
+Vue.use(__WEBPACK_IMPORTED_MODULE_1_vue_resource__["a" /* default */], __WEBPACK_IMPORTED_MODULE_3_lodash___default.a);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Object.defineProperty(Vue.prototype, '$lodash', { value: __WEBPACK_IMPORTED_MODULE_5_lodash___default.a });
+Object.defineProperty(Vue.prototype, '$lodash', { value: __WEBPACK_IMPORTED_MODULE_3_lodash___default.a });
 var app = new Vue({
   el: '#app',
-  store: __WEBPACK_IMPORTED_MODULE_4__store__["a" /* default */],
+  store: __WEBPACK_IMPORTED_MODULE_2__store__["a" /* default */],
   components: {
-    DataTable: __WEBPACK_IMPORTED_MODULE_0__components_DataTable_vue___default.a,
-    FacebookEvents: __WEBPACK_IMPORTED_MODULE_1__components_FacbookEvents_vue___default.a
+    DataTable: __WEBPACK_IMPORTED_MODULE_4__components_DataTable_vue___default.a,
+    FacebookEvents: __WEBPACK_IMPORTED_MODULE_5__components_FacbookEvents_vue___default.a,
+    Navbar: __WEBPACK_IMPORTED_MODULE_6__components_Navbar_vue___default.a,
+    ToTop: __WEBPACK_IMPORTED_MODULE_7__components_util_ToTop_vue___default.a
   }
 });
 axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
@@ -71693,7 +71703,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, "\n.fb-events[data-v-52596383] {\n        margin: 0 auto;\n}\n.container-image[data-v-52596383] {\n        position: relative;\n        width: auto;\n        height: 300px;\n}\n.title[data-v-52596383]{\n        line-height: 0.5rem;\n}\n.title > a[data-v-52596383] {\n        color: #13e1ee;\n        padding: .5em 0px;\n        text-transform: uppercase;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n}\n.title > a[data-v-52596383]:hover {\n        font-style: normal;\n        text-decoration: none;\n\n        opacity: .8;\n}\n.gradient-border[data-v-52596383]{\n        display: inline-block;\n        position: relative;\n        color: #ec1bd6;\n        width: 65px;\n        height: 65px;\n\n        border: 8px solid transparent;\n        -o-border-image: linear-gradient( 45deg, rgb(239,30,217) 0%, rgb(129,129,232) 56%, rgb(18,227,246) 75%);\n           border-image: linear-gradient( 45deg, rgb(239,30,217) 0%, rgb(129,129,232) 56%, rgb(18,227,246) 75%);\n        border-image-slice: 1;\n}\n.gradient-border > time[data-v-52596383]{\n        font-size: 38px;\n        font-weight: 500;\n        text-align: center;\n        vertical-align: middle;\n        width: 100%;\n        position: absolute;\n        top: -8px;      /*value is realtive by border width and is all time negative*/\n        left: 0;\n}\n.gradient-border + span[data-v-52596383]{\n        font-size: 24px;\n}\n.text-pink[data-v-52596383]{\n        color: #ec1bd6;\n}\n.event-description[data-v-52596383], .hour-start[data-v-52596383], .place[data-v-52596383]{\n        font-size: 14px;\n}\n@media only screen and (min-width: 1280px){\n.title > a[data-v-52596383] {\n        color: #13e1ee;\n        font-size: 16px;\n}\n}\n\n", ""]);
+exports.push([module.i, "\n.fb-events[data-v-52596383] {\n        margin: 0 auto;\n}\n.container-image[data-v-52596383] {\n        position: relative;\n        width: auto;\n        height: 300px;\n}\n.title[data-v-52596383]{\n        line-height: 0.5rem;\n}\n.title > a[data-v-52596383] {\n        color: #13e1ee;\n        padding: .5em 0px;\n        text-transform: uppercase;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n}\n.title > a[data-v-52596383]:hover {\n        font-style: normal;\n        text-decoration: none;\n\n        opacity: .8;\n}\n.gradient-border[data-v-52596383]{\n        display: inline-block;\n        position: relative;\n        color: #ec1bd6;\n        width: 65px;\n        height: 65px;\n\n        border: 8px solid transparent;\n        -o-border-image: linear-gradient( 45deg, rgb(239,30,217) 0%, rgb(129,129,232) 56%, rgb(18,227,246) 75%);\n           border-image: linear-gradient( 45deg, rgb(239,30,217) 0%, rgb(129,129,232) 56%, rgb(18,227,246) 75%);\n        border-image-slice: 1;\n}\n.gradient-border > time[data-v-52596383]{\n        font-size: 38px;\n        font-weight: 500;\n        text-align: center;\n        vertical-align: middle;\n        width: 100%;\n        position: absolute;\n        top: -8px;      /*value is realtive by border width and is all time negative*/\n        left: 0;\n}\n.gradient-border + span[data-v-52596383]{\n        font-size: 24px;\n}\n.text-pink[data-v-52596383]{\n        color: #ec1bd6;\n}\n.event-description[data-v-52596383], .hour-start[data-v-52596383], .place[data-v-52596383]{\n        font-size: 14px;\n}\n.title > a[data-v-52596383] {\n        color: #13e1ee;\n        word-break: break-all;\n        word-wrap: break-word;\n        overflow-x: hidden;\n}\n\n    /*Make all responsive :P */\n@media only screen and (min-width: 320px) {\n.title > a[data-v-52596383] {\n            font-size: 20px;\n}\n}\n@media only screen and (min-width: 768px) {\n}\n@media only screen and (min-width: 1280px){\n.title > a[data-v-52596383] {\n        font-size: 16px;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -71706,6 +71716,10 @@ exports.push([module.i, "\n.fb-events[data-v-52596383] {\n        margin: 0 auto
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_moment__);
+//
+//
+//
+//
 //
 //
 //
@@ -72097,9 +72111,26 @@ var render = function() {
               },
               [
                 _c("div", { staticClass: "row mt-3 mb-3" }, [
+                  _c("div", { staticClass: "col-12 d-sm-none pb-3 pb-md-0" }, [
+                    _c("h2", { staticClass: "title" }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href: "https://www.facebook.com/events/" + event.id,
+                            target: "_blank"
+                          }
+                        },
+                        [_vm._v(_vm._s(event.name))]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
                   _c(
                     "div",
-                    { staticClass: "col-xs-4 col-md-2 col-lg-2 text-pink" },
+                    {
+                      staticClass: "col-4 col-sm-4 col-md-2 col-lg-2 text-pink"
+                    },
                     [
                       _c("span", { staticClass: "gradient-border" }, [
                         _c("time", [
@@ -72113,7 +72144,7 @@ var render = function() {
                         "span",
                         {
                           staticClass:
-                            "d-block text-center text-uppercase text-pink"
+                            "d-block text-left text-md-center text-uppercase text-pink"
                         },
                         [
                           _vm._v(
@@ -72128,8 +72159,8 @@ var render = function() {
                     ]
                   ),
                   _vm._v(" "),
-                  _c("div", { staticClass: "col-xs-8 col-md-10 col-lg-10" }, [
-                    _c("h2", { staticClass: "title" }, [
+                  _c("div", { staticClass: "col-8 col-md-10 col-lg-10" }, [
+                    _c("h2", { staticClass: "title d-none d-md-inline" }, [
                       _c(
                         "a",
                         {
@@ -72143,7 +72174,7 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-xs-4 col-md-2 pl-0" }, [
+                      _c("div", { staticClass: "col-4 col-md-2 pl-0" }, [
                         _c("time", { staticClass: "hour-start" }, [
                           _c("i", { staticClass: "fa fa-clock-o" }),
                           _vm._v(
@@ -72152,7 +72183,7 @@ var render = function() {
                         ])
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "col-xs-8 col-md-10 pl-0" }, [
+                      _c("div", { staticClass: "col-8 col-md-10 pl-0" }, [
                         _c("span", { staticClass: "place" }, [
                           _c("i", { staticClass: "fa fa-map-marker" }),
                           _vm._v(" " + _vm._s(event.place.name))
@@ -72160,14 +72191,34 @@ var render = function() {
                       ])
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "row event-description" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "row event-description d-none d-md-block"
+                      },
+                      [
+                        _c("p", [
+                          _vm._v(
+                            _vm._s(_vm._f("truncate")(event.description, 200))
+                          )
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "col-12 event-description d-block d-md-none"
+                    },
+                    [
                       _c("p", [
                         _vm._v(
                           _vm._s(_vm._f("truncate")(event.description, 200))
                         )
                       ])
-                    ])
-                  ])
+                    ]
+                  )
                 ])
               ]
             )
@@ -86928,6 +86979,678 @@ var index_esm = {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */,
+/* 399 */,
+/* 400 */,
+/* 401 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(406)
+}
+var normalizeComponent = __webpack_require__(9)
+/* script */
+var __vue_script__ = __webpack_require__(404)
+/* template */
+var __vue_template__ = __webpack_require__(408)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Navbar.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-cd7fb372", Component.options)
+  } else {
+    hotAPI.reload("data-v-cd7fb372", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 402 */,
+/* 403 */,
+/* 404 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "navbar",
+    data: function data() {
+        return {
+            scrollPosition: 0,
+            headerHeight: 0
+        };
+    },
+    methods: {
+        updateScroll: function updateScroll() {
+            this.scrollPosition = window.scrollY;
+        },
+        calHeight: function calHeight() {
+            this.headerHeight = document.getElementById('mainHeader').offsetHeight;
+        }
+    },
+    created: function created() {
+        window.addEventListener('scroll', this.updateScroll);
+        console.log(this.headerHeight);
+        this.calHeight();
+    }
+});
+
+/***/ }),
+/* 405 */,
+/* 406 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(407);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(8)("06698fc8", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-cd7fb372\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Navbar.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-cd7fb372\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./Navbar.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 407 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(7)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\nnav .navbar.fixed-top{\r\n    background-color: #1b1e21cc !important;\n}\nnav.sticky{\r\n    z-index: 10;\n}\n#mainHeader{\r\n        margin-top: -92px;\n}\n.bg-gray{\r\n        background-color: rgba(33, 33, 33, 0.8) !important;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 408 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "b-navbar",
+    {
+      class: {
+        "sticky bg-transparent": _vm.scrollPosition < _vm.headerHeight,
+        "sticky-top bg-gray": _vm.scrollPosition > _vm.headerHeight
+      },
+      attrs: { toggleable: "md", type: "light", id: "mainNav" }
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "container" },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "navbar-brand text-light text-u bajerfont",
+              attrs: { href: "" }
+            },
+            [_vm._v("Bajer")]
+          ),
+          _vm._v(" "),
+          _c(
+            "b-navbar-toggle",
+            {
+              staticClass: "ml-auto navbar-toggler-right",
+              attrs: { target: "nav_collapse" }
+            },
+            [_c("i", { staticClass: "fa fa-bars" })]
+          ),
+          _vm._v(" "),
+          _c(
+            "b-collapse",
+            { attrs: { "is-nav": "", id: "nav_collapse" } },
+            [
+              _c(
+                "b-navbar-nav",
+                { staticClass: "ml-auto text-uppercase" },
+                [
+                  _c("b-nav-item", { attrs: { href: "#" } }, [
+                    _vm._v("o klubie")
+                  ]),
+                  _vm._v(" "),
+                  _c("b-nav-item", { attrs: { href: "#" } }, [_vm._v("ekipa")]),
+                  _vm._v(" "),
+                  _c("b-nav-item", { attrs: { href: "#" } }, [
+                    _vm._v("oferta")
+                  ]),
+                  _vm._v(" "),
+                  _c("b-nav-item", { attrs: { href: "#" } }, [
+                    _vm._v("wynajmy")
+                  ]),
+                  _vm._v(" "),
+                  _c("b-nav-item", { attrs: { href: "#" } }, [
+                    _vm._v("kontakt")
+                  ]),
+                  _vm._v(" "),
+                  _c("b-nav-item", { attrs: { href: "#" } }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "nav-buton btn btn-outline-primary btn-sm",
+                        attrs: { href: "#login" }
+                      },
+                      [_vm._v("Zaloguj")]
+                    )
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-cd7fb372", module.exports)
+  }
+}
+
+/***/ }),
+/* 409 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(410)
+}
+var normalizeComponent = __webpack_require__(9)
+/* script */
+var __vue_script__ = __webpack_require__(412)
+/* template */
+var __vue_template__ = __webpack_require__(413)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-6ea93a12"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\util\\ToTop.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-6ea93a12", Component.options)
+  } else {
+    hotAPI.reload("data-v-6ea93a12", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 410 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(411);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(8)("361eeb82", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6ea93a12\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./ToTop.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6ea93a12\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./ToTop.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 411 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(7)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.affix-top[data-v-6ea93a12]{\r\n    bottom: -50px;\r\n    right: 0;\r\n\r\n    padding: 15px;\n}\n.affix-top.d-block[data-v-6ea93a12]{\r\n    bottom: 0;\r\n    -webkit-transition: bottom ease-in .3s;\r\n    transition: bottom ease-in .3s;\n}\n.affix-top.d-none[data-v-6ea93a12]{\r\n    bottom: -50px;\r\n    -webkit-transition: bottom ease-in .3s;\r\n    transition: bottom ease-in .3s;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 412 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_infinite_scroll__ = __webpack_require__(414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_infinite_scroll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_infinite_scroll__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "to-top",
+    directives: {
+        infiniteScroll: __WEBPACK_IMPORTED_MODULE_0_vue_infinite_scroll___default.a
+    },
+    data: function data() {
+        return {
+            scrollPosition: 0,
+            headerHeight: 0
+        };
+    },
+    methods: {
+        updateScroll: function updateScroll() {
+            this.scrollPosition = window.scrollY;
+        },
+        scrollToTop: function scrollToTop() {
+            this.$nextTick(function () {
+                app.scrollTop = 0;
+            });
+        }
+    },
+    created: function created() {
+        window.addEventListener('scroll', this.updateScroll);
+    }
+});
+
+/***/ }),
+/* 413 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "affix-top position-fixed",
+      class: {
+        "d-block": _vm.scrollPosition > 900,
+        "d-none": _vm.scrollPosition < 900
+      },
+      on: { click: _vm.scrollToTop }
+    },
+    [_vm._m(0, false, false)]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("button", { staticClass: "btn btn-sm btn-dark" }, [
+      _c("i", { staticClass: "fa fa-chevron-up fa-2x" })
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6ea93a12", module.exports)
+  }
+}
+
+/***/ }),
+/* 414 */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global.infiniteScroll = factory());
+}(this, function () { 'use strict';
+
+  var ctx = '@@InfiniteScroll';
+
+  var throttle = function throttle(fn, delay) {
+    var now, lastExec, timer, context, args; //eslint-disable-line
+
+    var execute = function execute() {
+      fn.apply(context, args);
+      lastExec = now;
+    };
+
+    return function () {
+      context = this;
+      args = arguments;
+
+      now = Date.now();
+
+      if (timer) {
+        clearTimeout(timer);
+        timer = null;
+      }
+
+      if (lastExec) {
+        var diff = delay - (now - lastExec);
+        if (diff < 0) {
+          execute();
+        } else {
+          timer = setTimeout(function () {
+            execute();
+          }, diff);
+        }
+      } else {
+        execute();
+      }
+    };
+  };
+
+  var getScrollTop = function getScrollTop(element) {
+    if (element === window) {
+      return Math.max(window.pageYOffset || 0, document.documentElement.scrollTop);
+    }
+
+    return element.scrollTop;
+  };
+
+  var getComputedStyle = document.defaultView.getComputedStyle;
+
+  var getScrollEventTarget = function getScrollEventTarget(element) {
+    var currentNode = element;
+    // bugfix, see http://w3help.org/zh-cn/causes/SD9013 and http://stackoverflow.com/questions/17016740/onscroll-function-is-not-working-for-chrome
+    while (currentNode && currentNode.tagName !== 'HTML' && currentNode.tagName !== 'BODY' && currentNode.nodeType === 1) {
+      var overflowY = getComputedStyle(currentNode).overflowY;
+      if (overflowY === 'scroll' || overflowY === 'auto') {
+        return currentNode;
+      }
+      currentNode = currentNode.parentNode;
+    }
+    return window;
+  };
+
+  var getVisibleHeight = function getVisibleHeight(element) {
+    if (element === window) {
+      return document.documentElement.clientHeight;
+    }
+
+    return element.clientHeight;
+  };
+
+  var getElementTop = function getElementTop(element) {
+    if (element === window) {
+      return getScrollTop(window);
+    }
+    return element.getBoundingClientRect().top + getScrollTop(window);
+  };
+
+  var isAttached = function isAttached(element) {
+    var currentNode = element.parentNode;
+    while (currentNode) {
+      if (currentNode.tagName === 'HTML') {
+        return true;
+      }
+      if (currentNode.nodeType === 11) {
+        return false;
+      }
+      currentNode = currentNode.parentNode;
+    }
+    return false;
+  };
+
+  var doBind = function doBind() {
+    if (this.binded) return; // eslint-disable-line
+    this.binded = true;
+
+    var directive = this;
+    var element = directive.el;
+
+    var throttleDelayExpr = element.getAttribute('infinite-scroll-throttle-delay');
+    var throttleDelay = 200;
+    if (throttleDelayExpr) {
+      throttleDelay = Number(directive.vm[throttleDelayExpr] || throttleDelayExpr);
+      if (isNaN(throttleDelay) || throttleDelay < 0) {
+        throttleDelay = 200;
+      }
+    }
+    directive.throttleDelay = throttleDelay;
+
+    directive.scrollEventTarget = getScrollEventTarget(element);
+    directive.scrollListener = throttle(doCheck.bind(directive), directive.throttleDelay);
+    directive.scrollEventTarget.addEventListener('scroll', directive.scrollListener);
+
+    this.vm.$on('hook:beforeDestroy', function () {
+      directive.scrollEventTarget.removeEventListener('scroll', directive.scrollListener);
+    });
+
+    var disabledExpr = element.getAttribute('infinite-scroll-disabled');
+    var disabled = false;
+
+    if (disabledExpr) {
+      this.vm.$watch(disabledExpr, function (value) {
+        directive.disabled = value;
+        if (!value && directive.immediateCheck) {
+          doCheck.call(directive);
+        }
+      });
+      disabled = Boolean(directive.vm[disabledExpr]);
+    }
+    directive.disabled = disabled;
+
+    var distanceExpr = element.getAttribute('infinite-scroll-distance');
+    var distance = 0;
+    if (distanceExpr) {
+      distance = Number(directive.vm[distanceExpr] || distanceExpr);
+      if (isNaN(distance)) {
+        distance = 0;
+      }
+    }
+    directive.distance = distance;
+
+    var immediateCheckExpr = element.getAttribute('infinite-scroll-immediate-check');
+    var immediateCheck = true;
+    if (immediateCheckExpr) {
+      immediateCheck = Boolean(directive.vm[immediateCheckExpr]);
+    }
+    directive.immediateCheck = immediateCheck;
+
+    if (immediateCheck) {
+      doCheck.call(directive);
+    }
+
+    var eventName = element.getAttribute('infinite-scroll-listen-for-event');
+    if (eventName) {
+      directive.vm.$on(eventName, function () {
+        doCheck.call(directive);
+      });
+    }
+  };
+
+  var doCheck = function doCheck(force) {
+    var scrollEventTarget = this.scrollEventTarget;
+    var element = this.el;
+    var distance = this.distance;
+
+    if (force !== true && this.disabled) return; //eslint-disable-line
+    var viewportScrollTop = getScrollTop(scrollEventTarget);
+    var viewportBottom = viewportScrollTop + getVisibleHeight(scrollEventTarget);
+
+    var shouldTrigger = false;
+
+    if (scrollEventTarget === element) {
+      shouldTrigger = scrollEventTarget.scrollHeight - viewportBottom <= distance;
+    } else {
+      var elementBottom = getElementTop(element) - getElementTop(scrollEventTarget) + element.offsetHeight + viewportScrollTop;
+
+      shouldTrigger = viewportBottom + distance >= elementBottom;
+    }
+
+    if (shouldTrigger && this.expression) {
+      this.expression();
+    }
+  };
+
+  var InfiniteScroll = {
+    bind: function bind(el, binding, vnode) {
+      el[ctx] = {
+        el: el,
+        vm: vnode.context,
+        expression: binding.value
+      };
+      var args = arguments;
+      el[ctx].vm.$on('hook:mounted', function () {
+        el[ctx].vm.$nextTick(function () {
+          if (isAttached(el)) {
+            doBind.call(el[ctx], args);
+          }
+
+          el[ctx].bindTryCount = 0;
+
+          var tryBind = function tryBind() {
+            if (el[ctx].bindTryCount > 10) return; //eslint-disable-line
+            el[ctx].bindTryCount++;
+            if (isAttached(el)) {
+              doBind.call(el[ctx], args);
+            } else {
+              setTimeout(tryBind, 50);
+            }
+          };
+
+          tryBind();
+        });
+      });
+    },
+    unbind: function unbind(el) {
+      if (el && el[ctx] && el[ctx].scrollEventTarget) el[ctx].scrollEventTarget.removeEventListener('scroll', el[ctx].scrollListener);
+    }
+  };
+
+  var install = function install(Vue) {
+    Vue.directive('InfiniteScroll', InfiniteScroll);
+  };
+
+  if (window.Vue) {
+    window.infiniteScroll = InfiniteScroll;
+    Vue.use(install); // eslint-disable-line
+  }
+
+  InfiniteScroll.install = install;
+
+  return InfiniteScroll;
+
+}));
 
 /***/ })
 /******/ ]);
