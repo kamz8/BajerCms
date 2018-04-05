@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
 
     public function truncateTables()
     {
-        $dbName = 'heroku_4999b4dc8795c41'; //env('DB_DATABASE');
+        $dbName = env('DB_DATABASE');
         // Get all tables list, except migrations table
         $tables = DB::select('SHOW TABLES WHERE `Tables_in_' . $dbName . '` != ?', ['migrations']);
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');

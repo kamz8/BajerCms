@@ -1,7 +1,7 @@
 <template>
     <b-navbar toggleable="md" type="light" :class="{'sticky bg-transparent': scrollPosition < headerHeight, 'sticky-top bg-gray': scrollPosition > headerHeight, }" :style="{marginBottom: colapseIn + 'px'}" id="mainNav">
         <div class="container">
-            <a class="navbar-brand text-light text-u bajerfont" href="">Bajer</a>
+            <router-link class="navbar-brand text-light text-u bajerfont" :to="{name:'home'}">Bajer</router-link>
             <b-navbar-toggle target="nav_collapse" class="ml-auto navbar-toggler-right" >
                 <i class="fa fa-bars"></i>
             </b-navbar-toggle>
@@ -42,7 +42,7 @@
                 return this.colapseIn = !this.colapseIn
             }
         },
-        created() {
+        mounted() {
             window.addEventListener('scroll', this.updateScroll);
             console.log(this.headerHeight);
             this.calHeight()

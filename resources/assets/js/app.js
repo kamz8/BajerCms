@@ -10,18 +10,17 @@ require('./bootstrap');
 window.Vue = require('vue');
 import BootstrapVue from 'bootstrap-vue';
 import VueResource from 'vue-resource';
+
 import store from './store';
 import lodash from 'lodash'
+import router from './router/index.js'
 
-/*components import*/
-import DataTable from './components/DataTable.vue';
-import FacebookEvents from './components/FacbookEvents.vue';
-import Navbar from './components/Navbar.vue';
-import ToTop from './components/util/ToTop.vue';
+/*components import */
 import VueScrollTo from 'vue-scrollto'
+import App from './components/App';
 
-Vue.use(BootstrapVue);
-Vue.use(VueResource,lodash,VueScrollTo);
+Vue.use(BootstrapVue,router);
+Vue.use(VueResource,lodash,VueScrollTo, App);
 
 Vue.use(VueScrollTo, {
     container: "body",
@@ -46,10 +45,8 @@ const app = new Vue({
     el: '#app',
     store,
     components: {
-        DataTable,
-        FacebookEvents,
-        Navbar,
-        ToTop
+        App,
     },
+    router
 });
 axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content');

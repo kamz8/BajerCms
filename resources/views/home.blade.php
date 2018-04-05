@@ -167,10 +167,10 @@
                 <div class="col-sm-12 col-md-8">
                     <div class="social-icons text-center">
                         <ul class="social-network social-circle text-dark">
-                            <li><a href="#" class="Facebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="Instagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#" class="Snapchat" title="Snapchat"><i class="fa fa-snapchat-ghost"></i></a></li>
-                            <li><a href="#" class="Spotify" title="Spotify"><i class="fa fa-spotify"></i></a></li>
+                            <li><a href="https://www.facebook.com/Klub.Studencki.Bajer/" class="Facebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/klub.studencki.bajer/" class="Instagram" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.snapchat.com/add/ksbajer" class="Snapchat" title="Snapchat" target="_blank"><i class="fa fa-snapchat-ghost" ></i></a></li>
+                            <li><a href="https://open.spotify.com/user/klubstudenckibajer?si=ri5LY5koQrKIG5bkSbEi1w" class="Spotify" title="Spotify" target="_blank"><i class="fa fa-spotify"></i></a></li>
                         </ul>
                     </div>
                 </div>

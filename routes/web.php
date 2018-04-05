@@ -11,10 +11,13 @@
 |
 */
 
-Route::get('/', function (){
-    return view('home');
-})->name('home');
+Route::get('/{any}', function (){
+    return view('layouts.app');
+})->where('any', '.*');
 
+Route::get('/castom', function (){
+    return view('castom');
+})->name('castom');
 
 Route::group(['middleware'=>'roles',
     'roles'=>['super_admin','admin','moderator','consultant'],

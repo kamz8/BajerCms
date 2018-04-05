@@ -49,54 +49,53 @@
 </template>
 
 <script>
-    //    @TODO : stała wysokość pola minaturki
-    import moment from 'moment'
-    export default {
-        name: "facbook-events",
-        data: function () {
-            return {
-                fbAccessToken: '133251397369840|ygfuetzG-1vxSaXAHrjC3oX0Dkk',
-                errors: []
-            }
-        },
-        methods: {
-            formatDate: function (value, format = 'day') {
-                if (value) {
-                    let resault = {'day': moment(String(value)).format('D'), 'month': moment(String(value)).format('MMM') };
-                    return (resault.hasOwnProperty(format)) ? resault[format]: ''
-                }
-            },
-            hoursFromDate: function (value) {
-                if (value) {
-                    return moment(String(value)).format('hh:mm')
-                }
-            }
-        },
-        computed: {
-            getEventsStore: function () {
-                return this.$store.state.fbEvents
-            },
-        },
-        filters: {
-            'truncate': function (text, stop, clamp) {
-                return text.slice(0, stop) + (stop < text.length ? clamp || '...' : '')
-            }
-        },
-        created: function () {
-            axios.get('https://graph.facebook.com/Klub.Studencki.Bajer/events?fields=cover,name,description,start_time,place&limit=2', {
-                headers: {
-                    Authorization: 'Bearer ' + this.fbAccessToken
-                }
-            })
-                .then(response => {
-                    this.$store.state.fbEvents = response.data.data
-                })
-                .catch(e => {
-                    this.errors.push(e)
-                })
-            moment.locale('pl');
+import moment from 'moment'
+export default {
+    name: "facebook-events",
+    data: function () {
+        return {
+            fbAccessToken: '133251397369840|ygfuetzG-1vxSaXAHrjC3oX0Dkk',
+            errors: []
         }
+    },
+    methods: {
+        formatDate: function (value, format = 'day') {
+            if (value) {
+                let resault = {'day': moment(String(value)).format('D'), 'month': moment(String(value)).format('MMM') };
+                return (resault.hasOwnProperty(format)) ? resault[format]: ''
+            }
+        },
+        hoursFromDate: function (value) {
+            if (value) {
+                return moment(String(value)).format('hh:mm')
+            }
+        }
+    },
+    computed: {
+        getEventsStore: function () {
+            return this.$store.state.fbEvents
+        },
+    },
+    filters: {
+        'truncate': function (text, stop, clamp) {
+            return text.slice(0, stop) + (stop < text.length ? clamp || '...' : '')
+        }
+    },
+    created: function () {
+        axios.get('https://graph.facebook.com/Klub.Studencki.Bajer/events?fields=cover,name,description,start_time,place&limit=2', {
+            headers: {
+                Authorization: 'Bearer ' + this.fbAccessToken
+            }
+        })
+            .then(response => {
+                this.$store.state.fbEvents = response.data.data
+            })
+            .catch(e => {
+                this.errors.push(e)
+            })
+        moment.locale('pl');
     }
+}
 </script>
 
 <style scoped>
