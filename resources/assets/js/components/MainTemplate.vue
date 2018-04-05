@@ -1,12 +1,12 @@
 <template>
-<main>
-    <navbar></navbar>
+    <div>
+        <navbar></navbar>
 
-    <router-view></router-view>
+        <router-view />
 
-    <main-footer></main-footer>
-    <to-top></to-top>
-</main>
+        <main-footer></main-footer>
+        <to-top></to-top>
+    </div>
 </template>
 
 <script>
@@ -14,7 +14,7 @@
     import ToTop from '../components/util/ToTop';
     import MainFooter from './MainFooter';
     export default {
-        name: "app",
+        name: "main-template",
         components: {
             Navbar,
             ToTop,

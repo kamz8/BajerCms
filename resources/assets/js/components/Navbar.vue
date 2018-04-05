@@ -13,7 +13,7 @@
                     <b-nav-item href="#">oferta</b-nav-item>
                     <b-nav-item href="#">wynajmy</b-nav-item>
                     <b-nav-item href="#">kontakt</b-nav-item>
-                    <b-nav-item href="#"><a class="nav-buton btn btn-outline-primary btn-sm" href="#login">Zaloguj</a></b-nav-item>
+                    <b-nav-item href="#"><router-link class="nav-buton btn btn-outline-primary btn-sm" :to="{name:'login'}">Zaloguj</router-link></b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
 

@@ -17,10 +17,10 @@ import router from './router/index.js'
 
 /*components import */
 import VueScrollTo from 'vue-scrollto'
-import App from './components/App';
+import MyApp from './MyApp';
 
 Vue.use(BootstrapVue,router);
-Vue.use(VueResource,lodash,VueScrollTo, App);
+Vue.use(VueResource,lodash,VueScrollTo);
 
 Vue.use(VueScrollTo, {
     container: "body",
@@ -43,10 +43,9 @@ Vue.use(VueScrollTo, {
 Object.defineProperty(Vue.prototype, '$lodash', { value: lodash });
 const app = new Vue({
     el: '#app',
+    template: '<my-app/>',
+    components: { MyApp },
+    router,
     store,
-    components: {
-        App,
-    },
-    router
 });
 axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content');

@@ -66,7 +66,7 @@
   <script src="{{asset('js/dataTables.bootstrap4.js')}}"></script>
   <!-- Custom scripts for all pages-->
   <script src="{{asset('js/sbadmin/sb-admin.min.js')}}"></script>
-  <script src="{{asset('js/app.js')}}"></script>
+  <script src="{{asset('main.jss')}}"></script>
   <!-- Custom scripts for this page-->
   @stack('scripts')
 
