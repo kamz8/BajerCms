@@ -1,22 +1,6 @@
 <template>
     <div>
-        <header id="mainHeader" class="masthead overlay" ref="mainHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <div class="logo mw-50">
-                            <img src="img/bajer.png" class="img-fluid"/>
-                            <div class="sentence bajerfont">
-                                <span>Nagłośnienie</span><span>Oświetlenie</span><span>Integracje</span>
-                            </div>
-                        </div>
-                        <a href="#about" class="btn btn-circle align-text-bottom mt-4" v-scroll-to="'#onas'">
-                            <i class="fa fa-2x fa-angle-double-down"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <v-header scrollTo="#onas" vtitle="O Klubie" coverImg="https://images.pexels.com/photos/761543/pexels-photo-761543.jpeg"></v-header>
         <section id="onas" class="content-box">
             <div class="container">
                 <div class="row">
@@ -38,8 +22,12 @@
 </template>
 
 <script>
+    import vHeader from '../page-part/Header'
     export default {
-        name: "custom"
+        name: "about",
+        components: {
+            vHeader
+        }
     }
 </script>
 

@@ -56,7 +56,6 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
-
 .overlay {
     position: relative;
     z-index: 0;

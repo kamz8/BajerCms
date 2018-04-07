@@ -8,11 +8,12 @@
 
             <b-collapse is-nav id="nav_collapse" v-on:show="colapseIn = 92" v-on:hide="colapseIn = 0">
                 <b-navbar-nav class="ml-auto text-uppercase">
-                    <b-nav-item href="#">o klubie</b-nav-item>
-                    <b-nav-item href="#">ekipa</b-nav-item>
-                    <b-nav-item href="#">oferta</b-nav-item>
-                    <b-nav-item href="#">wynajmy</b-nav-item>
-                    <b-nav-item href="#">kontakt</b-nav-item>
+                    <li class="nav-item"><router-link class="nav-link" :to="{name:'about'}">o klubie</router-link></li>
+                    <li class="nav-item"><router-link class="nav-link" :to="{name:'people'}">ekipa</router-link></li>
+                    <li class="nav-item"><router-link class="nav-link" :to="{name:'about'}">oferta</router-link></li>
+                    <li class="nav-item"><router-link class="nav-link" :to="{name:'about'}">wynajmy</router-link></li>
+                    <li class="nav-item"><router-link class="nav-link" :to="{name:'about'}">kontakt</router-link></li>
+                    <li class="nav-item"><span class="nav-link"><router-link class="nav-buton btn btn-outline-light btn-sm" :to="{name:'booking'}">zarezerwuj</router-link></span></li>
                     <b-nav-item href="#"><router-link class="nav-buton btn btn-outline-primary btn-sm" :to="{name:'login'}">Zaloguj</router-link></b-nav-item>
                 </b-navbar-nav>
             </b-collapse>

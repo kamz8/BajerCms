@@ -1,42 +1,58 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MainTemplate from '../components/MainTemplate'
-import Home from '../components/pages/Home'
 import Custom from '../components/pages/Custom'
-import Login from '../components/auth/login'
+import AuthMain from '../components/auth/AuthMain'
 
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-    mode: 'history',
-    routes: [
+  mode: 'history',
+  routes: [
+    {
+      path: '/',
+      component: MainTemplate,
+      children: [
         {
-            path: '/',
-            component: MainTemplate,
-            name: 'home',
-            children: [
-                {
-                    path: '/',
-                    component: Home
-                },
-                {
-                    path: '/szablon',
-                    name: 'custom',
-                    component: Custom
-                }
-            ]
+          path: '/',
+          name: 'home',
+          component: require('../components/pages/Home').default
         },
         {
-            path: '/login',
-            name: 'booking',
-            component: Login
+          path: '/o-klubie',
+          name: 'about',
+          component: require('../components/pages/about').default
         },
         {
-            path: '/login',
-            name: 'login',
-            component: Login
+          path: '/ekipa',
+          name: 'people',
+          component: require('../components/pages/Peaople').default
+        },
+
+        {
+          path: '/szablon',
+          name: 'custom',
+          component: Custom
         }
-    ],
+      ]
+    },
+    {
+      path: '/zarezerwuj-sale',
+      name: 'booking',
+      component: require('../components/pages/BookingMain').default
+    },
+    {
+      path: '/',
+      component: AuthMain,
+      children: [
+        {
+          path: 'login',
+          name: 'login',
+          component: require('../components/auth/Login').default
+        }
+      ]
+    }
+  ],
 });
 
 

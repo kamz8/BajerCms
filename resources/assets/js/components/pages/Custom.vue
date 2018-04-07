@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header v-title="O Klubie"></header>
+        <header v-title="'O Klubie'"></header>
         <section id="onas" class="content-box">
             <div class="container">
                 <div class="row">
