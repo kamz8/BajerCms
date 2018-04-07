@@ -1,7 +1,6 @@
 <template>
     <div>
         <navbar></navbar>
-
         <router-view />
 
         <main-footer></main-footer>
@@ -10,9 +9,9 @@
 </template>
 
 <script>
-    import Navbar from '../components/Navbar';
+    import Navbar from './page-part/Navbar';
     import ToTop from '../components/util/ToTop';
-    import MainFooter from './MainFooter';
+    import MainFooter from './page-part/MainFooter';
     export default {
         name: "main-template",
         components: {

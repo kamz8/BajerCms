@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MainTemplate from '../components/MainTemplate'
-import Home from '../components/Home'
-import Custom from '../components/Custom'
+import Home from '../components/pages/Home'
+import Custom from '../components/pages/Custom'
 import Login from '../components/auth/login'
 
 Vue.use(VueRouter)
@@ -20,11 +20,16 @@ const router = new VueRouter({
                     component: Home
                 },
                 {
-                    path: '/custom',
+                    path: '/szablon',
                     name: 'custom',
                     component: Custom
                 }
             ]
+        },
+        {
+            path: '/login',
+            name: 'booking',
+            component: Login
         },
         {
             path: '/login',
