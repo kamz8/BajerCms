@@ -42,6 +42,10 @@ const router = new VueRouter({
       component: require('../components/pages/BookingMain').default
     },
     {
+      path: '/szklo',
+      component: require('../components/pages/draggeble').default
+    },
+    {
       path: '/',
       component: AuthMain,
       children: [

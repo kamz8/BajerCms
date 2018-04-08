@@ -41354,12 +41354,39 @@ if (false) {(function () {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-    name: "home",
-    components: { FacebookEvents: __WEBPACK_IMPORTED_MODULE_0__util_FacbookEvents__["a" /* default */], HomeHeader: __WEBPACK_IMPORTED_MODULE_1__page_part_HomeHeader__["a" /* default */] }
+  name: "home",
+  components: { FacebookEvents: __WEBPACK_IMPORTED_MODULE_0__util_FacbookEvents__["a" /* default */], HomeHeader: __WEBPACK_IMPORTED_MODULE_1__page_part_HomeHeader__["a" /* default */] }
 });
 
 /***/ }),
@@ -53388,11 +53415,10 @@ if (false) {(function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_vue_es_components_layout_container__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_vue_es_components_layout_row__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_vue_src_components_layout_col__ = __webpack_require__(472);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__page_part_Navbar__ = __webpack_require__(385);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__page_part_MainFooter__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__page_part_Navbar__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__page_part_MainFooter__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__calender_VCalender__ = __webpack_require__(494);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_vue__ = __webpack_require__(233);
 //
 //
 //
@@ -53411,8 +53437,11 @@ if (false) {(function () {
 //
 //
 //
-
-
+//
+//
+//
+//
+//
 
 
 
@@ -53421,19 +53450,9 @@ if (false) {(function () {
 /* harmony default export */ __webpack_exports__["a"] = ({
   name: "booking-main",
   components: {
-    MainFooter: __WEBPACK_IMPORTED_MODULE_4__page_part_MainFooter__["a" /* default */],
-    Navbar: __WEBPACK_IMPORTED_MODULE_3__page_part_Navbar__["a" /* default */],
-    Col: __WEBPACK_IMPORTED_MODULE_2_bootstrap_vue_src_components_layout_col__["a" /* default */],
-    Row: __WEBPACK_IMPORTED_MODULE_1_bootstrap_vue_es_components_layout_row__["a" /* default */],
-    Container: __WEBPACK_IMPORTED_MODULE_0_bootstrap_vue_es_components_layout_container__["a" /* default */] },
-  data: function data() {
-    return {
-      fcEvents: [{
-        title: 'Sunny Out of Office',
-        start: '2016-08-25',
-        end: '2017-07-27'
-      }]
-    };
+    VueCalender: __WEBPACK_IMPORTED_MODULE_2__calender_VCalender__["a" /* default */],
+    MainFooter: __WEBPACK_IMPORTED_MODULE_1__page_part_MainFooter__["a" /* default */],
+    Navbar: __WEBPACK_IMPORTED_MODULE_0__page_part_Navbar__["a" /* default */]
   }
 });
 
@@ -86206,6 +86225,9 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
     name: 'booking',
     component: __webpack_require__(426).default
   }, {
+    path: '/szklo',
+    component: __webpack_require__(502).default
+  }, {
     path: '/',
     component: __WEBPACK_IMPORTED_MODULE_4__components_auth_AuthMain__["a" /* default */],
     children: [{
@@ -90206,7 +90228,7 @@ exports = module.exports = __webpack_require__(6)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -90995,13 +91017,13 @@ var staticRenderFns = [
               _c("div", { staticClass: "mr-1 text-justify" }, [
                 _c("p", [
                   _vm._v(
-                    "\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare dictum dolor vitae viverra. Donec condimentum mattis tellus id vehicula. Aenean euismod risus id vestibulum consequat.\n                            Mauris rhoncus, eros vel venenatis condimentum, diam erat dictum ipsum, nec tristique ligula tellus at lacus. Nullam ac sodales eros. Aliquam quis lacinia ipsum, eget mollis magna. Morbi odio ligula,\n                            vehicula dignissim tempor a, hendrerit vitae dolor. Proin ullamcorper metus quis magna ultricies, non tincidunt dui luctus. Vivamus sed mi porttitor, euismod sapien id, fermentum nisi."
+                    "\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare dictum dolor\n                            vitae viverra. Donec condimentum mattis tellus id vehicula. Aenean euismod risus id\n                            vestibulum consequat.\n                            Mauris rhoncus, eros vel venenatis condimentum, diam erat dictum ipsum, nec tristique\n                            ligula tellus at lacus. Nullam ac sodales eros. Aliquam quis lacinia ipsum, eget mollis\n                            magna. Morbi odio ligula,\n                            vehicula dignissim tempor a, hendrerit vitae dolor. Proin ullamcorper metus quis magna\n                            ultricies, non tincidunt dui luctus. Vivamus sed mi porttitor, euismod sapien id,\n                            fermentum nisi."
                   )
                 ]),
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "Proin vehicula non sapien a dapibus. Etiam eget nisl tincidunt, varius odio a, tempus augue. Maecenas at erat ut diam luctus hendrerit. Nunc accumsan quam vitae mi commodo vehicula.\n                            Quisque sagittis sagittis mauris, a faucibus libero aliquet sit amet. Proin accumsan quam sit amet velit ultrices auctor. Donec venenatis maximus velit ut fermentum. "
+                    "Proin vehicula non sapien a dapibus. Etiam eget nisl tincidunt, varius odio a, tempus\n                            augue. Maecenas at erat ut diam luctus hendrerit. Nunc accumsan quam vitae mi commodo\n                            vehicula.\n                            Quisque sagittis sagittis mauris, a faucibus libero aliquet sit amet. Proin accumsan\n                            quam sit amet velit ultrices auctor. Donec venenatis maximus velit ut fermentum. "
                   )
                 ])
               ]),
@@ -91205,7 +91227,7 @@ var staticRenderFns = [
             [
               _c("p", { staticClass: "m-0" }, [
                 _vm._v(
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, imperdiet sed consectetur ut, placerat id nunc.Donec tincidunt mollis."
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, imperdiet\n                        sed consectetur ut, placerat id nunc.Donec tincidunt mollis."
                 )
               ])
             ]
@@ -91267,7 +91289,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "mr-1 text-center " }, [
                 _c("p", [
                   _vm._v(
-                    "\n                            Vivamus bibendum nibh at pretium condimentum. Proin consequat, metus at luctus hendrerit, arcu sapien aliquam enim, in elementum purus nibh maximus massa. Quisque ipsum nisl, porttitor quis pretium sed, molestie non est. Pellentesque ac faucibus. "
+                    "\n                            Vivamus bibendum nibh at pretium condimentum. Proin consequat, metus at luctus\n                            hendrerit, arcu sapien aliquam enim, in elementum purus nibh maximus massa. Quisque\n                            ipsum nisl, porttitor quis pretium sed, molestie non est. Pellentesque ac faucibus. "
                   )
                 ])
               ]),
@@ -91301,7 +91323,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("p", [
               _vm._v(
-                "\n\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, imperdiet sed consectetur ut, placerat id nunc. Donec tincidunt mollis orci id placerat. Nulla at cursus arcu, eu volutpat lectus. Sed id euismod purus. Nam velit turpis, iaculis a quam at, volutpat tristique risus. Ut turpis nulla, lacinia ut pulvinar et, tristique ac dui. Quisque urna quam, tincidunt in dui sed, lacinia rhoncus felis. Sed finibus non diam pretium aliquet. Duis blandit lorem eget purus vulputate, a bibendum ante fringilla. Donec vitae ultrices odio. Maecenas sed congue ex, non interdum mi. Donec pellentesque iaculis sapien, accumsan tempus nulla volutpat at. "
+                "\n\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, imperdiet sed\n                        consectetur ut, placerat id nunc. Donec tincidunt mollis orci id placerat. Nulla at cursus\n                        arcu, eu volutpat lectus. Sed id euismod purus. Nam velit turpis, iaculis a quam at,\n                        volutpat tristique risus. Ut turpis nulla, lacinia ut pulvinar et, tristique ac dui. Quisque\n                        urna quam, tincidunt in dui sed, lacinia rhoncus felis. Sed finibus non diam pretium\n                        aliquet. Duis blandit lorem eget purus vulputate, a bibendum ante fringilla. Donec vitae\n                        ultrices odio. Maecenas sed congue ex, non interdum mi. Donec pellentesque iaculis sapien,\n                        accumsan tempus nulla volutpat at. "
               )
             ]),
             _vm._v(" "),
@@ -91593,7 +91615,7 @@ exports = module.exports = __webpack_require__(6)(undefined);
 
 
 // module
-exports.push([module.i, "\n.page-cover[data-v-0d468b9a]{\n    position: absolute;\n    min-width: 100%;\n    min-height: 100%;\n\n    background-image: url(" + __webpack_require__(487) + ");\n    background-repeat: no-repeat;\n    background-position: top center;\n    background-size: cover;\n}\n\n", ""]);
+exports.push([module.i, "\n.page-cover[data-v-0d468b9a]{\n    position: absolute;\n    min-width: 100%;\n    min-height: 100%;\n    background: url(" + __webpack_require__(487) + ") 50% no-repeat fixed;\n    background-size: cover;\n}\n\n", ""]);
 
 // exports
 
@@ -91626,30 +91648,36 @@ var render = function() {
     [
       _c("navbar"),
       _vm._v(" "),
-      _c(
-        "article",
-        [
-          _c(
-            "container",
-            [
-              _c("row", [
-                _c("div", { staticClass: "col-12 mx-auto pt-4 pb-3" }, [
-                  _c("h1", { staticClass: "text-center" }, [
-                    _vm._v("Zarezerwuj Salę")
-                  ])
-                ])
-              ])
-            ],
-            1
-          )
-        ],
-        1
-      )
+      _c("article", [
+        _c("div", { staticClass: "container" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              { staticClass: "col-12 mx-auto pt-4 pb-3" },
+              [_c("vue-calender")],
+              1
+            )
+          ])
+        ])
+      ])
     ],
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-12 mx-auto pt-4 pb-3" }, [
+        _c("h1", { staticClass: "text-center" }, [_vm._v("Zarezerwuj Salę")])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 if (false) {
@@ -92508,1261 +92536,27 @@ if (false) {
 /* 463 */,
 /* 464 */,
 /* 465 */,
-/* 466 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export readonlyDescriptor */
-/**
- * Aliasing Object[method] allows the minifier to shorten methods to a single character variable,
- * as well as giving BV a chance to inject polyfills.
- * As long as we avoid
- * - import * as Object from "utils/object"
- * all unused exports should be removed by tree-shaking.
- */
-
-// @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
-if (typeof Object.assign !== 'function') {
-  Object.assign = function (target, varArgs) {
-    // .length of function is 2
-
-    if (target == null) {
-      // TypeError if undefined or null
-      throw new TypeError('Cannot convert undefined or null to object')
-    }
-
-    let to = Object(target)
-
-    for (let index = 1; index < arguments.length; index++) {
-      const nextSource = arguments[index]
-
-      if (nextSource != null) {
-        // Skip over if undefined or null
-        for (const nextKey in nextSource) {
-          // Avoid bugs when hasOwnProperty is shadowed
-          if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
-            to[nextKey] = nextSource[nextKey]
-          }
-        }
-      }
-    }
-    return to
-  }
-}
-
-// @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is#Polyfill
-if (!Object.is) {
-  Object.is = function (x, y) {
-    // SameValue algorithm
-    if (x === y) { // Steps 1-5, 7-10
-      // Steps 6.b-6.e: +0 != -0
-      return x !== 0 || 1 / x === 1 / y
-    } else {
-      // Step 6.a: NaN == NaN
-      // eslint-disable-next-line no-self-compare
-      return x !== x && y !== y
-    }
-  }
-}
-
-const assign = Object.assign
-/* harmony export (immutable) */ __webpack_exports__["a"] = assign;
-
-const getOwnPropertyNames = Object.getOwnPropertyNames
-/* unused harmony export getOwnPropertyNames */
-
-const keys = Object.keys
-/* harmony export (immutable) */ __webpack_exports__["c"] = keys;
-
-const defineProperties = Object.defineProperties
-/* unused harmony export defineProperties */
-
-const defineProperty = Object.defineProperty
-/* unused harmony export defineProperty */
-
-const freeze = Object.freeze
-/* unused harmony export freeze */
-
-const getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor
-/* unused harmony export getOwnPropertyDescriptor */
-
-const getOwnPropertySymbols = Object.getOwnPropertySymbols
-/* unused harmony export getOwnPropertySymbols */
-
-const getPrototypeOf = Object.getPrototypeOf
-/* unused harmony export getPrototypeOf */
-
-const create = Object.create
-/* harmony export (immutable) */ __webpack_exports__["b"] = create;
-
-const isFrozen = Object.isFrozen
-/* unused harmony export isFrozen */
-
-const is = Object.is
-/* unused harmony export is */
-
-
-function readonlyDescriptor () {
-  return { enumerable: true, configurable: false, writable: false }
-}
-
-
-/***/ }),
-/* 467 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export concat */
-// Production steps of ECMA-262, Edition 6, 22.1.2.1
-// es6-ified by @alexsasharegan
-if (!Array.from) {
-  Array.from = (function () {
-    const toStr = Object.prototype.toString
-    const isCallable = fn => typeof fn === 'function' || toStr.call(fn) === '[object Function]'
-    const toInteger = value => {
-      const number = Number(value)
-      if (isNaN(number)) {
-        return 0
-      }
-      if (number === 0 || !isFinite(number)) {
-        return number
-      }
-      return (number > 0 ? 1 : -1) * Math.floor(Math.abs(number))
-    }
-    const maxSafeInteger = Math.pow(2, 53) - 1
-    const toLength = value => Math.min(Math.max(toInteger(value), 0), maxSafeInteger)
-
-    // The length property of the from method is 1.
-    return function from (arrayLike /*, mapFn, thisArg */) {
-      // 1. Let C be the this value.
-      const C = this
-
-      // 2. Let items be ToObject(arrayLike).
-      const items = Object(arrayLike)
-
-      // 3. ReturnIfAbrupt(items).
-      if (arrayLike == null) {
-        throw new TypeError('Array.from requires an array-like object - not null or undefined')
-      }
-
-      // 4. If mapfn is undefined, then let mapping be false.
-      const mapFn = arguments.length > 1 ? arguments[1] : void undefined
-      let T
-
-      if (typeof mapFn !== 'undefined') {
-        // 5. else
-        // 5. a If IsCallable(mapfn) is false, throw a TypeError exception.
-        if (!isCallable(mapFn)) {
-          throw new TypeError('Array.from: when provided, the second argument must be a function')
-        }
-
-        // 5. b. If thisArg was supplied, let T be thisArg; else let T be undefined.
-        if (arguments.length > 2) {
-          T = arguments[2]
-        }
-      }
-
-      // 10. Let lenValue be Get(items, "length").
-      // 11. Let len be ToLength(lenValue).
-      const len = toLength(items.length)
-
-      // 13. If IsConstructor(C) is true, then
-      // 13. a. Let A be the result of calling the [[Construct]] internal method
-      // of C with an argument list containing the single item len.
-      // 14. a. Else, Let A be ArrayCreate(len).
-      let A = isCallable(C) ? Object(new C(len)) : new Array(len)
-
-      // 16. Let k be 0.
-      let k = 0
-      // 17. Repeat, while k < len… (also steps a - h)
-      let kValue
-      while (k < len) {
-        kValue = items[k]
-        if (mapFn) {
-          A[k] = typeof T === 'undefined' ? mapFn(kValue, k) : mapFn.call(T, kValue, k)
-        } else {
-          A[k] = kValue
-        }
-        k += 1
-      }
-      // 18. Let putStatus be Put(A, "length", len, true).
-      A.length = len
-      // 20. Return A.
-      return A
-    }
-  })()
-}
-
-// https://tc39.github.io/ecma262/#sec-array.prototype.find
-// Needed for IE support
-if (!Array.prototype.find) {
-  // eslint-disable-next-line no-extend-native
-  Object.defineProperty(Array.prototype, 'find', {
-    value: function (predicate) {
-      // 1. Let O be ? ToObject(this value).
-      if (this == null) {
-        throw new TypeError('"this" is null or not defined')
-      }
-
-      const o = Object(this)
-
-      // 2. Let len be ? ToLength(? Get(O, "length")).
-      const len = o.length >>> 0
-
-      // 3. If IsCallable(predicate) is false, throw a TypeError exception.
-      if (typeof predicate !== 'function') {
-        throw new TypeError('predicate must be a function')
-      }
-
-      // 4. If thisArg was supplied, let T be thisArg; else let T be undefined.
-      const thisArg = arguments[1]
-
-      // 5. Let k be 0.
-      let k = 0
-
-      // 6. Repeat, while k < len
-      while (k < len) {
-        // a. Let Pk be ! ToString(k).
-        // b. Let kValue be ? Get(O, Pk).
-        // c. Let testResult be ToBoolean(? Call(predicate, T, « kValue, k, O »)).
-        // d. If testResult is true, return kValue.
-        const kValue = o[k]
-        if (predicate.call(thisArg, kValue, k, o)) {
-          return kValue
-        }
-        // e. Increase k by 1.
-        k++
-      }
-
-      // 7. Return undefined.
-      return undefined
-    }
-  })
-}
-
-if (!Array.isArray) {
-  Array.isArray = arg => Object.prototype.toString.call(arg) === '[object Array]'
-}
-
-// Static
-const from = Array.from
-/* harmony export (immutable) */ __webpack_exports__["b"] = from;
-
-const isArray = Array.isArray
-/* harmony export (immutable) */ __webpack_exports__["c"] = isArray;
-
-
-// Instance
-const arrayIncludes = (array, value) => array.indexOf(value) !== -1
-/* harmony export (immutable) */ __webpack_exports__["a"] = arrayIncludes;
-
-const arrayFind = (array, fn, thisArg) => array.find(fn, thisArg)
-/* unused harmony export arrayFind */
-
-function concat () {
-  return Array.prototype.concat.apply([], arguments)
-}
-
-
-/***/ }),
-/* 468 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = identity;
-function identity (x) {
-  return x
-}
-
-
-/***/ }),
-/* 469 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = upperFirst;
-/**
- * @param {string} str
- */
-function upperFirst (str) {
-  if (typeof str !== 'string') {
-    str = String(str)
-  }
-  return str.charAt(0).toUpperCase() + str.slice(1)
-}
-
-
-/***/ }),
-/* 470 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__array__ = __webpack_require__(467);
-
-
-// Determine if an element is an HTML Element
-const isElement = el => {
-  return el && el.nodeType === Node.ELEMENT_NODE
-}
-/* harmony export (immutable) */ __webpack_exports__["a"] = isElement;
-
-
-// Determine if an HTML element is visible - Faster than CSS check
-const isVisible = el => {
-  return isElement(el) &&
-           document.body.contains(el) &&
-           el.getBoundingClientRect().height > 0 &&
-           el.getBoundingClientRect().width > 0
-}
-/* unused harmony export isVisible */
-
-
-// Determine if an element is disabled
-const isDisabled = el => {
-  return !isElement(el) ||
-           el.disabled ||
-           el.classList.contains('disabled') ||
-           Boolean(el.getAttribute('disabled'))
-}
-/* unused harmony export isDisabled */
-
-
-// Cause/wait-for an element to reflow it's content (adjusting it's height/width)
-const reflow = el => {
-  // requsting an elements offsetHight will trigger a reflow of the element content
-  return isElement(el) && el.offsetHeight
-}
-/* unused harmony export reflow */
-
-
-// Select all elements matching selector. Returns [] if none found
-const selectAll = (selector, root) => {
-  if (!isElement(root)) {
-    root = document
-  }
-  return Object(__WEBPACK_IMPORTED_MODULE_0__array__["b" /* from */])(root.querySelectorAll(selector))
-}
-/* unused harmony export selectAll */
-
-
-// Select a single element, returns null if not found
-const select = (selector, root) => {
-  if (!isElement(root)) {
-    root = document
-  }
-  return root.querySelector(selector) || null
-}
-/* unused harmony export select */
-
-
-// Determine if an element matches a selector
-const matches = (el, selector) => {
-  if (!isElement(el)) {
-    return false
-  }
-
-  // https://developer.mozilla.org/en-US/docs/Web/API/Element/matches#Polyfill
-  // Prefer native implementations over polyfill function
-  const proto = Element.prototype
-  const Matches = proto.matches ||
-        proto.matchesSelector ||
-        proto.mozMatchesSelector ||
-        proto.msMatchesSelector ||
-        proto.oMatchesSelector ||
-        proto.webkitMatchesSelector ||
-        /* istanbul ignore next */
-        function (sel) {
-          const element = this
-          const m = selectAll(sel, element.document || element.ownerDocument)
-          let i = m.length
-          // eslint-disable-next-line no-empty
-          while (--i >= 0 && m.item(i) !== element) {}
-          return i > -1
-        }
-
-  return Matches.call(el, selector)
-}
-/* unused harmony export matches */
-
-
-// Finds closest element matching selector. Returns null if not found
-const closest = (selector, root) => {
-  if (!isElement(root)) {
-    return null
-  }
-
-  // https://developer.mozilla.org/en-US/docs/Web/API/Element/closest
-  // Since we dont support IE < 10, we can use the "Matches" version of the polyfill for speed
-  // Prefer native implementation over polyfill function
-  const Closest = Element.prototype.closest ||
-                  /* istanbul ignore next */
-                  function (sel) {
-                    let element = this
-                    if (!document.documentElement.contains(element)) {
-                      return null
-                    }
-                    do {
-                      // Use our "patched" matches function
-                      if (matches(element, sel)) {
-                        return element
-                      }
-                      element = element.parentElement
-                    } while (element !== null)
-                    return null
-                  }
-
-  const el = Closest.call(root, selector)
-  // Emulate jQuery closest and return null if match is the passed in element (root)
-  return el === root ? null : el
-}
-/* unused harmony export closest */
-
-
-// Get an element given an ID
-const getById = id => {
-  return document.getElementById(/^#/.test(id) ? id.slice(1) : id) || null
-}
-/* unused harmony export getById */
-
-
-// Add a class to an element
-const addClass = (el, className) => {
-  if (className && isElement(el)) {
-    el.classList.add(className)
-  }
-}
-/* unused harmony export addClass */
-
-
-// Remove a class from an element
-const removeClass = (el, className) => {
-  if (className && isElement(el)) {
-    el.classList.remove(className)
-  }
-}
-/* unused harmony export removeClass */
-
-
-// Test if an element has a class
-const hasClass = (el, className) => {
-  if (className && isElement(el)) {
-    return el.classList.contains(className)
-  }
-  return false
-}
-/* unused harmony export hasClass */
-
-
-// Set an attribute on an element
-const setAttr = (el, attr, value) => {
-  if (attr && isElement(el)) {
-    el.setAttribute(attr, value)
-  }
-}
-/* unused harmony export setAttr */
-
-
-// Remove an attribute from an element
-const removeAttr = (el, attr) => {
-  if (attr && isElement(el)) {
-    el.removeAttribute(attr)
-  }
-}
-/* unused harmony export removeAttr */
-
-
-// Get an attribute value from an element (returns null if not found)
-const getAttr = (el, attr) => {
-  if (attr && isElement(el)) {
-    return el.getAttribute(attr)
-  }
-  return null
-}
-/* unused harmony export getAttr */
-
-
-// Determine if an attribute exists on an element (returns true or false, or null if element not found)
-const hasAttr = (el, attr) => {
-  if (attr && isElement(el)) {
-    return el.hasAttribute(attr)
-  }
-  return null
-}
-/* unused harmony export hasAttr */
-
-
-// Return the Bounding Client Rec of an element. Retruns null if not an element
-const getBCR = el => {
-  return isElement(el) ? el.getBoundingClientRect() : null
-}
-/* unused harmony export getBCR */
-
-
-// Get computed style object for an element
-const getCS = el => {
-  return isElement(el) ? window.getComputedStyle(el) : {}
-}
-/* unused harmony export getCS */
-
-
-// Return an element's offset wrt document element
-// https://j11y.io/jquery/#v=git&fn=jQuery.fn.offset
-const offset = el => {
-  if (isElement(el)) {
-    if (!el.getClientRects().length) {
-      return { top: 0, left: 0 }
-    }
-    const bcr = getBCR(el)
-    const win = el.ownerDocument.defaultView
-    return {
-      top: bcr.top + win.pageYOffset,
-      left: bcr.left + win.pageXOffset
-    }
-  }
-}
-/* unused harmony export offset */
-
-
-// Return an element's offset wrt to it's offsetParent
-// https://j11y.io/jquery/#v=git&fn=jQuery.fn.position
-const position = el => {
-  if (!isElement(el)) {
-    return
-  }
-  let parentOffset = { top: 0, left: 0 }
-  let offsetSelf
-  let offsetParent
-  if (getCS(el).position === 'fixed') {
-    offsetSelf = getBCR(el)
-  } else {
-    offsetSelf = offset(el)
-    const doc = el.ownerDocument
-    offsetParent = el.offsetParent || doc.documentElement
-    while (offsetParent &&
-                (offsetParent === doc.body || offsetParent === doc.documentElement) &&
-                getCS(offsetParent).position === 'static') {
-      offsetParent = offsetParent.parentNode
-    }
-    if (offsetParent && offsetParent !== el && offsetParent.nodeType === Node.ELEMENT_NODE) {
-      parentOffset = offset(offsetParent)
-      parentOffset.top += parseFloat(getCS(offsetParent).borderTopWidth)
-      parentOffset.left += parseFloat(getCS(offsetParent).borderLeftWidth)
-    }
-  }
-  return {
-    top: offsetSelf.top - parentOffset.top - parseFloat(getCS(el).marginTop),
-    left: offsetSelf.left - parentOffset.left - parseFloat(getCS(el).marginLeft)
-  }
-}
-/* unused harmony export position */
-
-
-// Attach an event listener to an element
-const eventOn = (el, evtName, handler) => {
-  if (el && el.addEventListener) {
-    el.addEventListener(evtName, handler)
-  }
-}
-/* unused harmony export eventOn */
-
-
-// Remove an event listener from an element
-const eventOff = (el, evtName, handler) => {
-  if (el && el.removeEventListener) {
-    el.removeEventListener(evtName, handler)
-  }
-}
-/* unused harmony export eventOff */
-
-
-
-/***/ }),
-/* 471 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = lowerFirst;
-/**
- * @param {string} str
- */
-function lowerFirst (str) {
-  if (typeof str !== 'string') {
-    str = String(str)
-  }
-  return str.charAt(0).toLowerCase() + str.slice(1)
-}
-
-
-/***/ }),
-/* 472 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(473);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_object__ = __webpack_require__(466);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_array__ = __webpack_require__(467);
-
-
-
-
-/**
- * Generates a prop object with a type of
- * [Boolean, String, Number]
- */
-function boolStrNum () {
-  return {
-    type: [Boolean, String, Number],
-    default: false
-  }
-}
-
-/**
- * Generates a prop object with a type of
- * [String, Number]
- */
-function strNum () {
-  return {
-    type: [String, Number],
-    default: null
-  }
-}
-
-const computeBkPtClass = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["a" /* memoize */])(function computeBkPt (type, breakpoint, val) {
-  let className = type
-  if (val === false || val === null || val === undefined) {
-    return undefined
-  }
-  if (breakpoint) {
-    className += `-${breakpoint}`
-  }
-  // Handling the boolean style prop when accepting [Boolean, String, Number]
-  // means Vue will not convert <b-col sm /> to sm: true for us.
-  // Since the default is false, an empty string indicates the prop's presence.
-  if (type === 'col' && (val === '' || val === true)) {
-    // .col-md
-    return className.toLowerCase()
-  }
-  // .order-md-6
-  className += `-${val}`
-  return className.toLowerCase()
-})
-/* unused harmony export computeBkPtClass */
-
-
-const BREAKPOINTS = ['sm', 'md', 'lg', 'xl']
-// Supports classes like: .col-sm, .col-md-6, .col-lg-auto
-const breakpointCol = BREAKPOINTS.reduce(
-  // eslint-disable-next-line no-sequences
-  (propMap, breakpoint) => ((propMap[breakpoint] = boolStrNum()), propMap),
-  Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["b" /* create */])(null)
-)
-// Supports classes like: .offset-md-1, .offset-lg-12
-const breakpointOffset = BREAKPOINTS.reduce(
-  // eslint-disable-next-line no-sequences
-  (propMap, breakpoint) => ((propMap[Object(__WEBPACK_IMPORTED_MODULE_0__utils__["c" /* suffixPropName */])(breakpoint, 'offset')] = strNum()), propMap),
-  Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["b" /* create */])(null)
-)
-// Supports classes like: .order-md-1, .order-lg-12
-const breakpointOrder = BREAKPOINTS.reduce(
-  // eslint-disable-next-line no-sequences
-  (propMap, breakpoint) => ((propMap[Object(__WEBPACK_IMPORTED_MODULE_0__utils__["c" /* suffixPropName */])(breakpoint, 'order')] = strNum()), propMap),
-  Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["b" /* create */])(null)
-)
-
-// For loop doesn't need to check hasOwnProperty
-// when using an object created from null
-const breakpointPropMap = Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["a" /* assign */])(Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["b" /* create */])(null), {
-  col: Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["c" /* keys */])(breakpointCol),
-  offset: Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["c" /* keys */])(breakpointOffset),
-  order: Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["c" /* keys */])(breakpointOrder)
-})
-
-const props = Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["a" /* assign */])({}, breakpointCol, breakpointOffset, breakpointOrder, {
-  tag: {
-    type: String,
-    default: 'div'
-  },
-  // Generic flexbox .col
-  col: {
-    type: Boolean,
-    default: false
-  },
-  // .col-[1-12]|auto
-  cols: strNum(),
-  // .offset-[1-12]
-  offset: strNum(),
-  // Flex ordering utility .order-[1-12]
-  order: strNum(),
-  alignSelf: {
-    type: String,
-    default: null,
-    validator: str => Object(__WEBPACK_IMPORTED_MODULE_2__utils_array__["a" /* arrayIncludes */])(['auto', 'start', 'end', 'center', 'baseline', 'stretch'], str)
-  }
-})
-/* unused harmony export props */
-
-
-/**
- * We need ".col" to default in when no other props are passed,
- * but always render when col=true.
- */
-/* harmony default export */ __webpack_exports__["a"] = ({
-  functional: true,
-  props,
-  render (h, { props, data, children }) {
-    const classList = []
-    // Loop through `col`, `offset`, `order` breakpoint props
-    for (const type in breakpointPropMap) {
-      // Returns colSm, offset, offsetSm, orderMd, etc.
-      const keys = breakpointPropMap[type]
-      for (let i = 0; i < keys.length; i++) {
-        // computeBkPt(col, colSm => Sm, value=[String, Number, Boolean])
-        const c = computeBkPtClass(type, keys[i].replace(type, ''), props[keys[i]])
-        // If a class is returned, push it onto the array.
-        if (c) {
-          classList.push(c)
-        }
-      }
-    }
-
-    classList.push({
-      // Default to .col if no other classes generated nor `cols` specified.
-      col: props.col || (classList.length === 0 && !props.cols),
-      [`col-${props.cols}`]: props.cols,
-      [`offset-${props.offset}`]: props.offset,
-      [`order-${props.order}`]: props.order,
-      [`align-self-${props.alignSelf}`]: props.alignSelf
-    })
-
-    return h(props.tag, Object(__WEBPACK_IMPORTED_MODULE_0__utils__["b" /* mergeData */])(data, { class: classList }), children)
-  }
-});
-
-
-/***/ }),
-/* 473 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__addEventListenerOnce__ = __webpack_require__(474);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(467);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__object__ = __webpack_require__(466);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom__ = __webpack_require__(470);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__copyProps__ = __webpack_require__(475);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__key_codes__ = __webpack_require__(476);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lowerFirst__ = __webpack_require__(471);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__identity__ = __webpack_require__(468);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__loose_equal__ = __webpack_require__(477);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_vue_functional_data_merge__ = __webpack_require__(241);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__memoize__ = __webpack_require__(478);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__observe_dom__ = __webpack_require__(479);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pluckProps__ = __webpack_require__(480);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__prefixPropName__ = __webpack_require__(481);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__plugins__ = __webpack_require__(482);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__stable_sort__ = __webpack_require__(483);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__suffixPropName__ = __webpack_require__(484);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__unPrefixPropName__ = __webpack_require__(485);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__upperFirst__ = __webpack_require__(469);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__warn__ = __webpack_require__(486);
-/* unused harmony reexport addEventListenerOnce */
-/* unused harmony reexport array */
-/* unused harmony reexport copyProps */
-/* unused harmony reexport dom */
-/* unused harmony reexport KeyCodes */
-/* unused harmony reexport lowerFirst */
-/* unused harmony reexport identity */
-/* unused harmony reexport looseEqual */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_9_vue_functional_data_merge__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_10__memoize__["a"]; });
-/* unused harmony reexport object */
-/* unused harmony reexport observeDom */
-/* unused harmony reexport pluckProps */
-/* unused harmony reexport prefixPropName */
-/* unused harmony reexport registerComponent */
-/* unused harmony reexport registerComponents */
-/* unused harmony reexport registerDirective */
-/* unused harmony reexport registerDirectives */
-/* unused harmony reexport stableSort */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_16__suffixPropName__["a"]; });
-/* unused harmony reexport upperFirst */
-/* unused harmony reexport unPrefixPropName */
-/* unused harmony reexport vueUse */
-/* unused harmony reexport warn */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***/ }),
-/* 474 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export default */
-/**
- * Register and event to listen on specified element once.
- * @param {Element} element to listen on
- * @param {String} event to listen for
- * @param {Function} callback when event fires
- */
-function addEventListenerOnce (el, evtName, callback) {
-  function fnOnce () {
-    el.removeEventListener(evtName, fnOnce)
-    return callback.apply(null, arguments)
-  }
-  el.addEventListener(event, fnOnce)
-}
-
-
-/***/ }),
-/* 475 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export default */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__array__ = __webpack_require__(467);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__object__ = __webpack_require__(466);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identity__ = __webpack_require__(468);
-
-
-
-
-/**
- * @param {[]|{}} props
- * @param {Function} transformFn
- */
-function copyProps (props, transformFn = __WEBPACK_IMPORTED_MODULE_2__identity__["a" /* default */]) {
-  if (Object(__WEBPACK_IMPORTED_MODULE_0__array__["c" /* isArray */])(props)) {
-    return props.map(transformFn)
-  }
-  // Props as an object.
-  const copied = {}
-
-  for (const prop in props) {
-    if (props.hasOwnProperty(prop)) {
-      if (typeof prop === 'object') {
-        copied[transformFn(prop)] = Object(__WEBPACK_IMPORTED_MODULE_1__object__["a" /* assign */])({}, props[prop])
-      } else {
-        copied[transformFn(prop)] = props[prop]
-      }
-    }
-  }
-
-  return copied
-}
-
-
-/***/ }),
-/* 476 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/*
- * Key Codes (events)
- */
-
-/* unused harmony default export */ var _unused_webpack_default_export = ({
-  SPACE: 32,
-  ENTER: 13,
-  ESC: 27,
-  LEFT: 37,
-  UP: 38,
-  RIGHT: 39,
-  DOWN: 40,
-  PAGEUP: 33,
-  PAGEDOWN: 34,
-  HOME: 36,
-  END: 35
-});
-
-
-/***/ }),
-/* 477 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__array__ = __webpack_require__(467);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__object__ = __webpack_require__(466);
-
-
-
-/**
- * Quick object check - this is primarily used to tell
- * Objects from primitive values when we know the value
- * is a JSON-compliant type.
- */
-function isObject (obj) {
-  return obj !== null && typeof obj === 'object'
-}
-
-/**
- * Check if two values are loosely equal - that is,
- * if they are plain objects, do they have the same shape?
- * Returns boolean true or false
- */
-function looseEqual (a, b) {
-  if (a === b) return true
-  const isObjectA = isObject(a)
-  const isObjectB = isObject(b)
-  if (isObjectA && isObjectB) {
-    try {
-      const isArrayA = Object(__WEBPACK_IMPORTED_MODULE_0__array__["c" /* isArray */])(a)
-      const isArrayB = Object(__WEBPACK_IMPORTED_MODULE_0__array__["c" /* isArray */])(b)
-      if (isArrayA && isArrayB) {
-        return a.length === b.length && a.every((e, i) => {
-          return looseEqual(e, b[i])
-        })
-      } else if (!isArrayA && !isArrayB) {
-        const keysA = Object(__WEBPACK_IMPORTED_MODULE_1__object__["c" /* keys */])(a)
-        const keysB = Object(__WEBPACK_IMPORTED_MODULE_1__object__["c" /* keys */])(b)
-        return keysA.length === keysB.length && keysA.every(key => {
-          return looseEqual(a[key], b[key])
-        })
-      } else {
-        return false
-      }
-    } catch (e) {
-      return false
-    }
-  } else if (!isObjectA && !isObjectB) {
-    return String(a) === String(b)
-  } else {
-    return false
-  }
-}
-
-/* unused harmony default export */ var _unused_webpack_default_export = (looseEqual);
-
-
-/***/ }),
-/* 478 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = memoize;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__object__ = __webpack_require__(466);
-
-
-function memoize (fn) {
-  const cache = Object(__WEBPACK_IMPORTED_MODULE_0__object__["b" /* create */])(null)
-
-  return function memoizedFn () {
-    const args = JSON.stringify(arguments)
-    return (cache[args] = cache[args] || fn.apply(null, arguments))
-  }
-}
-
-
-/***/ }),
-/* 479 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export default */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__object__ = __webpack_require__(466);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_dom__ = __webpack_require__(470);
-
-
-
-/**
- * Observe a DOM element changes, falls back to eventListener mode
- * @param {Element} el The DOM element to observe
- * @param {Function} callback callback to be called on change
- * @param {object} [opts={childList: true, subtree: true}] observe options
- * @see http://stackoverflow.com/questions/3219758
- */
-function observeDOM (el, callback, opts) {
-  const MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver
-  const eventListenerSupported = window.addEventListener
-
-  // Handle case where we might be passed a vue instance
-  el = el ? (el.$el || el) : null
-  /* istanbul ignore next: dificult to test in JSDOM */
-  if (!Object(__WEBPACK_IMPORTED_MODULE_1__utils_dom__["a" /* isElement */])(el)) {
-    // We can't observe somthing that isn't an element
-    return null
-  }
-
-  let obs = null
-
-  /* istanbul ignore next: dificult to test in JSDOM */
-  if (MutationObserver) {
-    // Define a new observer
-    obs = new MutationObserver(mutations => {
-      let changed = false
-      // A Mutation can contain several change records, so we loop through them to see what has changed.
-      // We break out of the loop early if any "significant" change has been detected
-      for (let i = 0; i < mutations.length && !changed; i++) {
-        // The muttion record
-        const mutation = mutations[i]
-        // Mutation Type
-        const type = mutation.type
-        // DOM Node (could be any DOM Node type - HTMLElement, Text, comment, etc)
-        const target = mutation.target
-        if (type === 'characterData' && target.nodeType === Node.TEXT_NODE) {
-          // We ignore nodes that are not TEXt (i.e. comments, etc) as they don't change layout
-          changed = true
-        } else if (type === 'attributes') {
-          changed = true
-        } else if (type === 'childList' && (mutation.addedNodes.length > 0 || mutation.removedNodes.length > 0)) {
-          // This includes HTMLElement and Text Nodes being added/removed/re-arranged
-          changed = true
-        }
-      }
-      if (changed) {
-        // We only call the callback if a change that could affect layout/size truely happened.
-        callback()
-      }
-    })
-
-    // Have the observer observe foo for changes in children, etc
-    obs.observe(el, Object(__WEBPACK_IMPORTED_MODULE_0__object__["a" /* assign */])({childList: true, subtree: true}, opts))
-  } else if (eventListenerSupported) {
-    // Legacy interface. most likely not used in modern browsers
-    el.addEventListener('DOMNodeInserted', callback, false)
-    el.addEventListener('DOMNodeRemoved', callback, false)
-  }
-
-  // We return a reference to the observer so that obs.disconnect() can be called if necessary
-  // To reduce overhead when the root element is hiiden
-  return obs
-}
-
-
-/***/ }),
-/* 480 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export default */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__object__ = __webpack_require__(466);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(467);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identity__ = __webpack_require__(468);
-
-
-
-
-/**
- * Given an array of properties or an object of property keys,
- * plucks all the values off the target object.
- * @param {{}|string[]} keysToPluck
- * @param {{}} objToPluck
- * @param {Function} transformFn
- * @return {{}}
- */
-function pluckProps (keysToPluck, objToPluck, transformFn = __WEBPACK_IMPORTED_MODULE_2__identity__["a" /* default */]) {
-  return (Object(__WEBPACK_IMPORTED_MODULE_1__array__["c" /* isArray */])(keysToPluck) ? keysToPluck.slice() : Object(__WEBPACK_IMPORTED_MODULE_0__object__["c" /* keys */])(keysToPluck)).reduce((memo, prop) => {
-    // eslint-disable-next-line no-sequences
-    return (memo[transformFn(prop)] = objToPluck[prop]), memo
-  }, {})
-}
-
-
-/***/ }),
-/* 481 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export default */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__upperFirst__ = __webpack_require__(469);
-
-
-/**
- * @param {string} prefix
- * @param {string} value
- */
-function prefixPropName (prefix, value) {
-  return prefix + Object(__WEBPACK_IMPORTED_MODULE_0__upperFirst__["a" /* default */])(value)
-}
-
-
-/***/ }),
-/* 482 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export registerComponent */
-/* unused harmony export registerComponents */
-/* unused harmony export registerDirective */
-/* unused harmony export registerDirectives */
-/* unused harmony export vueUse */
-/**
- * Register a component plugin as being loaded. returns true if compoent plugin already registered
- * @param {object} Vue
- * @param {string} Component name
- * @param {object} Component definition
- */
-function registerComponent (Vue, name, def) {
-  Vue._bootstrap_vue_components_ = Vue._bootstrap_vue_components_ || {}
-  const loaded = Vue._bootstrap_vue_components_[name]
-  if (!loaded && def && name) {
-    Vue._bootstrap_vue_components_[name] = true
-    Vue.component(name, def)
-  }
-  return loaded
-}
-
-/**
- * Register a group of components as being loaded.
- * @param {object} Vue
- * @param {object} Object of component definitions
- */
-function registerComponents (Vue, components) {
-  for (let component in components) {
-    registerComponent(Vue, component, components[component])
-  }
-}
-
-/**
- * Register a directive as being loaded. returns true if directive plugin already registered
- * @param {object} Vue
- * @param {string} Directive name
- * @param {object} Directive definition
- */
-function registerDirective (Vue, name, def) {
-  Vue._bootstrap_vue_directives_ = Vue._bootstrap_vue_directives_ || {}
-  const loaded = Vue._bootstrap_vue_directives_[name]
-  if (!loaded && def && name) {
-    Vue._bootstrap_vue_directives_[name] = true
-    Vue.directive(name, def)
-  }
-  return loaded
-}
-
-/**
- * Register a group of directives as being loaded.
- * @param {object} Vue
- * @param {object} Object of directive definitions
- */
-function registerDirectives (Vue, directives) {
-  for (let directive in directives) {
-    registerDirective(Vue, directive, directives[directive])
-  }
-}
-
-/**
- * Install plugin if window.Vue available
- * @param {object} Plugin definition
- */
-function vueUse (VuePlugin) {
-  if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(VuePlugin)
-  }
-}
-
-
-/***/ }),
-/* 483 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export default */
-/*
- * Consitant and stable sort function across JavsaScript platforms
- *
- * Inconsistant sorts can cause SSR problems between client and server
- * such as in <b-table> if sortBy is applied to the data on server side render.
- * Chrome and V8 native sorts are inconsistant/unstable
- *
- * This function uses native sort with fallback to index compare when the a and b
- * compare returns 0
- *
- * Algorithm bsaed on:
- * https://stackoverflow.com/questions/1427608/fast-stable-sorting-algorithm-implementation-in-javascript/45422645#45422645
- *
- * @param {array} array to sort
- * @param {function} sortcompare function
- * @return {array}
- */
-
-function stableSort (array, compareFn) {
-  // Using `.bind(compareFn)` on the wrapped anonymous function improves
-  // performance by avoiding the function call setup. We don't use an arrow
-  // function here as it binds `this` to the `stableSort` context rather than
-  // the `compareFn` context, which wouldn't give us the performance increase.
-  return array
-    .map((a, index) => [ index, a ])
-    .sort(function (a, b) { return this(a[1], b[1]) || a[0] - b[0] }.bind(compareFn))
-    .map(e => e[1])
-}
-
-
-/***/ }),
-/* 484 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = suffixPropName;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__upperFirst__ = __webpack_require__(469);
-
-
-/**
- * Suffix can be a falsey value so nothing is appended to string.
- * (helps when looping over props & some shouldn't change)
- * Use data last parameters to allow for currying.
- * @param {string} suffix
- * @param {string} str
- */
-function suffixPropName (suffix, str) {
-  return str + (suffix ? Object(__WEBPACK_IMPORTED_MODULE_0__upperFirst__["a" /* default */])(suffix) : '')
-}
-
-
-/***/ }),
-/* 485 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export default */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lowerFirst__ = __webpack_require__(471);
-
-
-/**
- * @param {string} prefix
- * @param {string} value
- */
-function unPrefixPropName (prefix, value) {
-  return Object(__WEBPACK_IMPORTED_MODULE_0__lowerFirst__["a" /* default */])(value.replace(prefix, ''))
-}
-
-
-/***/ }),
-/* 486 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/**
- * Log a warning message to the console with bootstrap-vue formatting sugar.
- * @param {string} message
- */
-/* istanbul ignore next */
-function warn (message) {
-  console.warn(`[Bootstrap-Vue warn]: ${message}`)
-}
-
-/* unused harmony default export */ var _unused_webpack_default_export = (warn);
-
-
-/***/ }),
+/* 466 */,
+/* 467 */,
+/* 468 */,
+/* 469 */,
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */,
+/* 474 */,
+/* 475 */,
+/* 476 */,
+/* 477 */,
+/* 478 */,
+/* 479 */,
+/* 480 */,
+/* 481 */,
+/* 482 */,
+/* 483 */,
+/* 484 */,
+/* 485 */,
+/* 486 */,
 /* 487 */
 /***/ (function(module, exports) {
 
@@ -94160,6 +92954,597 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-4e8bfdb2", { render: render, staticRenderFns: staticRenderFns })
   }
 }
+
+/***/ }),
+/* 493 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_moment__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dateFunc__ = __webpack_require__(510);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dateFunc___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__dateFunc__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+  name: "vue-calender",
+  props: {
+    weekNames: {},
+    monthNames: {}
+  },
+  data: function data() {
+    return {
+      daysOfWeek: ['Pon.', 'Wt.', 'Śr.', 'Czw.', 'Pt.', 'Sob.', 'Niedz.'],
+      // weekNames : DAY_NAMES,
+      weekMask: [1, 2, 3, 4, 5, 6, 7],
+      // events : [],
+      isLismit: true,
+      eventLimit: 3,
+      showMore: false,
+      morePos: {
+        top: 0,
+        left: 0
+      },
+      selectDay: {},
+      events: {},
+      currentDate: new Date()
+    };
+  },
+
+  methods: {
+    getCalendar: function getCalendar() {
+      // calculate 2d-array of each month
+      // first day of this month
+      var now = new Date(); // today
+      var current = new Date(this.currentDate);
+
+      var startDate = __WEBPACK_IMPORTED_MODULE_1__dateFunc___default.a.getStartDate(current);
+      // let duration = this.getDuration(current) - 1
+      // let endDate = this.changeDay(startDate,duration)
+
+      var curWeekDay = startDate.getDay();
+      // begin date of this table may be some day of last month
+      startDate.setDate(startDate.getDate() - curWeekDay);
+
+      var calendar = [];
+      // let isFinal = false
+
+      for (var perWeek = 0; perWeek < 6; perWeek++) {
+
+        var week = [];
+
+        for (var perDay = 0; perDay < 7; perDay++) {
+          week.push({
+            monthDay: startDate.getDate(),
+            isToday: now.toDateString() == startDate.toDateString(),
+            isCurMonth: startDate.getMonth() == current.getMonth(),
+            weekDay: perDay,
+            date: new Date(startDate)
+            /*events : this.slotEvents(startDate)*/
+          });
+
+          startDate.setDate(startDate.getDate() + 1);
+          // if (startDate.toDateString() == endDate.toDateString()) {
+          //   isFinal = true
+          //   break
+          // }
+        }
+
+        calendar.push(week);
+        // if (isFinal) break
+      }
+      return calendar;
+    }
+  },
+  computed: {
+    currentDates: function currentDates() {
+      return this.getCalendar();
+    }
+  }
+
+});
+
+/***/ }),
+/* 494 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_cacheDirectory_true_presets_env_modules_false_targets_browsers_2_uglify_true_plugins_transform_object_rest_spread_transform_runtime_polyfill_false_helpers_false_node_modules_vue_loader_lib_selector_type_script_index_0_VCalender_vue__ = __webpack_require__(493);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4c6ce525_hasScoped_true_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_VCalender_vue__ = __webpack_require__(497);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(5);
+var disposed = false
+function injectStyle (context) {
+  if (disposed) return
+  __webpack_require__(495)
+}
+/* script */
+
+
+/* template */
+
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-4c6ce525"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+
+var Component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_component_normalizer__["a" /* default */])(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_cacheDirectory_true_presets_env_modules_false_targets_browsers_2_uglify_true_plugins_transform_object_rest_spread_transform_runtime_polyfill_false_helpers_false_node_modules_vue_loader_lib_selector_type_script_index_0_VCalender_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4c6ce525_hasScoped_true_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_VCalender_vue__["a" /* render */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4c6ce525_hasScoped_true_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_VCalender_vue__["b" /* staticRenderFns */],
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\calender\\VCalender.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4c6ce525", Component.options)
+  } else {
+    hotAPI.reload("data-v-4c6ce525", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
+
+
+/***/ }),
+/* 495 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(496);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(7).default
+var update = add("6e42a100", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-4c6ce525\",\"scoped\":true,\"sourceMap\":false}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./VCalender.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-4c6ce525\",\"scoped\":true,\"sourceMap\":false}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./VCalender.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 496 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(6)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.calender-main[data-v-4c6ce525] {\n    position: relative;\n}\n.calender-body[data-v-4c6ce525] {\n    min-width: 100%;\n}\n.vc-row[data-v-4c6ce525] {\n    display: -ms-flexbox;\n    display: -webkit-box;\n    display: flex;\n    -ms-flex-wrap: wrap;\n    flex-wrap: wrap;\n    border-left: 1px solid #e0e0e0;\n}\n.vc-col[data-v-4c6ce525] {\n    /*max-width: calc((100% / 7) - 0.1px);*/\n    -ms-flex-preferred-size: 0;\n    flex-basis: 0;\n    -ms-flex-positive: 1;\n    -webkit-box-flex: 1;\n            flex-grow: 1;\n    max-width: 100%;\n    margin: auto; /* Magic! */\n}\n.weeks[data-v-4c6ce525] {\n    border-top: 1px #fff solid;\n}\n.week[data-v-4c6ce525] {\n    border-right: 1px #fff solid;\n    border-bottom: 1px #fff solid;\n}\n.week > p[data-v-4c6ce525] {\n    margin: auto;\n    line-height: 1.8em;\n}\n.dates[data-v-4c6ce525] {\n    position: relative;\n}\n.day-cell[data-v-4c6ce525] {\n    cursor: pointer;\n    min-height: 109px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n\n    border-right: 1px solid #e0e0e0;\n    border-bottom: 1px solid #e0e0e0;\n    padding: 4px;\n}\n.events-day[data-v-4c6ce525]:last-child {\n    border-right: 1px #fff solid;\n}\n.glass[data-v-4c6ce525] {\n    position: absolute;\n    background: inherit;\n    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);\n            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);\n    overflow: hidden;\n}\n.glass[data-v-4c6ce525]:before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background: inherit;\n    -webkit-filter: blur(10px) saturate(2);\n            filter: blur(10px) saturate(2);\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 497 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "calender-main" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "calender-body glass" }, [
+      _c("div", { staticClass: "weeks" }, [
+        _c(
+          "div",
+          { staticClass: "vc-row" },
+          _vm._l(_vm.daysOfWeek, function(dayOfWeek) {
+            return _c("div", { staticClass: "vc-col week text-center" }, [
+              _c("p", [_vm._v(_vm._s(dayOfWeek))])
+            ])
+          })
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "dates" },
+        _vm._l(_vm.currentDates, function(week) {
+          return _c(
+            "div",
+            { staticClass: "vc-row events-week" },
+            _vm._l(week, function(day) {
+              return _c(
+                "div",
+                {
+                  staticClass: "vc-col day-cell",
+                  class: {
+                    today: day.isToday,
+                    "not-cur-month": !day.isCurMonth
+                  }
+                },
+                [
+                  _c("p", { staticClass: "day-number" }, [
+                    _vm._v(_vm._s(day.monthDay))
+                  ])
+                ]
+              )
+            })
+          )
+        })
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("header", { staticClass: "calender-header" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-12 text-center" }, [
+          _c("p", { staticClass: "mx-auto" }, [
+            _c("i", { staticClass: "fa fa-arrow-left pr-4" }),
+            _vm._v(" "),
+            _c("span", [_vm._v("Kwiecień")]),
+            _vm._v(" "),
+            _c("i", { staticClass: "fa fa-arrow-right pl-4" })
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-4c6ce525", { render: render, staticRenderFns: staticRenderFns })
+  }
+}
+
+/***/ }),
+/* 498 */,
+/* 499 */,
+/* 500 */,
+/* 501 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__page_part_Navbar__ = __webpack_require__(385);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+  name: "draggeble",
+  components: {
+    navbar: __WEBPACK_IMPORTED_MODULE_0__page_part_Navbar__["a" /* default */]
+  }
+});
+
+/***/ }),
+/* 502 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_cacheDirectory_true_presets_env_modules_false_targets_browsers_2_uglify_true_plugins_transform_object_rest_spread_transform_runtime_polyfill_false_helpers_false_node_modules_vue_loader_lib_selector_type_script_index_0_draggeble_vue__ = __webpack_require__(501);
+/* empty harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9aa2632c_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_draggeble_vue__ = __webpack_require__(508);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(5);
+var disposed = false
+function injectStyle (context) {
+  if (disposed) return
+  __webpack_require__(506)
+}
+/* script */
+
+
+/* template */
+
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+
+var Component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_component_normalizer__["a" /* default */])(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_cacheDirectory_true_presets_env_modules_false_targets_browsers_2_uglify_true_plugins_transform_object_rest_spread_transform_runtime_polyfill_false_helpers_false_node_modules_vue_loader_lib_selector_type_script_index_0_draggeble_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9aa2632c_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_draggeble_vue__["a" /* render */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9aa2632c_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_draggeble_vue__["b" /* staticRenderFns */],
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\pages\\draggeble.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-9aa2632c", Component.options)
+  } else {
+    hotAPI.reload("data-v-9aa2632c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
+
+
+/***/ }),
+/* 503 */,
+/* 504 */,
+/* 505 */,
+/* 506 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(507);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(7).default
+var update = add("e51bc4f2", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"scoped\":false,\"sourceMap\":false}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./draggeble.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"scoped\":false,\"sourceMap\":false}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./draggeble.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 507 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(6)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/**{\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif;\n}*/\nmain{\n    height: 100vh;\n    background: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?dpr=0.800000011920929&auto=format&fit=crop&w=1199&h=800&q=80&cs=tinysrgb&crop=') fixed no-repeat;\n    background-size: cover;\n}\n#container{\n    width: 350px;\n    height: 500px;\n    background: inherit;\n    position: absolute;\n    overflow: hidden;\n    top: 50%;\n    left: 50%;\n    margin-left: -175px;\n    margin-top: -250px;\n    border-radius: 8px;\n}\n.frozen-glass{\n    background: inherit;\n    position: absolute;\n    overflow: hidden;\n    top: 50%;\n    left: 50%;\n    margin-left: -175px;\n    margin-top: -250px;\n    border-radius: 8px;\n}\n.frozen-glass::before{\n    width: 400px;\n    height: 550px;\n    content: \"\";\n    position: absolute;\n    top: -25px;\n    left: -25px;\n    bottom: 0;\n    right: 0;\n    background: inherit;\n    -webkit-box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);\n            box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);\n    -webkit-filter: blur(10px);\n            filter: blur(10px);\n}\n#container:before{\n    width: 400px;\n    height: 550px;\n    content: \"\";\n    position: absolute;\n    top: -25px;\n    left: -25px;\n    bottom: 0;\n    right: 0;\n    background: inherit;\n    -webkit-box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);\n            box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);\n    -webkit-filter: blur(10px);\n            filter: blur(10px);\n}\nform img{\n    width: 120px;\n    height: 120px;\n    border-radius: 100%;\n}\nform{\n    text-align: center;\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    -webkit-transform: translate(-50%,-50%);\n            transform: translate(-50%,-50%);\n}\ninput{\n    background: 0;\n    width: 200px;\n    outline: 0;\n    border: 0;\n    border-bottom: 2px solid rgba(255,255,255, 0.3);\n    margin: 20px 0;\n    padding-bottom: 10px;\n    font-size: 18px;\n    font-weight: bold;\n    color: rgba(255,255,255, 0.8);\n}\ninput[type=\"submit\"]{\n    border: 0;\n    border-radius: 8px;\n    padding-bottom: 0;\n    height: 60px;\n    background: #df2359;\n    color: white;\n    cursor: pointer;\n    -webkit-transition: all 600ms ease-in-out;\n    transition: all 600ms ease-in-out;\n}\ninput[type=\"submit\"]:hover{\n    background: #C0392B;\n}\nspan a{\n    color: rgba(255,255,255, 0.8);\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 508 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "main",
+    { staticClass: "overlay" },
+    [_c("navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1)],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("article", [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12 mx-auto pt-4 pb-3" }, [
+            _c("h1", { staticClass: "text-center" }, [
+              _vm._v("Zarezerwuj Salę")
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "container" } }, [
+      _c("form", { attrs: { action: "" } }, [
+        _c("img", { attrs: { src: "http://bit.ly/2tlJLoz" } }),
+        _c("br"),
+        _vm._v(" "),
+        _c("input", { attrs: { type: "text", value: "@AmJustSam" } }),
+        _c("br"),
+        _vm._v(" "),
+        _c("input", { attrs: { type: "password" } }),
+        _c("br"),
+        _vm._v(" "),
+        _c("input", { attrs: { type: "submit", value: "SIGN IN" } }),
+        _c("br"),
+        _vm._v(" "),
+        _c("span", [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Forgot Password?")])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-9aa2632c", { render: render, staticRenderFns: staticRenderFns })
+  }
+}
+
+/***/ }),
+/* 509 */,
+/* 510 */
+/***/ (function(module, exports) {
+
+var dateFunc = {
+    getDuration: function getDuration(date) {
+        // how many days of this month
+        var dt = new Date(date);
+        var month = dt.getMonth();
+        dt.setMonth(dt.getMonth() + 1);
+        dt.setDate(0);
+        return dt.getDate();
+    },
+    changeDay: function changeDay(date, num) {
+        var dt = new Date(date);
+        return new Date(dt.setDate(dt.getDate() + num));
+    },
+    getStartDate: function getStartDate(date) {
+        // return first day of this month
+        return new Date(date.getFullYear(), date.getMonth(), 1);
+    },
+    getEndDate: function getEndDate(date) {
+        // get last day of this month
+        var dt = new Date(date.getFullYear(), date.getMonth() + 1, 1); // 1st day of next month
+        return new Date(dt.setDate(dt.getDate() - 1)); // last day of this month
+    },
+    format: function format(date, _format) {
+        if (typeof date === 'string') {
+            date = new Date(date.replace(/-/g, '/'));
+        } else {
+            date = new Date(date);
+        }
+
+        var map = {
+            'M': date.getMonth() + 1,
+            'd': date.getDate(),
+            'h': date.getHours(),
+            'm': date.getMinutes(),
+            's': date.getSeconds(),
+            'q': Math.floor((date.getMonth() + 3) / 3),
+            'S': date.getMilliseconds()
+        };
+
+        _format = _format.replace(/([yMdhmsqS])+/g, function (all, t) {
+            var v = map[t];
+            if (v !== undefined) {
+                if (all.length > 1) {
+                    v = '0' + v;
+                    v = v.substr(v.length - 2);
+                }
+                return v;
+            } else if (t === 'y') {
+                return String(date.getFullYear()).substr(4 - all.length);
+            }
+            return all;
+        });
+        return _format;
+    }
+};
+
+module.exports = dateFunc;
 
 /***/ })
 /******/ ]);
