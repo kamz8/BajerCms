@@ -44,6 +44,7 @@
     },
     data() {
       return {
+        monthName: '',
         daysOfWeek: ['Pon.', 'Wt.', 'Śr.', 'Czw.', 'Pt.', 'Sob.', 'Niedz.'],
         // weekNames : DAY_NAMES,
         weekMask : [1,2,3,4,5,6,7],
@@ -78,7 +79,7 @@
         let calendar = []
         // let isFinal = false
 
-        for(let perWeek = 0 ; perWeek < 6 ; perWeek++) {
+        for(let perWeek = 0 ; perWeek < 5 ; perWeek++) {
 
           let week = []
 
@@ -192,5 +193,8 @@
         bottom: 0;
         background: inherit;
         filter: blur(10px) saturate(2);
+    }
+    .not-cur-month{
+        color: rgba(130,130,130,0.8);
     }
 </style>

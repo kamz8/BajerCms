@@ -122,51 +122,9 @@ return [
     */
 
     'providers' => [
-
-        /*
-        |--------------------------------------------------------------------------
-        | User Provider
-        |--------------------------------------------------------------------------
-        |
-        | Specify the provider that is used to find the user based
-        | on the subject claim
-        |
-        */
-
-        'user' => 'Tymon\JWTAuth\Providers\User\EloquentUserAdapter',
-
-        /*
-        |--------------------------------------------------------------------------
-        | JWT Provider
-        |--------------------------------------------------------------------------
-        |
-        | Specify the provider that is used to create and decode the tokens.
-        |
-        */
-
-        'jwt' => 'Tymon\JWTAuth\Providers\JWT\NamshiAdapter',
-
-        /*
-        |--------------------------------------------------------------------------
-        | Authentication Provider
-        |--------------------------------------------------------------------------
-        |
-        | Specify the provider that is used to authenticate users.
-        |
-        */
-
-        'auth' => 'Tymon\JWTAuth\Providers\Auth\IlluminateAuthAdapter',
-
-        /*
-        |--------------------------------------------------------------------------
-        | Storage Provider
-        |--------------------------------------------------------------------------
-        |
-        | Specify the provider that is used to store tokens in the blacklist
-        |
-        */
-
-        'storage' => 'Tymon\JWTAuth\Providers\Storage\IlluminateCacheAdapter',
+        'jwt' => 'Tymon\JWTAuth\Providers\JWT\Namshi',
+        'auth' => 'Tymon\JWTAuth\Providers\Auth\Illuminate',
+        'storage' => 'Tymon\JWTAuth\Providers\Storage\Illuminate'
 
     ],
 
