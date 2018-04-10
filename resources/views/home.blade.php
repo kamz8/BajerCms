@@ -1,4 +1,5 @@
 @extends('layouts.app')
+
 @section('content')
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
@@ -107,18 +108,18 @@
                         </div>
                         <div class="col-md-3 col-xs-12 text-center">
                             <figure class="member avatar mx-auto d-block">
-                                <img class="img-fluid rounded-circle" src="https://avatars.io/facebook/damian.cieslak.560/large">
+                                <img class="img-fluid rounded-circle" src="https://avatars.io/facebook/Bartuchaa/large">
                                 <figcaption class="caption">
-                                    <span>Damian Cieślak</span>
+                                    <span>Bartosz Skokuń</span>
                                     <span class="member-title">Członek Zarządu</span>
                                 </figcaption>
                             </figure>
                         </div>
                         <div class="col-md-3 col-xs-12 text-center">
                             <figure class="member avatar mx-auto d-block">
-                                <img class="img-fluid rounded-circle" src="https://avatars.io/facebook/mpodgoreczny/large">
+                                <img class="img-fluid rounded-circle" src="https://avatars.io/facebook/mreemirates/large">
                                 <figcaption class="caption">
-                                    <span>Michał Podgóreczny</span>
+                                    <span>Marta Emirsajłow</span>
                                     <span class="member-title">Członek Zarządu</span>
                                 </figcaption>
                             </figure>
@@ -140,10 +141,15 @@
         </div>
     </section>
     <section class="spotify">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6"></div>
-                <div class="col-md  -6"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-6 col-md-6 visible-sm-inline-block">
+                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, imperdiet sed consectetur ut, placerat id nunc.Donec tincidunt mollis.</p>
+                </div>
+                <div class="col-6 col-md-4 offset-md-2">
+                    <span class="bajerfont bajer-2x mr-2 mb-sm-2 d-sm-block d-md-inline-block mb-md-0">#AleBajer</span>
+                    <a class="btn btn-md btn-outline-light text-light text-uppercase btn-lg-space" style="margin-top: -10px;">zobacz playlistę</a>
+                </div>
             </div>
         </div>
     </section>
@@ -165,13 +171,44 @@
         <div class="container">
             <div class="row">
                 <article class="col-md-12 text-center">
-                    <h1 class="text-uppercase pb-4">wynajem</h1>
+                    <h1 class="text-uppercase pb-4 pt-4">wynajem</h1>
+                    <p>
 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, imperdiet sed consectetur ut, placerat id nunc. Donec tincidunt mollis orci id placerat. Nulla at cursus arcu, eu volutpat lectus. Sed id euismod purus. Nam velit turpis, iaculis a quam at, volutpat tristique risus. Ut turpis nulla, lacinia ut pulvinar et, tristique ac dui. Quisque urna quam, tincidunt in dui sed, lacinia rhoncus felis. Sed finibus non diam pretium aliquet. Duis blandit lorem eget purus vulputate, a bibendum ante fringilla. Donec vitae ultrices odio. Maecenas sed congue ex, non interdum mi. Donec pellentesque iaculis sapien, accumsan tempus nulla volutpat at. </p>
+
+                    <a class="btn btn-success text-uppercase mt-5 mb-4">dowiedz się więcej</a>
                 </article>
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="footer">
+        <h2 class="text-uppercase text-center p-2">śledz nas</h2>
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-sm-6 col-md-2 col-md-offset-1">
+                    <img class="img-fluid mx-auto d-block w-50" src="{{asset('img/bajer.png')}}">
+                    <address class="text-center">
+                        ul. Edwarda Wittiga 6 <br />
+                        Akademik T-15 <br />
+                        51-628 Wrocław <br />
+
+                    </address>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <div class="social-icons text-center">
+                        <ul class="social-network social-circle text-dark">
+                            <li><a href="#" class="Facebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="Instagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#" class="Snapchat" title="Snapchat"><i class="fa fa-snapchat-ghost"></i></a></li>
+                            <li><a href="#" class="Spotify" title="Spotify"><i class="fa fa-spotify"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                    <a class="btn btn-light text-uppercase text-dark btn-block btn-lg-space  mt-5 mt-sm-0">kontakt</a>
+                </div>
+            </div>
+        </div>
         <div class="subfooter"></div>
     </footer>
 @endsection
