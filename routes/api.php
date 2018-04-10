@@ -17,6 +17,9 @@ use Illuminate\Http\Request;
 
 Route::post('recover', 'AuthController@recover');*/
 Route::post('auth/login', 'AuthController@login');
+//social auth
+Route::get('auth/{provider}', 'AuthController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'AuthController@handleProviderCallback');
 
 Route::get('/', function (){
     return ['status'=>'200',
@@ -30,6 +33,7 @@ Route::group([
     Route::post('logout', 'AuthController@logout');
     Route::post('refresh', 'AuthController@refresh');
     Route::get('me', 'AuthController@me');
+
 });
 
 Route::group(['middleware' => 'auth.api'],function($router){
