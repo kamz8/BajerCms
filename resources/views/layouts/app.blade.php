@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Klub Studencki Bajer - strona logowania">
+    <meta name="description" content="Klub Studencki Bajer">
     <meta name="author" content="Kamil Żmijowski">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @stack('meta')
@@ -21,10 +21,9 @@
 
 <body>
 <div id="app">
-    @yield('content')
 </div>
 
-<script src="{{asset('js/app.js')}}"></script>
+<script src="{{ mix('js/app.js') }}"></script>
 </body>
 
 </html>

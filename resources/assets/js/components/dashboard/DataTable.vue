@@ -75,8 +75,8 @@
 
 <script>
     import SearchBox from './SearchBox.vue'
-    import AddUser from  './AddUser.vue'
-    import DeleteUser from  './DeleteUser.vue'
+    import AddUser from './AddUser.vue'
+    import DeleteUser from './DeleteUser.vue'
     import _ from 'lodash'
     import UpdateUser from "./UpdateUser";
 

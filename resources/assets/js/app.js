@@ -8,16 +8,32 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-import DataTable from './components/DataTable.vue';
-import FacebookEvents from './components/FacbookEvents.vue';
 import BootstrapVue from 'bootstrap-vue';
 import VueResource from 'vue-resource';
+
 import store from './store';
 import lodash from 'lodash'
-import NotificationsDemo from './components/Notification/NotificationsDemo'
-import NotificationsDropdown from './components/Notification/NotificationsDropdown'
-Vue.use(BootstrapVue);
-Vue.use(VueResource,lodash);
+import router from './router/index.js'
+
+/*components import */
+import VueScrollTo from 'vue-scrollto'
+import MyApp from './MyApp';
+
+Vue.use(BootstrapVue,router);
+Vue.use(VueResource,lodash,VueScrollTo);
+
+Vue.use(VueScrollTo, {
+    container: "body",
+    duration: 500,
+    easing: "ease-in",
+    offset: 0,
+    cancelable: true,
+    onStart: false,
+    onDone: false,
+    onCancel: false,
+    x: false,
+    y: true
+});
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -27,12 +43,9 @@ Vue.use(VueResource,lodash);
 Object.defineProperty(Vue.prototype, '$lodash', { value: lodash });
 const app = new Vue({
     el: '#app',
+    template: '<my-app/>',
+    components: { MyApp },
+    router,
     store,
-    components: {
-        DataTable,
-        FacebookEvents,
-        NotificationsDemo,
-        NotificationsDropdown
-    }
 });
 axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content');

@@ -169,6 +169,7 @@ return [
          */
         Spatie\GoogleCalendar\GoogleCalendarServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
+        NotificationChannels\WebPush\WebPushServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -177,7 +178,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        NotificationChannels\WebPush\WebPushServiceProvider::class,
+
     ],
 
     /*
@@ -228,6 +229,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'GoogleCalendar' => Spatie\GoogleCalendar\GoogleCalendarFacade::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+
     ],
 
 ];

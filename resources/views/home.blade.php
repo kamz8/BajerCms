@@ -1,39 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand text-light text-u bajerfont" href="">Bajer</a>
-            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">o klubie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#download">ekipa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#download">oferta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#download">wynajmy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">kontakt</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-buton btn btn-outline-primary btn-sm mt-2" href="#login">Zaloguj</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header id="mainHeader" class="masthead overlay">
+    <navbar></navbar>
+    <header id="mainHeader" class="masthead overlay" ref="mainHeader">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
@@ -43,14 +12,14 @@
                             <span>Nagłośnienie</span><span>Oświetlenie</span><span>Integracje</span>
                         </div>
                     </div>
-                    <a href="#about" class="btn btn-circle align-text-bottom mt-4">
+                    <a href="#about" class="btn btn-circle align-text-bottom mt-4" v-scroll-to="'#onas'">
                         <i class="fa fa-2x fa-angle-double-down"></i>
                     </a>
                 </div>
             </div>
         </div>
     </header>
-    <section class="content-box">
+    <section id="onas" class="content-box">
         <div class="container">
             <div class="row">
                 <article class="col-md-12 text-center">
@@ -143,12 +112,13 @@
     <section class="spotify">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-6 col-md-6 visible-sm-inline-block">
+                <div class="col-12 col-md-6 visible-sm-inline-block">
                     <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, imperdiet sed consectetur ut, placerat id nunc.Donec tincidunt mollis.</p>
                 </div>
-                <div class="col-6 col-md-4 offset-md-2">
-                    <span class="bajerfont bajer-2x mr-2 mb-sm-2 d-sm-block d-md-inline-block mb-md-0">#AleBajer</span>
-                    <a class="btn btn-md btn-outline-light text-light text-uppercase btn-lg-space" style="margin-top: -10px;">zobacz playlistę</a>
+                <div class="col-12 col-md-4 offset-md-2">
+                    <span class="bajerfont bajer-2x mr-2 mb-2 d-block d-md-inline mb-md-0 text-center">#AleBajer</span>
+                    <a class="btn btn-md btn-outline-light text-light text-uppercase btn-lg-space d-none d-sm-inline btn-lg-space" style="margin-top: -10px;">zobacz playlistę</a>
+                    <a class="btn btn-sm btn-outline-light text-light text-uppercase d-block d-sm-none"  style="font-size: 12px">zobacz playlistę</a>
                 </div>
             </div>
         </div>
@@ -182,7 +152,7 @@
         </div>
     </section>
     <footer class="footer">
-        <h2 class="text-uppercase text-center p-2">śledz nas</h2>
+        <h2 class="text-uppercase text-center p-2">śledź nas</h2>
         <div class="container h-100">
             <div class="row align-items-center h-100">
                 <div class="col-sm-6 col-md-2 col-md-offset-1">
@@ -197,10 +167,10 @@
                 <div class="col-sm-12 col-md-8">
                     <div class="social-icons text-center">
                         <ul class="social-network social-circle text-dark">
-                            <li><a href="#" class="Facebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="Instagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#" class="Snapchat" title="Snapchat"><i class="fa fa-snapchat-ghost"></i></a></li>
-                            <li><a href="#" class="Spotify" title="Spotify"><i class="fa fa-spotify"></i></a></li>
+                            <li><a href="https://www.facebook.com/Klub.Studencki.Bajer/" class="Facebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/klub.studencki.bajer/" class="Instagram" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.snapchat.com/add/ksbajer" class="Snapchat" title="Snapchat" target="_blank"><i class="fa fa-snapchat-ghost" ></i></a></li>
+                            <li><a href="https://open.spotify.com/user/klubstudenckibajer?si=ri5LY5koQrKIG5bkSbEi1w" class="Spotify" title="Spotify" target="_blank"><i class="fa fa-spotify"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -209,6 +179,12 @@
                 </div>
             </div>
         </div>
-        <div class="subfooter"></div>
+
     </footer>
+    <div class="subfooter text-center text-md-right">
+        <div class="container">
+            <span>&copy; Bajer 2018 | Created by Kamil Żmijowski</span>
+        </div>
+    </div>
+    <to-top></to-top>
 @endsection

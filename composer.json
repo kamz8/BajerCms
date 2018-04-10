@@ -14,7 +14,8 @@
         "laravel/tinker": "~1.0",
         "sammyk/laravel-facebook-sdk": "^3.5",
         "spatie/laravel-google-calendar": "^2.1",
-        "twbs/bootstrap": "4.0.0-beta.2"
+        "twbs/bootstrap": "4.0.0-beta.2",
+        "tymon/jwt-auth": "1.0.0-rc.2"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
@@ -51,7 +52,7 @@
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover"
+            "php artisan package:discover"
         ]
     },
     "config": {
