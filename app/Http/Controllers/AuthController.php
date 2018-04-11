@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 
 use Socialite;
+use Tymon\JWTAuth\JWTAuth;
 
 class AuthController extends Controller
 {
@@ -101,7 +103,7 @@ class AuthController extends Controller
         $user = Socialite::driver($provider)->stateless()->user();
 
         $authUser = $this->findOrCreateUser($user, $provider);
-        if (! $token = auth('api')->loginUsingId($authUser->id)) {
+        if (! $token = auth()->tokenById($authUser->id)) {
             return response()->json(['error' => 'Unauthorized'], 401);
         }
         return $this->respondWithToken($token);
@@ -113,7 +115,7 @@ class AuthController extends Controller
      */
     public function redirectToProvider($provider)
     {
-        return Socialite::driver($provider)->stateless()->redirect();
+        return Socialite::driver($provider)->stateless()->redirect()->getTargetUrl();
     }
     /**
      * If a user has registered before using social auth, return the user
