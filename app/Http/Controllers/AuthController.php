@@ -137,6 +137,8 @@ class AuthController extends Controller
             'email'    => $user->email,
             'provider' => $provider,
             'provider_id' => $user->id,
+            'firstname' => $user->user['first_name'],
+            'lastname' => $user->user['last_name']
 
         ]);
     }
