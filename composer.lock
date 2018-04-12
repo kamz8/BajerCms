@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d52fced36606e2c8ccb933a86476205e",
-    "content-hash": "34a5213e9a4d3a5269204d22d17a2652",
+    "hash": "2ef01839e0a5e9dcdda566e8962e6945",
+    "content-hash": "ab311636b9ccb61f4485e52de6212b06",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1704,6 +1704,56 @@
                 "secp256r1"
             ],
             "time": "2017-10-09 16:05:37"
+        },
+        {
+            "name": "metricloop/laravel-transformer-maker",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/metricloop/laravel-transformer-maker.git",
+                "reference": "bcebd6511c0c1b11867baa0216f759919f45060b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/metricloop/laravel-transformer-maker/zipball/bcebd6511c0c1b11867baa0216f759919f45060b",
+                "reference": "bcebd6511c0c1b11867baa0216f759919f45060b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "5.5.*",
+                "illuminate/support": "5.5.*",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MetricLoop\\TransformerMaker\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Patrick Guevara",
+                    "email": "pguevara@metricloop.com",
+                    "homepage": "https://metricloop.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel 5 package to create Fractal Transformers",
+            "homepage": "https://github.com/metricloop/laravel-transformer-maker",
+            "keywords": [
+                "api",
+                "fractal",
+                "metricloop",
+                "transformer"
+            ],
+            "time": "2018-03-06 04:22:21"
         },
         {
             "name": "minishlink/web-push",
