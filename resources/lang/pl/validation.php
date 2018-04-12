@@ -86,7 +86,7 @@ return [
     'unique' => 'Taki :attribute już występuje.',
     'uploaded' => 'Nie udało się wgrać pliku :attribute.',
     'url' => 'Format :attribute jest nieprawidłowy.',
-
+    'phone_number' => 'Podany numer telefonu jest nieprawidłowy.',
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Language Lines

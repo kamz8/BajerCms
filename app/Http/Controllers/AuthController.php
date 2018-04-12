@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Role;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -127,7 +128,7 @@ class AuthController extends Controller
     public function findOrCreateUser($user, $provider)
     {
         $authUser = User::where('provider_id', $user->id)->first();
-
+        $role = Role::where('name', 'customer')->first();
         if ($authUser) {
             return $authUser;
         }
@@ -137,9 +138,7 @@ class AuthController extends Controller
             'email'    => $user->email,
             'provider' => $provider,
             'provider_id' => $user->id,
-            'firstname' => $user->user['first_name'],
-            'lastname' => $user->user['last_name']
 
-        ]);
+        ])->roles()->attach($role);
     }
 }

@@ -13,17 +13,25 @@ use Illuminate\Http\Request;
 |
 */
 
-/*Route::post('register', 'AuthController@register');
 
-Route::post('recover', 'AuthController@recover');*/
 
+
+Route::fallback(function(){
+    return response()->json(['message' => 'Not Found!'], 404);
+});
 
 Route::get('/', function (){
     return ['status'=>'200',
-            'message'=>'Hello user in to Bajer API! Send to administrator to credential.'
+            'message'=>'Hello user in to Bajer API! Place to administrator for credential.'
         ];
 });
+// Restore user password
+Route::post('auth/password/email', 'Auth\ForgotPasswordController@getResetToken');
+Route::post('auth/password/reset', 'Auth\ResetPasswordController@reset');
+//login user
 Route::post('auth/login', 'AuthController@login');
+Route::post('auth/register', 'Auth\RegisterController@register');
+// auth grape
 Route::group([
     'middleware' => 'auth.api',
     'prefix' => 'auth'], function ($router) {
@@ -60,6 +68,3 @@ Route::group(['middleware' => 'auth.api'],function($router){
     ]);
 });
 
-Route::fallback(function(){
-    return response()->json(['message' => 'Not Found!'], 404);
-});
