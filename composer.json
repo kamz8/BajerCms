@@ -13,6 +13,7 @@
         "laravel/framework": "5.5.*",
         "laravel/socialite": "^3.0",
         "laravel/tinker": "~1.0",
+        "metricloop/laravel-transformer-maker": "^1.0",
         "sammyk/laravel-facebook-sdk": "^3.5",
         "spatie/laravel-google-calendar": "^2.1",
         "twbs/bootstrap": "4.0.0-beta.2",
