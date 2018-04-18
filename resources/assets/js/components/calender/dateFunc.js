@@ -20,6 +20,10 @@ let dateFunc = {
     let dt = new Date(date.getFullYear(),date.getMonth()+1,1) // 1st day of next month
     return new Date(dt.setDate(dt.getDate()-1)) // last day of this month
   },
+  getMonthName (date, locale) {
+    console.log(date.toLocaleString(locale, { month: "long" }));
+    return date.toLocaleString(locale, { month: "long" });
+  },
   format (date, format) {
     if (typeof date === 'string') {
         date = new Date(date.replace(/-/g, '/'))

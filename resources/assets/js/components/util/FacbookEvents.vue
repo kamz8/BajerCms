@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-6 col-xs-12" v-for="event in getEventsStore">
                 <article class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12 event-cover">
                         <img class="img-fluid d-block" :src="event.cover.source"/>
                     </div>
                     <div class="clearfix "></div>
@@ -54,7 +54,7 @@ export default {
     name: "facebook-events",
     data: function () {
         return {
-            fbAccessToken: '133251397369840|ygfuetzG-1vxSaXAHrjC3oX0Dkk',
+            fbAccessToken: 'EAAB5MQI0vZCABAGUcJrbP8kcFHAbIf6r8QzwH8V0OZAb49AZCGyPO5ntA6Ma624uRi8Tn7FKET85Mjm4WYgOBgLYdN6ZAuKTD7wcaCoA3zSKzKzO0elmwBtS4keQY0aiQ94ZBvUzbT1IyC881V4qldvQ3wwLJM8d2QaP4fB5LiS3o3XE10YloDhpvUCUNbcXwGdLqZAwICyQZDZD',
             errors: []
         }
     },
@@ -169,7 +169,14 @@ export default {
         word-wrap: break-word;
         overflow-x: hidden;
     }
+    .event-cover{
+        height: 300px;
+        display: flex;
+    }
 
+    .event-cover > img{
+        align-self: center;
+    }
     /*Make all responsive :P */
     @media only screen and (min-width: 320px) {
         .title > a {
