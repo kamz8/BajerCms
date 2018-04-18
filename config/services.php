@@ -35,8 +35,13 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
     'facebook' => [
-        'client_id' => 'FACEBOOK_ID',
-        'client_secret' => 'FACEBOOK_SECRET',
-        'redirect' => 'FACEBOOK_URL',
+        'client_id' => env('FACEBOOK_ID'),
+        'client_secret' => env('FACEBOOK_SECRET'),
+        'redirect' => env('FACEBOOK_URL'),
+    ],
+    'google' => [
+        'client_id' => env('GOOGLE_ID'),
+        'client_secret' => env('GOOGLE_ID_SECRET'),
+        'redirect' => env('GOOGLE_ID_URL'),
     ],
 ];

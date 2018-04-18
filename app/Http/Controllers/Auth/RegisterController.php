@@ -2,10 +2,19 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Role;
 use App\User;
 use App\Http\Controllers\Controller;
+use function GuzzleHttp\Psr7\_parse_message;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Transformers\Json;
+
+use App\Http\Requests\RegisterRequest;
 
 class RegisterController extends Controller
 {
@@ -40,21 +49,6 @@ class RegisterController extends Controller
     }
 
     /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-    protected function validator(array $data)
-    {
-        return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
-        ]);
-    }
-
-    /**
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
@@ -62,10 +56,29 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $role = Role::where('name', 'customer')->first();
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-        ]);
+            'firstname' => $data['firstname'],
+            'lastname'=> $data['lastname'],
+            'phone'=> $data['phone'],
+            'student_id'=> $data['student_id'],
+        ])->roles()->attach($role);
     }
+
+    /**
+     * Handle a registration request for the application.
+     *
+     * @param  RegisterRequest  $request
+     * @return \Illuminate\Http\JsonResponse|Response
+     */
+    public function register(RegisterRequest $request)
+    {
+        $user = $this->create($request->all());
+        event(new Registered($user));
+        return \response()->json(Json::response($user,trans('auth.register_successful')));
+    }
+
 }

@@ -29,7 +29,6 @@ class CreateUsersTable extends Migration
             $table->string('student_id',8)->nullable()->unique()->index();
             $table->string('provider'); //social login provider
             $table->string('provider_id');
-            $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();
         });

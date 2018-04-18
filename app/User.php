@@ -96,7 +96,32 @@ class User extends Authenticatable implements JWTSubject
         return [
             'email' => $this->email,
             'name' => $this->name,
-            'roles' => $this->roles()->get()
+            'roles' => $this->roles()->get(),
             ];
     }
+
+    public static function createWithFacebook($user, $role){
+        return User::create([
+            'name'     => $user->name,
+            'email'    => $user->email,
+            'provider' => 'facebook',
+            'provider_id' => $user->id,
+            'firstname' => $user->user['first_name'],
+            'lastname' => $user->user['last_name']
+
+        ])->roles()->attach($role);
+    }
+
+    public static function createWithGoogle($user, $role){
+        return User::create([
+            'name'     => $user->name,
+            'email'    => $user->email,
+            'provider' => 'google',
+            'provider_id' => $user->id,
+            'firstname' => $user->user['name']['givenName'],
+            'lastname' => $user->user['name']['familyName']
+
+        ])->roles()->attach($role);
+    }
+
 }
