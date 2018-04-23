@@ -53790,7 +53790,9 @@ if (false) {(function () {
 /* harmony default export */ __webpack_exports__["a"] = ({
   name: "vue-calender",
   props: {
-    events: [],
+    events: {
+      default: []
+    },
     locale: {
       default: 'pl'
     }
@@ -53808,7 +53810,7 @@ if (false) {(function () {
         left: 0
       },
       selectDay: {},
-      currentDate: new Date()
+      currentDate: __WEBPACK_IMPORTED_MODULE_0_moment___default.a.utc(__WEBPACK_IMPORTED_MODULE_0_moment___default()(), "YYYY-MM-DD")
     };
   },
 
@@ -53816,94 +53818,62 @@ if (false) {(function () {
     getCalendar: function getCalendar() {
       // calculate 2d-array of each month
       // first day of this month
-      var now = new Date(); // today
-      var current = new Date(this.currentDate);
+      var now = __WEBPACK_IMPORTED_MODULE_0_moment___default.a.utc(__WEBPACK_IMPORTED_MODULE_0_moment___default()(), "YYYY-MM-DD"); // today
+      var current = __WEBPACK_IMPORTED_MODULE_0_moment___default()(this.currentDate);
+      // return first day of this month
+      var startDate = current.clone().subtract(1, 'month').endOf('month').day("Monday");
+      var endDate = __WEBPACK_IMPORTED_MODULE_0_moment___default()(current).endOf('month');
 
-      var startDate = __WEBPACK_IMPORTED_MODULE_1__dateFunc___default.a.getStartDate(current);
-      // let duration = this.getDuration(current) - 1
-      // let endDate = this.changeDay(startDate,duration)
-
-      var curWeekDay = startDate.getDay();
+      var curWeekDay = startDate.date();
 
       // begin date of this table may be some day of last month
-      startDate.setDate(startDate.getDate() - curWeekDay);
+      // startDate.setDate(startDate.getDate() - curWeekDay)
 
       var calendar = [];
-      // let isFinal = false
+      var isFinal = false;
 
-      for (var perWeek = 0; perWeek < 5; perWeek++) {
+      while (startDate.format() !== endDate.format()) {
 
         var week = [];
 
         for (var perDay = 0; perDay < 7; perDay++) {
           week.push({
-            monthDay: startDate.getDate(),
-            isToday: now.toDateString() == startDate.toDateString(),
-            isCurMonth: startDate.getMonth() == current.getMonth(),
-            weekDay: perDay,
-            date: new Date(startDate),
-            events: this.slotEvents(startDate)
+            monthDay: startDate.date(),
+            isToday: now.format('YYYY MM DD') === startDate.format('YYYY MM DD'),
+            isCurMonth: startDate.format('MM') === now.format('MM'),
+            weekDay: startDate.weekday(),
+            date: startDate,
+            events: [] //this.slotEvents(startDate)
           });
-          console.log(startDate);
-          startDate.setDate(startDate.getDate() + 1);
-          // if (startDate.toDateString() == endDate.toDateString()) {
-          //   isFinal = true
-          //   break
-          // }
+          startDate.add(1, 'day');
         }
-
         calendar.push(week);
-        // if (isFinal) break
       }
       return calendar;
     },
     slotEvents: function slotEvents(date) {
-
-      // find all events start from this date
-      var cellIndexArr = [];
-      var thisDayEvents = this.events.filter(function (day) {
-        var dt = new Date(day.start_date);
-        var st = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate());
-        var ed = day.end ? new Date(day.end_date) : st;
-        return date >= st && date <= ed;
+      return this.events.filter(function (event) {
+        var startDate = __WEBPACK_IMPORTED_MODULE_0_moment___default()(event.start_date);
+        if (date.format('YYYY-MM-DD') === startDate.format('YYYY-MM-DD')) {
+          return event;
+        }
       });
-
-      // sort by duration
-      thisDayEvents.sort(function (a, b) {
-        if (!a.cellIndex) return 1;
-        if (!b.cellIndex) return -1;
-        return a.cellIndex - b.cellIndex;
-      });
-
-      // mark cellIndex and place holder
-      for (var i = 0; i < thisDayEvents.length; i++) {
-        thisDayEvents[i].cellIndex = thisDayEvents[i].cellIndex || i + 1;
-        thisDayEvents[i].isShow = true;
-        if (thisDayEvents[i].cellIndex == i + 1 || i > 2) continue;
-        thisDayEvents.splice(i, 0, {
-          title: 'holder',
-          cellIndex: i + 1,
-          start_date: __WEBPACK_IMPORTED_MODULE_1__dateFunc___default.a.format(date, 'yyyy-MM-dd'),
-          end_date: __WEBPACK_IMPORTED_MODULE_1__dateFunc___default.a.format(date, 'yyyy-MM-dd'),
-          isShow: false
-        });
-      }
-
-      return thisDayEvents;
     },
     isStart: function isStart(eventDate, date) {
-      var st = new Date(eventDate);
-      return st.toDateString() === date.toDateString();
+      return eventDate.toString() === date.toString();
     },
     isEnd: function isEnd(eventDate, date) {
-      var ed = new Date(eventDate);
-      return ed.toDateString() === date.toDateString();
+      var ed = new __WEBPACK_IMPORTED_MODULE_0_moment___default.a(eventDate);
+      return ed.toString() === __WEBPACK_IMPORTED_MODULE_0_moment___default()(date).toString();
     },
     nextMonth: function nextMonth() {
+
       this.currentDate = __WEBPACK_IMPORTED_MODULE_0_moment___default()(this.currentDate).add(1, 'month');
+      console.log(this.currentDate);
     },
     prevMonth: function prevMonth() {
-      this.currentDate = __WEBPACK_IMPORTED_MODULE_0_moment___default()(this.currentDate).subtract(1, 'month');
+      var current = this.currentDate.format();
+      this.currentDate = __WEBPACK_IMPORTED_MODULE_0_moment___default()(current).subtract(1, 'month');
     }
   },
   computed: {
@@ -53921,9 +53891,7 @@ if (false) {(function () {
   },
 
   created: function created() {
-    console.log(this.locale);
     __WEBPACK_IMPORTED_MODULE_0_moment___default.a.locale(this.locale);
-
     this.daysOfWeek = __WEBPACK_IMPORTED_MODULE_0_moment___default.a.weekdaysShort(true);
   }
 });
@@ -92547,8 +92515,8 @@ var render = function() {
                           ],
                           staticClass: "event-item",
                           class: {
-                            "is-start": _vm.isStart(event.start, day.date),
-                            "is-end": _vm.isEnd(event.end, day.date),
+                            /*                  'is-start'   : isStart(event.start_date, day.date),
+                  'is-end'     : isEnd(event.end_date,day.date),*/
                             "is-opacity": !event.isShow,
                             "bg-danger": !event.accepted,
                             "bg-info": event.accepted
@@ -92561,13 +92529,13 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                        " +
+                            "\n                            " +
                               _vm._s(
                                 _vm._f("isBegin day.date day.weekDay")(
                                   event.title
                                 )
                               ) +
-                              "\n                    "
+                              "\n                        "
                           )
                         ]
                       )

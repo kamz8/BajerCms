@@ -27,8 +27,8 @@
                         <div class="event-box">
                             <p class="event-item" v-for="event in day.events" v-show="event.cellIndex <= eventLimit"
                            :class="{
-                  'is-start'   : isStart(event.start, day.date),
-                  'is-end'     : isEnd(event.end,day.date),
+/*                  'is-start'   : isStart(event.start_date, day.date),
+                  'is-end'     : isEnd(event.end_date,day.date),*/
                   'is-opacity' : !event.isShow,
                   'bg-danger': !event.accepted,
                   'bg-info': event.accepted
@@ -52,7 +52,9 @@
   export default {
     name: "vue-calender",
     props : {
-      events:[],
+      events:{
+        default: []
+      },
       locale: {
         default: 'pl'
       }
@@ -70,103 +72,71 @@
           left : 0
         },
         selectDay : {},
-        currentDate : new Date,
+        currentDate :  moment.utc(moment(), "YYYY-MM-DD"),
       }
     },
     methods: {
       getCalendar () {
         // calculate 2d-array of each month
         // first day of this month
-        let now = new Date() // today
-        let current = new Date(this.currentDate)
+        let now = moment.utc(moment(), "YYYY-MM-DD") // today
+        var current = moment(this.currentDate)
+        // return first day of this month
+        let startDate = current.clone().subtract(1,'month').endOf('month').day("Monday")
+        let endDate = moment(current).endOf('month')
 
-        let startDate = dateFunc.getStartDate(current)
-        // let duration = this.getDuration(current) - 1
-        // let endDate = this.changeDay(startDate,duration)
-
-        let curWeekDay = startDate.getDay()
+        let curWeekDay = startDate.date()
 
         // begin date of this table may be some day of last month
-        startDate.setDate(startDate.getDate() - curWeekDay)
+        // startDate.setDate(startDate.getDate() - curWeekDay)
 
         let calendar = []
-        // let isFinal = false
+        let isFinal = false
 
-        for(let perWeek = 0 ; perWeek < 5 ; perWeek++) {
+        while(startDate.format() !== endDate.format()) {
 
           let week = []
 
           for(let perDay = 0 ; perDay < 7 ; perDay++) {
             week.push({
-              monthDay : startDate.getDate(),
-              isToday : now.toDateString() == startDate.toDateString(),
-              isCurMonth : startDate.getMonth() == current.getMonth(),
-              weekDay : perDay,
-              date : new Date(startDate),
-              events : this.slotEvents(startDate)
+              monthDay :  startDate.date(),
+              isToday : now.format('YYYY MM DD') === startDate.format('YYYY MM DD'),
+              isCurMonth : startDate.format('MM') === now.format('MM'),
+              weekDay : startDate.weekday(),
+              date : startDate,
+              events : []//this.slotEvents(startDate)
             })
-            console.log(startDate)
-            startDate.setDate(startDate.getDate() + 1)
-            // if (startDate.toDateString() == endDate.toDateString()) {
-            //   isFinal = true
-            //   break
-            // }
+            startDate.add(1,'day')
           }
-
           calendar.push(week)
-          // if (isFinal) break
 
         }
         return calendar
       },
       slotEvents(date) {
-
-        // find all events start from this date
-        let cellIndexArr = []
-        let thisDayEvents = this.events.filter(day => {
-          let dt = new Date(day.start_date)
-          let st = new Date(dt.getFullYear(),dt.getMonth(),dt.getDate())
-          let ed = day.end ? new Date(day.end_date) : st
-          return date>=st && date<=ed
+        return this.events.filter(event => {
+          let startDate = moment(event.start_date)
+          if(date.format('YYYY-MM-DD') === startDate.format('YYYY-MM-DD')) {
+            return event
+          }
         })
-
-        // sort by duration
-        thisDayEvents.sort((a,b)=>{
-          if(!a.cellIndex) return 1
-          if (!b.cellIndex) return -1
-          return a.cellIndex - b.cellIndex
-        })
-
-        // mark cellIndex and place holder
-        for (let i = 0;i<thisDayEvents.length;i++) {
-          thisDayEvents[i].cellIndex = thisDayEvents[i].cellIndex || (i + 1)
-          thisDayEvents[i].isShow = true
-          if (thisDayEvents[i].cellIndex == i+1 || i>2) continue
-          thisDayEvents.splice(i,0,{
-            title : 'holder',
-            cellIndex : i+1,
-            start_date : dateFunc.format(date,'yyyy-MM-dd'),
-            end_date : dateFunc.format(date,'yyyy-MM-dd'),
-            isShow : false
-          })
-        }
-
-        return thisDayEvents
       },
       isStart (eventDate, date) {
-        let st = new Date(eventDate)
-        return st.toDateString() === date.toDateString()
+        return eventDate.toString() === date.toString()
       },
       isEnd (eventDate,date) {
-        let ed = new Date(eventDate)
-        return ed.toDateString() === date.toDateString()
+        let ed = new moment(eventDate)
+        return ed.toString() === moment(date).toString()
       },
       nextMonth () {
+
         this.currentDate = moment(this.currentDate).add(1, 'month')
+        console.log(this.currentDate)
       },
 
       prevMonth () {
-        this.currentDate = moment(this.currentDate).subtract(1, 'month')
+        let current = this.currentDate.format()
+        this.currentDate = moment(current).subtract(1, 'month')
       }
     },
     computed: {
@@ -183,9 +153,7 @@
     },
 
     created () {
-      console.log(this.locale)
       moment.locale(this.locale)
-
       this.daysOfWeek = moment.weekdaysShort(true)
     }
 
