@@ -41607,7 +41607,7 @@ if (false) {(function () {
     name: "facebook-events",
     data: function data() {
         return {
-            fbAccessToken: '133251397369840|ygfuetzG-1vxSaXAHrjC3oX0Dkk',
+            fbAccessToken: 'EAAB5MQI0vZCABAGUcJrbP8kcFHAbIf6r8QzwH8V0OZAb49AZCGyPO5ntA6Ma624uRi8Tn7FKET85Mjm4WYgOBgLYdN6ZAuKTD7wcaCoA3zSKzKzO0elmwBtS4keQY0aiQ94ZBvUzbT1IyC881V4qldvQ3wwLJM8d2QaP4fB5LiS3o3XE10YloDhpvUCUNbcXwGdLqZAwICyQZDZD',
             errors: []
         };
     },
@@ -53691,6 +53691,39 @@ if (false) {(function () {
     VueCalender: __WEBPACK_IMPORTED_MODULE_2__calender_VCalender__["a" /* default */],
     MainFooter: __WEBPACK_IMPORTED_MODULE_1__page_part_MainFooter__["a" /* default */],
     Navbar: __WEBPACK_IMPORTED_MODULE_0__page_part_Navbar__["a" /* default */]
+  },
+  data: function data() {
+    return {
+      events: [{
+        id: 31,
+        title: 'Rezerwacja xyz',
+        description: 'Odio est ipsam magnam nulla distinctio. Voluptatem ducimus saepe labore et a mollitia sunt.',
+        start_date: '2018-01-21 08:00:00',
+        end_date: '2018-01-21 15:00:00',
+        accepted: 0
+      }, {
+        id: 51,
+        title: 'Rezerwacja xyz',
+        description: 'Ut sed eligendi delectus unde quasi dignissimos accusamus. Sed aut rerum eum quibusdam cum esse.',
+        start_date: '2018-04-11 19:00:00',
+        end_date: '2018-04-12 02:00:00',
+        accepted: 1
+      }, {
+        id: 81,
+        title: 'Rezerwacja xyz',
+        description: 'Incidunt quas culpa dolor. Quos enim rerum et. Voluptatem est in quis qui reiciendis.',
+        start_date: '2018-04-10 18:00:00',
+        end_date: '2018-04-10 19:00:00',
+        accepted: 1
+      }, {
+        id: 81,
+        title: 'Rezerwacja Jan Kowalski',
+        description: 'Incidunt quas culpa dolor. Quos enim rerum et. Voluptatem est in quis qui reiciendis.',
+        start_date: '2018-04-10 20:00:00',
+        end_date: '2018-04-10 24:00:00',
+        accepted: 0
+      }]
+    };
   }
 });
 
@@ -53737,6 +53770,19 @@ if (false) {(function () {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -53744,16 +53790,18 @@ if (false) {(function () {
 /* harmony default export */ __webpack_exports__["a"] = ({
   name: "vue-calender",
   props: {
-    weekNames: {},
-    monthNames: {}
+    events: {
+      default: []
+    },
+    locale: {
+      default: 'pl'
+    }
   },
   data: function data() {
     return {
       monthName: '',
-      daysOfWeek: ['Pon.', 'Wt.', 'Śr.', 'Czw.', 'Pt.', 'Sob.', 'Niedz.'],
-      // weekNames : DAY_NAMES,
+      daysOfWeek: null, // ['Pon.', 'Wt.', 'Śr.', 'Czw.', 'Pt.', 'Sob.', 'Niedz.'],
       weekMask: [1, 2, 3, 4, 5, 6, 7],
-      // events : [],
       isLismit: true,
       eventLimit: 3,
       showMore: false,
@@ -53762,8 +53810,7 @@ if (false) {(function () {
         left: 0
       },
       selectDay: {},
-      events: {},
-      currentDate: new Date()
+      currentDate: __WEBPACK_IMPORTED_MODULE_0_moment___default.a.utc(__WEBPACK_IMPORTED_MODULE_0_moment___default()(), "YYYY-MM-DD")
     };
   },
 
@@ -53771,53 +53818,82 @@ if (false) {(function () {
     getCalendar: function getCalendar() {
       // calculate 2d-array of each month
       // first day of this month
-      var now = new Date(); // today
-      var current = new Date(this.currentDate);
+      var now = __WEBPACK_IMPORTED_MODULE_0_moment___default.a.utc(__WEBPACK_IMPORTED_MODULE_0_moment___default()(), "YYYY-MM-DD"); // today
+      var current = __WEBPACK_IMPORTED_MODULE_0_moment___default()(this.currentDate);
+      // return first day of this month
+      var startDate = current.clone().subtract(1, 'month').endOf('month').day("Monday");
+      var endDate = __WEBPACK_IMPORTED_MODULE_0_moment___default()(current).endOf('month');
 
-      var startDate = __WEBPACK_IMPORTED_MODULE_1__dateFunc___default.a.getStartDate(current);
-      // let duration = this.getDuration(current) - 1
-      // let endDate = this.changeDay(startDate,duration)
+      var curWeekDay = startDate.date();
 
-      var curWeekDay = startDate.getDay();
       // begin date of this table may be some day of last month
-      startDate.setDate(startDate.getDate() - curWeekDay);
+      // startDate.setDate(startDate.getDate() - curWeekDay)
 
       var calendar = [];
-      // let isFinal = false
+      var isFinal = false;
 
-      for (var perWeek = 0; perWeek < 5; perWeek++) {
+      while (startDate.format() !== endDate.format()) {
 
         var week = [];
 
         for (var perDay = 0; perDay < 7; perDay++) {
           week.push({
-            monthDay: startDate.getDate(),
-            isToday: now.toDateString() == startDate.toDateString(),
-            isCurMonth: startDate.getMonth() == current.getMonth(),
-            weekDay: perDay,
-            date: new Date(startDate)
-            /*events : this.slotEvents(startDate)*/
+            monthDay: startDate.date(),
+            isToday: now.format('YYYY MM DD') === startDate.format('YYYY MM DD'),
+            isCurMonth: startDate.format('MM') === now.format('MM'),
+            weekDay: startDate.weekday(),
+            date: startDate,
+            events: [] //this.slotEvents(startDate)
           });
-
-          startDate.setDate(startDate.getDate() + 1);
-          // if (startDate.toDateString() == endDate.toDateString()) {
-          //   isFinal = true
-          //   break
-          // }
+          startDate.add(1, 'day');
         }
-
         calendar.push(week);
-        // if (isFinal) break
       }
       return calendar;
+    },
+    slotEvents: function slotEvents(date) {
+      return this.events.filter(function (event) {
+        var startDate = __WEBPACK_IMPORTED_MODULE_0_moment___default()(event.start_date);
+        if (date.format('YYYY-MM-DD') === startDate.format('YYYY-MM-DD')) {
+          return event;
+        }
+      });
+    },
+    isStart: function isStart(eventDate, date) {
+      return eventDate.toString() === date.toString();
+    },
+    isEnd: function isEnd(eventDate, date) {
+      var ed = new __WEBPACK_IMPORTED_MODULE_0_moment___default.a(eventDate);
+      return ed.toString() === __WEBPACK_IMPORTED_MODULE_0_moment___default()(date).toString();
+    },
+    nextMonth: function nextMonth() {
+
+      this.currentDate = __WEBPACK_IMPORTED_MODULE_0_moment___default()(this.currentDate).add(1, 'month');
+      console.log(this.currentDate);
+    },
+    prevMonth: function prevMonth() {
+      var current = this.currentDate.format();
+      this.currentDate = __WEBPACK_IMPORTED_MODULE_0_moment___default()(current).subtract(1, 'month');
     }
   },
   computed: {
     currentDates: function currentDates() {
       return this.getCalendar();
-    }
-  }
+    },
 
+
+    /**
+     * @return {string}
+     */
+    MonthName: function MonthName() {
+      return __WEBPACK_IMPORTED_MODULE_0_moment___default()(this.currentDate).format('MMMM YYYY');
+    }
+  },
+
+  created: function created() {
+    __WEBPACK_IMPORTED_MODULE_0_moment___default.a.locale(this.locale);
+    this.daysOfWeek = __WEBPACK_IMPORTED_MODULE_0_moment___default.a.weekdaysShort(true);
+  }
 });
 
 /***/ }),
@@ -90576,7 +90652,7 @@ exports = module.exports = __webpack_require__(5)(undefined);
 
 
 // module
-exports.push([module.i, "\n.fb-events[data-v-68303787] {\n        margin: 0 auto;\n}\n.container-image[data-v-68303787] {\n        position: relative;\n        width: auto;\n        height: 300px;\n}\n.title[data-v-68303787]{\n        line-height: 0.5rem;\n}\n.title > a[data-v-68303787] {\n        color: #13e1ee;\n        padding: .5em 0px;\n        text-transform: uppercase;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n}\n.title > a[data-v-68303787]:hover {\n        font-style: normal;\n        text-decoration: none;\n\n        opacity: .8;\n}\n.gradient-border[data-v-68303787]{\n        display: inline-block;\n        position: relative;\n        color: #ec1bd6;\n        width: 65px;\n        height: 65px;\n\n        border: 8px solid transparent;\n        -o-border-image: linear-gradient( 45deg, rgb(239,30,217) 0%, rgb(129,129,232) 56%, rgb(18,227,246) 75%);\n           border-image: linear-gradient( 45deg, rgb(239,30,217) 0%, rgb(129,129,232) 56%, rgb(18,227,246) 75%);\n        border-image-slice: 1;\n}\n.gradient-border > time[data-v-68303787]{\n        font-size: 38px;\n        font-weight: 500;\n        text-align: center;\n        vertical-align: middle;\n        width: 100%;\n        position: absolute;\n        top: -8px;      /*value is realtive by border width and is all time negative*/\n        left: 0;\n}\n.gradient-border + span[data-v-68303787]{\n        font-size: 24px;\n}\n.text-pink[data-v-68303787]{\n        color: #ec1bd6;\n}\n.event-description[data-v-68303787], .hour-start[data-v-68303787], .place[data-v-68303787]{\n        font-size: 14px;\n}\n.title > a[data-v-68303787] {\n        color: #13e1ee;\n        word-break: break-all;\n        word-wrap: break-word;\n        overflow-x: hidden;\n}\n\n    /*Make all responsive :P */\n@media only screen and (min-width: 320px) {\n.title > a[data-v-68303787] {\n            font-size: 20px;\n}\n}\n@media only screen and (min-width: 768px) {\n}\n@media only screen and (min-width: 1280px){\n.title > a[data-v-68303787] {\n        font-size: 16px;\n}\n}\n\n", ""]);
+exports.push([module.i, "\n.fb-events[data-v-68303787] {\n        margin: 0 auto;\n}\n.container-image[data-v-68303787] {\n        position: relative;\n        width: auto;\n        height: 300px;\n}\n.title[data-v-68303787]{\n        line-height: 0.5rem;\n}\n.title > a[data-v-68303787] {\n        color: #13e1ee;\n        padding: .5em 0px;\n        text-transform: uppercase;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n}\n.title > a[data-v-68303787]:hover {\n        font-style: normal;\n        text-decoration: none;\n\n        opacity: .8;\n}\n.gradient-border[data-v-68303787]{\n        display: inline-block;\n        position: relative;\n        color: #ec1bd6;\n        width: 65px;\n        height: 65px;\n\n        border: 8px solid transparent;\n        -o-border-image: linear-gradient( 45deg, rgb(239,30,217) 0%, rgb(129,129,232) 56%, rgb(18,227,246) 75%);\n           border-image: linear-gradient( 45deg, rgb(239,30,217) 0%, rgb(129,129,232) 56%, rgb(18,227,246) 75%);\n        border-image-slice: 1;\n}\n.gradient-border > time[data-v-68303787]{\n        font-size: 38px;\n        font-weight: 500;\n        text-align: center;\n        vertical-align: middle;\n        width: 100%;\n        position: absolute;\n        top: -8px;      /*value is realtive by border width and is all time negative*/\n        left: 0;\n}\n.gradient-border + span[data-v-68303787]{\n        font-size: 24px;\n}\n.text-pink[data-v-68303787]{\n        color: #ec1bd6;\n}\n.event-description[data-v-68303787], .hour-start[data-v-68303787], .place[data-v-68303787]{\n        font-size: 14px;\n}\n.title > a[data-v-68303787] {\n        color: #13e1ee;\n        word-break: break-all;\n        word-wrap: break-word;\n        overflow-x: hidden;\n}\n.event-cover[data-v-68303787]{\n        height: 300px;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n}\n.event-cover > img[data-v-68303787]{\n        -ms-flex-item-align: center;\n            align-self: center;\n}\n    /*Make all responsive :P */\n@media only screen and (min-width: 320px) {\n.title > a[data-v-68303787] {\n            font-size: 20px;\n}\n}\n@media only screen and (min-width: 768px) {\n}\n@media only screen and (min-width: 1280px){\n.title > a[data-v-68303787] {\n        font-size: 16px;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -90869,7 +90945,10 @@ var render = function() {
           _c("article", { staticClass: "row" }, [
             _c(
               "div",
-              { staticClass: "col-xs-12 col-sm-12 col-md-12 col-xl-12" },
+              {
+                staticClass:
+                  "col-xs-12 col-sm-12 col-md-12 col-xl-12 event-cover"
+              },
               [
                 _c("img", {
                   staticClass: "img-fluid d-block",
@@ -92174,7 +92253,7 @@ exports = module.exports = __webpack_require__(5)(undefined);
 
 
 // module
-exports.push([module.i, "\n.page-cover[data-v-0d468b9a]{\n    position: absolute;\n    min-width: 100%;\n    min-height: 100%;\n    background: url(" + __webpack_require__(432) + ") 50% no-repeat fixed;\n    background-size: cover;\n}\n\n", ""]);
+exports.push([module.i, "\n.page-cover[data-v-0d468b9a]{\n    position: absolute;\n    min-width: 100%;\n    min-height: 100%;\n    background: url(" + __webpack_require__(432) + ") 100% no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n}\n\n", ""]);
 
 // exports
 
@@ -92255,13 +92334,13 @@ if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = __webpack_require__(6).default
-var update = add("6e42a100", content, false, {});
+var update = add("37286bcc", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-4c6ce525\",\"scoped\":true,\"sourceMap\":false}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./VCalender.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-4c6ce525\",\"scoped\":true,\"sourceMap\":false}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./VCalender.vue");
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-4c6ce525\",\"scoped\":true,\"sourceMap\":false}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./VCalender.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-4c6ce525\",\"scoped\":true,\"sourceMap\":false}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./VCalender.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -92279,7 +92358,7 @@ exports = module.exports = __webpack_require__(5)(undefined);
 
 
 // module
-exports.push([module.i, "\n.calender-main[data-v-4c6ce525] {\n    position: relative;\n}\n.calender-body[data-v-4c6ce525] {\n    min-width: 100%;\n}\n.vc-row[data-v-4c6ce525] {\n    display: -ms-flexbox;\n    display: -webkit-box;\n    display: flex;\n    -ms-flex-wrap: wrap;\n    flex-wrap: wrap;\n    border-left: 1px solid #e0e0e0;\n}\n.vc-col[data-v-4c6ce525] {\n    /*max-width: calc((100% / 7) - 0.1px);*/\n    -ms-flex-preferred-size: 0;\n    flex-basis: 0;\n    -ms-flex-positive: 1;\n    -webkit-box-flex: 1;\n            flex-grow: 1;\n    max-width: 100%;\n    margin: auto; /* Magic! */\n}\n.weeks[data-v-4c6ce525] {\n    border-top: 1px #fff solid;\n}\n.week[data-v-4c6ce525] {\n    border-right: 1px #fff solid;\n    border-bottom: 1px #fff solid;\n}\n.week > p[data-v-4c6ce525] {\n    margin: auto;\n    line-height: 1.8em;\n}\n.dates[data-v-4c6ce525] {\n    position: relative;\n}\n.day-cell[data-v-4c6ce525] {\n    cursor: pointer;\n    min-height: 109px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n\n    border-right: 1px solid #e0e0e0;\n    border-bottom: 1px solid #e0e0e0;\n    padding: 4px;\n}\n.events-day[data-v-4c6ce525]:last-child {\n    border-right: 1px #fff solid;\n}\n.glass[data-v-4c6ce525] {\n    position: absolute;\n    background: inherit;\n    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);\n            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);\n    overflow: hidden;\n}\n.glass[data-v-4c6ce525]:before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background: inherit;\n    -webkit-filter: blur(10px) saturate(2);\n            filter: blur(10px) saturate(2);\n}\n.not-cur-month[data-v-4c6ce525]{\n    color: rgba(130,130,130,0.8);\n}\n", ""]);
+exports.push([module.i, "\n.calender-main[data-v-4c6ce525] {\n  position: relative;\n}\n.calender-body[data-v-4c6ce525] {\n  min-width: 100%;\n}\n.vc-row[data-v-4c6ce525] {\n  display: -ms-flexbox;\n  display: -webkit-box;\n  display: flex;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  border-left: 1px solid #e0e0e0;\n}\n.vc-col[data-v-4c6ce525] {\n  -ms-flex-preferred-size: 0;\n  flex-basis: 0;\n  -ms-flex-positive: 1;\n  -webkit-box-flex: 1;\n          flex-grow: 1;\n  max-width: 100%;\n  margin: auto;\n  /* Magic! */\n}\n.weeks[data-v-4c6ce525] {\n  border-top: 1px #fff solid;\n}\n.week[data-v-4c6ce525] {\n  border-right: 1px #fff solid;\n  border-bottom: 1px #fff solid;\n}\n.week > p[data-v-4c6ce525] {\n  margin: auto;\n  line-height: 1.8em;\n}\n.dates[data-v-4c6ce525] {\n  position: relative;\n}\n.day-cell[data-v-4c6ce525] {\n  cursor: pointer;\n  min-height: 109px;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  border-right: 1px solid #e0e0e0;\n  border-bottom: 1px solid #e0e0e0;\n  padding: 4px;\n}\n.today .day-number[data-v-4c6ce525] {\n  background-color: #007bff;\n  border-radius: 100%;\n  display: inline-block;\n  width: 1.5em;\n  line-height: 1.5em;\n  text-align: center;\n}\n.events-day[data-v-4c6ce525]:last-child {\n  border-right: 1px #fff solid;\n}\n.glass[data-v-4c6ce525] {\n  position: absolute;\n  background: inherit;\n  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);\n          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);\n  overflow: hidden;\n}\n.glass[data-v-4c6ce525]:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: inherit;\n  -webkit-filter: blur(10px) saturate(2);\n          filter: blur(10px) saturate(2);\n}\n.not-cur-month[data-v-4c6ce525] {\n  color: rgba(130, 130, 130, 0.8);\n}\n.prev-month[data-v-4c6ce525], .next-month[data-v-4c6ce525] {\n  cursor: pointer;\n}\np.event-item[data-v-4c6ce525] {\n  margin: 4px auto;\n  padding: 0px 2px;\n  font-size: 12px;\n  cursor: pointer;\n  height: 18px;\n  line-height: 18px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.is-opacity[data-v-4c6ce525] {\n  opacity: 0.8;\n}\n", ""]);
 
 // exports
 
@@ -92289,59 +92368,63 @@ exports.push([module.i, "\n.calender-main[data-v-4c6ce525] {\n    position: rela
 /***/ (function(module, exports) {
 
 var dateFunc = {
-    getDuration: function getDuration(date) {
-        // how many days of this month
-        var dt = new Date(date);
-        var month = dt.getMonth();
-        dt.setMonth(dt.getMonth() + 1);
-        dt.setDate(0);
-        return dt.getDate();
-    },
-    changeDay: function changeDay(date, num) {
-        var dt = new Date(date);
-        return new Date(dt.setDate(dt.getDate() + num));
-    },
-    getStartDate: function getStartDate(date) {
-        // return first day of this month
-        return new Date(date.getFullYear(), date.getMonth(), 1);
-    },
-    getEndDate: function getEndDate(date) {
-        // get last day of this month
-        var dt = new Date(date.getFullYear(), date.getMonth() + 1, 1); // 1st day of next month
-        return new Date(dt.setDate(dt.getDate() - 1)); // last day of this month
-    },
-    format: function format(date, _format) {
-        if (typeof date === 'string') {
-            date = new Date(date.replace(/-/g, '/'));
-        } else {
-            date = new Date(date);
-        }
-
-        var map = {
-            'M': date.getMonth() + 1,
-            'd': date.getDate(),
-            'h': date.getHours(),
-            'm': date.getMinutes(),
-            's': date.getSeconds(),
-            'q': Math.floor((date.getMonth() + 3) / 3),
-            'S': date.getMilliseconds()
-        };
-
-        _format = _format.replace(/([yMdhmsqS])+/g, function (all, t) {
-            var v = map[t];
-            if (v !== undefined) {
-                if (all.length > 1) {
-                    v = '0' + v;
-                    v = v.substr(v.length - 2);
-                }
-                return v;
-            } else if (t === 'y') {
-                return String(date.getFullYear()).substr(4 - all.length);
-            }
-            return all;
-        });
-        return _format;
+  getDuration: function getDuration(date) {
+    // how many days of this month
+    var dt = new Date(date);
+    var month = dt.getMonth();
+    dt.setMonth(dt.getMonth() + 1);
+    dt.setDate(0);
+    return dt.getDate();
+  },
+  changeDay: function changeDay(date, num) {
+    var dt = new Date(date);
+    return new Date(dt.setDate(dt.getDate() + num));
+  },
+  getStartDate: function getStartDate(date) {
+    // return first day of this month
+    return new Date(date.getFullYear(), date.getMonth(), 1);
+  },
+  getEndDate: function getEndDate(date) {
+    // get last day of this month
+    var dt = new Date(date.getFullYear(), date.getMonth() + 1, 1); // 1st day of next month
+    return new Date(dt.setDate(dt.getDate() - 1)); // last day of this month
+  },
+  getMonthName: function getMonthName(date, locale) {
+    console.log(date.toLocaleString(locale, { month: "long" }));
+    return date.toLocaleString(locale, { month: "long" });
+  },
+  format: function format(date, _format) {
+    if (typeof date === 'string') {
+      date = new Date(date.replace(/-/g, '/'));
+    } else {
+      date = new Date(date);
     }
+
+    var map = {
+      'M': date.getMonth() + 1,
+      'd': date.getDate(),
+      'h': date.getHours(),
+      'm': date.getMinutes(),
+      's': date.getSeconds(),
+      'q': Math.floor((date.getMonth() + 3) / 3),
+      'S': date.getMilliseconds()
+    };
+
+    _format = _format.replace(/([yMdhmsqS])+/g, function (all, t) {
+      var v = map[t];
+      if (v !== undefined) {
+        if (all.length > 1) {
+          v = '0' + v;
+          v = v.substr(v.length - 2);
+        }
+        return v;
+      } else if (t === 'y') {
+        return String(date.getFullYear()).substr(4 - all.length);
+      }
+      return all;
+    });
+    return _format;
+  }
 };
 
 module.exports = dateFunc;
@@ -92358,7 +92441,27 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "calender-main" }, [
-    _vm._m(0),
+    _c("header", { staticClass: "calender-header" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-12 text-center" }, [
+          _c("p", { staticClass: "mx-auto" }, [
+            _c("i", {
+              staticClass: "fa fa-arrow-left pr-4 prev-month",
+              on: { click: _vm.prevMonth }
+            }),
+            _vm._v(" "),
+            _c("span", { staticClass: "text-capitalize" }, [
+              _vm._v(_vm._s(_vm.MonthName))
+            ]),
+            _vm._v(" "),
+            _c("i", {
+              staticClass: "fa fa-arrow-right pl-4 next-month",
+              on: { click: _vm.nextMonth }
+            })
+          ])
+        ])
+      ])
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "calender-body glass" }, [
       _c("div", { staticClass: "weeks" }, [
@@ -92366,8 +92469,8 @@ var render = function() {
           "div",
           { staticClass: "vc-row" },
           _vm._l(_vm.daysOfWeek, function(dayOfWeek) {
-            return _c("div", { staticClass: "vc-col week text-center" }, [
-              _c("p", [_vm._v(_vm._s(dayOfWeek))])
+            return _c("div", { staticClass: "vc-col week text-center " }, [
+              _c("p", [_vm._v(_vm._s(dayOfWeek) + ".")])
             ])
           })
         )
@@ -92393,7 +92496,51 @@ var render = function() {
                 [
                   _c("p", { staticClass: "day-number" }, [
                     _vm._v(_vm._s(day.monthDay))
-                  ])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "event-box" },
+                    _vm._l(day.events, function(event) {
+                      return _c(
+                        "p",
+                        {
+                          directives: [
+                            {
+                              name: "show",
+                              rawName: "v-show",
+                              value: event.cellIndex <= _vm.eventLimit,
+                              expression: "event.cellIndex <= eventLimit"
+                            }
+                          ],
+                          staticClass: "event-item",
+                          class: {
+                            /*                  'is-start'   : isStart(event.start_date, day.date),
+                  'is-end'     : isEnd(event.end_date,day.date),*/
+                            "is-opacity": !event.isShow,
+                            "bg-danger": !event.accepted,
+                            "bg-info": event.accepted
+                          },
+                          on: {
+                            click: function($event) {
+                              _vm.eventClick(event, $event)
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                            " +
+                              _vm._s(
+                                _vm._f("isBegin day.date day.weekDay")(
+                                  event.title
+                                )
+                              ) +
+                              "\n                        "
+                          )
+                        ]
+                      )
+                    })
+                  )
                 ]
               )
             })
@@ -92403,26 +92550,7 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("header", { staticClass: "calender-header" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-12 text-center" }, [
-          _c("p", { staticClass: "mx-auto" }, [
-            _c("i", { staticClass: "fa fa-arrow-left pr-4" }),
-            _vm._v(" "),
-            _c("span", [_vm._v("Kwiecień")]),
-            _vm._v(" "),
-            _c("i", { staticClass: "fa fa-arrow-right pl-4" })
-          ])
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 if (false) {
@@ -92457,7 +92585,11 @@ var render = function() {
             _c(
               "div",
               { staticClass: "col-12 mx-auto pt-4 pb-3" },
-              [_c("vue-calender")],
+              [
+                _c("vue-calender", {
+                  attrs: { events: _vm.events, locale: "pl" }
+                })
+              ],
               1
             )
           ])
