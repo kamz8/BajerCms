@@ -41,13 +41,13 @@ if (token) {
  * allows your team to easily build robust real-time Procfile applications.
  */
 
-window.Pusher = require('pusher-js');
+/*window.Pusher = require('pusher-js');
 // Enable pusher logging - don't include this in production
 Pusher.logToConsole = true;
 
 var channel = pusher.subscribe('my-channel');
 channel.bind('my-event', function(data) {
     alert(data.message);
-});
+});*/
 
 window.axios = axios

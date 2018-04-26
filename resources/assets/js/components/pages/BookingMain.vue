@@ -40,8 +40,8 @@
             id: 31,
             title: 'Rezerwacja xyz',
             description: 'Odio est ipsam magnam nulla distinctio. Voluptatem ducimus saepe labore et a mollitia sunt.',
-            start_date: '2018-01-21 08:00:00',
-            end_date: '2018-01-21 15:00:00',
+            start_date: '2018-04-21 08:00:00',
+            end_date: '2018-04-21 15:00:00',
             accepted: 0
           },
           {

@@ -20,36 +20,35 @@
             </div>
             <div class="dates">
                 <div class="vc-row events-week" v-for="week in currentDates">
-                    <div class="vc-col day-cell" v-for="day in week"
+                    <div class="vc-col day-cell" v-for="(day, i) in week"
                          :class="{'today' : day.isToday,
                          'not-cur-month' : !day.isCurMonth}">
                         <p class="day-number">{{day.monthDay}}</p>
                         <div class="event-box">
-                            <p class="event-item" v-for="event in day.events" v-show="event.cellIndex <= eventLimit"
+                            <p class="event-item" v-for="(event, n) in day.events"
                            :class="{
-/*                  'is-start'   : isStart(event.start_date, day.date),
-                  'is-end'     : isEnd(event.end_date,day.date),*/
-                  'is-opacity' : !event.isShow,
                   'bg-danger': !event.accepted,
                   'bg-info': event.accepted
                   }"
-                           @click="eventClick(event,$event)">
-                            {{event.title | isBegin day.date day.weekDay}}
+                           @click="eventClick(event,$event)" :id="'event-'+event.start_date">
+                            {{event.title}}
                         </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    <show-event :popoverTrigger="showMore" :event="selectedEvent"></show-event>
     </div>
 </template>
 
 <script>
   import moment from "moment"
   import dateFunc from "./dateFunc"
+  import ShowEvent from "./ShowEvent";
 
   export default {
+    components: {ShowEvent},
     name: "vue-calender",
     props : {
       events:{
@@ -63,9 +62,9 @@
       return {
         monthName: '',
         daysOfWeek: null, // ['Pon.', 'Wt.', 'Śr.', 'Czw.', 'Pt.', 'Sob.', 'Niedz.'],
-        weekMask : [1,2,3,4,5,6,7],
         isLismit : true,
         eventLimit : 3,
+        selectedEvent: null,
         showMore : false,
         morePos : {
           top: 0,
@@ -80,11 +79,11 @@
         // calculate 2d-array of each month
         // first day of this month
         let now = moment.utc(moment(), "YYYY-MM-DD") // today
-        var current = moment(this.currentDate)
+        var current = this.currentDate.clone()
         // return first day of this month
-        let startDate = current.clone().subtract(1,'month').endOf('month').day("Monday")
-        let endDate = moment(current).endOf('month')
-
+        let startDate = current.subtract(1,'month').endOf('month').day("Monday")
+        let endDate = moment(current).add(1,'month').endOf('month').day(7)
+        console.log(endDate)
         let curWeekDay = startDate.date()
 
         // begin date of this table may be some day of last month
@@ -93,29 +92,32 @@
         let calendar = []
         let isFinal = false
 
-        while(startDate.format() !== endDate.format()) {
+        for(let perWeek = 0; perWeek < 6; perWeek++) {
 
           let week = []
-
           for(let perDay = 0 ; perDay < 7 ; perDay++) {
+              console.log( current.month())
             week.push({
               monthDay :  startDate.date(),
               isToday : now.format('YYYY MM DD') === startDate.format('YYYY MM DD'),
-              isCurMonth : startDate.format('MM') === now.format('MM'),
+              isCurMonth : startDate.format('MM') == current.format('MM'),
               weekDay : startDate.weekday(),
               date : startDate,
-              events : []//this.slotEvents(startDate)
+              events : this.slotEvents(startDate)
             })
             startDate.add(1,'day')
-          }
-          calendar.push(week)
 
+          }
+
+          calendar.push(week)
+          if(startDate.isSameOrAfter(endDate)) break
         }
         return calendar
       },
       slotEvents(date) {
         return this.events.filter(event => {
           let startDate = moment(event.start_date)
+
           if(date.format('YYYY-MM-DD') === startDate.format('YYYY-MM-DD')) {
             return event
           }
@@ -130,14 +132,17 @@
       },
       nextMonth () {
 
-        this.currentDate = moment(this.currentDate).add(1, 'month')
-        console.log(this.currentDate)
+        this.currentDate = moment.utc(this.currentDate, "YYYY-MM-DD").add(1, 'month')
       },
 
       prevMonth () {
         let current = this.currentDate.format()
-        this.currentDate = moment(current).subtract(1, 'month')
-      }
+        this.currentDate = moment.utc(this.currentDate, "YYYY-MM-DD").subtract(1, 'month')
+      },
+        eventClick(event){
+            this.selectedEvent = event
+            this.showMore = !this.showMore
+        }
     },
     computed: {
       currentDates () {
