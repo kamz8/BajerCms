@@ -35,6 +35,7 @@
     "moment-calendar": "0.0.4",
     "pusher": "^1.5.1",
     "pusher-js": "^4.2.2",
+    "vue-click-outside": "^1.0.7",
     "vue-fullcalendar": "^1.0.9",
     "vue-infinite-scroll": "^2.0.2",
     "vue-resource": "^1.5.0",

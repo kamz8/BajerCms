@@ -26,32 +26,40 @@
                         <p class="day-number">{{day.monthDay}}</p>
                         <div class="event-box">
                             <p class="event-item" v-for="(event, n) in day.events"
-                           :class="{
+                               :class="{
                   'bg-danger': !event.accepted,
                   'bg-info': event.accepted
                   }"
-                           @click="eventClick(event,$event)" :id="'event-'+event.start_date">
-                            {{event.title}}
-                        </p>
+                               :v-click-outside="showMore = false"
+                               @click="eventClick(event,$event)" :id="'event-'+event.id" >
+                                {{formatTime(event.start_date)+" "+ event.title}}
+                                <show-event :popoverTrigger="showMore" :event="event"
+                                            :target="'event-'+event.id" />
+                            </p>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    <show-event :popoverTrigger="showMore" :event="selectedEvent"></show-event>
+
     </div>
 </template>
 
 <script>
   import moment from "moment"
-  import dateFunc from "./dateFunc"
   import ShowEvent from "./ShowEvent";
+  import ClickOutside from 'vue-click-outside'
 
   export default {
-    components: {ShowEvent},
     name: "vue-calender",
-    props : {
-      events:{
+    components: {ShowEvent},
+    // do not forget this section
+    directives: {
+      ClickOutside
+    },
+    props: {
+      events: {
         default: []
       },
       locale: {
@@ -62,28 +70,27 @@
       return {
         monthName: '',
         daysOfWeek: null, // ['Pon.', 'Wt.', 'Śr.', 'Czw.', 'Pt.', 'Sob.', 'Niedz.'],
-        isLismit : true,
-        eventLimit : 3,
+        isLismit: true,
+        eventLimit: 3,
         selectedEvent: null,
-        showMore : false,
-        morePos : {
+        showMore: false,
+        morePos: {
           top: 0,
-          left : 0
+          left: 0
         },
-        selectDay : {},
-        currentDate :  moment.utc(moment(), "YYYY-MM-DD"),
+        selectDay: {},
+        currentDate: moment.utc(moment(), "YYYY-MM-DD"),
       }
     },
     methods: {
-      getCalendar () {
+      getCalendar() {
         // calculate 2d-array of each month
         // first day of this month
         let now = moment.utc(moment(), "YYYY-MM-DD") // today
-        var current = this.currentDate.clone()
+        var current = moment(this.currentDate).utc()
         // return first day of this month
-        let startDate = current.subtract(1,'month').endOf('month').day("Monday")
-        let endDate = moment(current).add(1,'month').endOf('month').day(7)
-        console.log(endDate)
+        let startDate = current.subtract(1, 'month').endOf('month').day("Monday")
+        let endDate = moment(current).add(1, 'month').endOf('month').day(7)
         let curWeekDay = startDate.date()
 
         // begin date of this table may be some day of last month
@@ -92,25 +99,24 @@
         let calendar = []
         let isFinal = false
 
-        for(let perWeek = 0; perWeek < 6; perWeek++) {
+        for (let perWeek = 0; perWeek < 6; perWeek++) {
 
           let week = []
-          for(let perDay = 0 ; perDay < 7 ; perDay++) {
-              console.log( current.month())
+          for (let perDay = 0; perDay < 7; perDay++) {
             week.push({
-              monthDay :  startDate.date(),
-              isToday : now.format('YYYY MM DD') === startDate.format('YYYY MM DD'),
-              isCurMonth : startDate.format('MM') == current.format('MM'),
-              weekDay : startDate.weekday(),
-              date : startDate,
-              events : this.slotEvents(startDate)
+              monthDay: startDate.date(),
+              isToday: now.format('YYYY MM DD') === startDate.format('YYYY MM DD'),
+              isCurMonth: startDate.month() == this.currentDate.month(),
+              weekDay: startDate.weekday(),
+              date: startDate,
+              events: this.slotEvents(startDate)
             })
-            startDate.add(1,'day')
+            startDate.add(1, 'day')
 
           }
 
           calendar.push(week)
-          if(startDate.isSameOrAfter(endDate)) break
+          if (startDate.isSameOrAfter(endDate)) break
         }
         return calendar
       },
@@ -118,49 +124,60 @@
         return this.events.filter(event => {
           let startDate = moment(event.start_date)
 
-          if(date.format('YYYY-MM-DD') === startDate.format('YYYY-MM-DD')) {
+          if (date.format('YYYY-MM-DD') === startDate.format('YYYY-MM-DD')) {
             return event
           }
         })
       },
-      isStart (eventDate, date) {
+      isStart(eventDate, date) {
         return eventDate.toString() === date.toString()
       },
-      isEnd (eventDate,date) {
+      isEnd(eventDate, date) {
         let ed = new moment(eventDate)
         return ed.toString() === moment(date).toString()
       },
-      nextMonth () {
+      nextMonth() {
 
         this.currentDate = moment.utc(this.currentDate, "YYYY-MM-DD").add(1, 'month')
       },
 
-      prevMonth () {
+      prevMonth() {
         let current = this.currentDate.format()
         this.currentDate = moment.utc(this.currentDate, "YYYY-MM-DD").subtract(1, 'month')
       },
-        eventClick(event){
-            this.selectedEvent = event
-            this.showMore = !this.showMore
+      eventClick(event) {
+        this.$root.$emit('bv::hide::popover')
+        this.selectedEvent = event
+        this.showMore = !this.showMore
+      },
+      formatTime: function (time) {
+        if (time) {
+          return moment(time).format('HH:mm')
         }
+        return ''
+      }
     },
     computed: {
-      currentDates () {
+      currentDates() {
         return this.getCalendar()
       },
 
       /**
        * @return {string}
        */
-      MonthName () {
+      MonthName() {
         return moment(this.currentDate).format('MMMM YYYY');
-      }
+      },
+
     },
 
-    created () {
+    created() {
       moment.locale(this.locale)
       this.daysOfWeek = moment.weekdaysShort(true)
-    }
+    },
+    mounted() {
+      this.popupItem = this.$el
+    },
 
   }
 </script>
@@ -219,10 +236,10 @@
         border-bottom: 1px solid #e0e0e0;
         padding: 4px;
 
-
     }
-    .today{
-        .day-number{
+
+    .today {
+        .day-number {
             background-color: #007bff;
             border-radius: 100%;
 
@@ -232,6 +249,7 @@
             text-align: center;
         }
     }
+
     .events-day:last-child {
         border-right: 1px #fff solid;
     }
@@ -253,14 +271,16 @@
         background: inherit;
         filter: blur(10px) saturate(2);
     }
-    .not-cur-month{
-        color: rgba(130,130,130,0.8);
+
+    .not-cur-month {
+        color: rgba(130, 130, 130, 0.8);
     }
-    .prev-month, .next-month{
+
+    .prev-month, .next-month {
         cursor: pointer;
     }
 
-    p.event-item{
+    p.event-item {
         margin: 4px auto;
         padding: 0px 2px;
         font-size: 12px;
@@ -273,7 +293,8 @@
         text-overflow: ellipsis;
 
     }
-    .is-opacity{
+
+    .is-opacity {
         opacity: 0.8;
     }
 </style>
