@@ -23,7 +23,7 @@ $factory->define(App\User::class, function (Faker $faker) {
         'lastname'=> $faker->lastName(),
         'phone'=> $faker->unique()->phoneNumber(),
         'organization'=> $faker->company,
-        'student_id'=> $faker->unique()->numberBetween(1000000, 3000000),
+        'student_id'=> $faker->unique()->numberBetween(1900000, 3000000),
         'provider'=> ('facebook'),
         'provider_id' => $faker->numberBetween(100000000, 300000000),
         'password' => bcrypt($faker->password(8)),

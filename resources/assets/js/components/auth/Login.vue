@@ -3,25 +3,29 @@
         <div class="card card-login mt-5">
             <div class="card-header">Zaloguj się</div>
             <div class="card-body">
-                <form class="form-horizontal" method="POST">
+                <form class="form-horizontal" method="POST" @submit.prevent="auth">
                     <div class="text-center">
                         <hr class="d-block small mt-3">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" :class="{'danger':failedAuth}">
                         <label for="InputEmail1" class="control-label">Adres Email</label>
-                        <input class="form-control" name="email" id="InputEmail1" type="email" aria-describedby="emailHelp" placeholder="Email" required autofocus>
+                        <input class="form-control" v-model="credential.email" name="email" id="InputEmail1" type="email"
+                               aria-describedby="emailHelp" placeholder="Email" required autofocus>
+                        <div v-show="failedAuth" class="form-control-feedback">Błędny login lub hasło.</div>
                     </div>
-                    <div class="form-group ">
+                    <div class="form-group">
                         <label for="InputPassword1">Hasło</label>
-                        <input class="form-control label-info" name="password" id="InputPassword1" type="password" placeholder="Hasło" required>
+                        <input class="form-control label-info" v-model="credential.password" name="password" id="InputPassword1" type="password"
+                               placeholder="Hasło" required>
+
                     </div>
                     <div class="form-group">
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox"> Zapamiętaj Mnie</label>
+                                <input class="form-check-input" v-model="credential.rememberMe" type="checkbox"> Zapamiętaj Mnie</label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Zaloguj</button>
+                    <state-button v-model.sync="logging" :class="'btn-block'" type="submit" variant="primary" label="Logowanie...">Zaloguj</state-button>
                 </form>
                 <div class="text-center">
                     <a class="d-block small mt-3" href="">Nowe konto</a>
@@ -33,9 +37,47 @@
 </template>
 
 <script>
-    export default {
-        name: "login"
+  import { mapGetters } from 'vuex'
+  import StateButton from '../util/StateButton'
+
+  export default {
+    components: {StateButton},
+    name: "login",
+    component: {
+      StateButton
+    },
+    data () {
+      return {
+        credential:{
+          email: '',
+          password: '',
+          rememberMe: Boolean
+        },
+        logging: false
+      }
+    },
+    methods: {
+      auth () {
+        this.logging = true
+        var self = this
+        this.$store.dispatch('login', this.credential).then((x =this.logging)=>{
+          self.logging = false
+        })
+        setTimeout(() =>{this.logging = false}, 1)
+      }
+    },
+    computed: {
+      ...mapGetters({
+        logged: 'logged',
+        failedAuth: 'failedAuth',
+      }),
+    },
+    watch: {
+      logged () {
+        this.$router.push({path: '/',force: true})
+      },
     }
+  }
 </script>
 
 <style scoped>

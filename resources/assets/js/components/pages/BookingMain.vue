@@ -26,55 +26,39 @@
   import MainFooter from "../page-part/MainFooter";
   import VueCalender from "../calender/VCalender";
   import VueBootstrap from "bootstrap-vue"
+  import {HTTP} from "../../http-comon";
+
   export default {
     name: "booking-main",
     components: {
       VueCalender,
       MainFooter,
       Navbar,
-      },
-    data(){
-      return{
-        events: [
-          {
-            id: 31,
-            title: 'Rezerwacja Ala',
-            description: 'Odio est ipsam magnam nulla distinctio. Voluptatem ducimus saepe labore et a mollitia sunt.',
-            start_date: '2018-04-21 08:00:00',
-            end_date: '2018-04-21 15:00:00',
-            accepted: 0
-          },
-          {
-            id: 51,
-            title: 'Rezerwacja Misio Pysio',
-            description: 'Ut sed eligendi delectus unde quasi dignissimos accusamus. Sed aut rerum eum quibusdam cum esse.',
-            start_date: '2018-04-11 19:00:00',
-            end_date: '2018-04-12 02:00:00',
-            accepted: 1
-          },
-          {
-            id: 81,
-            title: 'Rezerwacja xyz',
-            description: 'Incidunt quas culpa dolor. Quos enim rerum et. Voluptatem est in quis qui reiciendis.',
-            start_date: '2018-04-10 18:00:00',
-            end_date: '2018-04-10 19:00:00',
-            accepted: 1
-          },
-          {
-            id: 91,
-            title: 'Rezerwacja Jan Kowalski',
-            description: 'Incidunt quas culpa dolor. Quos enim rerum et. Voluptatem est in quis qui reiciendis.',
-            start_date: '2018-04-10 20:00:00',
-            end_date: '2018-04-10 24:00:00',
-            accepted: 0
-          }
-]
+    },
+    data() {
+      return {
+        events: []
       }
+    },
+    methods: {
+      fetchEvents: function() {
+        HTTP.get('/events?start_date=2018-03-01&end_date=2018-05-30')
+          .then(response => {
+            this.events = response.data
+          })
+          .catch(error => {
+            console.log(error)
+          })
+      },
+    },
+    created() {
+      this.fetchEvents()
     }
+
   }
 </script>
 <style scoped>
-    .page-cover{
+    .page-cover {
         position: absolute;
         min-width: 100%;
         min-height: 100%;

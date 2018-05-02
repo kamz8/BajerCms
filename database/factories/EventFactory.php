@@ -5,13 +5,13 @@ use Illuminate\Support\Carbon;
 
 $factory->define(App\Event::class, function (Faker $faker) {
 
-    $startingDate = $faker->dateTimeThisYear('+1 month');
-    $endingDate   = strtotime('+1 Week', $startingDate->getTimestamp());
+    $startingDate = \Carbon\Carbon::now()->setTime($faker->numberBetween(1,24),0,0)->addDays($faker->numberBetween(1,9));
+    $endingDate   = $startingDate->copy()->addDays($faker->numberBetween(0,1))->addHours($faker->numberBetween(1,24));
     return [
-        'title' => 'Rezerwacja xyz',
-        'description'=> $faker->text(100),
-        'start_date' => $startingDate,
-        'end_date' => $endingDate,
+        'title' => $faker->sentence(5),
+        'description'=> $faker->paragraph(2),
+        'start_date' => $startingDate->toDateTimeString(),
+        'end_date' => $endingDate->toDateTimeString(),
         'accepted' => $faker->boolean()
     ];
 });

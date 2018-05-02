@@ -22,7 +22,7 @@ Route::fallback(function(){
 
 Route::get('/', function (){
     return ['status'=>'200',
-            'message'=>'Hello user in to Bajer API! Place to administrator for credential.'
+            'message'=>'Hello user in to Bajer API! Place to administrator for more info.'
         ];
 });
 // Restore user password
@@ -31,7 +31,7 @@ Route::post('auth/password/reset', 'Auth\ResetPasswordController@reset');
 //login user
 Route::post('auth/login', 'AuthController@login');
 Route::post('auth/register', 'Auth\RegisterController@register');
-// auth grape
+// auth group
 Route::group([
     'middleware' => 'auth.api',
     'prefix' => 'auth'], function ($router) {
@@ -62,9 +62,10 @@ Route::group(['middleware' => 'auth.api'],function($router){
         return App\Role::all();
     });
 
-    Route::resources([
-        'events' => 'EventsController',
-        'notes' => 'NotesController',
-    ]);
 });
+
+Route::resources([
+    'events' => 'EventsController',
+    'notes' => 'NotesController',
+]);
 

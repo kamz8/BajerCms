@@ -14,7 +14,15 @@
                     <li class="nav-item"><router-link class="nav-link" :to="{name:'about'}">wynajmy</router-link></li>
                     <li class="nav-item"><router-link class="nav-link" :to="{name:'about'}">kontakt</router-link></li>
                     <li class="nav-item"><span class="nav-link"><router-link class="nav-buton btn btn-outline-light btn-sm" :to="{name:'booking'}">zarezerwuj</router-link></span></li>
-                    <b-nav-item href="#"><router-link class="nav-buton btn btn-outline-primary btn-sm" :to="{name:'login'}">Zaloguj</router-link></b-nav-item>
+                    <b-nav-item href="#">
+                        <router-link v-show="!logged" class="nav-buton btn btn-outline-primary btn-sm" :to="{name:'login'}">Zaloguj</router-link>
+                        <b-dropdown v-show="logged" id="down-user" :text="user.name" size="sm" variant="primary" class="m-2">
+                            <b-dropdown-item href="#"><i class="fa fa-user-circle"></i> Profil</b-dropdown-item>
+                            <b-dropdown-item href="#"><i class="fa fa-dashboard"></i> Panel Admina</b-dropdown-item>
+                            <b-dropdown-divider></b-dropdown-divider>
+                            <b-dropdown-item to="/logout"><i class="fa fa-sign-out"></i> Wyloguj</b-dropdown-item>
+                        </b-dropdown>
+                    </b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
 
@@ -23,13 +31,15 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
     export default {
         name: "navbar",
         data: function () {
             return {
                 scrollPosition: 0,
                 headerHeight: 0,
-                colapseIn: 0
+                colapseIn: 0,
+
             }
         },
         methods: {
@@ -47,6 +57,12 @@
             window.addEventListener('scroll', this.updateScroll);
             console.log(this.headerHeight);
             this.calHeight()
+        },
+        computed: {
+          ...mapGetters({
+            logged: 'logged',
+            user: 'user'
+          }),
         }
     }
 </script>
@@ -66,5 +82,9 @@ nav.sticky{
     }
     nav.colapse-space{
         margin-bottom: 92px;
+    }
+    .dropdown-item{
+      line-height: initial;
+      font-size: 14px;
     }
 </style>

@@ -22,16 +22,18 @@
                 <div class="vc-row events-week" v-for="week in currentDates">
                     <div class="vc-col day-cell" v-for="(day, i) in week"
                          :class="{'today' : day.isToday,
-                         'not-cur-month' : !day.isCurMonth}">
+                         'not-cur-month' : !day.isCurMonth}"
+                    @click="showAddModal()">
                         <p class="day-number">{{day.monthDay}}</p>
                         <div class="event-box">
                             <p class="event-item" v-for="(event, n) in day.events"
                                :class="{
                   'bg-danger': !event.accepted,
-                  'bg-info': event.accepted
+                  'bg-info': event.accepted,
+                  'd-none': n>1
                   }"
                                :v-click-outside="showMore = false"
-                               @click="eventClick(event,$event)" :id="'event-'+event.id" >
+                               @click.stop="eventClick(event,$event)" :id="'event-'+event.id" >
                                 {{formatTime(event.start_date)+" "+ event.title}}
                                 <show-event :popoverTrigger="showMore" :event="event"
                                             :target="'event-'+event.id" />
@@ -42,7 +44,7 @@
                 </div>
             </div>
         </div>
-
+        <add-event :modal-show.sync="modalShow"></add-event>
     </div>
 </template>
 
@@ -50,10 +52,14 @@
   import moment from "moment"
   import ShowEvent from "./ShowEvent";
   import ClickOutside from 'vue-click-outside'
+  import AddEvent from "./AddEvent";
 
   export default {
     name: "vue-calender",
-    components: {ShowEvent},
+    components: {
+      AddEvent,
+      ShowEvent
+    },
     // do not forget this section
     directives: {
       ClickOutside
@@ -74,6 +80,7 @@
         eventLimit: 3,
         selectedEvent: null,
         showMore: false,
+        modalShow: false,
         morePos: {
           top: 0,
           left: 0
@@ -155,6 +162,9 @@
           return moment(time).format('HH:mm')
         }
         return ''
+      },
+      showAddModal: function() {
+        this.$root.$emit('bv::show::modal','modal-add')
       }
     },
     computed: {
@@ -166,7 +176,7 @@
        * @return {string}
        */
       MonthName() {
-        return moment(this.currentDate).format('MMMM YYYY');
+        return moment(this.currentDate).locale(this.locale).format('MMMM YYYY');
       },
 
     },

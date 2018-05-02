@@ -20,7 +20,7 @@ class AuthController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth:api', ['except' => ['login','handleProviderCallback','redirectToProvider']]);
+        $this->middleware('auth.api', ['except' => ['login','handleProviderCallback','redirectToProvider']]);
     }
 
     /**
@@ -34,7 +34,7 @@ class AuthController extends Controller
     {
         $credentials = request(['email', 'password']);
         if (! $token = auth('api')->attempt($credentials)) {
-            return response()->json(['error' => 'Unauthorized'], 401);
+            return response()->json(['error' => 'Bad credentials'], 401);
         }
         return $this->respondWithToken($token);
     }
@@ -104,6 +104,7 @@ class AuthController extends Controller
         $user = Socialite::driver($provider)->stateless()->user();
 
         $authUser = $this->findOrCreateUser($user, $provider);
+        dd($authUser);
         if (! $token = auth()->tokenById($authUser->id)) {
             return response()->json(['error' => 'Unauthorized'], 401);
         }
@@ -127,7 +128,7 @@ class AuthController extends Controller
      */
     public function findOrCreateUser($user, $provider)
     {
-        $authUser = User::where('provider_id', $user->id)->first();
+        $authUser = User::where('provider_id', $user->id)->first(); //get null if not found
         $role = Role::where('name', 'customer')->first();
         if ($authUser) {
             return $authUser;

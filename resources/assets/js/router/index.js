@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import MainTemplate from '../components/MainTemplate'
 import Custom from '../components/pages/Custom'
 import AuthMain from '../components/auth/AuthMain'
-
+import store from '../store/index'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
@@ -53,7 +53,22 @@ const router = new VueRouter({
           path: 'login',
           name: 'login',
           component: require('../components/auth/Login').default
-        }
+        },
+        {
+          path: '/logout',
+          name: 'logout',
+          beforeEnter(to, from, next) {
+            store.dispatch('logout')
+            next({
+              path: '/'
+            })
+          }
+        },
+        {
+          path: 'resetowanie-hasla',
+          name: 'passwordReset',
+          component: require('../components/auth/PasswordReset').default
+        },
       ]
     }
   ],
