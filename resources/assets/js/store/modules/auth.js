@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken'
 import {HTTP} from "../../http-comon";
 import router from "../../router";
 import store from "../index";
-
+import axios from 'axios'
 const state = {
   logged: false,
   failedAuth: false,
@@ -54,6 +54,28 @@ const actions = {
         }
     })
   },
+  socialLogin ({commit}, info) {
+    axios.get(`auth/${info.provider}/callback?code=${info.code}`)
+      .then(result => {
+        // console.log(result.data.access_token)
+        jwt.verify(result.data.access_token, 'mXoRMQllBhPGi7ENpNlWwg3IVzC8vkuF', error => {
+          if(!error) {
+            localStorage.setItem('token', result.data.access_token)
+            store.dispatch('dispatchToken',result.data.access_token)
+            commit('PROCESSING')
+            commit('LOGGED')
+            window.opener.close()
+          }
+        })
+      }).catch(error => {
+      console.log(error)
+      if(!(error.response.status) || error.response.status === 401){
+        state.failedAuth = true
+        commit('PROCESSING')
+      }
+    })
+
+  },
   logout ({commit}){
     HTTP.post('/auth/logout')
       .then(result => {
@@ -80,6 +102,7 @@ const mutations = {
     state.processing = !state.logged
   }
 }
+
 
 export default {
   state,

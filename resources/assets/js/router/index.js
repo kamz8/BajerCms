@@ -69,7 +69,17 @@ const router = new VueRouter({
           name: 'passwordReset',
           component: require('../components/auth/PasswordReset').default
         },
+        {
+          path: 'rejestracja',
+          name: 'register',
+          component: require('../components/auth/Register').default
+        },
       ]
+    },
+    {
+      path: '/auth/facebook/callback',
+      name: 'socialAuth',
+      component: require('../components/auth/popup').default
     }
   ],
 });

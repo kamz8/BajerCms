@@ -1,12 +1,14 @@
 <template>
-    <div class="col-6 mx-auto">
+    <div class="col-12 col-md-6 mx-auto">
         <div class="card card-login mt-5">
             <div class="card-header">Zaloguj się</div>
             <div class="card-body">
+                <div class="text-center">
+                    <p class="text-center text-muted">Zaloguj przy pomocy:</p>
+                    <b-button variant="primary" class="btn-block" style="background-color: #3B5998" @click="fbLogin('facebook')"><i class="fa fa-facebook"></i>  Facebook</b-button>
+                    <div class="or-seperator"><i>lub</i></div>
+                </div>
                 <form class="form-horizontal" method="POST" @submit.prevent="auth">
-                    <div class="text-center">
-                        <hr class="d-block small mt-3">
-                    </div>
                     <div class="form-group" :class="{'danger':failedAuth}">
                         <label for="InputEmail1" class="control-label">Adres Email</label>
                         <input class="form-control" v-model="credential.email" name="email" id="InputEmail1" type="email"
@@ -22,14 +24,18 @@
                     <div class="form-group">
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input class="form-check-input" v-model="credential.rememberMe" type="checkbox"> Zapamiętaj Mnie</label>
+                            <b-form-checkbox id="checkbox1"
+                                             v-model="credential.rememberMe">
+                                Zapamiętaj Mnie
+                             </b-form-checkbox>
+                            </label>
                         </div>
                     </div>
-                    <state-button v-model.sync="logging" :class="'btn-block'" type="submit" variant="primary" label="Logowanie...">Zaloguj</state-button>
+                    <state-button v-model="logging" :class="'btn-block'" type="submit" variant="primary" label="Logowanie...">Zaloguj</state-button>
                 </form>
                 <div class="text-center">
-                    <a class="d-block small mt-3" href="">Nowe konto</a>
-                    <a class="d-block small" href="/password/reset">Zapomniałeś hasła?</a>
+                    <router-link class="d-block small mt-3" :to="{name:'register'}">Nowe konto</router-link>
+                    <router-link class="d-block small" :to="{name:'passwordReset'}">Zapomniałeś hasła?</router-link>
                 </div>
             </div>
         </div>
@@ -37,6 +43,7 @@
 </template>
 
 <script>
+  import { HTTP } from '../../http-comon'
   import { mapGetters } from 'vuex'
   import StateButton from '../util/StateButton'
 
@@ -58,12 +65,18 @@
     },
     methods: {
       auth () {
-        this.logging = true
+        setTimeout(() =>{this.logging = true}, 1)
+
         var self = this
-        this.$store.dispatch('login', this.credential).then((x =this.logging)=>{
-          self.logging = false
-        })
-        setTimeout(() =>{this.logging = false}, 1)
+        this.$store.dispatch('login', this.credential)
+        setTimeout(() =>{self.logging = false}, 900)
+      },
+      fbLogin(provider) {
+        HTTP.get(`auth/${provider}`)
+          .then(response => {
+            window.popup = window.open(response.data, 'child','height=550,width=630')
+          })
+        // this.$store.dispatch('socialLogin', provider)
       }
     },
     computed: {
@@ -75,11 +88,13 @@
     watch: {
       logged () {
         this.$router.push({path: '/',force: true})
-      },
+      }
     }
   }
 </script>
 
 <style scoped>
-
+    .form-check-label {
+        padding-left: 0;
+    }
 </style>

@@ -201,6 +201,20 @@ footer.footer {
 footer + .subfooter{
     background-color: #111;
 }
+
+.or-seperator {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+.or-seperator i {
+    padding: 0 10px;
+    background: #fff;
+    position: relative;
+    top: -11px;
+    z-index: 1;
+}
+
 /*Make all responsive :P */
 @media only screen and (min-width: 320px) {
     .sentence.bajerfont {

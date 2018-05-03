@@ -37,6 +37,7 @@ Vue.use(VueScrollTo, {
   x: false,
   y: true
 });
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -51,6 +52,7 @@ const app = new Vue({
   router,
   store,
 });
+
 axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 const token = localStorage.getItem('token')
 

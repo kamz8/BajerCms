@@ -18,7 +18,7 @@
     "cross-env": "^5.1.4",
     "jquery": "^3.3.1",
     "laravel-mix": "^1.7.2",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.10",
     "vue": "^2.5.16",
     "vue-axios": "^2.1.1",
     "vue-loader": "^14.2.2",
@@ -45,6 +45,7 @@
     "vue-infinite-scroll": "^2.0.2",
     "vue-resource": "^1.5.0",
     "vue-scrollto": "^2.11.0",
+    "vue-social": "^1.0.1",
     "vue-truncate-filter": "^1.1.7"
   }
 }

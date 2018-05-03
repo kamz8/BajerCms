@@ -30,6 +30,7 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
+    /*@TODO add remember me if checked*/
     public function login()
     {
         $credentials = request(['email', 'password']);
@@ -104,7 +105,6 @@ class AuthController extends Controller
         $user = Socialite::driver($provider)->stateless()->user();
 
         $authUser = $this->findOrCreateUser($user, $provider);
-        dd($authUser);
         if (! $token = auth()->tokenById($authUser->id)) {
             return response()->json(['error' => 'Unauthorized'], 401);
         }
