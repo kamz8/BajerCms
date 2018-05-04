@@ -35,8 +35,6 @@
 </template>
 
 <script>
-// Import this component
-import datePicker from '../util/Datatime-picker/DatePicker';
   // Import date picker css
 import moment from "moment";
 
@@ -44,7 +42,7 @@ import moment from "moment";
     name: "add-event",
     props: ['modalShow'],
     components:{
-      datePicker
+
     },
     data() {
       return {

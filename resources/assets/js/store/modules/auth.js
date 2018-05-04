@@ -55,24 +55,32 @@ const actions = {
     })
   },
   socialLogin ({commit}, info) {
-    axios.get(`auth/${info.provider}/callback?code=${info.code}`)
+    const api = axios.create({
+      baseURL: 'http://localhost:8000/api',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept':'application/json'
+
+      }
+    })
+    api.get(`/auth/${info.provider}/callback?code=${info.code}`)
       .then(result => {
         // console.log(result.data.access_token)
         jwt.verify(result.data.access_token, 'mXoRMQllBhPGi7ENpNlWwg3IVzC8vkuF', error => {
           if(!error) {
             localStorage.setItem('token', result.data.access_token)
+            window.opener.store = store
             store.dispatch('dispatchToken',result.data.access_token)
             commit('PROCESSING')
             commit('LOGGED')
-            window.opener.close()
           }
         })
       }).catch(error => {
       console.log(error)
-      if(!(error.response.status) || error.response.status === 401){
+      /*if(!(error.response.status) || error.response.status === 401){
         state.failedAuth = true
         commit('PROCESSING')
-      }
+      }*/
     })
 
   },

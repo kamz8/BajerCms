@@ -60,7 +60,8 @@
           password: '',
           rememberMe: Boolean
         },
-        logging: false
+        logging: false,
+        wmLogged: window.logged
       }
     },
     methods: {
@@ -74,10 +75,9 @@
       fbLogin(provider) {
         HTTP.get(`auth/${provider}`)
           .then(response => {
-            window.popup = window.open(response.data, 'child','height=550,width=630')
+            let popup = window.open(response.data,'_self')
           })
-        // this.$store.dispatch('socialLogin', provider)
-      }
+       }
     },
     computed: {
       ...mapGetters({
@@ -87,6 +87,9 @@
     },
     watch: {
       logged () {
+        this.$router.push({path: '/',force: true})
+      },
+      wmLogged(){
         this.$router.push({path: '/',force: true})
       }
     }
