@@ -1,3 +1,5 @@
+import store from "../store";
+
 export default function auth (router) {
   router.beforeEach((to, from, next) => {
     if (to.matched.some(record => record.meta.requiresAuth)) {
@@ -18,5 +20,6 @@ export default function auth (router) {
         path: from.path
       })
     }
+    // store.dispatch('refresh')
   })
 }

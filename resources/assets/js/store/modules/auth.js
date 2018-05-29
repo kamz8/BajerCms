@@ -1,6 +1,5 @@
 import jwt from 'jsonwebtoken'
 import {HTTP} from "../../http-comon";
-import router from "../../router";
 import store from "../index";
 import axios from 'axios'
 const state = {
@@ -96,6 +95,20 @@ const actions = {
     state.user.email = decoded.email
     state.user.name = decoded.name
     state.user.role = decoded.roles[0].name
+  },
+  refresh({commit}){
+    HTTP.post('/auth/refresh')
+      .then(result => {
+        // console.log(result.data.access_token)
+        jwt.verify(result.data.access_token, 'mXoRMQllBhPGi7ENpNlWwg3IVzC8vkuF', error => {
+          if(!error) {
+            localStorage.setItem('token', result.data.access_token)
+            store.dispatch('dispatchToken',result.data.access_token)
+          }
+        })
+      }).catch(error => {
+      console.log(error)
+    })
   }
 }
 

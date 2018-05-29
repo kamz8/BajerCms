@@ -52,7 +52,7 @@ class EventsController extends Controller
      * @return \Illuminate\Http\JsonResponse
      */
     public function store(CreateEventRequest $request){
-        $user = User::find($request->user_id);
+        $user = User::find(auth()->user()->id);
         $event =  new Event();
             $event->title = "Rezerwacja ".$user->firstname.' '.$user->lastname;
             $event->description = $request->description;

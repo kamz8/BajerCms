@@ -30,12 +30,12 @@ Route::post('auth/password/email', 'Auth\ForgotPasswordController@getResetToken'
 Route::post('auth/password/reset', 'Auth\ResetPasswordController@reset');
 //login user
 Route::post('auth/login', 'AuthController@login');
+Route::post('auth/logout', 'AuthController@logout');
 Route::post('auth/register', 'Auth\RegisterController@register');
 // auth group
 Route::group([
     'middleware' => 'auth.api',
     'prefix' => 'auth'], function ($router) {
-    Route::post('logout', 'AuthController@logout');
     Route::post('refresh', 'AuthController@refresh');
     Route::get('me', 'AuthController@me');
 });

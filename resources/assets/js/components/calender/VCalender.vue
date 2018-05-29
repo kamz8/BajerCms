@@ -43,6 +43,9 @@
                     </div>
                 </div>
             </div>
+            <a href="#" @click.prevent="showAddModal()" v-show="isLogged" class="btn btn-danger btn-circle add-event">
+                <i class="fa fa-plus"></i>
+            </a>
         </div>
         <add-event :modal-show.sync="modalShow"></add-event>
     </div>
@@ -53,7 +56,7 @@
   import ShowEvent from "./ShowEvent";
   import ClickOutside from 'vue-click-outside'
   import AddEvent from "./AddEvent";
-
+  import { mapGetters } from 'vuex'
   export default {
     name: "vue-calender",
     components: {
@@ -112,8 +115,8 @@
           for (let perDay = 0; perDay < 7; perDay++) {
             week.push({
               monthDay: startDate.date(),
-              isToday: now.format('YYYY MM DD') === startDate.format('YYYY MM DD'),
-              isCurMonth: startDate.month() == this.currentDate.month(),
+              isToday: now.format('YYYY-MM-DD') === startDate.format('YYYY-MM-DD'),
+              isCurMonth: startDate.month() === this.currentDate.month(),
               weekDay: startDate.weekday(),
               date: startDate,
               events: this.slotEvents(startDate)
@@ -144,13 +147,18 @@
         return ed.toString() === moment(date).toString()
       },
       nextMonth() {
-
         this.currentDate = moment.utc(this.currentDate, "YYYY-MM-DD").add(1, 'month')
+        this.$emit('nextMonth', {
+          currentDate: currentDate
+        })
       },
 
       prevMonth() {
         let current = this.currentDate.format()
         this.currentDate = moment.utc(this.currentDate, "YYYY-MM-DD").subtract(1, 'month')
+        this.$emit('prevMonth', {
+          currentDate: currentDate
+        })
       },
       eventClick(event) {
         this.$root.$emit('bv::hide::popover')
@@ -163,9 +171,13 @@
         }
         return ''
       },
-      showAddModal: function() {
-        this.$root.$emit('bv::show::modal','modal-add')
-      }
+      showAddModal: function () {
+        if (this.isLogged) {
+          this.$root.$emit('bv::show::modal', 'modal-add')
+        } else {
+          this.$emit('notAuth')
+        }
+      },
     },
     computed: {
       currentDates() {
@@ -178,7 +190,9 @@
       MonthName() {
         return moment(this.currentDate).locale(this.locale).format('MMMM YYYY');
       },
-
+      ...mapGetters({
+        isLogged: 'logged'
+      }),
     },
 
     created() {
@@ -306,5 +320,12 @@
 
     .is-opacity {
         opacity: 0.8;
+    }
+    .btn.add-event{
+        border-color: transparent;
+
+        position: absolute;
+        bottom: 1em;
+        right: 1em;
     }
 </style>

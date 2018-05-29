@@ -12,12 +12,19 @@
                 </div>
                 <div class="row">
                     <div class="col-12 mx-auto pt-4 pb-3">
-                        <vue-calender :events="events" locale="pl"></vue-calender>
+                        <vue-calender :events="events" locale="pl"
+                                      @nextMonth="updateCalenar()"
+                                      @prevMonth="updateCalenar()"
+                                      @notAuth="loginAlert = true"></vue-calender>
                     </div>
                 </div>
             </div>
         </article>
-
+        <b-alert :show="loginAlert" @dismissed="loginAlert=false" class="popup" dismissible  variant="warning">
+            <p>
+                Aby dodać rezerwację musisz być zalogowany! <b-link :to="{name: 'login'}">zaloguj</b-link>
+            </p>
+        </b-alert>
     </div>
 </template>
 
@@ -27,7 +34,7 @@
   import VueCalender from "../calender/VCalender";
   import VueBootstrap from "bootstrap-vue"
   import {HTTP} from "../../http-comon";
-
+  import moment from 'moment'
   export default {
     name: "booking-main",
     components: {
@@ -37,12 +44,21 @@
     },
     data() {
       return {
-        events: []
+        events: [],
+        currentDate: moment(),
+        loginAlert: false
       }
     },
     methods: {
+        updateCalenar(newDate) {
+          this.currentDate = newDate
+        }
+    },
+    computed: {
       fetchEvents: function() {
-        HTTP.get('/events?start_date=2018-03-01&end_date=2018-05-30')
+        let start_date = moment(this.currentDate).subtract(1, 'months').format('YYYY-MM-DD')
+        let end_date = moment(this.currentDate).add(1, 'months').format('YYYY-MM-DD')
+        HTTP.get(`/events?start_date=${start_date}&end_date=${end_date}`)
           .then(response => {
             this.events = response.data
           })
@@ -66,5 +82,12 @@
         background-attachment: fixed;
         background-size: cover;
     }
-
+.popup{
+    position: absolute;
+    top: 50px;
+    right: 25px;
+}
+    .popup > p {
+        padding-right: 1em
+    }
 </style>
