@@ -23093,7 +23093,8 @@ module.exports = CipherBase
 
 
 var HTTP = __WEBPACK_IMPORTED_MODULE_0_axios___default.a.create({
-  baseURL: Object({"NODE_ENV":"development"}).baseURL || 'http://localhost:8000/api',
+  // baseURL: process.env.APP_API_URL || 'http://localhost:8000/api',
+  baseURL: 'http://bajercms.herokuapp.com/api',
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json'
@@ -96874,7 +96875,7 @@ var actions = {
 
       }
     });
-    api.get("/auth/" + info.provider + "/callback?code=" + info.code).then(function (result) {
+    __WEBPACK_IMPORTED_MODULE_1__http_comon__["a" /* HTTP */].get("/auth/" + info.provider + "/callback?code=" + info.code).then(function (result) {
       // console.log(result.data.access_token)
       __WEBPACK_IMPORTED_MODULE_0_jsonwebtoken___default.a.verify(result.data.access_token, 'mXoRMQllBhPGi7ENpNlWwg3IVzC8vkuF', function (error) {
         if (!error) {
