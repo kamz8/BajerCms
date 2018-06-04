@@ -62,7 +62,7 @@ const actions = {
 
       }
     })
-    api.get(`/auth/${info.provider}/callback?code=${info.code}`)
+    HTTP.get(`/auth/${info.provider}/callback?code=${info.code}`)
       .then(result => {
         // console.log(result.data.access_token)
         jwt.verify(result.data.access_token, 'mXoRMQllBhPGi7ENpNlWwg3IVzC8vkuF', error => {
