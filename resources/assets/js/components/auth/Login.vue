@@ -70,7 +70,7 @@
 
         var self = this
         this.$store.dispatch('login', this.credential)
-        setTimeout(() =>{self.logging = false}, 900)
+        setTimeout(() =>{self.logging = false}, 500)
       },
       fbLogin(provider) {
         HTTP.get(`auth/${provider}`)

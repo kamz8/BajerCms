@@ -68,7 +68,7 @@ const actions = {
         jwt.verify(result.data.access_token, 'mXoRMQllBhPGi7ENpNlWwg3IVzC8vkuF', error => {
           if(!error) {
             localStorage.setItem('token', result.data.access_token)
-            window.opener.store = store
+            // window.opener.store = store
             store.dispatch('dispatchToken',result.data.access_token)
             commit('PROCESSING')
             commit('LOGGED')
@@ -80,6 +80,7 @@ const actions = {
         state.failedAuth = true
         commit('PROCESSING')
       }*/
+
     })
 
   },

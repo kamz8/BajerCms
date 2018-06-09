@@ -18,7 +18,8 @@
                         <router-link v-show="!logged" class="nav-buton btn btn-outline-primary btn-sm" :to="{name:'login'}">Zaloguj</router-link>
                         <b-dropdown v-show="logged" id="down-user" :text="user.name" size="sm" variant="primary" class="m-2">
                             <b-dropdown-item href="#"><i class="fa fa-user-circle"></i> Profil</b-dropdown-item>
-                            <b-dropdown-item href="#" v-if="user.roles =='admin' || user.roles =='moderator' || user.roles =='consoltant' || user.roles =='super_admi' "><i class="fa fa-dashboard"></i> Panel Admina</b-dropdown-item>
+                            <b-dropdown-item href="#"><i class="fa fa-calendar"></i> Moje rezerwacje</b-dropdown-item>
+                            <b-dropdown-item href="#" v-show="user.role ==='admin' || user.roles ==='moderator' || user.role ==='consoltant' || user.role ==='super_admin' "><i class="fa fa-dashboard"></i> Panel Admina</b-dropdown-item>
                             <b-dropdown-divider></b-dropdown-divider>
                             <b-dropdown-item to="/logout"><i class="fa fa-sign-out"></i> Wyloguj</b-dropdown-item>
                         </b-dropdown>

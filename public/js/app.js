@@ -23093,8 +23093,8 @@ module.exports = CipherBase
 
 
 var HTTP = __WEBPACK_IMPORTED_MODULE_0_axios___default.a.create({
-  // baseURL: process.env.APP_API_URL || 'http://localhost:8000/api',
-  baseURL: 'http://bajercms.herokuapp.com/api',
+  baseURL: Object({"NODE_ENV":"development"}).APP_API_URL || 'http://localhost:8000/api',
+  // baseURL: 'http://bajercms.herokuapp.com/api',
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json'
@@ -66252,6 +66252,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -79500,7 +79501,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
       this.$store.dispatch('login', this.credential);
       setTimeout(function () {
         self.logging = false;
-      }, 900);
+      }, 500);
     },
     fbLogin: function fbLogin(provider) {
       __WEBPACK_IMPORTED_MODULE_0__http_comon__["a" /* HTTP */].get('auth/' + provider).then(function (response) {
@@ -96880,7 +96881,7 @@ var actions = {
       __WEBPACK_IMPORTED_MODULE_0_jsonwebtoken___default.a.verify(result.data.access_token, 'mXoRMQllBhPGi7ENpNlWwg3IVzC8vkuF', function (error) {
         if (!error) {
           localStorage.setItem('token', result.data.access_token);
-          window.opener.store = __WEBPACK_IMPORTED_MODULE_2__index__["a" /* default */];
+          // window.opener.store = store
           __WEBPACK_IMPORTED_MODULE_2__index__["a" /* default */].dispatch('dispatchToken', result.data.access_token);
           commit('PROCESSING');
           commit('LOGGED');
@@ -112554,15 +112555,34 @@ var render = function() {
                             _vm._v(" Profil")
                           ]),
                           _vm._v(" "),
-                          _vm.user.roles == "admin" ||
-                          _vm.user.roles == "moderator" ||
-                          _vm.user.roles == "consoltant" ||
-                          _vm.user.roles == "super_admi"
-                            ? _c("b-dropdown-item", { attrs: { href: "#" } }, [
-                                _c("i", { staticClass: "fa fa-dashboard" }),
-                                _vm._v(" Panel Admina")
-                              ])
-                            : _vm._e(),
+                          _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                            _c("i", { staticClass: "fa fa-calendar" }),
+                            _vm._v(" Moje rezerwacje")
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "b-dropdown-item",
+                            {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value:
+                                    _vm.user.role === "admin" ||
+                                    _vm.user.roles === "moderator" ||
+                                    _vm.user.role === "consoltant" ||
+                                    _vm.user.role === "super_admin",
+                                  expression:
+                                    "user.role ==='admin' || user.roles ==='moderator' || user.role ==='consoltant' || user.role ==='super_admin' "
+                                }
+                              ],
+                              attrs: { href: "#" }
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-dashboard" }),
+                              _vm._v(" Panel Admina")
+                            ]
+                          ),
                           _vm._v(" "),
                           _c("b-dropdown-divider"),
                           _vm._v(" "),
