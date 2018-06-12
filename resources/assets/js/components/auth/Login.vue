@@ -71,6 +71,7 @@
         var self = this
         this.$store.dispatch('login', this.credential)
         setTimeout(() =>{self.logging = false}, 500)
+        this.$router.push({path: '/',force: true})
       },
       fbLogin(provider) {
         HTTP.get(`auth/${provider}`)
