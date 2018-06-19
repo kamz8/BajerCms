@@ -12,8 +12,8 @@
                     <div class="form-group" :class="{'danger':failedAuth}">
                         <label for="InputEmail1" class="control-label">Adres Email</label>
                         <input class="form-control" v-model="credential.email" name="email" id="InputEmail1" type="email"
-                               aria-describedby="emailHelp" placeholder="Email" required autofocus>
-                        <div v-show="failedAuth" class="form-control-feedback">Błędny login lub hasło.</div>
+                               aria-describedby="emailHelp" placeholder="Email" required autofocus :class="{'is-invalid': failedAuth}">
+                        <div v-show="failedAuth" class="form-control-feedback invalid-feedback">Błędny login lub hasło.</div>
                     </div>
                     <div class="form-group">
                         <label for="InputPassword1">Hasło</label>
