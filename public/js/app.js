@@ -23093,8 +23093,8 @@ module.exports = CipherBase
 
 
 var HTTP = __WEBPACK_IMPORTED_MODULE_0_axios___default.a.create({
-  baseURL: Object({"NODE_ENV":"development"}).APP_API_URL || 'http://localhost:8000/api',
-  // baseURL: 'http://bajercms.herokuapp.com/api',
+  // baseURL: process.env.APP_API_URL || 'http://localhost:8000/api',
+  baseURL: 'http://bajercms.herokuapp.com/api',
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json'
@@ -79502,6 +79502,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
       setTimeout(function () {
         self.logging = false;
       }, 500);
+      this.$router.push({ path: '/', force: true });
     },
     fbLogin: function fbLogin(provider) {
       __WEBPACK_IMPORTED_MODULE_0__http_comon__["a" /* HTTP */].get('auth/' + provider).then(function (response) {
