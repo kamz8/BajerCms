@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-header scrollTo="#onas" vtitle="O Klubie" coverImg="https://images.pexels.com/photos/761543/pexels-photo-761543.jpeg"></v-header>
+        <v-header scrollTo="#onas" vtitle="O Klubie" coverImg="./img/_DSC2048.jpg"></v-header>
         <section id="onas" class="content-box">
             <div class="container">
                 <div class="row">

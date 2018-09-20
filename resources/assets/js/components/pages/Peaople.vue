@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-header scrollTo="#ekipa" vtitle="O Klubie" coverImg="https://images.pexels.com/photos/761543/pexels-photo-761543.jpeg"></v-header>
+        <v-header scrollTo="#ekipa" vtitle="Ekipa" coverImg="https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/32639675_2033682436644284_7713636091089125376_o.jpg?_nc_cat=0&oh=92c715ab9e6258e18c8068551c9a49cd&oe=5C2E28B0"></v-header>
         <section id="ekipa" class="content-box">
             <div class="container">
                 <div class="row">

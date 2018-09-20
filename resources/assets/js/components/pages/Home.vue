@@ -96,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <section id="wydarzenia" class="content-box">
+<!--        <section id="wydarzenia" class="content-box">
             <div class="container">
                 <div class="row">
                     <article class="col-md-12 text-center">
@@ -105,7 +105,7 @@
                     </article>
                 </div>
             </div>
-        </section>
+        </section>-->
         <section class="spotify">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
@@ -115,9 +115,9 @@
                     </div>
                     <div class="col-12 col-md-4 offset-md-2">
                         <span class="bajerfont bajer-2x mr-2 mb-2 d-block d-md-inline mb-md-0 text-center">#AleBajer</span>
-                        <a class="btn btn-md btn-outline-light text-light text-uppercase btn-lg-space d-none d-sm-inline btn-lg-space"
+                        <a href="https://open.spotify.com/playlist/7x0EzxGOPef8DH4sh3zEoo" target="_blank" class="btn btn-md btn-outline-light text-light text-uppercase btn-lg-space d-none d-sm-inline btn-lg-space"
                            style="margin-top: -10px;">zobacz playlistę</a>
-                        <a class="btn btn-sm btn-outline-light text-light text-uppercase d-block d-sm-none"
+                        <a href="https://open.spotify.com/playlist/7x0EzxGOPef8DH4sh3zEoo" target="_blank" class="btn btn-sm btn-outline-light text-light text-uppercase d-block d-sm-none"
                            style="font-size: 12px">zobacz playlistę</a>
                     </div>
                 </div>

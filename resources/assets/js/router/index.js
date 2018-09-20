@@ -21,22 +21,36 @@ const router = new VueRouter({
         {
           path: '/o-klubie',
           name: 'about',
-          component: require('../components/pages/about').default
+          component: require('../components/pages/About').default
         },
         {
           path: '/ekipa',
           name: 'people',
           component: require('../components/pages/Peaople').default
         },
-
+        {
+          path: '/oferta',
+          name: 'offer',
+          component: require('../components/pages/Offer').default
+        },
+        {
+          path: '/wynajmy',
+          name: 'booking-info',
+          component: require('../components/pages/Booking').default
+        },
+        {
+          path: '/kontakt',
+          name: 'contact',
+          component: require('../components/pages/Contact').default
+        },
         {
           path: '/szablon',
           name: 'custom',
           component: Custom
         }
       ]
-    },
-    {
+    }
+/*    {
       path: '/zarezerwuj-sale',
       name: 'booking',
       component: require('../components/pages/BookingMain').default
@@ -80,7 +94,7 @@ const router = new VueRouter({
       path: '/auth/facebook/callback',
       name: 'socialAuth',
       component: require('../components/auth/popup').default
-    }
+    }*/
   ],
 });
 

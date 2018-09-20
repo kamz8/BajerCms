@@ -171,7 +171,9 @@ figure.member > figcaption > span:first-child {
 figure.member > figcaption > .member-title {
     font-weight: lighter;
 }
-
+figure.member > figcaption > .member-link {
+    font-weight: lighter;
+}
 .spotify {
     background-color: #1ed760;
 }

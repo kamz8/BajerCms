@@ -13,8 +13,8 @@
                 <div class="row">
                     <div class="col-12 mx-auto pt-4 pb-3">
                         <vue-calender :events="events" locale="pl"
-                                      @nextMonth="updateCalenar()"
-                                      @prevMonth="updateCalenar()"
+                                      @nextMonth="updateCalenar(currentDate.add(1, 'months'))"
+                                      @prevMonth="updateCalenar(currentDate.subtract(1, 'months'))"
                                       @notAuth="loginAlert = true"></vue-calender>
                     </div>
                 </div>
@@ -56,8 +56,8 @@
     },
     computed: {
       fetchEvents: function() {
-        let start_date = moment(this.currentDate).subtract(1, 'months').format('YYYY-MM-DD')
-        let end_date = moment(this.currentDate).add(1, 'months').format('YYYY-MM-DD')
+        let start_date = moment(this.currentDate).subtract(2, 'months').format('YYYY-MM-DD')
+        let end_date = moment(this.currentDate).add(2, 'months').format('YYYY-MM-DD')
         HTTP.get(`/events?start_date=${start_date}&end_date=${end_date}`)
           .then(response => {
             this.events = response.data

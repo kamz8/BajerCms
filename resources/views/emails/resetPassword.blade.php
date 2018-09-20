@@ -1,0 +1,1 @@
+<a href="{{link}}">Przejdź do strony odzyskiwania hasła</a>

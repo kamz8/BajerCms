@@ -93,6 +93,10 @@ class User extends Authenticatable implements JWTSubject
      */
     public function getJWTCustomClaims()
     {
+//        if ($this->can('use-extended-token-timelines')) {
+//            $expiration = Carbon::now('UTC')->addWeeks(2)->getTimestamp();
+//            return ['exp' => $expiration];
+//        }
         return [
             'email' => $this->email,
             'name' => $this->name,

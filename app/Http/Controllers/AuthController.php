@@ -10,7 +10,7 @@ use App\Http\Controllers\Controller;
 
 use Socialite;
 use Tymon\JWTAuth\JWTAuth;
-
+use Carbon;
 class AuthController extends Controller
 {
     /**
@@ -34,7 +34,8 @@ class AuthController extends Controller
     public function login()
     {
         $credentials = request(['email', 'password']);
-        if (! $token = auth('api')->attempt($credentials)) {
+        $rememberMe = request()->has('rememberMe');
+        if (! $token = auth('api')->attempt($credentials,['exp' => Carbon\Carbon::now()->addDays(7)->timestamp])) {
             return response()->json(['error' => 'Bad credentials'], 401);
         }
         return $this->respondWithToken($token);

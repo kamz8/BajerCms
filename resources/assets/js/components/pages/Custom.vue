@@ -1,13 +1,17 @@
+<!--
+Custom page is standard template for all static page.
+When we create new page - you copy of template below and name as NameOfPage
+-->
 <template>
     <div>
-        <header v-title="'O Klubie'"></header>
+        <header v-title="'Tytuł strony'"></header>
         <section id="onas" class="content-box">
             <div class="container">
                 <div class="row">
                     <article class="col-md-12 text-center">
                         <h1 class="text-uppercase pb-2">Jakiś tytuł strony</h1>
                         <div class="mr-1 text-justify">
-                            <p>
+                            <p> <!--treść strony-->
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare dictum dolor vitae viverra. Donec condimentum mattis tellus id vehicula. Aenean euismod risus id vestibulum consequat.
                                 Mauris rhoncus, eros vel venenatis condimentum, diam erat dictum ipsum, nec tristique ligula tellus at lacus. Nullam ac sodales eros. Aliquam quis lacinia ipsum, eget mollis magna. Morbi odio ligula,
                                 vehicula dignissim tempor a, hendrerit vitae dolor. Proin ullamcorper metus quis magna ultricies, non tincidunt dui luctus. Vivamus sed mi porttitor, euismod sapien id, fermentum nisi.</p>
@@ -22,9 +26,12 @@
 </template>
 
 <script>
-    import Header from '../page-part/Header'
+    import vHeader from '../page-part/Header'
     export default {
-        name: "custom"
+      name: "custom",
+      components: {
+        vHeader
+      }
     }
 </script>
 

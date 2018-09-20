@@ -11,7 +11,7 @@
                                       type="text"
                                       :state="nameState"
                                       aria-describedby="inputLiveHelp inputLiveFeedback"
-                                      placeholder="Enter your name"></b-form-input>
+                                      placeholder="Wpisz swoje imię."></b-form-input>
                         <b-form-invalid-feedback id="inputLiveFeedback">
                             <!-- This will only be shown if the preceeding input has an invalid state -->
                             Enter at least 3 letters
@@ -25,6 +25,20 @@
                                       :state="nameState"
                                       aria-describedby="inputLiveHelp inputLiveFeedback"
                                       placeholder="Enter your name"></b-form-input>
+                        <b-form-invalid-feedback id="inputLiveFeedback">
+                            <!-- This will only be shown if the preceeding input has an invalid state -->
+                            Enter at least 3 letters
+                        </b-form-invalid-feedback>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="InputPassword">Powtórz hasło</label>
+                        <b-form-input id="InputPassword"
+                                      v-model.trim="confirmPassword"
+                                      type="text"
+                                      :state="nameState"
+                                      aria-describedby="inputLiveHelp inputLiveFeedback"
+                                      placeholder="Wpisz swoje hasło"></b-form-input>
                         <b-form-invalid-feedback id="inputLiveFeedback">
                             <!-- This will only be shown if the preceeding input has an invalid state -->
                             Enter at least 3 letters

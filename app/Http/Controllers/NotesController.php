@@ -11,6 +11,16 @@ use Illuminate\Http\Request;
 class NotesController extends Controller
 {
     /**
+     * Create a new NotesController instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth.api');
+        $this->middleware('roles:admin');
+    }
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response

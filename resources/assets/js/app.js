@@ -16,12 +16,19 @@ import lodash from 'lodash'
 import router from './router/index.js'
 import {HTTP} from "./http-comon";
 import middleware from './middleware/middleware'
+import * as VueGoogleMaps from "vue2-google-maps";
 /*components import */
 import VueScrollTo from 'vue-scrollto'
 import MyApp from './MyApp';
 
 middleware(router)
 
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: "AIzaSyBKviyzsDgBYVf36WonAM3uRBiPbuuMFkA",
+    libraries: "places" // necessary for places input
+  }
+});
 Vue.use(BootstrapVue, router,HTTP);
 Vue.use(VueResource, lodash, VueScrollTo);
 
