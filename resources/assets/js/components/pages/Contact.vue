@@ -31,7 +31,7 @@ When we create new page - you copy of template below and name as NameOfPage
                                                       name="email"
                                                       placeholder="Enter email"
                                                       v-validate="'required|email'"
-                                                      :class="{'input': true, 'is-invalid': errors.has('email') }">
+                                                      :class="{'is-invalid': errors.has('email') }">
                                         </b-form-input>
                                         <b-form-invalid-feedback>{{errors.first('email')}}</b-form-invalid-feedback>
                                     </b-form-group>
@@ -43,7 +43,8 @@ When we create new page - you copy of template below and name as NameOfPage
                                                       v-model="contactForm.name"
                                                       name="name"
                                                       v-validate="'require'"
-                                                      placeholder="Wpisz swoje imię i nazwisko">
+                                                      placeholder="Wpisz swoje imię i nazwisko"
+                                                      :class="{'is-invalid': errors.has('name') }">
                                         </b-form-input>
                                     </b-form-group>
                                     <b-form-group id="exampleInputGroup3"
@@ -54,7 +55,8 @@ When we create new page - you copy of template below and name as NameOfPage
                                                       v-model="contactForm.phone"
                                                       v-validate="'require'"
                                                       name="phone"
-                                                      placeholder="Wpisz swój numer telefonu">
+                                                      placeholder="Wpisz swój numer telefonu"
+                                                      :class="{'is-invalid': errors.has('phone') }">
                                         </b-form-input>
                                     </b-form-group>
                                     <b-form-group id="exampleInputGroup4"
@@ -190,8 +192,9 @@ import MapHeader from '../page-part/HeaderMap'
 import Avatar from '../page-part/Avatar/Avatar'
 import SocialLink from "../page-part/Avatar/SocialLink";
 import VeeValidate from "vee-validate";
+
 export default {
-  name: "custom",
+  name: "contact",
   components: {
     SocialLink,
     MapHeader,
@@ -217,7 +220,10 @@ export default {
         }
       });
     }
-    }
+    },
+  mounted: () => {
+    this.$validator.localize('PL');
+  }
 }
 </script>
 

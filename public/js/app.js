@@ -79337,13 +79337,16 @@ var _this = this;
 //
 //
 //
+//
+//
+
 
 
 
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  name: "custom",
+  name: "contact",
   components: {
     SocialLink: __WEBPACK_IMPORTED_MODULE_2__page_part_Avatar_SocialLink__["a" /* default */],
     MapHeader: __WEBPACK_IMPORTED_MODULE_0__page_part_HeaderMap__["a" /* default */],
@@ -79370,6 +79373,9 @@ var _this = this;
         }
       });
     }
+  },
+  mounted: function mounted() {
+    _this.$validator.localize('PL');
   }
 });
 
@@ -115790,7 +115796,7 @@ exports = module.exports = __webpack_require__(8)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -116231,10 +116237,7 @@ var render = function() {
                                   expression: "'required|email'"
                                 }
                               ],
-                              class: {
-                                input: true,
-                                "is-invalid": _vm.errors.has("email")
-                              },
+                              class: { "is-invalid": _vm.errors.has("email") },
                               attrs: {
                                 id: "exampleInput1",
                                 type: "email",
@@ -116276,6 +116279,7 @@ var render = function() {
                                   expression: "'require'"
                                 }
                               ],
+                              class: { "is-invalid": _vm.errors.has("name") },
                               attrs: {
                                 id: "exampleInput2",
                                 type: "text",
@@ -116313,6 +116317,7 @@ var render = function() {
                                   expression: "'require'"
                                 }
                               ],
+                              class: { "is-invalid": _vm.errors.has("phone") },
                               attrs: {
                                 id: "exampleInput2",
                                 type: "text",
