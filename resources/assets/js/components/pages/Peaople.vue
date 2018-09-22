@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="row">
                     <article class="col-md-12 text-center">
-                        <h1 class="text-uppercase pb-1">członkowie</h1>
+                        <h2 class="text-uppercase pb-1">Zarząd</h2>
                         <div class="mb-lg-4 mb-md-3 mb-sm-2 text-center text-light font-weight-light" style="font-size: 24px">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
@@ -14,7 +14,7 @@
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle" src="https://avatars.io/facebook/kasia.szybalska.5/large">
                                     <figcaption class="caption">
-                                        <span>Katarzyna Szybalska</span>
+                                        <span>Krzysztof Trybuszewski</span>
                                         <span class="member-title">Prezes Zarządu</span>
                                     </figcaption>
                                 </figure>
@@ -25,7 +25,7 @@
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle" src="https://avatars.io/facebook/dawid.chmiel.50/large">
                                     <figcaption class="caption">
-                                        <span>Dawid Chmiel</span>
+                                        <span>Kewin Gałuszka</span>
                                         <span class="member-title">Zastępca Prezesa</span>
                                     </figcaption>
                                 </figure>
@@ -34,8 +34,8 @@
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle" src="https://avatars.io/facebook/julia.borula/large">
                                     <figcaption class="caption">
-                                        <span>Julia Borula</span>
-                                        <span class="member-title">Członek Zarządu</span>
+                                        <span>Daria Jaworska</span>
+                                        <span class="member-title">Skarbnik</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -43,8 +43,8 @@
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle" src="https://avatars.io/facebook/Bartuchaa/large">
                                     <figcaption class="caption">
-                                        <span>Bartosz Skokuń</span>
-                                        <span class="member-title">Członek Zarządu</span>
+                                        <span>Jakub Grzybek</span>
+                                        <span class="member-title"><!--Świerży narybek--> DS. Klubu</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -52,13 +52,13 @@
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle" src="https://avatars.io/facebook/mreemirates/large">
                                     <figcaption class="caption">
-                                        <span>Marta Emirsajłow</span>
-                                        <span class="member-title">Członek Zarządu</span>
+                                        <span>Sandra Mrzygłód</span>
+                                        <span class="member-title">DS. Promocji</span>
                                     </figcaption>
                                 </figure>
                             </div>
                         </div>
-                        <a href="" class="btn btn-outline-light text-uppercase center-block m-5">zobacz wszytkich</a>
+
                     </article>
                 </div>
             </div>

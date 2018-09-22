@@ -17,6 +17,8 @@ import router from './router/index.js'
 import {HTTP} from "./http-comon";
 import middleware from './middleware/middleware'
 import * as VueGoogleMaps from "vue2-google-maps";
+import VeeValidate from 'vee-validate';
+
 /*components import */
 import VueScrollTo from 'vue-scrollto'
 import MyApp from './MyApp';
@@ -29,8 +31,10 @@ Vue.use(VueGoogleMaps, {
     libraries: "places" // necessary for places input
   }
 });
-Vue.use(BootstrapVue, router,HTTP);
+Vue.use(router,HTTP);
+Vue.use(BootstrapVue);
 Vue.use(VueResource, lodash, VueScrollTo);
+Vue.use(VeeValidate);
 
 Vue.use(VueScrollTo, {
   container: "body",
