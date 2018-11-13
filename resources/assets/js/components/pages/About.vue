@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="row">
                     <article class="col-md-12 text-center">
-                        <h1 class="text-uppercase pb-2">Jakiś tytuł strony</h1>
+                        <h1 class="text-uppercase pb-2">O klubie</h1>
                         <div class="mr-1 text-justify">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare dictum dolor vitae viverra. Donec condimentum mattis tellus id vehicula. Aenean euismod risus id vestibulum consequat.

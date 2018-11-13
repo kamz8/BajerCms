@@ -28,7 +28,8 @@ middleware(router)
 Vue.use(VueGoogleMaps, {
   load: {
     key: "AIzaSyBKviyzsDgBYVf36WonAM3uRBiPbuuMFkA",
-    libraries: "places" // necessary for places input
+    callback: "x",
+    // libraries: "places" // necessary for places input
   }
 });
 Vue.use(router,HTTP);

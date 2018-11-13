@@ -42,7 +42,6 @@ class Event extends Model
             ->get();
     }
 
-
     public function setTitleAttribute($title){
         $this->attributes['title'] = $title;
     }

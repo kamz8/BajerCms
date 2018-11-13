@@ -1,11 +1,11 @@
     <template>
         <div>
-            <v-header scrollTo="#ekipa" vtitle="Wynajmy" coverImg="https://scontent.fpoz1-1.fna.fbcdn.net/v/t31.0-8/22904747_1825851234094073_1217771858351134340_o.jpg?_nc_cat=0&oh=35e37c75eb8b174a994ae7d27a05d11a&oe=5C1C7A03"></v-header>
-            <section id="onas" class="content-box">
+            <v-header scrollTo="#wynajmy" vtitle="Wynajmy" coverImg="https://scontent.fpoz1-1.fna.fbcdn.net/v/t31.0-8/22904747_1825851234094073_1217771858351134340_o.jpg?_nc_cat=0&oh=35e37c75eb8b174a994ae7d27a05d11a&oe=5C1C7A03"></v-header>
+            <section id="wynajmy" class="content-box">
                 <div class="container">
                     <div class="row">
                         <article class="col-md-12 text-center">
-                            <h1 class="text-uppercase pb-2">Wynajmij salę na własne potrzeby</h1>
+                            <h2 class="text-uppercase pb-2">Wynajmij salę na własne potrzeby</h2>
                             <div class="mr-1 text-justify">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare dictum dolor vitae viverra. Donec condimentum mattis tellus id vehicula. Aenean euismod risus id vestibulum consequat.
@@ -16,6 +16,40 @@
                             </div>
                         </article>
                     </div>
+                    <div class="row">
+                        <article class="col-md-12 text-center">
+                            <h2 class="text-uppercase pb-2">Jak wynająć klub?</h2>
+                            <div class="mr-1 text-justify">
+                                <h5>Od czego rozpoczynamy wynajmy:</h5>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id="faq" class="content-box">
+                <div class="container">
+                    <div class="row">
+                        <article class="col-md-12 text-center">
+                            <h1 class="text-uppercase pb-2">FAQ</h1>
+                            <div class="mr-1 text-justify">
+                                <dropdown-cart :title="'Pytanie 1'">
+                                    alala
+                                </dropdown-cart>
+                                <dropdown-cart :title="'Pytanie 2?'">
+                                    Header and footers using props.
+                                </dropdown-cart>
+                                <dropdown-cart :title="'Pytanie 3?'">
+                                    Header and footers using props.
+                                </dropdown-cart>
+                                <dropdown-cart :title="'Pytanie 4?'">
+                                    Header and footers using props.
+                                </dropdown-cart>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </section>
         </div>
@@ -23,9 +57,11 @@
 
 <script>
   import vHeader from '../page-part/Header'
+  import DropdownCart from '../util/DropdownCart'
   export default {
     name: "booking",
     components: {
+      DropdownCart,
       vHeader
     }
   }

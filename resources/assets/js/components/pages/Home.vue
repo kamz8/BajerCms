@@ -8,22 +8,17 @@
                         <h1 class="text-uppercase pb-2">o klubie</h1>
                         <div class="mr-1 text-justify">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare dictum dolor
-                                vitae viverra. Donec condimentum mattis tellus id vehicula. Aenean euismod risus id
-                                vestibulum consequat.
-                                Mauris rhoncus, eros vel venenatis condimentum, diam erat dictum ipsum, nec tristique
-                                ligula tellus at lacus. Nullam ac sodales eros. Aliquam quis lacinia ipsum, eget mollis
-                                magna. Morbi odio ligula,
-                                vehicula dignissim tempor a, hendrerit vitae dolor. Proin ullamcorper metus quis magna
-                                ultricies, non tincidunt dui luctus. Vivamus sed mi porttitor, euismod sapien id,
-                                fermentum nisi.</p>
-                            <p>Proin vehicula non sapien a dapibus. Etiam eget nisl tincidunt, varius odio a, tempus
-                                augue. Maecenas at erat ut diam luctus hendrerit. Nunc accumsan quam vitae mi commodo
-                                vehicula.
-                                Quisque sagittis sagittis mauris, a faucibus libero aliquet sit amet. Proin accumsan
-                                quam sit amet velit ultrices auctor. Donec venenatis maximus velit ut fermentum. </p>
+                                Jesteśmy agendą kultury, która zajmuje się organizacją imprez tanecznych, koncertów, aktywności sportowych oraz innych inicjatyw kulturalno-rozrywkowych dla studentów. Ponadto bardzo aktywnie współpracujemy z innymi organizacjami zapewniając na wydarzeniach oprawę muzyczną i zaplecze techniczne. Jeżeli idąc przez kampus uczelni słyszycie muzykę, widzicie tańczących ludzi tam na pewno nas spotkacie.
+                                W tym roku Klub Studencki Bajer świętuje jubileusz 40-lecia działalności przy Politechnice Wrocławskiej. Jako jedna z nielicznych organizacji działających przy Politechnice możemy się pochwalić tak długą tradycją funkcjonowania.
+                            </p>
+                            <p>
+                                Wydarzenia odbywają się w siedzibie naszego klubu, w Domu Studenckim T-15 na osiedlu akademickim Wittigowo.
+                                Również ze względu na stale rosnące zainteresowanie coraz częściej organizowane działalności przenosimy poza mury akademika,
+                                w miejsca, gdzie możemy zaprosić jeszcze więcej studentów.
+                                Zapraszamy do stałego śledzenia naszych mediów społecznościowych, zamieszczamy tam wszystkie informacje na temat planowanych inicjatyw.
+                            </p>
                         </div>
-                        <a href="" class="btn btn-success text-uppercase center-block m-4">Czytaj dalej</a>
+                        <router-link :to="{name:'about'}" class="btn btn-success text-uppercase center-block m-4">Czytaj dalej</router-link>
                     </article>
                 </div>
             </div>
@@ -91,7 +86,7 @@
                                 </figure>
                             </div>
                         </div>
-                        <a href="" class="btn btn-outline-light text-uppercase center-block m-5">zobacz wszytkich</a>
+                        <router-link :to="{name:'people'}" class="btn btn-outline-light text-uppercase center-block m-5">zobacz wszytkich</router-link>
                     </article>
                 </div>
             </div>
@@ -134,7 +129,7 @@
                                 hendrerit, arcu sapien aliquam enim, in elementum purus nibh maximus massa. Quisque
                                 ipsum nisl, porttitor quis pretium sed, molestie non est. Pellentesque ac faucibus. </p>
                         </div>
-                        <a href="" class="btn btn-outline-light text-uppercase center-block m-4">Czytaj dalej</a>
+                        <router-link :to="{name:'offer'}" class="btn btn-outline-light text-uppercase center-block m-4">Czytaj dalej</router-link>
                     </article>
                 </div>
             </div>
@@ -143,19 +138,17 @@
             <div class="container">
                 <div class="row">
                     <article class="col-md-12 text-center">
-                        <h1 class="text-uppercase pb-4 pt-4">wynajem</h1>
+                        <h1 class="text-uppercase pb-4 pt-4">Wynajmij salę na własne porzeby</h1>
                         <p>
 
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, imperdiet sed
-                            consectetur ut, placerat id nunc. Donec tincidunt mollis orci id placerat. Nulla at cursus
-                            arcu, eu volutpat lectus. Sed id euismod purus. Nam velit turpis, iaculis a quam at,
-                            volutpat tristique risus. Ut turpis nulla, lacinia ut pulvinar et, tristique ac dui. Quisque
-                            urna quam, tincidunt in dui sed, lacinia rhoncus felis. Sed finibus non diam pretium
-                            aliquet. Duis blandit lorem eget purus vulputate, a bibendum ante fringilla. Donec vitae
-                            ultrices odio. Maecenas sed congue ex, non interdum mi. Donec pellentesque iaculis sapien,
-                            accumsan tempus nulla volutpat at. </p>
+                            <span style="font-size:1.2em" class="text-bold">Już dzisiaj możesz zaplanować swoje wydarzenie w naszym Klubie.</span> </br>
+                            Istnieje możliwość wynajęcia sali tanecznej do zorganizowania Waszego prywatnego przedsięwzięcia.
+                            Urodziny, szkolenia, imprezy inauguracyjne, warsztaty, wykłady i prelekcje? Dla nas nie ważny jest powód, oddajemy Klub w Wasze ręce.
+                            Skontaktuj się z Nami. Chętnie odpowiemy na wszystkie Twoje pytania, pomożemy dopełnić formalności, a Ty możesz już zapraszać gości.
 
-                        <a class="btn btn-success text-uppercase mt-5 mb-4">dowiedz się więcej</a>
+                        </p>
+
+                        <router-link :to="{name:'offer'}" class="btn btn-success text-uppercase mt-5 mb-4">dowiedz się więcej</router-link>
                     </article>
                 </div>
             </div>
@@ -165,11 +158,11 @@
 </template>
 
 <script>
-  import FacebookEvents from "../util/FacbookEvents";
+  // import FacebookEvents from "../util/FacbookEvents";
   import HomeHeader from "../page-part/HomeHeader";
   export default {
     name: "home",
-    components: {FacebookEvents, HomeHeader}
+    components: {HomeHeader}
   }
 </script>
 

@@ -84,8 +84,8 @@ When we create new page - you copy of template below and name as NameOfPage
                 <div class="row">
                     <article class="col-md-12 text-center">
                         <h1 class="text-uppercase pb-2">Zarząd</h1>
-                        <div class="row mr-1 text-justify">
-                            <div class="col-md-12 col-12">
+                        <div class="row mr-1 text-justify justify-content-center">
+                            <div class="col-3">
                                 <avatar
                                         name="Krzysztof Trybuszewski"
                                         memberType="Prezes"
@@ -96,6 +96,7 @@ When we create new page - you copy of template below and name as NameOfPage
                                 </avatar>
 
                             </div>
+                            <div class="w-100"></div>
                             <div class="col-md-3 col-12">
                                 <avatar
                                         name="Kewin Gałuszka"
@@ -150,10 +151,11 @@ When we create new page - you copy of template below and name as NameOfPage
                 <div class="row">
                     <article class="col-md-12 text-center">
                         <h1 class="text-uppercase pb-2">DJE</h1>
-                        <div class="row mr-1 text-justify">
-                            <div class="col-md-4 col-12">
+                        <div class="row mr-1 text-justify justify-content-center">
+                            <div class="col-3 ">
                                 <avatar
                                   name="DJ Kamz"
+                                  memberType="Przewdoniczący sekcji DJ-skiej"
                                   avatar-img="https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/19657282_1363116423796026_1587300144022569518_n.jpg?_nc_cat=0&oh=04bc4935cfb044d84002812fcd9b1cf1&oe=5C277DD8"
                                   phone="668751336"
                                   email="kamzil2@gmail.com">
@@ -170,8 +172,8 @@ When we create new page - you copy of template below and name as NameOfPage
                 <div class="row">
                     <article class="col-md-12 text-center">
                         <h1 class="text-uppercase pb-2">fotografowie</h1>
-                        <div class="row mr-1 text-justify">
-                            <div class="col-md-4 col-12">
+                        <div class="row mr-1 text-justify justify-content-center">
+                            <div class="col-3 ">
                                 <avatar
                                         name="Julia Musiał"
                                         avatar-img="https://thumbs.dreamstime.com/b/braka-placeholder-profilu-ikona-90197997.jpg"
