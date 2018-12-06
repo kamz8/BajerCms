@@ -7,7 +7,7 @@
                     <article class="col-md-12 text-center">
                         <h2 class="text-uppercase pb-1">Zarząd</h2>
                         <div class="mb-lg-4 mb-md-3 mb-sm-2 text-center text-light font-weight-light" style="font-size: 24px">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Nasza grupa to kreatywni ludzie, dla których nie ma rzeczy niemożliwych.</p>
                         </div>
                         <div class="row">
                             <div class="col-md-12 col-xs-12 text-center mb-4">

@@ -62429,7 +62429,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
-//
 
 // import FacebookEvents from "../util/FacbookEvents";
 
@@ -62682,15 +62681,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -62699,6 +62689,26 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
   components: {
     DropdownCart: __WEBPACK_IMPORTED_MODULE_1__util_DropdownCart__["a" /* default */],
     vHeader: __WEBPACK_IMPORTED_MODULE_0__page_part_Header__["a" /* default */]
+  },
+  data: function data() {
+    return {
+      faqs: [{
+        question: '',
+        answer: ''
+      }, {
+        question: '',
+        answer: ''
+      }, {
+        question: '',
+        answer: ''
+      }, {
+        question: '',
+        answer: ''
+      }, {
+        question: '',
+        answer: ''
+      }]
+    };
   }
 });
 
@@ -62745,6 +62755,35 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vee_validate__ = __webpack_require__(174);
 var _this = this;
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -101284,6 +101323,14 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
   mode: 'history',
+  scrollBehavior: function scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { x: 0, y: 0 };
+    }
+  },
+
   routes: [{
     path: '/',
     component: __WEBPACK_IMPORTED_MODULE_2__components_MainTemplate__["a" /* default */],
@@ -105314,7 +105361,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -105667,7 +105714,9 @@ var staticRenderFns = [
       },
       [
         _c("p", [
-          _vm._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+          _vm._v(
+            "Nasza grupa to kreatywni ludzie, dla których nie ma rzeczy niemożliwych."
+          )
         ])
       ]
     )
@@ -105687,7 +105736,7 @@ var staticRenderFns = [
           }),
           _vm._v(" "),
           _c("figcaption", { staticClass: "caption" }, [
-            _c("span", [_vm._v("Katarzyna Szybalska")]),
+            _c("span", [_vm._v("Krzysztow Trybuszewski")]),
             _vm._v(" "),
             _c("span", { staticClass: "member-title" }, [
               _vm._v("Prezes Zarządu")
@@ -105706,11 +105755,9 @@ var staticRenderFns = [
           }),
           _vm._v(" "),
           _c("figcaption", { staticClass: "caption" }, [
-            _c("span", [_vm._v("Dawid Chmiel")]),
+            _c("span", [_vm._v("Kewin Gałuszka")]),
             _vm._v(" "),
-            _c("span", { staticClass: "member-title" }, [
-              _vm._v("Zastępca Prezesa")
-            ])
+            _c("span", { staticClass: "member-title" }, [_vm._v("Wiceprezes")])
           ])
         ])
       ]),
@@ -105723,11 +105770,9 @@ var staticRenderFns = [
           }),
           _vm._v(" "),
           _c("figcaption", { staticClass: "caption" }, [
-            _c("span", [_vm._v("Julia Borula")]),
+            _c("span", [_vm._v("Daria Jaworska")]),
             _vm._v(" "),
-            _c("span", { staticClass: "member-title" }, [
-              _vm._v("Członek Zarządu")
-            ])
+            _c("span", { staticClass: "member-title" }, [_vm._v("Skarbnik")])
           ])
         ])
       ]),
@@ -105740,11 +105785,9 @@ var staticRenderFns = [
           }),
           _vm._v(" "),
           _c("figcaption", { staticClass: "caption" }, [
-            _c("span", [_vm._v("Bartosz Skokuń")]),
+            _c("span", [_vm._v("Jakub Grzybek")]),
             _vm._v(" "),
-            _c("span", { staticClass: "member-title" }, [
-              _vm._v("Członek Zarządu")
-            ])
+            _c("span", { staticClass: "member-title" }, [_vm._v("ds Klubu")])
           ])
         ])
       ]),
@@ -105757,11 +105800,9 @@ var staticRenderFns = [
           }),
           _vm._v(" "),
           _c("figcaption", { staticClass: "caption" }, [
-            _c("span", [_vm._v("Marta Emirsajłow")]),
+            _c("span", [_vm._v("Sandra Mrzygłód")]),
             _vm._v(" "),
-            _c("span", { staticClass: "member-title" }, [
-              _vm._v("Członek Zarządu")
-            ])
+            _c("span", { staticClass: "member-title" }, [_vm._v("ds Promocji")])
           ])
         ])
       ])
@@ -105779,9 +105820,7 @@ var staticRenderFns = [
             { staticClass: "col-12 col-md-6 visible-sm-inline-block" },
             [
               _c("p", { staticClass: "m-0" }, [
-                _vm._v(
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, imperdiet\n                            sed consectetur ut, placerat id nunc.Donec tincidunt mollis."
-                )
+                _vm._v("Zobaczcie naszą nie powtarzalną imprezową składankę. ")
               ])
             ]
           ),
@@ -106199,7 +106238,7 @@ var staticRenderFns = [
                 [
                   _c("p", [
                     _vm._v(
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                      "Nasza grupa to kreatywni ludzie, dla których nie ma rzeczy niemożliwych."
                     )
                   ])
                 ]
@@ -106613,7 +106652,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -106812,37 +106851,26 @@ var render = function() {
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("article", { staticClass: "col-md-12 text-center" }, [
-              _c("h1", { staticClass: "text-uppercase pb-2" }, [_vm._v("FAQ")]),
+              _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                _vm._v("Najczęściej zadawane pytania")
+              ]),
               _vm._v(" "),
               _c(
                 "div",
                 { staticClass: "mr-1 text-justify" },
-                [
-                  _c("dropdown-cart", { attrs: { title: "Pytanie 1" } }, [
-                    _vm._v(
-                      "\n                            alala\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("dropdown-cart", { attrs: { title: "Pytanie 2?" } }, [
-                    _vm._v(
-                      "\n                            Header and footers using props.\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("dropdown-cart", { attrs: { title: "Pytanie 3?" } }, [
-                    _vm._v(
-                      "\n                            Header and footers using props.\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("dropdown-cart", { attrs: { title: "Pytanie 4?" } }, [
-                    _vm._v(
-                      "\n                            Header and footers using props.\n                        "
-                    )
-                  ])
-                ],
-                1
+                _vm._l(_vm.faqs, function(faq) {
+                  return _c(
+                    "dropdown-cart",
+                    { attrs: { title: faq.question } },
+                    [
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(faq.answer) +
+                          "\n                        "
+                      )
+                    ]
+                  )
+                })
               )
             ])
           ])
@@ -107006,7 +107034,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -107722,6 +107750,83 @@ var render = function() {
                 "div",
                 { staticClass: "row mr-1 text-justify justify-content-center" },
                 [
+                  _c(
+                    "div",
+                    { staticClass: "col-3 " },
+                    [
+                      _c(
+                        "avatar",
+                        {
+                          attrs: {
+                            name: "DJ Kamz",
+                            memberType: "Przewdoniczący sekcji DJ-skiej",
+                            "avatar-img":
+                              "https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/19657282_1363116423796026_1587300144022569518_n.jpg?_nc_cat=0&oh=04bc4935cfb044d84002812fcd9b1cf1&oe=5C277DD8",
+                            phone: "668751336",
+                            email: "kamzil2@gmail.com"
+                          }
+                        },
+                        [
+                          _c("social-link", {
+                            attrs: {
+                              type: "facebook",
+                              href: "https://www.facebook.com/kamzdj/"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-3 " },
+                    [
+                      _c("avatar", {
+                        attrs: {
+                          name: "DJ Criss",
+                          "avatar-img":
+                            "https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/19657282_1363116423796026_1587300144022569518_n.jpg?_nc_cat=0&oh=04bc4935cfb044d84002812fcd9b1cf1&oe=5C277DD8",
+                          phone: "",
+                          email: ""
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-3 " },
+                    [
+                      _c(
+                        "avatar",
+                        {
+                          attrs: {
+                            name: "DJ Kamz",
+                            memberType: "Przewdoniczący sekcji DJ-skiej",
+                            "avatar-img":
+                              "https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/19657282_1363116423796026_1587300144022569518_n.jpg?_nc_cat=0&oh=04bc4935cfb044d84002812fcd9b1cf1&oe=5C277DD8",
+                            phone: "668751336",
+                            email: "kamzil2@gmail.com"
+                          }
+                        },
+                        [
+                          _c("social-link", {
+                            attrs: {
+                              type: "facebook",
+                              href: "https://www.facebook.com/kamzdj/"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "col-3 " },

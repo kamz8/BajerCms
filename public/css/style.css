@@ -184,7 +184,9 @@ figure.member > figcaption > .member-link {
     background-origin: padding-box;
     background-position: center top;
 }
-
+figure.avatar {
+    max-width: 200px;
+}
 .bajerfont.bajer-2x {
     font-size: 2em;
 }
@@ -295,9 +297,7 @@ footer + .subfooter{
     .sentence.bajerfont {
         font-size: 30px;
     }
-
     figure.avatar {
-        max-width: 200px;
+        max-width: 250px;
     }
-
 }

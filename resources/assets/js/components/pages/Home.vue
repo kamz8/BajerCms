@@ -30,7 +30,7 @@
                         <h1 class="text-uppercase pb-1">członkowie</h1>
                         <div class="mb-lg-4 mb-md-3 mb-sm-2 text-center text-light font-weight-light"
                              style="font-size: 24px">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Nasza grupa to kreatywni ludzie, dla których nie ma rzeczy niemożliwych.</p>
                         </div>
                         <div class="row">
                             <div class="col-md-12 col-xs-12 text-center mb-4">
@@ -38,7 +38,7 @@
                                     <img class="img-fluid rounded-circle"
                                          src="https://avatars.io/facebook/kasia.szybalska.5/large">
                                     <figcaption class="caption">
-                                        <span>Katarzyna Szybalska</span>
+                                        <span>Krzysztow Trybuszewski</span>
                                         <span class="member-title">Prezes Zarządu</span>
                                     </figcaption>
                                 </figure>
@@ -50,8 +50,8 @@
                                     <img class="img-fluid rounded-circle"
                                          src="https://avatars.io/facebook/dawid.chmiel.50/large">
                                     <figcaption class="caption">
-                                        <span>Dawid Chmiel</span>
-                                        <span class="member-title">Zastępca Prezesa</span>
+                                        <span>Kewin Gałuszka</span>
+                                        <span class="member-title">Wiceprezes</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -60,8 +60,8 @@
                                     <img class="img-fluid rounded-circle"
                                          src="https://avatars.io/facebook/julia.borula/large">
                                     <figcaption class="caption">
-                                        <span>Julia Borula</span>
-                                        <span class="member-title">Członek Zarządu</span>
+                                        <span>Daria Jaworska</span>
+                                        <span class="member-title">Skarbnik</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -70,8 +70,8 @@
                                     <img class="img-fluid rounded-circle"
                                          src="https://avatars.io/facebook/Bartuchaa/large">
                                     <figcaption class="caption">
-                                        <span>Bartosz Skokuń</span>
-                                        <span class="member-title">Członek Zarządu</span>
+                                        <span>Jakub Grzybek</span>
+                                        <span class="member-title">ds Klubu</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -80,8 +80,8 @@
                                     <img class="img-fluid rounded-circle"
                                          src="https://avatars.io/facebook/mreemirates/large">
                                     <figcaption class="caption">
-                                        <span>Marta Emirsajłow</span>
-                                        <span class="member-title">Członek Zarządu</span>
+                                        <span>Sandra Mrzygłód</span>
+                                        <span class="member-title">ds Promocji</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -105,8 +105,7 @@
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12 col-md-6 visible-sm-inline-block">
-                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, imperdiet
-                            sed consectetur ut, placerat id nunc.Donec tincidunt mollis.</p>
+                        <p class="m-0">Zobaczcie naszą nie powtarzalną imprezową składankę. </p>
                     </div>
                     <div class="col-12 col-md-4 offset-md-2">
                         <span class="bajerfont bajer-2x mr-2 mb-2 d-block d-md-inline mb-md-0 text-center">#AleBajer</span>

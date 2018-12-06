@@ -33,19 +33,10 @@
                 <div class="container">
                     <div class="row">
                         <article class="col-md-12 text-center">
-                            <h1 class="text-uppercase pb-2">FAQ</h1>
+                            <h1 class="text-uppercase pb-2">Najczęściej zadawane pytania</h1>
                             <div class="mr-1 text-justify">
-                                <dropdown-cart :title="'Pytanie 1'">
-                                    alala
-                                </dropdown-cart>
-                                <dropdown-cart :title="'Pytanie 2?'">
-                                    Header and footers using props.
-                                </dropdown-cart>
-                                <dropdown-cart :title="'Pytanie 3?'">
-                                    Header and footers using props.
-                                </dropdown-cart>
-                                <dropdown-cart :title="'Pytanie 4?'">
-                                    Header and footers using props.
+                                <dropdown-cart v-for="faq in faqs" :title="faq.question">
+                                    {{faq.answer}}
                                 </dropdown-cart>
                             </div>
                         </article>
@@ -63,6 +54,32 @@
     components: {
       DropdownCart,
       vHeader
+    },
+    data () {
+      return {
+        faqs: [
+          {
+            question: '',
+            answer: ''
+          },
+          {
+            question: '',
+            answer: ''
+          },
+          {
+            question: '',
+            answer: ''
+          },
+          {
+            question: '',
+            answer: ''
+          },
+          {
+            question: '',
+            answer: ''
+          }
+        ]
+      }
     }
   }
 </script>
