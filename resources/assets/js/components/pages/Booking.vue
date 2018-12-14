@@ -35,7 +35,7 @@
                         <article class="col-md-12 text-center">
                             <h1 class="text-uppercase pb-2">Najczęściej zadawane pytania</h1>
                             <div class="mr-1 text-justify">
-                                <dropdown-cart v-for="faq in faqs" :title="faq.question">
+                                <dropdown-cart v-for="faq in faqs" :key="faq.question" :title="faq.question">
                                     {{faq.answer}}
                                 </dropdown-cart>
                             </div>

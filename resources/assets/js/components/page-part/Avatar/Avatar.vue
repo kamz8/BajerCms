@@ -5,8 +5,8 @@
         <figcaption class="caption text-center">
             <span>{{name}}</span>
             <span v-if="memberType" class="member-title">{{memberType}}</span>
-            <span class="text-left">
-                <i v-if="phone" class="fa fa-phone"></i>&nbsp; {{phone}} <br/>
+            <span class="text-left" v-if="phone || email">
+                <i v-if="phone" class="fa fa-phone"></i>&nbsp; <a :href="'tel:'+phone">{{phone}}</a>  <br/>
                 <i v-if="email" class="fa fa-envelope"></i> {{email}}
             </span>
             <span class="member-link text-left">
@@ -43,5 +43,7 @@
     figcaption > span {
         line-height: 1.6em;
     }
-
+    a{
+        color: #ffffff;
+    }
 </style>

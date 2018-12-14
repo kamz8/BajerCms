@@ -62579,6 +62579,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -62755,6 +62760,37 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vee_validate__ = __webpack_require__(174);
 var _this = this;
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -92302,7 +92338,7 @@ module.exports.makeKey = makeKey
 /* 406 */
 /***/ (function(module, exports) {
 
-module.exports = {"_args":[["elliptic@6.4.0","D:\\Laravel\\BajerCms"]],"_development":true,"_from":"elliptic@6.4.0","_id":"elliptic@6.4.0","_inBundle":false,"_integrity":"sha1-ysmvh2LIWDYYcAPI3+GT5eLq5d8=","_location":"/elliptic","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"elliptic@6.4.0","name":"elliptic","escapedName":"elliptic","rawSpec":"6.4.0","saveSpec":null,"fetchSpec":"6.4.0"},"_requiredBy":["/browserify-sign","/create-ecdh"],"_resolved":"https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz","_spec":"6.4.0","_where":"D:\\Laravel\\BajerCms","author":{"name":"Fedor Indutny","email":"fedor@indutny.com"},"bugs":{"url":"https://github.com/indutny/elliptic/issues"},"dependencies":{"bn.js":"^4.4.0","brorand":"^1.0.1","hash.js":"^1.0.0","hmac-drbg":"^1.0.0","inherits":"^2.0.1","minimalistic-assert":"^1.0.0","minimalistic-crypto-utils":"^1.0.0"},"description":"EC cryptography","devDependencies":{"brfs":"^1.4.3","coveralls":"^2.11.3","grunt":"^0.4.5","grunt-browserify":"^5.0.0","grunt-cli":"^1.2.0","grunt-contrib-connect":"^1.0.0","grunt-contrib-copy":"^1.0.0","grunt-contrib-uglify":"^1.0.1","grunt-mocha-istanbul":"^3.0.1","grunt-saucelabs":"^8.6.2","istanbul":"^0.4.2","jscs":"^2.9.0","jshint":"^2.6.0","mocha":"^2.1.0"},"files":["lib"],"homepage":"https://github.com/indutny/elliptic","keywords":["EC","Elliptic","curve","Cryptography"],"license":"MIT","main":"lib/elliptic.js","name":"elliptic","repository":{"type":"git","url":"git+ssh://git@github.com/indutny/elliptic.git"},"scripts":{"jscs":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","jshint":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","lint":"npm run jscs && npm run jshint","test":"npm run lint && npm run unit","unit":"istanbul test _mocha --reporter=spec test/index.js","version":"grunt dist && git add dist/"},"version":"6.4.0"}
+module.exports = {"_args":[["elliptic@6.4.0","C:\\Laravel\\BajerCms"]],"_development":true,"_from":"elliptic@6.4.0","_id":"elliptic@6.4.0","_inBundle":false,"_integrity":"sha1-ysmvh2LIWDYYcAPI3+GT5eLq5d8=","_location":"/elliptic","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"elliptic@6.4.0","name":"elliptic","escapedName":"elliptic","rawSpec":"6.4.0","saveSpec":null,"fetchSpec":"6.4.0"},"_requiredBy":["/browserify-sign","/create-ecdh"],"_resolved":"https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz","_spec":"6.4.0","_where":"C:\\Laravel\\BajerCms","author":{"name":"Fedor Indutny","email":"fedor@indutny.com"},"bugs":{"url":"https://github.com/indutny/elliptic/issues"},"dependencies":{"bn.js":"^4.4.0","brorand":"^1.0.1","hash.js":"^1.0.0","hmac-drbg":"^1.0.0","inherits":"^2.0.1","minimalistic-assert":"^1.0.0","minimalistic-crypto-utils":"^1.0.0"},"description":"EC cryptography","devDependencies":{"brfs":"^1.4.3","coveralls":"^2.11.3","grunt":"^0.4.5","grunt-browserify":"^5.0.0","grunt-cli":"^1.2.0","grunt-contrib-connect":"^1.0.0","grunt-contrib-copy":"^1.0.0","grunt-contrib-uglify":"^1.0.1","grunt-mocha-istanbul":"^3.0.1","grunt-saucelabs":"^8.6.2","istanbul":"^0.4.2","jscs":"^2.9.0","jshint":"^2.6.0","mocha":"^2.1.0"},"files":["lib"],"homepage":"https://github.com/indutny/elliptic","keywords":["EC","Elliptic","curve","Cryptography"],"license":"MIT","main":"lib/elliptic.js","name":"elliptic","repository":{"type":"git","url":"git+ssh://git@github.com/indutny/elliptic.git"},"scripts":{"jscs":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","jshint":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","lint":"npm run jscs && npm run jshint","test":"npm run lint && npm run unit","unit":"istanbul test _mocha --reporter=spec test/index.js","version":"grunt dist && git add dist/"},"version":"6.4.0"}
 
 /***/ }),
 /* 407 */
@@ -104237,7 +104273,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, "\nnav .navbar.fixed-top{\n    background-color: #1b1e21cc !important;\n}\nnav.sticky{\n    z-index: 10;\n}\n#mainHeader{\n        margin-top: -92px;\n}\n.bg-gray{\n        background-color: rgba(33, 33, 33, 0.8) !important;\n}\nnav.colapse-space{\n        margin-bottom: 92px;\n}\n.dropdown-item{\n      line-height: initial;\n      font-size: 14px;\n}\n", ""]);
+exports.push([module.i, "\nnav .navbar.fixed-top{\r\n    background-color: #1b1e21cc !important;\n}\nnav.sticky{\r\n    z-index: 10;\n}\n#mainHeader{\r\n        margin-top: -92px;\n}\n.bg-gray{\r\n        background-color: rgba(33, 33, 33, 0.8) !important;\n}\nnav.colapse-space{\r\n        margin-bottom: 92px;\n}\n.dropdown-item{\r\n      line-height: initial;\r\n      font-size: 14px;\n}\r\n", ""]);
 
 // exports
 
@@ -105731,7 +105767,7 @@ var staticRenderFns = [
           _c("img", {
             staticClass: "img-fluid rounded-circle",
             attrs: {
-              src: "https://avatars.io/facebook/kasia.szybalska.5/large"
+              src: "https://avatars.io/facebook/krzysztof.trybuszewski/large"
             }
           }),
           _vm._v(" "),
@@ -105751,7 +105787,7 @@ var staticRenderFns = [
         _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
           _c("img", {
             staticClass: "img-fluid rounded-circle",
-            attrs: { src: "https://avatars.io/facebook/dawid.chmiel.50/large" }
+            attrs: { src: "https://avatars.io/facebook/kewin.galuszka/large" }
           }),
           _vm._v(" "),
           _c("figcaption", { staticClass: "caption" }, [
@@ -105766,7 +105802,9 @@ var staticRenderFns = [
         _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
           _c("img", {
             staticClass: "img-fluid rounded-circle",
-            attrs: { src: "https://avatars.io/facebook/julia.borula/large" }
+            attrs: {
+              src: "https://avatars.io/facebook/daria.jaworowska.1/large"
+            }
           }),
           _vm._v(" "),
           _c("figcaption", { staticClass: "caption" }, [
@@ -105781,7 +105819,7 @@ var staticRenderFns = [
         _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
           _c("img", {
             staticClass: "img-fluid rounded-circle",
-            attrs: { src: "https://avatars.io/facebook/Bartuchaa/large" }
+            attrs: { src: "https://avatars.io/facebook/asderkg/large" }
           }),
           _vm._v(" "),
           _c("figcaption", { staticClass: "caption" }, [
@@ -105796,7 +105834,7 @@ var staticRenderFns = [
         _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
           _c("img", {
             staticClass: "img-fluid rounded-circle",
-            attrs: { src: "https://avatars.io/facebook/mreemirates/large" }
+            attrs: { src: "https://avatars.io/facebook/100013585574066/large" }
           }),
           _vm._v(" "),
           _c("figcaption", { staticClass: "caption" }, [
@@ -106179,7 +106217,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -106257,12 +106295,12 @@ var staticRenderFns = [
                           staticClass: "img-fluid rounded-circle",
                           attrs: {
                             src:
-                              "https://avatars.io/facebook/kasia.szybalska.5/large"
+                              "https://avatars.io/facebook/krzysztof.trybuszewski/large"
                           }
                         }),
                         _vm._v(" "),
                         _c("figcaption", { staticClass: "caption" }, [
-                          _c("span", [_vm._v("Krzysztof Trybuszewski")]),
+                          _c("span", [_vm._v("Krzysztow Trybuszewski")]),
                           _vm._v(" "),
                           _c("span", { staticClass: "member-title" }, [
                             _vm._v("Prezes Zarządu")
@@ -106284,7 +106322,7 @@ var staticRenderFns = [
                         staticClass: "img-fluid rounded-circle",
                         attrs: {
                           src:
-                            "https://avatars.io/facebook/dawid.chmiel.50/large"
+                            "https://avatars.io/facebook/kewin.galuszka/large"
                         }
                       }),
                       _vm._v(" "),
@@ -106292,7 +106330,7 @@ var staticRenderFns = [
                         _c("span", [_vm._v("Kewin Gałuszka")]),
                         _vm._v(" "),
                         _c("span", { staticClass: "member-title" }, [
-                          _vm._v("Zastępca Prezesa")
+                          _vm._v("Wiceprezes")
                         ])
                       ])
                     ]
@@ -106307,7 +106345,8 @@ var staticRenderFns = [
                       _c("img", {
                         staticClass: "img-fluid rounded-circle",
                         attrs: {
-                          src: "https://avatars.io/facebook/julia.borula/large"
+                          src:
+                            "https://avatars.io/facebook/daria.jaworowska.1/large"
                         }
                       }),
                       _vm._v(" "),
@@ -106330,7 +106369,7 @@ var staticRenderFns = [
                       _c("img", {
                         staticClass: "img-fluid rounded-circle",
                         attrs: {
-                          src: "https://avatars.io/facebook/Bartuchaa/large"
+                          src: "https://avatars.io/facebook/asderkg/large"
                         }
                       }),
                       _vm._v(" "),
@@ -106338,7 +106377,7 @@ var staticRenderFns = [
                         _c("span", [_vm._v("Jakub Grzybek")]),
                         _vm._v(" "),
                         _c("span", { staticClass: "member-title" }, [
-                          _vm._v(" DS. Klubu")
+                          _vm._v("ds Klubu")
                         ])
                       ])
                     ]
@@ -106353,7 +106392,8 @@ var staticRenderFns = [
                       _c("img", {
                         staticClass: "img-fluid rounded-circle",
                         attrs: {
-                          src: "https://avatars.io/facebook/mreemirates/large"
+                          src:
+                            "https://avatars.io/facebook/100013585574066/large"
                         }
                       }),
                       _vm._v(" "),
@@ -106361,7 +106401,7 @@ var staticRenderFns = [
                         _c("span", [_vm._v("Sandra Mrzygłód")]),
                         _vm._v(" "),
                         _c("span", { staticClass: "member-title" }, [
-                          _vm._v("DS. Promocji")
+                          _vm._v("ds Promocji")
                         ])
                       ])
                     ]
@@ -106861,7 +106901,7 @@ var render = function() {
                 _vm._l(_vm.faqs, function(faq) {
                   return _c(
                     "dropdown-cart",
-                    { attrs: { title: faq.question } },
+                    { key: faq.question, attrs: { title: faq.question } },
                     [
                       _vm._v(
                         "\n                            " +
@@ -107034,7 +107074,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -107285,7 +107325,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, "\nfigcaption > span[data-v-bd2624ec] {\n    line-height: 1.6em;\n}\n\n", ""]);
+exports.push([module.i, "\nfigcaption > span[data-v-bd2624ec] {\n    line-height: 1.6em;\n}\na[data-v-bd2624ec]{\n    color: #ffffff;\n}\n", ""]);
 
 // exports
 
@@ -107384,14 +107424,20 @@ var render = function() {
           ])
         : _vm._e(),
       _vm._v(" "),
-      _c("span", { staticClass: "text-left" }, [
-        _vm.phone ? _c("i", { staticClass: "fa fa-phone" }) : _vm._e(),
-        _vm._v("  " + _vm._s(_vm.phone) + " "),
-        _c("br"),
-        _vm._v(" "),
-        _vm.email ? _c("i", { staticClass: "fa fa-envelope" }) : _vm._e(),
-        _vm._v(" " + _vm._s(_vm.email) + "\n        ")
-      ]),
+      _vm.phone || _vm.email
+        ? _c("span", { staticClass: "text-left" }, [
+            _vm.phone ? _c("i", { staticClass: "fa fa-phone" }) : _vm._e(),
+            _vm._v("  "),
+            _c("a", { attrs: { href: "tel:" + _vm.phone } }, [
+              _vm._v(_vm._s(_vm.phone))
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _vm.email ? _c("i", { staticClass: "fa fa-envelope" }) : _vm._e(),
+            _vm._v(" " + _vm._s(_vm.email) + "\n        ")
+          ])
+        : _vm._e(),
       _vm._v(" "),
       _c(
         "span",
@@ -107690,8 +107736,8 @@ var render = function() {
                           memberType: "Skarbnik",
                           "avatar-img":
                             "https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-1/31363237_1646117462132562_5530777129639215104_n.jpg?_nc_cat=0&oh=a2ba70a21cd02846dcb581376023b41f&oe=5C5D3374",
-                          phone: "",
-                          email: ""
+                          phone: "726115611",
+                          email: "jaworowskadaria@gmail.com"
                         }
                       })
                     ],
@@ -107708,8 +107754,8 @@ var render = function() {
                           memberType: "ds. Klubu",
                           "avatar-img":
                             "https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/29594885_1665039356921470_2588230364635524435_n.jpg?_nc_cat=0&oh=cafd302dfba18b81644f7e5b95948131&oe=5C1B7F3C",
-                          phone: "",
-                          email: ""
+                          phone: "660358343",
+                          email: "kuba.grzybek@gmail.com"
                         }
                       })
                     ],
@@ -107726,8 +107772,8 @@ var render = function() {
                           memberType: "ds. Promocji",
                           "avatar-img":
                             "https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/32678486_422018788260970_534810766511964160_n.jpg?_nc_cat=0&oh=80e1356be116829e3a8fbfd67cf4e2c3&oe=5C5D7A0D",
-                          phone: "",
-                          email: ""
+                          phone: "669228089",
+                          email: "sandra.mrzyglod.564@gmail.com"
                         }
                       })
                     ],
@@ -107748,7 +107794,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "row mr-1 text-justify justify-content-center" },
+                { staticClass: "row mr-1 text-justify justify-content-left" },
                 [
                   _c(
                     "div",
@@ -107772,52 +107818,20 @@ var render = function() {
                               type: "facebook",
                               href: "https://www.facebook.com/kamzdj/"
                             }
-                          })
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "col-3 " },
-                    [
-                      _c("avatar", {
-                        attrs: {
-                          name: "DJ Criss",
-                          "avatar-img":
-                            "https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/19657282_1363116423796026_1587300144022569518_n.jpg?_nc_cat=0&oh=04bc4935cfb044d84002812fcd9b1cf1&oe=5C277DD8",
-                          phone: "",
-                          email: ""
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "col-3 " },
-                    [
-                      _c(
-                        "avatar",
-                        {
-                          attrs: {
-                            name: "DJ Kamz",
-                            memberType: "Przewdoniczący sekcji DJ-skiej",
-                            "avatar-img":
-                              "https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/19657282_1363116423796026_1587300144022569518_n.jpg?_nc_cat=0&oh=04bc4935cfb044d84002812fcd9b1cf1&oe=5C277DD8",
-                            phone: "668751336",
-                            email: "kamzil2@gmail.com"
-                          }
-                        },
-                        [
+                          }),
+                          _vm._v(" "),
                           _c("social-link", {
                             attrs: {
-                              type: "facebook",
-                              href: "https://www.facebook.com/kamzdj/"
+                              type: "instagram",
+                              href: "https://www.instagram.com/djkamz/"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("social-link", {
+                            attrs: {
+                              type: "spotify",
+                              href:
+                                "https://open.spotify.com/artist/4OpowxAJqCRvswnbe9af1m?si=4EWYhiHaQjetgbujj6FOyw"
                             }
                           })
                         ],
@@ -107835,19 +107849,109 @@ var render = function() {
                         "avatar",
                         {
                           attrs: {
-                            name: "DJ Kamz",
-                            memberType: "Przewdoniczący sekcji DJ-skiej",
-                            "avatar-img":
-                              "https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/19657282_1363116423796026_1587300144022569518_n.jpg?_nc_cat=0&oh=04bc4935cfb044d84002812fcd9b1cf1&oe=5C277DD8",
-                            phone: "668751336",
-                            email: "kamzil2@gmail.com"
+                            name: "DJ Criss",
+                            "avatar-img": "img/djcriss.jpg",
+                            phone: "507663376",
+                            email: "k.trybuszewski@gmail.com"
                           }
                         },
                         [
                           _c("social-link", {
                             attrs: {
                               type: "facebook",
-                              href: "https://www.facebook.com/kamzdj/"
+                              href:
+                                "https://www.facebook.com/Dj-Criss-1921255518175790"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-3 " },
+                    [
+                      _c(
+                        "avatar",
+                        {
+                          attrs: {
+                            name: "DJ MichaelUp",
+                            "avatar-img": "img/djmichaelup.jpg",
+                            phone: "",
+                            email: ""
+                          }
+                        },
+                        [
+                          _c("social-link", {
+                            attrs: {
+                              type: "facebook",
+                              href: "https://www.facebook.com/michaelupbeats"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("social-link", {
+                            attrs: {
+                              type: "instagram",
+                              href: "https://www.instagram.com/michaelupx01"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-3 " },
+                    [
+                      _c(
+                        "avatar",
+                        {
+                          attrs: {
+                            name: "DJ Chmielu",
+                            "avatar-img": "img/djchmielu.jpg",
+                            phone: "663259689",
+                            email: "dav.chmiel@gmail.com"
+                          }
+                        },
+                        [
+                          _c("social-link", {
+                            attrs: {
+                              type: "facebook",
+                              href:
+                                "https://www.facebook.com/Dj-Chmielu-362800980519005"
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-3 " },
+                    [
+                      _c(
+                        "avatar",
+                        {
+                          attrs: {
+                            name: "Dj Rykon",
+                            "avatar-img":
+                              "https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/21557748_346211829155221_8523649959774637894_n.jpg?_nc_cat=108&_nc_ht=scontent.fpoz1-1.fna&oh=28a10164d50e2dd01851cba8422274f4&oe=5CADF867"
+                          }
+                        },
+                        [
+                          _c("social-link", {
+                            attrs: {
+                              type: "facebook",
+                              href: "https://www.facebook.com/RykonOfficial"
                             }
                           })
                         ],
@@ -107876,9 +107980,7 @@ var render = function() {
                 _vm._v(" "),
                 _c(
                   "div",
-                  {
-                    staticClass: "row mr-1 text-justify justify-content-center"
-                  },
+                  { staticClass: "row mr-1 text-justify justify-content-left" },
                   [
                     _c(
                       "div",
@@ -107893,6 +107995,63 @@ var render = function() {
                             email: ""
                           }
                         })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col-3 " },
+                      [
+                        _c(
+                          "avatar",
+                          {
+                            attrs: {
+                              name: "Wojtek Obuchowski",
+                              "avatar-img": "img/obuchowski.jpg",
+                              phone: "",
+                              email: ""
+                            }
+                          },
+                          [
+                            _c("social-link", {
+                              attrs: {
+                                type: "facebook",
+                                href:
+                                  "https://www.facebook.com/W.Obuchowski1FOTO"
+                              }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col-3 " },
+                      [
+                        _c(
+                          "avatar",
+                          {
+                            attrs: {
+                              name: "Kamil Żmijowski",
+                              "avatar-img": "img/kzmijowski.jpg",
+                              phone: "",
+                              email: ""
+                            }
+                          },
+                          [
+                            _c("social-link", {
+                              attrs: {
+                                type: "facebook",
+                                href: "https://www.facebook.com/kzmijowski"
+                              }
+                            })
+                          ],
+                          1
+                        )
                       ],
                       1
                     )

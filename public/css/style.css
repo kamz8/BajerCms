@@ -1,8 +1,8 @@
 @import "socialicons.css";
 
 @font-face {
-    font-family: 'BajerFont';
-    src: url('../fonts/Candice.ttf') format('truetype');
+    font-family: 'Candice';
+    src: url('../fonts/BajerFont_pl.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }

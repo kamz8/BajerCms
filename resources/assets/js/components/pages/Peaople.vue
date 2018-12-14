@@ -12,9 +12,10 @@
                         <div class="row">
                             <div class="col-md-12 col-xs-12 text-center mb-4">
                                 <figure class="member avatar mx-auto d-block">
-                                    <img class="img-fluid rounded-circle" src="https://avatars.io/facebook/kasia.szybalska.5/large">
+                                    <img class="img-fluid rounded-circle"
+                                         src="https://avatars.io/facebook/krzysztof.trybuszewski/large">
                                     <figcaption class="caption">
-                                        <span>Krzysztof Trybuszewski</span>
+                                        <span>Krzysztow Trybuszewski</span>
                                         <span class="member-title">Prezes Zarządu</span>
                                     </figcaption>
                                 </figure>
@@ -23,16 +24,18 @@
                             <!--new line -->
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
-                                    <img class="img-fluid rounded-circle" src="https://avatars.io/facebook/dawid.chmiel.50/large">
+                                    <img class="img-fluid rounded-circle"
+                                         src="https://avatars.io/facebook/kewin.galuszka/large">
                                     <figcaption class="caption">
                                         <span>Kewin Gałuszka</span>
-                                        <span class="member-title">Zastępca Prezesa</span>
+                                        <span class="member-title">Wiceprezes</span>
                                     </figcaption>
                                 </figure>
                             </div>
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
-                                    <img class="img-fluid rounded-circle" src="https://avatars.io/facebook/julia.borula/large">
+                                    <img class="img-fluid rounded-circle"
+                                         src="https://avatars.io/facebook/daria.jaworowska.1/large">
                                     <figcaption class="caption">
                                         <span>Daria Jaworska</span>
                                         <span class="member-title">Skarbnik</span>
@@ -41,19 +44,21 @@
                             </div>
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
-                                    <img class="img-fluid rounded-circle" src="https://avatars.io/facebook/Bartuchaa/large">
+                                    <img class="img-fluid rounded-circle"
+                                         src="https://avatars.io/facebook/asderkg/large">
                                     <figcaption class="caption">
                                         <span>Jakub Grzybek</span>
-                                        <span class="member-title"><!--Świerży narybek--> DS. Klubu</span>
+                                        <span class="member-title">ds Klubu</span>
                                     </figcaption>
                                 </figure>
                             </div>
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
-                                    <img class="img-fluid rounded-circle" src="https://avatars.io/facebook/mreemirates/large">
+                                    <img class="img-fluid rounded-circle"
+                                         src="https://avatars.io/facebook/100013585574066/large">
                                     <figcaption class="caption">
                                         <span>Sandra Mrzygłód</span>
-                                        <span class="member-title">DS. Promocji</span>
+                                        <span class="member-title">ds Promocji</span>
                                     </figcaption>
                                 </figure>
                             </div>
