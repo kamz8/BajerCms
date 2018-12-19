@@ -19,15 +19,15 @@ When we create new page - you copy of template below and name as NameOfPage
                                 </address>
                             </div>
                             <div class="col-md-8">
-                                <b-form @submit.prevent="validateBeforeSubmit()" >
+                                <b-form @submit.prevent="validateBeforeSubmit" >
                                     <b-form-group id="exampleInputGroup1"
                                                   label="Adres email:"
                                                   label-for="exampleInput1"
-                                                  description="Potrzebujemy twojego adresu email, żeby się z tobą skontaktować"
+                                                  description="Potrzebujemy Twojego adresu email, żeby się z tobą skontaktować"
                                                   >
                                         <b-form-input id="exampleInput1"
                                                       type="email"
-                                                      v-model="contactForm.email"
+                                                      v-model.lazy="contactForm.email"
                                                       name="email"
                                                       placeholder="Enter email"
                                                       v-validate="'required|email'"
@@ -40,7 +40,7 @@ When we create new page - you copy of template below and name as NameOfPage
                                                   label-for="exampleInput2">
                                         <b-form-input id="exampleInput2"
                                                       type="text"
-                                                      v-model="contactForm.name"
+                                                      v-model.lazy="contactForm.name"
                                                       name="name"
                                                       v-validate="'require'"
                                                       placeholder="Wpisz swoje imię i nazwisko"
@@ -52,7 +52,7 @@ When we create new page - you copy of template below and name as NameOfPage
                                                   label-for="exampleInput2">
                                         <b-form-input id="exampleInput2"
                                                       type="text"
-                                                      v-model="contactForm.phone"
+                                                      v-model.lazy="contactForm.phone"
                                                       v-validate="'require'"
                                                       name="phone"
                                                       placeholder="Wpisz swój numer telefonu"
@@ -64,12 +64,13 @@ When we create new page - you copy of template below and name as NameOfPage
                                                   label-for="message">
 
                                         <b-form-textarea id="message"
-                                                         v-model="contactForm.message"
-                                                         placeholder="Napisz w jakiej sprawie chcesz się z nami skontaktować"
+                                                         v-model.lazy="contactForm.message"
+                                                         placeholder="Napisz, w jakiej sprawie chcesz się z nami skontaktować"
                                                          name="message"
                                                          :rows="3"
                                                          :max-rows="6"
-                                                         v-validate="'require'"></b-form-textarea>
+                                                         v-validate="'require'"
+                                                         :class="{'input': true, 'is-danger': errors.has('message') }"></b-form-textarea>
                                     </b-form-group>
                                     <b-button type="submit" variant="primary">Wyślij</b-button>
                                 </b-form>
@@ -110,7 +111,7 @@ When we create new page - you copy of template below and name as NameOfPage
                             </div>
                             <div class="col-md-3 col-12">
                                 <avatar
-                                        name="Daria Jaworska"
+                                        name="Daria Jaworowska"
                                         memberType="Skarbnik"
                                         avatar-img="https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-1/31363237_1646117462132562_5530777129639215104_n.jpg?_nc_cat=0&oh=a2ba70a21cd02846dcb581376023b41f&oe=5C5D3374"
                                         phone="726115611"
@@ -155,7 +156,7 @@ When we create new page - you copy of template below and name as NameOfPage
                             <div class="col-3 ">
                                 <avatar
                                   name="DJ Kamz"
-                                  memberType="Przewdoniczący sekcji DJ-skiej"
+                                  memberType="Przewodniczący sekcji DJ-skiej"
                                   avatar-img="https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/19657282_1363116423796026_1587300144022569518_n.jpg?_nc_cat=0&oh=04bc4935cfb044d84002812fcd9b1cf1&oe=5C277DD8"
                                   phone="668751336"
                                   email="kamzil2@gmail.com">
@@ -216,7 +217,7 @@ When we create new page - you copy of template below and name as NameOfPage
                             <div class="col-3 ">
                                 <avatar
                                         name="Julia Musiał"
-                                        avatar-img="https://thumbs.dreamstime.com/b/braka-placeholder-profilu-ikona-90197997.jpg"
+                                        avatar-img="img/jmusial.jpg"
                                         phone="775125856"
                                         email=""
                                 />
@@ -253,7 +254,7 @@ When we create new page - you copy of template below and name as NameOfPage
 import MapHeader from '../page-part/HeaderMap'
 import Avatar from '../page-part/Avatar/Avatar'
 import SocialLink from "../page-part/Avatar/SocialLink";
-import VeeValidate from "vee-validate";
+import VeeValidate from 'vee-validate';
 
 export default {
   name: "contact",
@@ -284,7 +285,7 @@ export default {
     }
     },
   mounted: () => {
-    this.$validator.localize('PL');
+    // this.$validator.localize('PL');
   }
 }
 </script>
