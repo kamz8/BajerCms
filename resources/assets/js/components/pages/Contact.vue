@@ -69,8 +69,6 @@ When we create new page - you copy of template below and name as NameOfPage
                                                     :description="errors.first('message')">
 
                                         <b-form-textarea id="message"
-                                                         v-model.lazy="contactForm.message"
-                                                         placeholder="Napisz, w jakiej sprawie chcesz się z nami skontaktować"
                                                          v-model.trim="contactForm.message"
                                                          placeholder="Napisz w jakiej sprawie chcesz się z nami skontaktować"
                                                          name="message"

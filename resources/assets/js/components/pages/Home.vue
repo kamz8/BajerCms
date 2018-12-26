@@ -8,11 +8,11 @@
                         <h1 class="text-uppercase pb-2">o klubie</h1>
                         <div class="mr-1 text-justify">
                             <p>
-                                Jesteśmy agendą kultury, która zajmuje się organizacją imprez tanecznych, koncertów, aktywności sportowych oraz innych inicjatyw kulturalno-rozrywkowych dla studentów. Ponadto bardzo aktywnie współpracujemy z innymi organizacjami zapewniając na wydarzeniach oprawę muzyczną i zaplecze techniczne. Jeżeli idąc przez kampus uczelni słyszycie muzykę, widzicie tańczących ludzi tam na pewno nas spotkacie.
-                                W tym roku Klub Studencki Bajer świętuje jubileusz 40-lecia działalności przy Politechnice Wrocławskiej. Jako jedna z nielicznych organizacji działających przy Politechnice możemy się pochwalić tak długą tradycją funkcjonowania.
+                                Jesteśmy <strong>agendą kultury</strong>, która zajmuje się organizacją imprez tanecznych, koncertów, aktywności sportowych oraz innych inicjatyw kulturalno-rozrywkowych dla studentów. Ponadto bardzo aktywnie współpracujemy z innymi organizacjami zapewniając na wydarzeniach oprawę muzyczną i zaplecze techniczne. Jeżeli idąc przez kampus uczelni słyszycie muzykę, widzicie tańczących ludzi tam na pewno nas spotkacie.
+                                W tym roku Klub Studencki Bajer świętuje <strong> jubileusz 40-lecia </strong> działalności przy Politechnice Wrocławskiej. Jako jedna z nielicznych organizacji działających przy Politechnice możemy się pochwalić tak długą tradycją funkcjonowania.
                             </p>
                             <p>
-                                Wydarzenia odbywają się w siedzibie naszego klubu, w Domu Studenckim T-15 na osiedlu akademickim Wittigowo.
+                                Wydarzenia odbywają się w siedzibie naszego klubu, w <strong> Domu Studenckim T-15 </strong>na osiedlu akademickim Wittigowo.
                                 Również ze względu na stale rosnące zainteresowanie coraz częściej organizowane działalności przenosimy poza mury akademika,
                                 w miejsca, gdzie możemy zaprosić jeszcze więcej studentów.
                                 Zapraszamy do stałego śledzenia naszych mediów społecznościowych, zamieszczamy tam wszystkie informacje na temat planowanych inicjatyw.
