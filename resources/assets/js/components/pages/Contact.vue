@@ -69,6 +69,8 @@ When we create new page - you copy of template below and name as NameOfPage
                                                     :description="errors.first('message')">
 
                                         <b-form-textarea id="message"
+                                                         v-model.lazy="contactForm.message"
+                                                         placeholder="Napisz, w jakiej sprawie chcesz się z nami skontaktować"
                                                          v-model.trim="contactForm.message"
                                                          placeholder="Napisz w jakiej sprawie chcesz się z nami skontaktować"
                                                          name="message"
@@ -260,15 +262,15 @@ When we create new page - you copy of template below and name as NameOfPage
 import MapHeader from '../page-part/HeaderMap'
 import Avatar from '../page-part/Avatar/Avatar'
 import SocialLink from "../page-part/Avatar/SocialLink";
-import PhoneNumber from '../util/validator/Custom-rules/PhoneNumber'
-import {HTTP} from "../../http-comon";
+import VeeValidate from "vee-validate";
 
 export default {
   name: "contact",
   components: {
     SocialLink,
     MapHeader,
-    Avatar
+    Avatar,
+    VeeValidate
   },
   data() {
     return {
@@ -277,39 +279,21 @@ export default {
         email: '',
         phone: '',
         message: ''
-      },
-      isSending: false
+      }
     }
   },
   methods: {
-    validateBeforeSubmit() {
-      this.$validator.validateAll().then(result => {
+    validateBeforeSubmit: () => {
+      this.$validator.validateAll().then((result) => {
         if (result) {
-          this.isSending = true
-          HTTP.post('/contact',this.contactForm)
-            .then(request => {
-              this.isSending = false
-              this.contactForm = {
-                nameAndSurname: '',
-                email: '',
-                phone: '',
-                message: ''
-              }
-              this.$validator.reset()
-              this.$swal("Sukces",request.data.message,'success')
-
-          }).catch(error => {
-            console.log(error)
-              this.isSending = false
-            this.$swal(error)
-          })
+          // eslint-disable-next-line
+          return;
         }
       });
     }
     },
-  created () {
-    this.$swal('Hello Vue world!!!');
-    this.$validator.localize('pl');
+  mounted: () => {
+    this.$validator.localize('PL');
   }
 }
 </script>
