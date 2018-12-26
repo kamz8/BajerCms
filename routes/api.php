@@ -25,6 +25,11 @@ Route::get('/', function (){
             'message'=>'Hello user in to Bajer API! Place to administrator for more info.'
         ];
 });
+//Contact form
+Route::post('/contact', 'ContactController@send');
+
+/**/
+
 // Restore user password
 Route::post('auth/password/email', 'Auth\ForgotPasswordController@getResetToken');
 Route::post('auth/password/reset', 'Auth\ResetPasswordController@reset');

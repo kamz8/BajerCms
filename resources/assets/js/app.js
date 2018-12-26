@@ -18,6 +18,10 @@ import {HTTP} from "./http-comon";
 import middleware from './middleware/middleware'
 import * as VueGoogleMaps from "vue2-google-maps";
 import VeeValidate from 'vee-validate';
+import pl from 'vee-validate/dist/locale/pl';
+import VueSweetalert2 from 'vue-sweetalert2';
+
+
 
 /*components import */
 import VueScrollTo from 'vue-scrollto'
@@ -32,11 +36,17 @@ Vue.use(VueGoogleMaps, {
     // libraries: "places" // necessary for places input
   }
 });
+
 Vue.use(router,HTTP);
 Vue.use(BootstrapVue);
 Vue.use(VueResource, lodash, VueScrollTo);
-Vue.use(VeeValidate);
+Vue.use(VueSweetalert2);
+/*import validation plugin and set language as Polish*/
+Vue.use(VeeValidate,{
+  locale: 'pl'});
+VeeValidate.Validator.localize('pl', pl);
 
+//set settings for scroll animation plugin
 Vue.use(VueScrollTo, {
   container: "body",
   duration: 500,

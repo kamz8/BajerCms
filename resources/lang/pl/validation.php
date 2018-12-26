@@ -87,6 +87,7 @@ return [
     'uploaded' => 'Nie udało się wgrać pliku :attribute.',
     'url' => 'Format :attribute jest nieprawidłowy.',
     'phone_number' => 'Podany numer telefonu jest nieprawidłowy.',
+    'phone' => ':attribute zawiera nie poprawny format dla numeru telefonu.',
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Language Lines

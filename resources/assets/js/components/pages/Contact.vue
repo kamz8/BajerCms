@@ -29,7 +29,7 @@ When we create new page - you copy of template below and name as NameOfPage
                                                       type="email"
                                                       v-model="contactForm.email"
                                                       name="email"
-                                                      placeholder="Enter email"
+                                                      placeholder="Wpisz adres email"
                                                       v-validate="'required|email'"
                                                       :class="{'is-invalid': errors.has('email') }">
                                         </b-form-input>
@@ -37,41 +37,48 @@ When we create new page - you copy of template below and name as NameOfPage
                                     </b-form-group>
                                     <b-form-group id="exampleInputGroup2"
                                                   label="Imię i nazwisko:"
-                                                  label-for="exampleInput2">
+                                                  label-for="exampleInput2"
+                                                  description="Chcemy wiedzieć kto do nas piszę">
                                         <b-form-input id="exampleInput2"
                                                       type="text"
-                                                      v-model="contactForm.name"
+                                                      v-model="contactForm.nameAndSurname"
                                                       name="name"
-                                                      v-validate="'require'"
-                                                      placeholder="Wpisz swoje imię i nazwisko"
+                                                      v-validate="'required|min:5'"
+                                                      placeholder="Wpisz swoje imię i nazwisko *"
                                                       :class="{'is-invalid': errors.has('name') }">
                                         </b-form-input>
+                                        <b-form-invalid-feedback>{{errors.first('name')}}</b-form-invalid-feedback>
                                     </b-form-group>
                                     <b-form-group id="exampleInputGroup3"
                                                   label="Numer telefonu:"
-                                                  label-for="exampleInput2">
+                                                  label-for="exampleInput2"
+                                                  description="Jeśli chcesz, żebyśmy oddzwonili">
                                         <b-form-input id="exampleInput2"
                                                       type="text"
                                                       v-model="contactForm.phone"
-                                                      v-validate="'require'"
+                                                      v-validate="'required|phoneNumber'"
                                                       name="phone"
-                                                      placeholder="Wpisz swój numer telefonu"
+                                                      placeholder="Wpisz swój numer telefonu zaczynający się od +48"
                                                       :class="{'is-invalid': errors.has('phone') }">
                                         </b-form-input>
+                                        <b-form-invalid-feedback>{{errors.first('phone')}}</b-form-invalid-feedback>
                                     </b-form-group>
                                     <b-form-group id="exampleInputGroup4"
                                                   label="Wiadomość:"
-                                                  label-for="message">
+                                                  label-for="message"
+                                                    :description="errors.first('message')">
 
                                         <b-form-textarea id="message"
-                                                         v-model="contactForm.message"
+                                                         v-model.trim="contactForm.message"
                                                          placeholder="Napisz w jakiej sprawie chcesz się z nami skontaktować"
                                                          name="message"
-                                                         :rows="3"
+                                                         :rows="4"
                                                          :max-rows="6"
-                                                         v-validate="'require'"></b-form-textarea>
+                                                         v-validate="'required|min:25'"
+                                                         :state="!errors.has('message')"
+                                                         :aria-invalid="errors.first('message')"></b-form-textarea>
                                     </b-form-group>
-                                    <b-button type="submit" variant="primary">Wyślij</b-button>
+                                    <b-button type="submit" variant="primary" :disabled="errors.any() || isSending">Wyślij <span v-show="isSending"><i class="fa fa-spinner fa-spin"></i></span></b-button>
                                 </b-form>
                             </div>
                         </div>
@@ -253,15 +260,15 @@ When we create new page - you copy of template below and name as NameOfPage
 import MapHeader from '../page-part/HeaderMap'
 import Avatar from '../page-part/Avatar/Avatar'
 import SocialLink from "../page-part/Avatar/SocialLink";
-import VeeValidate from "vee-validate";
+import PhoneNumber from '../util/validator/Custom-rules/PhoneNumber'
+import {HTTP} from "../../http-comon";
 
 export default {
   name: "contact",
   components: {
     SocialLink,
     MapHeader,
-    Avatar,
-    VeeValidate
+    Avatar
   },
   data() {
     return {
@@ -270,21 +277,39 @@ export default {
         email: '',
         phone: '',
         message: ''
-      }
+      },
+      isSending: false
     }
   },
   methods: {
-    validateBeforeSubmit: () => {
-      this.$validator.validateAll().then((result) => {
+    validateBeforeSubmit() {
+      this.$validator.validateAll().then(result => {
         if (result) {
-          // eslint-disable-next-line
-          return;
+          this.isSending = true
+          HTTP.post('/contact',this.contactForm)
+            .then(request => {
+              this.isSending = false
+              this.contactForm = {
+                nameAndSurname: '',
+                email: '',
+                phone: '',
+                message: ''
+              }
+              this.$validator.reset()
+              this.$swal("Sukces",request.data.message,'success')
+
+          }).catch(error => {
+            console.log(error)
+              this.isSending = false
+            this.$swal(error)
+          })
         }
       });
     }
     },
-  mounted: () => {
-    this.$validator.localize('PL');
+  created () {
+    this.$swal('Hello Vue world!!!');
+    this.$validator.localize('pl');
   }
 }
 </script>

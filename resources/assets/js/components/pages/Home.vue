@@ -23,7 +23,7 @@
                 </div>
             </div>
         </section>
-        <section id="zespol" class="content-box">
+        <section id="zespol" class="content-box overlay">
             <div class="container">
                 <div class="row">
                     <article class="col-md-12 text-center">
