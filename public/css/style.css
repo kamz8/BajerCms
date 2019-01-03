@@ -48,7 +48,7 @@ body {
     padding: 80px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.png) no-repeat bottom center scroll;
+    background: url(../img/intro-bg2.jpg) no-repeat bottom center scroll;
     background-color: rgba(0, 0, 0, 0);
     background-size: auto auto;
     -webkit-background-size: cover;
@@ -267,10 +267,6 @@ footer + .subfooter{
     .spotify .bajerfont.bajer-2x{
         font-size: 2em;
     }
-}
-
-#zespol {
-    background-image: url('https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/45464923_537031970092984_3430118855777714176_o.jpg?_nc_cat=110&_nc_ht=scontent.fpoz1-1.fna&oh=90214804fa16e3eae8257027aa61f1cf&oe=5C9C26E4')
 }
 
 @media only screen and (min-width: 1280px) {

@@ -23,7 +23,7 @@
                 </div>
             </div>
         </section>
-        <section id="zespol" class="content-box overlay">
+        <section id="zespol" class="content-box overlay" style=" background-image: url('../img/zespol2.jpg')">
             <div class="container">
                 <div class="row">
                     <article class="col-md-12 text-center">

@@ -1,6 +1,6 @@
     <template>
         <div>
-            <v-header scrollTo="#wynajmy" vtitle="Wynajmy" coverImg="https://scontent.fpoz1-1.fna.fbcdn.net/v/t31.0-8/22904747_1825851234094073_1217771858351134340_o.jpg?_nc_cat=0&oh=35e37c75eb8b174a994ae7d27a05d11a&oe=5C1C7A03"></v-header>
+            <v-header scrollTo="#wynajmy" vtitle="Wynajmy" coverImg="../img/bg_cover.jpg" class="hue"></v-header>
             <section id="wynajmy" class="content-box">
                 <div class="container">
                     <div class="row">
@@ -114,10 +114,19 @@
           }
         ]
       }
-    }
+    },
   }
 </script>
 
 <style scoped>
+    .hue {
+        -webkit-animation: hue 1s infinite;
+    }
 
+    @-webkit-keyframes hue {
+        0%, 100%  { -webkit-filter: hue-rotate(0deg); }
+        40% { -webkit-filter: hue-rotate(90deg); }
+        60% { -webkit-filter: hue-rotate(180deg); }
+        80% { -webkit-filter: hue-rotate(90deg); }
+    }
 </style>

@@ -105682,7 +105682,11 @@ var render = function() {
       _vm._v(" "),
       _c(
         "section",
-        { staticClass: "content-box overlay", attrs: { id: "zespol" } },
+        {
+          staticClass: "content-box overlay",
+          staticStyle: { "background-image": "url('../img/zespol2.jpg')" },
+          attrs: { id: "zespol" }
+        },
         [
           _c("div", { staticClass: "container" }, [
             _c("div", { staticClass: "row" }, [
@@ -106145,7 +106149,7 @@ var render = function() {
         attrs: {
           scrollTo: "#onas",
           vtitle: "O Klubie",
-          coverImg: "./img/_DSC2048.jpg"
+          coverImg: "./img/bg_oklubie.jpg"
         }
       }),
       _vm._v(" "),
@@ -106330,11 +106334,11 @@ var render = function() {
     "div",
     [
       _c("v-header", {
+        staticStyle: { "background-position-y": "-90px" },
         attrs: {
           scrollTo: "#ekipa",
           vtitle: "Ekipa",
-          coverImg:
-            "https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/32639675_2033682436644284_7713636091089125376_o.jpg?_nc_cat=0&oh=92c715ab9e6258e18c8068551c9a49cd&oe=5C2E28B0"
+          coverImg: "../img/zespol2.jpg"
         }
       }),
       _vm._v(" "),
@@ -106635,8 +106639,7 @@ var render = function() {
         attrs: {
           scrollTo: "#oferta",
           vtitle: "Oferta klubu",
-          coverImg:
-            "https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/36320145_2085007281511799_5693493524721303552_o.jpg?_nc_cat=0&oh=e97850dc99d8ca3eb73f3731d7be45ac&oe=5C15245D"
+          coverImg: "../img/oferta-cover.jpg"
         }
       }),
       _vm._v(" "),
@@ -106785,7 +106788,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.hue[data-v-4c8a45da] {\n    -webkit-animation: hue-data-v-4c8a45da 1s infinite;\n}\n@-webkit-keyframes hue-data-v-4c8a45da {\n0%, 100%  { -webkit-filter: hue-rotate(0deg);\n}\n40% { -webkit-filter: hue-rotate(90deg);\n}\n60% { -webkit-filter: hue-rotate(180deg);\n}\n80% { -webkit-filter: hue-rotate(90deg);\n}\n}\n", ""]);
 
 // exports
 
@@ -106970,11 +106973,11 @@ var render = function() {
     "div",
     [
       _c("v-header", {
+        staticClass: "hue",
         attrs: {
           scrollTo: "#wynajmy",
           vtitle: "Wynajmy",
-          coverImg:
-            "https://scontent.fpoz1-1.fna.fbcdn.net/v/t31.0-8/22904747_1825851234094073_1217771858351134340_o.jpg?_nc_cat=0&oh=35e37c75eb8b174a994ae7d27a05d11a&oe=5C1C7A03"
+          coverImg: "../img/bg_cover.jpg"
         }
       }),
       _vm._v(" "),

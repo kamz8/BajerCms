@@ -1,6 +1,6 @@
 <template>
         <div>
-            <v-header scrollTo="#oferta" vtitle="Oferta klubu" coverImg="https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/36320145_2085007281511799_5693493524721303552_o.jpg?_nc_cat=0&oh=e97850dc99d8ca3eb73f3731d7be45ac&oe=5C15245D"></v-header>
+            <v-header scrollTo="#oferta" vtitle="Oferta klubu" coverImg="../img/oferta-cover.jpg"></v-header>
             <section id="oferta" class="content-box">
                 <div class="container">
                     <div class="row">
