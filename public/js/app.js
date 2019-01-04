@@ -62598,6 +62598,525 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -106314,7 +106833,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -106503,6 +107022,1184 @@ var staticRenderFns = [
                       ])
                     ]
                   )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "container" }, [
+                _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                  _vm._v("Sekcja finansowa")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "mr-1 text-justify" }, [
+                  _c("p", [
+                    _vm._v(
+                      "\n                                Działacze sekcji finansowej są odpowiedzialni za dokumenty oraz dopilnowanie wszystkich formalności związanych z wydarzeniami. Formułują Oni oficjalne pisma\n                                i przestrzegają terminów składania dokumentów.\n                                To właśnie sekcja finansowa dba o to, by hajs się zgadzał.\n                            "
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "figure",
+                        { staticClass: "member avatar mx-auto d-block" },
+                        [
+                          _c("img", {
+                            staticClass: "img-fluid rounded-circle",
+                            attrs: {
+                              src:
+                                "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-1.jpg"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("figcaption", { staticClass: "caption" }, [
+                            _c("span", [_vm._v("Daria Jaworska")]),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "member-title" }, [
+                              _vm._v("Przewodznicząca")
+                            ])
+                          ])
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-3.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Katarzyna Szybalska")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-3.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Cezary Dobrakowski")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-3.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Marcin Ruszczyk")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-3.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Oliwia Bańkowska")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-3.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-3.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                  _vm._v("Sekcja Współpracy z biznesem")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "mr-1 text-justify" }, [
+                  _c("p", [
+                    _vm._v(
+                      "\n                                Prowadzisz swój własny biznes i szukasz organizacji, która wypromuje twoją firmę wśród studentów? Nie mogłeś trafić lepiej. Członkowie Sekcji Współpracy z biznesem zajmują się nawiązywaniem kontaktów z różnymi przedsiębiorstwami i ustalaniem warunków współpracy.\n                            "
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "figure",
+                        { staticClass: "member avatar mx-auto d-block" },
+                        [
+                          _c("img", {
+                            staticClass: "img-fluid rounded-circle",
+                            attrs: {
+                              src:
+                                "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-4.jpg"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("figcaption", { staticClass: "caption" }, [
+                            _c("span", [_vm._v("Rafał Dąbrowski")]),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "member-title" }, [
+                              _vm._v("Przewodzniczący")
+                            ])
+                          ])
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                  _vm._v("Sekcja Promocji")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "mr-1 text-justify" }, [
+                  _c("p", [
+                    _vm._v(
+                      "\n                                Nie ma imprezy bez ludzi, a o ich liczną obecność na wydarzeniach dbają członkowie Sekcji promocji. Dla działaczy tej sekcji Facebook czy Instagram nie mają żadnych tajemnic. To odpowiednie miejsce dla osób otwartych na ludzi i kreatywnych.\n                            "
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "figure",
+                        { staticClass: "member avatar mx-auto d-block" },
+                        [
+                          _c("img", {
+                            staticClass: "img-fluid rounded-circle",
+                            attrs: {
+                              src:
+                                "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-10.jpg"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("figcaption", { staticClass: "caption" }, [
+                            _c("span", [_vm._v("Sandra Mrzygłód")]),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "member-title" }, [
+                              _vm._v("Przewodznicząca")
+                            ])
+                          ])
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Kamil Żmijowski")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Cezary Dobrakowski")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Olga Piekarczyk")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Wojciech Obuchowski")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Weronika Łokaj")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Staszek Markowski")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Dawid Trzebiński")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Michał Giec")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                  _vm._v("Sekcja DJ-ska")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "mr-1 text-justify" }, [
+                  _c("p", [
+                    _vm._v(
+                      "\n                                Na żadnej imprezie nie może zabraknąć dobrego DJ-a, a w Bajerze ich nie brakuje. Ich zadaniem jest nie tylko prowadzenie imprez oraz zapewnienie oprawy muzycznej, ale także doskonalenie swoich umiejętności. Dzięki temu ich występy na wydarzeniach są zawsze profesjonalne, a parkiet rozgrzany jest do czerwoności.\n                            "
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "figure",
+                        { staticClass: "member avatar mx-auto d-block" },
+                        [
+                          _c("img", {
+                            staticClass: "img-fluid rounded-circle",
+                            attrs: {
+                              src:
+                                "https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Daffy_Duck.svg/800px-Daffy_Duck.svg.png"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("figcaption", { staticClass: "caption" }, [
+                            _c("span", [_vm._v("Kamil Żmijowski")]),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "member-title" }, [
+                              _vm._v("Przewodzniczący")
+                            ])
+                          ])
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                  _vm._v("Sekcja Techniczna")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "mr-1 text-justify" }, [
+                  _c("p", [
+                    _vm._v(
+                      "\n                                Są tu osoby odpowiedzialne za oświetlenie i nagłośnienie w czasie naszych wydarzeń oraz dbanie o sprzęt (montaż, transport, naprawy). Przykładają uwagę do najmniejszych szczegółów (jak odpowiednie składanie kabli), aby wyposażenie klubu było\n                                w jak najlepszym stanie, a wydarzenia przebiegały bez jakichkolwiek usterek.\n                            "
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "figure",
+                        { staticClass: "member avatar mx-auto d-block" },
+                        [
+                          _c("img", {
+                            staticClass: "img-fluid rounded-circle",
+                            attrs: {
+                              src:
+                                "https://www.celebrationspress.com/wp-content/uploads/2018/01/010218Goofy.jpg"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("figcaption", { staticClass: "caption" }, [
+                            _c("span", [_vm._v("Marcin Ruszczyk")]),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "member-title" }, [
+                              _vm._v("Przewodzniczący")
+                            ])
+                          ])
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://ecsmedia.pl/c/disney-myszka-miki-i-przyjaciele-dekoracja-scienna-w-iext47856196.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://ecsmedia.pl/c/disney-myszka-miki-i-przyjaciele-dekoracja-scienna-w-iext47856196.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://ecsmedia.pl/c/disney-myszka-miki-i-przyjaciele-dekoracja-scienna-w-iext47856196.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://ecsmedia.pl/c/disney-myszka-miki-i-przyjaciele-dekoracja-scienna-w-iext47856196.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://ecsmedia.pl/c/disney-myszka-miki-i-przyjaciele-dekoracja-scienna-w-iext47856196.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://ecsmedia.pl/c/disney-myszka-miki-i-przyjaciele-dekoracja-scienna-w-iext47856196.jpg"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                  _vm._v("Sekcja Fotografii&Filmów")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "mr-1 text-justify" }, [
+                  _c("p", [
+                    _vm._v(
+                      "\n                                Nasze wydarzenia cieszą się dużym zainteresowaniem, a ich uczestnicy chętnie je wspominają. Członkowie tej sekcji upamiętniają chwile pełne świetnej zabawy, muzyki i tańca. Samodzielnie zajmują się obróbką zdjęć oraz produkcją  filmów.\n                            "
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "figure",
+                        { staticClass: "member avatar mx-auto d-block" },
+                        [
+                          _c("img", {
+                            staticClass: "img-fluid rounded-circle",
+                            attrs: {
+                              src:
+                                "https://vignette.wikia.nocookie.net/kaczordonald/images/d/d4/Daisy.jpg/revision/latest?cb=20121016181244&path-prefix=pl"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("figcaption", { staticClass: "caption" }, [
+                            _c("span", [_vm._v("Julka Musiał")]),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "member-title" }, [
+                              _vm._v("Przewodzniczący")
+                            ])
+                          ])
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://vignette.wikia.nocookie.net/kaczor-donald-czasopisma/images/a/a2/Pluto.jpeg/revision/latest?cb=20120925145019&path-prefix=pl"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Wojtek Obuchowski")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://vignette.wikia.nocookie.net/kaczor-donald-czasopisma/images/a/a2/Pluto.jpeg/revision/latest?cb=20120925145019&path-prefix=pl"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Jakub Grzybek")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://vignette.wikia.nocookie.net/kaczor-donald-czasopisma/images/a/a2/Pluto.jpeg/revision/latest?cb=20120925145019&path-prefix=pl"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Krzysztof Trybuszewski")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://vignette.wikia.nocookie.net/kaczor-donald-czasopisma/images/a/a2/Pluto.jpeg/revision/latest?cb=20120925145019&path-prefix=pl"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Karolina Wierdak")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://vignette.wikia.nocookie.net/kaczor-donald-czasopisma/images/a/a2/Pluto.jpeg/revision/latest?cb=20120925145019&path-prefix=pl"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: {
+                            src:
+                              "https://vignette.wikia.nocookie.net/kaczor-donald-czasopisma/images/a/a2/Pluto.jpeg/revision/latest?cb=20120925145019&path-prefix=pl"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("figcaption", { staticClass: "caption" }, [
+                          _c("span", [_vm._v("Imię i Nazwisko")]),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "member-title" }, [
+                            _vm._v("Członek")
+                          ])
+                        ])
+                      ]
+                    )
+                  ])
                 ])
               ])
             ])
@@ -108003,8 +109700,7 @@ var render = function() {
                           attrs: {
                             name: "DJ Kamz",
                             memberType: "Przewdoniczący sekcji DJ-skiej",
-                            "avatar-img":
-                              "https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/19657282_1363116423796026_1587300144022569518_n.jpg?_nc_cat=0&oh=04bc4935cfb044d84002812fcd9b1cf1&oe=5C277DD8",
+                            "avatar-img": "../img/djkamz.jpg",
                             phone: "668751336",
                             email: "kamzil2@gmail.com"
                           }
@@ -108120,8 +109816,7 @@ var render = function() {
                           _c("social-link", {
                             attrs: {
                               type: "facebook",
-                              href:
-                                "https://www.facebook.com/Dj-Chmielu-362800980519005"
+                              href: "../img/djchmielu.jpg"
                             }
                           })
                         ],

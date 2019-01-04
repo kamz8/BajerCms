@@ -163,7 +163,7 @@ When we create new page - you copy of template below and name as NameOfPage
                                 <avatar
                                   name="DJ Kamz"
                                   memberType="Przewdoniczący sekcji DJ-skiej"
-                                  avatar-img="https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/19657282_1363116423796026_1587300144022569518_n.jpg?_nc_cat=0&oh=04bc4935cfb044d84002812fcd9b1cf1&oe=5C277DD8"
+                                  avatar-img="../img/djkamz.jpg"
                                   phone="668751336"
                                   email="kamzil2@gmail.com">
                                     <social-link type="facebook" href="https://www.facebook.com/kamzdj/" />
@@ -197,7 +197,7 @@ When we create new page - you copy of template below and name as NameOfPage
                                         avatar-img="img/djchmielu.jpg"
                                         phone="663259689"
                                         email="dav.chmiel@gmail.com">
-                                    <social-link type="facebook" href="https://www.facebook.com/Dj-Chmielu-362800980519005" />
+                                    <social-link type="facebook" href="../img/djchmielu.jpg" />
                                 </avatar>
                             </div>
                             <div class="col-3 ">
