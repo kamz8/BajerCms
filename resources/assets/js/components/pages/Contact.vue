@@ -96,7 +96,7 @@ When we create new page - you copy of template below and name as NameOfPage
                                 <avatar
                                         name="Krzysztof Trybuszewski"
                                         memberType="Prezes"
-                                        avatar-img="https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/41499478_1394415154028911_1216649563624964096_n.jpg?_nc_cat=0&oh=08cd631dacff62bc23e1cd414c4073a2&oe=5C36A8B6"
+                                        avatar-img="../img/avatars/Krzysiek.jpg"
                                         phone="507663376"
                                         email="k.trybuszewski@gmail.com">
 
@@ -117,9 +117,9 @@ When we create new page - you copy of template below and name as NameOfPage
                             </div>
                             <div class="col-md-3 col-12">
                                 <avatar
-                                        name="Daria Jaworska"
+                                        name="Daria Jaworowska"
                                         memberType="Skarbnik"
-                                        avatar-img="https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-1/31363237_1646117462132562_5530777129639215104_n.jpg?_nc_cat=0&oh=a2ba70a21cd02846dcb581376023b41f&oe=5C5D3374"
+                                        avatar-img="../img/avatars/Daria.jpg"
                                         phone="726115611"
                                         email="jaworowskadaria@gmail.com">
 
@@ -130,7 +130,7 @@ When we create new page - you copy of template below and name as NameOfPage
                                 <avatar
                                         name="Jakub Grzybek"
                                         memberType="ds. Klubu"
-                                        avatar-img="https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/29594885_1665039356921470_2588230364635524435_n.jpg?_nc_cat=0&oh=cafd302dfba18b81644f7e5b95948131&oe=5C1B7F3C"
+                                        avatar-img="../img/avatars/grzybek.jpg"
                                         phone="660358343"
                                         email="kuba.grzybek@gmail.com">
 
@@ -141,7 +141,7 @@ When we create new page - you copy of template below and name as NameOfPage
                                 <avatar
                                         name="Sandra Mrzygłód"
                                         memberType="ds. Promocji"
-                                        avatar-img="https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/32678486_422018788260970_534810766511964160_n.jpg?_nc_cat=0&oh=80e1356be116829e3a8fbfd67cf4e2c3&oe=5C5D7A0D"
+                                        avatar-img="../img/avatars/sandra.jpg"
                                         phone="669228089"
                                         email="sandra.mrzyglod.564@gmail.com">
 
@@ -163,27 +163,29 @@ When we create new page - you copy of template below and name as NameOfPage
                                 <avatar
                                   name="DJ Kamz"
                                   memberType="Przewdoniczący sekcji DJ-skiej"
-                                  avatar-img="../img/djkamz.jpg"
+                                  avatar-img="../img/avatars/kamil.jpg"
                                   phone="668751336"
                                   email="kamzil2@gmail.com">
                                     <social-link type="facebook" href="https://www.facebook.com/kamzdj/" />
                                     <social-link type="instagram" href="https://www.instagram.com/djkamz/" />
                                     <social-link type="spotify" href="https://open.spotify.com/artist/4OpowxAJqCRvswnbe9af1m?si=4EWYhiHaQjetgbujj6FOyw" />
+                                    <social-link type="mixclude" href="https://www.mixcloud.com/potentialdifference/" />
+                                    <social-link type="youtube" href="https://www.youtube.com/channel/UCvLSoIwN5iUh25cL92ctPlw" />
                                 </avatar>
                             </div>
                             <div class="col-3 ">
                                 <avatar
                                         name="DJ Criss"
-                                        avatar-img="img/djcriss.jpg"
+                                        avatar-img="../img/avatars/Krzysiek.jpg"
                                         phone="507663376"
                                         email="k.trybuszewski@gmail.com">
-                                    <social-link type="facebook" href="https://www.facebook.com/Dj-Criss-1921255518175790" />
+                                    <social-link type="facebook" href="https://www.facebook.com/DJ.CR1SS" />
                                 </avatar>
                             </div>
                             <div class="col-3 ">
                                 <avatar
                                         name="DJ MichaelUp"
-                                        avatar-img="img/djmichaelup.jpg"
+                                        avatar-img="../img/avatars/Pato.jpg"
                                         phone=""
                                         email="">
                                     <social-link type="facebook" href="https://www.facebook.com/michaelupbeats" />
@@ -194,7 +196,7 @@ When we create new page - you copy of template below and name as NameOfPage
                             <div class="col-3 ">
                                 <avatar
                                         name="DJ Chmielu"
-                                        avatar-img="img/djchmielu.jpg"
+                                        avatar-img="../img/avatars/Chmielu.jpg"
                                         phone="663259689"
                                         email="dav.chmiel@gmail.com">
                                     <social-link type="facebook" href="../img/djchmielu.jpg" />
@@ -203,9 +205,28 @@ When we create new page - you copy of template below and name as NameOfPage
                             <div class="col-3 ">
                                 <avatar
                                         name="Dj Rykon"
-                                        avatar-img="https://scontent.fpoz1-1.fna.fbcdn.net/v/t1.0-9/21557748_346211829155221_8523649959774637894_n.jpg?_nc_cat=108&_nc_ht=scontent.fpoz1-1.fna&oh=28a10164d50e2dd01851cba8422274f4&oe=5CADF867"
-                                        >
-                                    <social-link type="facebook" href="https://www.facebook.com/RykonOfficial" />
+                                        avatar-img="../img/avatars/Ruszczyk.jpg"
+                                        email="mar.ruszczyk@gmail.com"
+                                phone="503461713">
+
+                                </avatar>
+
+                            </div>
+                            <div class="col-3 ">
+                                <avatar
+                                        name="Dj Macko"
+                                        avatar-img="../img/avatars/maciek.jpg"
+                                        email="mar.ruszczyk@gmail.com"
+                                        phone="503461713">
+
+                                </avatar>
+
+                            </div>
+                            <div class="col-3 ">
+                                <avatar
+                                        name="Dj Bodzio"
+                                        avatar-img="../img/avatars/bodzio.jpg">
+
                                 </avatar>
 
                             </div>
@@ -231,7 +252,7 @@ When we create new page - you copy of template below and name as NameOfPage
                             <div class="col-3 ">
                                 <avatar
                                         name="Wojtek Obuchowski"
-                                        avatar-img="img/obuchowski.jpg"
+                                        avatar-img="../img/avatars/Wojteko.jpg"
                                         phone=""
                                         email="">
                                     <social-link type="facebook" href="https://www.facebook.com/W.Obuchowski1FOTO"></social-link>
@@ -241,7 +262,7 @@ When we create new page - you copy of template below and name as NameOfPage
                             <div class="col-3 ">
                                 <avatar
                                         name="Kamil Żmijowski"
-                                        avatar-img="img/kzmijowski.jpg"
+                                        avatar-img="../img/avatars/kamil.jpg"
                                         phone=""
                                         email="">
                                     <social-link type="facebook" href="https://www.facebook.com/kzmijowski"></social-link>
@@ -260,15 +281,27 @@ When we create new page - you copy of template below and name as NameOfPage
 import MapHeader from '../page-part/HeaderMap'
 import Avatar from '../page-part/Avatar/Avatar'
 import SocialLink from "../page-part/Avatar/SocialLink";
-import VeeValidate from "vee-validate";
+import { Validator } from 'vee-validate';
+import PhoneNumber from '../util/validator/Custom-rules/PhoneNumber'
+import {HTTP} from "../../http-comon";
+
+const dictionary = {
+  pl: {
+    attributes: {
+      email: 'adres email',
+      name: 'imię i nazwisko',
+      phone: 'numer telefonu',
+      message: 'wiadomość'
+    }
+  }
+};
 
 export default {
   name: "contact",
   components: {
     SocialLink,
     MapHeader,
-    Avatar,
-    VeeValidate
+    Avatar
   },
   data() {
     return {
@@ -277,21 +310,48 @@ export default {
         email: '',
         phone: '',
         message: ''
-      }
+      },
+      isSending: false
     }
   },
   methods: {
-    validateBeforeSubmit: () => {
-      this.$validator.validateAll().then((result) => {
+    validateBeforeSubmit: function () {
+      this.$validator.validateAll().then(result => {
         if (result) {
-          // eslint-disable-next-line
-          return;
+          this.isSending = true
+          HTTP.post('/contact', this.contactForm)
+            .then(request => {
+              this.isSending = false
+              this.contactForm = {
+                nameAndSurname: '',
+                email: '',
+                phone: '',
+                message: ''
+              }
+              this.$validator.reset()
+              this.$swal("Sukces", request.data.message, 'success')
+
+            }).catch(error => {
+            console.log(error)
+            console.log(error.request)
+            switch (error.request.status) {
+              case 429:
+                this.$swal('Zbyt dużo prób!','Możesz wysłać tylko jedną wiadomość na 10 minut. Jeśli już musisz poczekaj 10 minut i spróbuj ponownie ','warning')
+                break
+
+              default:
+                this.$swal(error.request.message)
+                break
+            }
+            this.isSending = false
+
+          })
         }
       });
     }
-    },
-  mounted: () => {
-    this.$validator.localize('PL');
+  },
+  beforeCreate () {
+    Validator.localize(dictionary);
   }
 }
 </script>

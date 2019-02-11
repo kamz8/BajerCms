@@ -36,9 +36,9 @@
                             <div class="col-md-12 col-xs-12 text-center mb-4">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         src="https://avatars.io/facebook/krzysztof.trybuszewski/large">
+                                         :src="'../img/avatars/Krzysiek.jpg'">
                                     <figcaption class="caption">
-                                        <span>Krzysztow Trybuszewski</span>
+                                        <span>Krzysztof Trybuszewski</span>
                                         <span class="member-title">Prezes Zarządu</span>
                                     </figcaption>
                                 </figure>
@@ -58,9 +58,9 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         src="https://avatars.io/facebook/daria.jaworowska.1/large">
+                                         :src="'../img/avatars/Daria.jpg'">
                                     <figcaption class="caption">
-                                        <span>Daria Jaworska</span>
+                                        <span>Daria Jaworowska</span>
                                         <span class="member-title">Skarbnik</span>
                                     </figcaption>
                                 </figure>
@@ -68,7 +68,7 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         src="https://avatars.io/facebook/asderkg/large">
+                                         :src="'../img/avatars/grzybek.jpg'">
                                     <figcaption class="caption">
                                         <span>Jakub Grzybek</span>
                                         <span class="member-title">ds Klubu</span>
@@ -78,7 +78,7 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         src="https://avatars.io/facebook/100013585574066/large">
+                                         :src="'../img/avatars/sandra.jpg'">
                                     <figcaption class="caption">
                                         <span>Sandra Mrzygłód</span>
                                         <span class="member-title">ds Promocji</span>

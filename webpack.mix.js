@@ -14,8 +14,8 @@ let mix = require('laravel-mix');
 
 // App
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css')
-  .browserSync('localhost:8000');
+  .sass('resources/assets/sass/app.scss', 'public/css')
+  .browserSync('localhost:8000')
 
 mix.autoload({
   'jquery': ['$', 'window.jQuery', 'jQuery'],
@@ -23,5 +23,6 @@ mix.autoload({
   'moment': ['moment','window.moment'],
 })
 
-
-
+mix.options({
+  processCssUrls: false
+});

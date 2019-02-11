@@ -13,9 +13,9 @@
                             <div class="col-md-12 col-xs-12 text-center mb-4">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         src="https://avatars.io/facebook/krzysztof.trybuszewski/large">
+                                         :src="'../img/avatars/Krzysiek.jpg'">
                                     <figcaption class="caption">
-                                        <span>Krzysztow Trybuszewski</span>
+                                        <span>Krzysztof Trybuszewski</span>
                                         <span class="member-title">Prezes Zarządu</span>
                                     </figcaption>
                                 </figure>
@@ -35,9 +35,9 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         src="https://avatars.io/facebook/daria.jaworowska.1/large">
+                                         :src="'../img/avatars/Daria.jpg'">
                                     <figcaption class="caption">
-                                        <span>Daria Jaworska</span>
+                                        <span>Daria Jaworowska</span>
                                         <span class="member-title">Skarbnik</span>
                                     </figcaption>
                                 </figure>
@@ -45,7 +45,7 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         src="https://avatars.io/facebook/asderkg/large">
+                                         :src="'../img/avatars/grzybek.jpg'">
                                     <figcaption class="caption">
                                         <span>Jakub Grzybek</span>
                                         <span class="member-title">ds Klubu</span>
@@ -55,7 +55,7 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         src="https://avatars.io/facebook/100013585574066/large">
+                                         :src="'../img/avatars/sandra.jpg'">
                                     <figcaption class="caption">
                                         <span>Sandra Mrzygłód</span>
                                         <span class="member-title">ds Promocji</span>
@@ -63,7 +63,7 @@
                                 </figure>
                             </div>
                         </div>
-
+                        <div class="clearfix hidden-xs mb-6"></div>
                         <div class="container">
                             <h1 class="text-uppercase pb-2">Sekcja finansowa</h1>
                             <div class="mr-1 text-justify">
@@ -73,11 +73,11 @@
                                     To właśnie sekcja finansowa dba o to, by hajs się zgadzał.
                                 </p>
                             </div>
-                            <div class="row">
+                            <div class="row mx-auto">
                                 <div class="col-md-12 col-xs-12 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-1.jpg">
+                                             :src="'../img/avatars/Daria.jpg'">
                                         <figcaption class="caption">
                                             <span>Daria Jaworska</span>
                                             <span class="member-title">Przewodznicząca</span>
@@ -89,7 +89,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-3.jpg">
+                                             :src="'../img/avatars/kasia.jpg'">
                                         <figcaption class="caption">
                                             <span>Katarzyna Szybalska</span>
                                             <span class="member-title">Członek</span>
@@ -99,7 +99,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-3.jpg">
+                                             :src="'../img/avatars/czarek.jpg'">
                                         <figcaption class="caption">
                                             <span>Cezary Dobrakowski</span>
                                             <span class="member-title">Członek</span>
@@ -109,7 +109,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-3.jpg">
+                                             :src="'../img/avatars/Ruszczyk.jpg'">
                                         <figcaption class="caption">
                                             <span>Marcin Ruszczyk</span>
                                             <span class="member-title">Członek</span>
@@ -119,19 +119,20 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-3.jpg">
+                                             :src="'../img/avatars/Bania.jpg'">
                                         <figcaption class="caption">
                                             <span>Oliwia Bańkowska</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
                                 </div>
+
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-3.jpg">
+                                             :src="'../img/avatars/Jurkowski.jpg'">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Maciej Jurkowski</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
@@ -241,7 +242,7 @@
                                 <div class="col-md-12 col-xs-12 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-10.jpg">
+                                             :src="'../img/avatars/sandra.jpg'">
                                         <figcaption class="caption">
                                             <span>Sandra Mrzygłód</span>
                                             <span class="member-title">Przewodznicząca</span>
@@ -253,7 +254,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg">
+                                             :src="'../img/avatars/Kamil.jpg'">
                                         <figcaption class="caption">
                                             <span>Kamil Żmijowski</span>
                                             <span class="member-title">Członek</span>
@@ -263,7 +264,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg">
+                                             :src="'../img/avatars/czarek.jpg'">
                                         <figcaption class="caption">
                                             <span>Cezary Dobrakowski</span>
                                             <span class="member-title">Członek</span>
@@ -273,7 +274,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg">
+                                             :src="'../img/avatars/Olga.jpg'">
                                         <figcaption class="caption">
                                             <span>Olga Piekarczyk</span>
                                             <span class="member-title">Członek</span>
@@ -283,7 +284,17 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg">
+                                             :src="'../img/avatars/Ruszczyk.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Marcin Ruszczyk</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/wojteko.jpg'">
                                         <figcaption class="caption">
                                             <span>Wojciech Obuchowski</span>
                                             <span class="member-title">Członek</span>
@@ -303,7 +314,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg">
+                                             :src="'../img/avatars/stachu.jpg'">
                                         <figcaption class="caption">
                                             <span>Staszek Markowski</span>
                                             <span class="member-title">Członek</span>
@@ -313,23 +324,14 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg">
+                                             :src="'../img/avatars/DawidT2.jpg'">
                                         <figcaption class="caption">
                                             <span>Dawid Trzebiński</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
                                 </div>
-                                <div class="col-md-2 col-xs-9 text-center">
-                                    <figure class="member avatar mx-auto d-block">
-                                        <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg">
-                                        <figcaption class="caption">
-                                            <span>Michał Giec</span>
-                                            <span class="member-title">Członek</span>
-                                        </figcaption>
-                                    </figure>
-                                </div>
+
                             </div>
 
 
@@ -344,7 +346,7 @@
                                 <div class="col-md-12 col-xs-12 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Daffy_Duck.svg/800px-Daffy_Duck.svg.png">
+                                             :src="'../img/avatars/Kamil.jpg'">
                                         <figcaption class="caption">
                                             <span>Kamil Żmijowski</span>
                                             <span class="member-title">Przewodzniczący</span>
@@ -356,14 +358,134 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg">
+                                             :src="'../img/avatars/chmielu.jpg'">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Dawid Chmiel</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
                                 </div>
                                 <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/Ruszczyk.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Marcin Ruszczyk</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/maciek.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Maciej Macko</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg">
+                                        <figcaption class="caption">
+                                            <span>Michał Koziołek</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/stachu.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Staszek Markowski</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/Durmaj.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Dawid Durmaj</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/Krzysiek.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Krzysztof Trybuszewski</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg">
+                                        <figcaption class="caption">
+                                            <span>Kewin Gałuszka</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/grzybek.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Jakub Grzybek</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                <figure class="member avatar mx-auto d-block">
+                                    <img class="img-fluid rounded-circle"
+                                         :src="'../img/avatars/Arek.jpg'">
+                                    <figcaption class="caption">
+                                        <span>Arkadiusz Szeląg</span>
+                                        <span class="member-title">Członek</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/Iza.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Izabela Popławska</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/Pato.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Michał Podgóreczny</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/Bodzio.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Artur Pieńkowski</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+<!--                                <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
                                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg">
@@ -392,27 +514,8 @@
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
-                                </div>
-                                <div class="col-md-2 col-xs-9 text-center">
-                                    <figure class="member avatar mx-auto d-block">
-                                        <img class="img-fluid rounded-circle"
-                                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg">
-                                        <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
-                                            <span class="member-title">Członek</span>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="col-md-2 col-xs-9 text-center">
-                                    <figure class="member avatar mx-auto d-block">
-                                        <img class="img-fluid rounded-circle"
-                                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg">
-                                        <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
-                                            <span class="member-title">Członek</span>
-                                        </figcaption>
-                                    </figure>
-                                </div>
+                                </div>-->
+
                             </div>
 
 
@@ -428,7 +531,7 @@
                                 <div class="col-md-12 col-xs-12 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://www.celebrationspress.com/wp-content/uploads/2018/01/010218Goofy.jpg">
+                                             :src="'../img/avatars/Ruszczyk.jpg'">
                                         <figcaption class="caption">
                                             <span>Marcin Ruszczyk</span>
                                             <span class="member-title">Przewodzniczący</span>
@@ -440,9 +543,9 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://ecsmedia.pl/c/disney-myszka-miki-i-przyjaciele-dekoracja-scienna-w-iext47856196.jpg">
+                                             :src="'../img/avatars/dawid_c.jpg'">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Dawid Chmiel</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
@@ -450,9 +553,9 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://ecsmedia.pl/c/disney-myszka-miki-i-przyjaciele-dekoracja-scienna-w-iext47856196.jpg">
+                                             :src="'../img/avatars/Iza.jpg'">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Izabela Popławska</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
@@ -460,9 +563,9 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://ecsmedia.pl/c/disney-myszka-miki-i-przyjaciele-dekoracja-scienna-w-iext47856196.jpg">
+                                             :src="'../img/avatars/Pato.jpg'">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Michał Podgóreczny</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
@@ -470,9 +573,9 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://ecsmedia.pl/c/disney-myszka-miki-i-przyjaciele-dekoracja-scienna-w-iext47856196.jpg">
+                                             :src="'../img/avatars/Durmaj.jpg'">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Dawid Durmaj</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
@@ -480,9 +583,9 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://ecsmedia.pl/c/disney-myszka-miki-i-przyjaciele-dekoracja-scienna-w-iext47856196.jpg">
+                                             :src="'../img/avatars/Kamil.jpg'">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Kamil Żmijowski</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
@@ -490,13 +593,74 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://ecsmedia.pl/c/disney-myszka-miki-i-przyjaciele-dekoracja-scienna-w-iext47856196.jpg">
+                                             :src="'../img/avatars/Krzysiek.jpg'">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Krzysztof Trybuszewski</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
                                 </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg">
+                                        <figcaption class="caption">
+                                            <span>Kewin Gałuszka</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/grzybek.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Jakub Grzybek</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             src="https://vignette.wikia.nocookie.net/kaczor-donald-czasopisma/images/a/a2/Pluto.jpeg/revision/latest?cb=20120925145019&path-prefix=pl">
+                                        <figcaption class="caption">
+                                            <span>Weronika Łokaj</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/czarek.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Cezary Dobrakowski</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/Arek.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Arkadiusz Szeląg</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/Konrad.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Konrad Fligier</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <!--end sekcja techniczna-->
                             </div>
 
 
@@ -524,7 +688,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://vignette.wikia.nocookie.net/kaczor-donald-czasopisma/images/a/a2/Pluto.jpeg/revision/latest?cb=20120925145019&path-prefix=pl">
+                                             :src="'../img/avatars/Wojteko.jpg'">
                                         <figcaption class="caption">
                                             <span>Wojtek Obuchowski</span>
                                             <span class="member-title">Członek</span>
@@ -534,7 +698,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://vignette.wikia.nocookie.net/kaczor-donald-czasopisma/images/a/a2/Pluto.jpeg/revision/latest?cb=20120925145019&path-prefix=pl">
+                                             :src="'../img/avatars/grzybek.jpg'">
                                         <figcaption class="caption">
                                             <span>Jakub Grzybek</span>
                                             <span class="member-title">Członek</span>
@@ -544,7 +708,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://vignette.wikia.nocookie.net/kaczor-donald-czasopisma/images/a/a2/Pluto.jpeg/revision/latest?cb=20120925145019&path-prefix=pl">
+                                             :src="'../img/avatars/Krzysiek.jpg'">
                                         <figcaption class="caption">
                                             <span>Krzysztof Trybuszewski</span>
                                             <span class="member-title">Członek</span>
@@ -564,9 +728,9 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://vignette.wikia.nocookie.net/kaczor-donald-czasopisma/images/a/a2/Pluto.jpeg/revision/latest?cb=20120925145019&path-prefix=pl">
+                                             :src="'../img/avatars/Kamil.jpg'">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Kamil Żmijowski</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
@@ -574,9 +738,9 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://vignette.wikia.nocookie.net/kaczor-donald-czasopisma/images/a/a2/Pluto.jpeg/revision/latest?cb=20120925145019&path-prefix=pl">
+                                             :src="'../img/avatars/Klaudia.jpg'">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Klaudia Szlichta</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>

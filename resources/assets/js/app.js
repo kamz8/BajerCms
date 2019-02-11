@@ -4,7 +4,7 @@
  * building robust, powerful Procfile applications using Vue and Laravel.
  */
 
-
+import '@babel/polyfill'
 require('./bootstrap');
 
 window.Vue = require('vue');

@@ -10,6 +10,11 @@ use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('throttle:2,1');
+    }
+
     public function send(ContactRequest $request) {
         Mail::to('kontakt@bajer.io')->send(new ContactForm($request));
         return \response()->json(['status'=>'success',
