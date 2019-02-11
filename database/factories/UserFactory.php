@@ -1,6 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
+use Faker\Provider\pl_PL as Pl;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +15,18 @@ use Faker\Generator as Faker;
 */
 
 $factory->define(App\User::class, function (Faker $faker) {
-    static $password;
 
     return [
-        'name' => $faker->name,
+        'name' => $faker->userName,
         'email' => $faker->unique()->safeEmail,
-        'password' => $password ?: $password = bcrypt('secret'),
+        'firstname' => $faker->firstName(),
+        'lastname'=> $faker->lastName(),
+        'phone'=> $faker->unique()->phoneNumber(),
+        'organization'=> $faker->company,
+        'student_id'=> $faker->unique()->numberBetween(1900000, 3000000),
+        'provider'=> ('facebook'),
+        'provider_id' => $faker->numberBetween(100000000, 300000000),
+        'password' => bcrypt($faker->password(8)),
         'remember_token' => str_random(10),
     ];
 });

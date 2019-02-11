@@ -79,7 +79,7 @@ return [
     */
 
     'locale' => 'pl',
-
+    'faker_locale' => 'pl_PL',
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
@@ -168,6 +168,8 @@ return [
          * Package Service Providers...
          */
         Spatie\GoogleCalendar\GoogleCalendarServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
+        NotificationChannels\WebPush\WebPushServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -175,8 +177,8 @@ return [
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class
-
+        App\Providers\RouteServiceProvider::class,
+        MetricLoop\TransformerMaker\TransformerMakerServiceProvider::class,
     ],
 
     /*
@@ -226,6 +228,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'GoogleCalendar' => Spatie\GoogleCalendar\GoogleCalendarFacade::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+
     ],
 
 ];

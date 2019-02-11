@@ -1,42 +1,299 @@
-html{
+@import "socialicons.css";
+
+@font-face {
+    font-family: 'Candice';
+    src: url('../fonts/BajerFont_pl.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    width: 100%;
     height: 100%;
 }
-body{
+
+body {
     position: relative;
     min-height: 100%;
+    font-family: "Raleway", sans-serif;
+    background-color: #222222;
+    color: #fff;
+    overflow-x: hidden;
 }
-.bg-img-login{
+
+.bajerfont {
+    font-family: "Candice", "Segoe UI", Fallback;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-light .navbar-toggler > i {
+    color: #fff;
+    font-size: 26px;
+}
+.navbar-toggler,  button.navbar-toggler:focus{
+    border: 0px;
+    outline: 0px;
+}
+.masthead {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/intro-bg2.jpg) no-repeat bottom center scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: auto auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.overlay {
+    position: relative;
+    z-index: 0;
+}
+
+.overlay::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #222c;
+    z-index: -1;
+}
+
+header.sentence {
+    font-family: "BajerFont", Fallback, sans-serif;
+    padding-bottom: 1em;
+
+}
+
+header .sentence > span::after {
+    content: ' | ';
+}
+
+header .sentence > span:last-child::after {
+    content: ""
+}
+
+a.btn-circle {
+    color: #fff;
+    border-color: #fff;
+    border-radius: 100%;
+}
+
+.navbar-brand {
+    font-size: 32px;
+}
+
+/*login page style*/
+.bg-img-login {
     background-image: url("../img/login_bg.jpg");
-    background-repeat:  no-repeat;
+    background-repeat: no-repeat;
     background-position: 0px -100px;
     background-size: cover;
 
 }
- .logo-xl{
-     width: 200px;
-     height: auto;
- }
 
- .gradient-overlay{
-     position: relative;
+.logo-xl {
+    width: 200px;
+    height: auto;
+}
+
+.gradient-overlay {
+    position: relative;
 
     min-height: 100vh;
     color: #fff;
- }
- .gradient-overlay::before{
-     content: " ";
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/login_bg.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center center;
-     color: #fff;
+}
 
- }
+.gradient-overlay::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/login_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
 
- .card{
-     color:#333;
- }
+}
 
+.card {
+    color: #333;
+}
+
+.btn-lg-space, .content-box article > a {
+    line-height: 28px;
+}
+
+section.content-box h1 {
+    font-size: 38px;
+    line-height: 1.5em;
+}
+
+section.content-box {
+    padding: 50px 0px;
+    min-height: 500px;
+}
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: cover;
+    background-position: center top;
+}
+
+figure.member > figcaption {
+    padding: 15px 0px;
+}
+
+figure.member > figcaption > span {
+    display: block;
+}
+
+figure.member > figcaption > span:first-child {
+    font-size: 18px;
+}
+
+figure.member > figcaption > .member-title {
+    font-weight: lighter;
+}
+figure.member > figcaption > .member-link {
+    font-weight: lighter;
+}
+.spotify {
+    background-color: #1ed760;
+}
+
+#zespol {
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position: center top;
+}
+figure.avatar {
+    max-width: 200px;
+}
+.bajerfont.bajer-2x {
+    font-size: 2em;
+}
+
+.bajerfont.bajer-3x {
+    font-size: 3em;
+}
+
+.bajerfont.bajer-4x {
+    font-size: 4em;
+}
+
+footer.footer {
+    background-color: #363636;
+}
+footer + .subfooter{
+    background-color: #111;
+}
+
+.or-seperator {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+.or-seperator i {
+    padding: 0 10px;
+    background: #fff;
+    position: relative;
+    top: -11px;
+    z-index: 1;
+}
+
+/*Make all responsive :P */
+@media only screen and (min-width: 320px) {
+    .sentence.bajerfont {
+        font-family: "Candice", "Segoe UI", sans-serif;
+        font-size: 20px;
+    }
+
+    .spotify {
+        height: 200px;
+    }
+
+    .spotify p {
+        font-size: 12px;
+    }
+
+    .spotify .bajerfont.bajer-2x {
+        font-size: 1.5em;
+    }
+
+    footer.footer {
+        padding: 2em 0 0;
+        min-height: 100vh;
+    }
+    .subfooter{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .sentence.bajerfont {
+        font-size: 25px;
+    }
+
+    footer.footer {
+        padding: 4rem 0;
+        min-height: initial;
+    }
+    .spotify {
+        height: 100px;
+    }
+
+    .spotify p{
+        font-size: initial;
+    }
+    .spotify .bajerfont.bajer-2x{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .sentence.bajerfont {
+        font-size: 28px;
+    }
+
+    nav.navbar {
+        line-height: 60px;
+        font-size: 18px;
+    }
+
+    #oferta {
+        min-height: 800px;
+    }
+
+    #zespol {
+        min-height: 1000px;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .sentence.bajerfont {
+        font-size: 30px;
+    }
+    figure.avatar {
+        max-width: 250px;
+    }
+}

@@ -2,20 +2,30 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Hash as Hash;
+use NotificationChannels\WebPush\HasPushSubscriptions;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class User extends Authenticatable
+class User extends Authenticatable implements JWTSubject
 {
-    use Notifiable;
+    use Notifiable, HasPushSubscriptions, SoftDeletes;
 
+    /**
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = ['deleted_at'];
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'firstname', 'lastname', 'phone', 'organization', 'email', 'password','provider', 'provider_id'
     ];
 
     /**
@@ -26,4 +36,96 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class)->withTimestamps();
+    }
+
+    public function event() {
+        return $this->belongsToMany(Event::class);
+    }
+
+    public function notes() {
+        return $this->belongsToMany(Note::class);
+    }
+
+    public function hasAnyRole($roles)
+    {
+        if (is_array($roles)) {
+            foreach ($roles as $role) {
+                if ($this->hasRole($role)) return true;
+            }
+        } else {
+            if ($this->hasRole($roles)) {
+                return true;
+            }
+        }
+    }
+
+    public function hasRole($role)
+    {
+        if ($this->roles()->where('name', $role)->first()) {
+            return true;
+        }
+        return false;
+    }
+
+    public function setPasswordAttribute($pass){
+
+        $this->attributes['password'] = Hash::make($pass);
+
+    }
+    /**
+     * Get the identifier that will be stored in the subject claim of the JWT.
+     *
+     * @return mixed
+     */
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    /**
+     * Return a key value array, containing any custom claims to be added to the JWT.
+     *
+     * @return array
+     */
+    public function getJWTCustomClaims()
+    {
+//        if ($this->can('use-extended-token-timelines')) {
+//            $expiration = Carbon::now('UTC')->addWeeks(2)->getTimestamp();
+//            return ['exp' => $expiration];
+//        }
+        return [
+            'email' => $this->email,
+            'name' => $this->name,
+            'roles' => $this->roles()->get(),
+            ];
+    }
+
+    public static function createWithFacebook($user, $role){
+        return User::create([
+            'name'     => $user->name,
+            'email'    => $user->email,
+            'provider' => 'facebook',
+            'provider_id' => $user->id,
+            'firstname' => $user->user['first_name'],
+            'lastname' => $user->user['last_name']
+
+        ])->roles()->attach($role);
+    }
+
+    public static function createWithGoogle($user, $role){
+        return User::create([
+            'name'     => $user->name,
+            'email'    => $user->email,
+            'provider' => 'google',
+            'provider_id' => $user->id,
+            'firstname' => $user->user['name']['givenName'],
+            'lastname' => $user->user['name']['familyName']
+
+        ])->roles()->attach($role);
+    }
+
 }

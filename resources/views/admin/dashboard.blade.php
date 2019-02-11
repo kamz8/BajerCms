@@ -854,3 +854,6 @@
       </div>
     </div>
 @endsection
+@push('scripts')
+  <script src="{{asset('js/sbadmin/sb-admin-charts.min.js')}}"></script>
+@endpush

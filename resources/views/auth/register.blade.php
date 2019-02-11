@@ -4,7 +4,7 @@
 <div class="bg-img-login gradient-overlay">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-8 mx-auto">
                 <div class="card card-register mx-auto mt-5">
                     <div class="card-header">Register</div>
 

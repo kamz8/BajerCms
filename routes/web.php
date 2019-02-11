@@ -11,17 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::group(['prefix' => 'admin', 'namespace' => 'Admin'],function () {
-    Route::get('/', function (){
-        return view('admin.dashboard');
-    })->name('dashboard');
-});
-//auth routes
-Auth::routes();
-
-Route::get('/', function (){
-    return view('welcome');
-})->name('home');
+Route::get('/{any}', function (){
+    return view('layouts.app');
+})->where('any', '.*');

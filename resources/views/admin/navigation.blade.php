@@ -13,7 +13,7 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="użytkownicy">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="{{url('admin/users')}}">
                     <i class="fa fa-fw fa-users"></i>
                     <span class="nav-link-text">użytkownicy</span>
                 </a>
@@ -34,7 +34,7 @@
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown " hidden>
+            <li class="nav-item dropdown ">
                 <a class="hidden nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-fw fa-envelope"></i>
                     <span class="d-lg-none">Messages
@@ -44,7 +44,7 @@
               <i class="fa fa-fw fa-circle"></i>
             </span>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
                     <h6 class="dropdown-header">New Messages:</h6>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">
@@ -68,7 +68,7 @@
                     <a class="dropdown-item small" href="#">View all messages</a>
                 </div>
             </li>
-            <li class="nav-item dropdown" hidden>
+            <li class="nav-item dropdown" >
                 <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-fw fa-bell"></i>
                     <span class="d-lg-none">Alerts
@@ -78,7 +78,7 @@
               <i class="fa fa-fw fa-circle"></i>
             </span>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
                     <h6 class="dropdown-header">New Alerts:</h6>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">

@@ -1,6 +1,4 @@
-
 window._ = require('lodash');
-
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
  * for JavaScript based Bootstrap features such as modals and tabs. This
@@ -43,11 +41,13 @@ if (token) {
  * allows your team to easily build robust real-time Procfile applications.
  */
 
-// import Echo from 'laravel-echo'
+/*window.Pusher = require('pusher-js');
+// Enable pusher logging - don't include this in production
+Pusher.logToConsole = true;
 
-// window.Pusher = require('pusher-js');
+var channel = pusher.subscribe('my-channel');
+channel.bind('my-event', function(data) {
+    alert(data.message);
+});*/
 
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: 'your-pusher-key'
-// });
+window.axios = axios

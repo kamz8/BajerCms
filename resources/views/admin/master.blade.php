@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>BajerCms - Kokpit</title>
   <!-- Bootstrap core CSS-->
   <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
@@ -18,7 +19,7 @@
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
 @include('admin.navigation')
-<div class="content-wrapper">
+<div class="content-wrapper" id="app">
   <div class="container-fluid">
     @yield('content')
   </div>
@@ -65,12 +66,13 @@
   <script src="{{asset('js/dataTables.bootstrap4.js')}}"></script>
   <!-- Custom scripts for all pages-->
   <script src="{{asset('js/sbadmin/sb-admin.min.js')}}"></script>
+  <script src="{{asset('main.jss')}}"></script>
   <!-- Custom scripts for this page-->
-  <script src="{{asset('js/sbadmin/sb-admin-datatables.min.js')}}"></script>
-  <script src="{{asset('js/sbadmin/sb-admin-charts.min.js')}}"></script>
+  @stack('scripts')
+
 
 </div>
-<script></script>
+
 </body>
 
 </html>
