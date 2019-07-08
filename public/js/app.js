@@ -5222,7 +5222,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var C_Laravel_BajerCms_node_modules_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var C_Users_kamil_zmijowski_Desktop_laravel_BajerCms_node_modules_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 
 //
@@ -5285,7 +5285,7 @@ __webpack_require__.r(__webpack_exports__);
     console.log(this.headerHeight);
     this.calHeight();
   },
-  computed: Object(C_Laravel_BajerCms_node_modules_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapGetters"])({
+  computed: Object(C_Users_kamil_zmijowski_Desktop_laravel_BajerCms_node_modules_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapGetters"])({
     logged: 'logged',
     user: 'user'
   }))
@@ -6180,6 +6180,38 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _page_part_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../page-part/Header */ "./resources/assets/js/components/page-part/Header.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -38386,7 +38418,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -44141,10 +44173,10 @@ utils.intFromLE = intFromLE;
 /*!********************************************!*\
   !*** ./node_modules/elliptic/package.json ***!
   \********************************************/
-/*! exports provided: _from, _id, _inBundle, _integrity, _location, _phantomChildren, _requested, _requiredBy, _resolved, _shasum, _spec, _where, author, bugs, bundleDependencies, dependencies, deprecated, description, devDependencies, files, homepage, keywords, license, main, name, repository, scripts, version, default */
+/*! exports provided: _args, _development, _from, _id, _inBundle, _integrity, _location, _phantomChildren, _requested, _requiredBy, _resolved, _spec, _where, author, bugs, dependencies, description, devDependencies, files, homepage, keywords, license, main, name, repository, scripts, version, default */
 /***/ (function(module) {
 
-module.exports = {"_from":"elliptic@^6.0.0","_id":"elliptic@6.4.1","_inBundle":false,"_integrity":"sha512-BsXLz5sqX8OHcsh7CqBMztyXARmGQ3LWPtGjJi6DiJHq5C/qvi9P3OqgswKSDftbu8+IoI/QDTAm2fFnQ9SZSQ==","_location":"/elliptic","_phantomChildren":{},"_requested":{"type":"range","registry":true,"raw":"elliptic@^6.0.0","name":"elliptic","escapedName":"elliptic","rawSpec":"^6.0.0","saveSpec":null,"fetchSpec":"^6.0.0"},"_requiredBy":["/browserify-sign","/create-ecdh"],"_resolved":"https://registry.npmjs.org/elliptic/-/elliptic-6.4.1.tgz","_shasum":"c2d0b7776911b86722c632c3c06c60f2f819939a","_spec":"elliptic@^6.0.0","_where":"C:\\Laravel\\BajerCms\\node_modules\\browserify-sign","author":{"name":"Fedor Indutny","email":"fedor@indutny.com"},"bugs":{"url":"https://github.com/indutny/elliptic/issues"},"bundleDependencies":false,"dependencies":{"bn.js":"^4.4.0","brorand":"^1.0.1","hash.js":"^1.0.0","hmac-drbg":"^1.0.0","inherits":"^2.0.1","minimalistic-assert":"^1.0.0","minimalistic-crypto-utils":"^1.0.0"},"deprecated":false,"description":"EC cryptography","devDependencies":{"brfs":"^1.4.3","coveralls":"^2.11.3","grunt":"^0.4.5","grunt-browserify":"^5.0.0","grunt-cli":"^1.2.0","grunt-contrib-connect":"^1.0.0","grunt-contrib-copy":"^1.0.0","grunt-contrib-uglify":"^1.0.1","grunt-mocha-istanbul":"^3.0.1","grunt-saucelabs":"^8.6.2","istanbul":"^0.4.2","jscs":"^2.9.0","jshint":"^2.6.0","mocha":"^2.1.0"},"files":["lib"],"homepage":"https://github.com/indutny/elliptic","keywords":["EC","Elliptic","curve","Cryptography"],"license":"MIT","main":"lib/elliptic.js","name":"elliptic","repository":{"type":"git","url":"git+ssh://git@github.com/indutny/elliptic.git"},"scripts":{"jscs":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","jshint":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","lint":"npm run jscs && npm run jshint","test":"npm run lint && npm run unit","unit":"istanbul test _mocha --reporter=spec test/index.js","version":"grunt dist && git add dist/"},"version":"6.4.1"};
+module.exports = {"_args":[["elliptic@6.4.1","C:\\Users\\kamil.zmijowski\\Desktop\\laravel\\BajerCms"]],"_development":true,"_from":"elliptic@6.4.1","_id":"elliptic@6.4.1","_inBundle":false,"_integrity":"sha512-BsXLz5sqX8OHcsh7CqBMztyXARmGQ3LWPtGjJi6DiJHq5C/qvi9P3OqgswKSDftbu8+IoI/QDTAm2fFnQ9SZSQ==","_location":"/elliptic","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"elliptic@6.4.1","name":"elliptic","escapedName":"elliptic","rawSpec":"6.4.1","saveSpec":null,"fetchSpec":"6.4.1"},"_requiredBy":["/browserify-sign","/create-ecdh"],"_resolved":"https://registry.npmjs.org/elliptic/-/elliptic-6.4.1.tgz","_spec":"6.4.1","_where":"C:\\Users\\kamil.zmijowski\\Desktop\\laravel\\BajerCms","author":{"name":"Fedor Indutny","email":"fedor@indutny.com"},"bugs":{"url":"https://github.com/indutny/elliptic/issues"},"dependencies":{"bn.js":"^4.4.0","brorand":"^1.0.1","hash.js":"^1.0.0","hmac-drbg":"^1.0.0","inherits":"^2.0.1","minimalistic-assert":"^1.0.0","minimalistic-crypto-utils":"^1.0.0"},"description":"EC cryptography","devDependencies":{"brfs":"^1.4.3","coveralls":"^2.11.3","grunt":"^0.4.5","grunt-browserify":"^5.0.0","grunt-cli":"^1.2.0","grunt-contrib-connect":"^1.0.0","grunt-contrib-copy":"^1.0.0","grunt-contrib-uglify":"^1.0.1","grunt-mocha-istanbul":"^3.0.1","grunt-saucelabs":"^8.6.2","istanbul":"^0.4.2","jscs":"^2.9.0","jshint":"^2.6.0","mocha":"^2.1.0"},"files":["lib"],"homepage":"https://github.com/indutny/elliptic","keywords":["EC","Elliptic","curve","Cryptography"],"license":"MIT","main":"lib/elliptic.js","name":"elliptic","repository":{"type":"git","url":"git+ssh://git@github.com/indutny/elliptic.git"},"scripts":{"jscs":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","jshint":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","lint":"npm run jscs && npm run jshint","test":"npm run lint && npm run unit","unit":"istanbul test _mocha --reporter=spec test/index.js","version":"grunt dist && git add dist/"},"version":"6.4.1"};
 
 /***/ }),
 
@@ -97680,7 +97712,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Krzysiek.jpg" }
+                          attrs: { src: "../img/avatars/Ruszczyk.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(1)
@@ -97691,8 +97723,6 @@ var render = function() {
                 _vm._v(" "),
                 _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
                 _vm._v(" "),
-                _vm._m(2),
-                _vm._v(" "),
                 _c("div", { staticClass: "col-md-3 col-xs-12 text-center" }, [
                   _c(
                     "figure",
@@ -97701,6 +97731,21 @@ var render = function() {
                       _c("img", {
                         staticClass: "img-fluid rounded-circle",
                         attrs: { src: "../img/avatars/Daria.jpg" }
+                      }),
+                      _vm._v(" "),
+                      _vm._m(2)
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-3 col-xs-12 text-center" }, [
+                  _c(
+                    "figure",
+                    { staticClass: "member avatar mx-auto d-block" },
+                    [
+                      _c("img", {
+                        staticClass: "img-fluid rounded-circle",
+                        attrs: { src: "../img/avatars/czarek.jpg" }
                       }),
                       _vm._v(" "),
                       _vm._m(3)
@@ -97715,7 +97760,7 @@ var render = function() {
                     [
                       _c("img", {
                         staticClass: "img-fluid rounded-circle",
-                        attrs: { src: "../img/avatars/grzybek.jpg" }
+                        attrs: { src: "../img/avatars/konrad.jpg" }
                       }),
                       _vm._v(" "),
                       _vm._m(4)
@@ -97730,7 +97775,7 @@ var render = function() {
                     [
                       _c("img", {
                         staticClass: "img-fluid rounded-circle",
-                        attrs: { src: "../img/avatars/sandra.jpg" }
+                        attrs: { src: "../img/avatars/jurkowski.jpg" }
                       }),
                       _vm._v(" "),
                       _vm._m(5)
@@ -97845,22 +97890,72 @@ var render = function() {
                     )
                   ]),
                   _vm._v(" "),
-                  _vm._m(13)
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/kalina.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(13)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/koziolek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(14)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/WeronikaB.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(15)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Klaudia.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(16)
+                      ]
+                    )
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("h1", { staticClass: "text-uppercase pb-2" }, [
                   _vm._v("Sekcja Współpracy z biznesem")
                 ]),
                 _vm._v(" "),
-                _vm._m(14),
-                _vm._v(" "),
-                _vm._m(15),
-                _vm._v(" "),
-                _c("h1", { staticClass: "text-uppercase pb-2" }, [
-                  _vm._v("Sekcja Promocji")
-                ]),
-                _vm._v(" "),
-                _vm._m(16),
+                _vm._m(17),
                 _vm._v(" "),
                 _c("div", { staticClass: "row" }, [
                   _c(
@@ -97873,10 +97968,103 @@ var render = function() {
                         [
                           _c("img", {
                             staticClass: "img-fluid rounded-circle",
-                            attrs: { src: "../img/avatars/sandra.jpg" }
+                            attrs: { src: "../img/avatars/kewin.jpg" }
                           }),
                           _vm._v(" "),
-                          _vm._m(17)
+                          _vm._m(18)
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Klaudia.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(19)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/kalina.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(20)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(21),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/mateuszB.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(22)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/DawidT2.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(23)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(24)
+                ]),
+                _vm._v(" "),
+                _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                  _vm._v("Sekcja Promocji")
+                ]),
+                _vm._v(" "),
+                _vm._m(25),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "figure",
+                        { staticClass: "member avatar mx-auto d-block" },
+                        [
+                          _c("img", {
+                            staticClass: "img-fluid rounded-circle",
+                            attrs: { src: "../img/avatars/stachu.jpg" }
+                          }),
+                          _vm._v(" "),
+                          _vm._m(26)
                         ]
                       )
                     ]
@@ -97894,7 +98082,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Kamil.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(18)
+                        _vm._m(27)
                       ]
                     )
                   ]),
@@ -97909,7 +98097,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/czarek.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(19)
+                        _vm._m(28)
                       ]
                     )
                   ]),
@@ -97921,10 +98109,10 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Olga.jpg" }
+                          attrs: { src: "../img/avatars/sandra.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(20)
+                        _vm._m(29)
                       ]
                     )
                   ]),
@@ -97939,7 +98127,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Ruszczyk.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(21)
+                        _vm._m(30)
                       ]
                     )
                   ]),
@@ -97954,12 +98142,12 @@ var render = function() {
                           attrs: { src: "../img/avatars/wojteko.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(22)
+                        _vm._m(31)
                       ]
                     )
                   ]),
                   _vm._v(" "),
-                  _vm._m(23),
+                  _vm._m(32),
                   _vm._v(" "),
                   _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
                     _c(
@@ -97971,7 +98159,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/stachu.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(24)
+                        _vm._m(33)
                       ]
                     )
                   ]),
@@ -97986,7 +98174,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/DawidT2.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(25)
+                        _vm._m(34)
                       ]
                     )
                   ])
@@ -97996,7 +98184,7 @@ var render = function() {
                   _vm._v("Sekcja DJ-ska")
                 ]),
                 _vm._v(" "),
-                _vm._m(26),
+                _vm._m(35),
                 _vm._v(" "),
                 _c("div", { staticClass: "row" }, [
                   _c(
@@ -98012,7 +98200,7 @@ var render = function() {
                             attrs: { src: "../img/avatars/Kamil.jpg" }
                           }),
                           _vm._v(" "),
-                          _vm._m(27)
+                          _vm._m(36)
                         ]
                       )
                     ]
@@ -98030,7 +98218,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/chmielu.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(28)
+                        _vm._m(37)
                       ]
                     )
                   ]),
@@ -98045,7 +98233,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Ruszczyk.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(29)
+                        _vm._m(38)
                       ]
                     )
                   ]),
@@ -98060,12 +98248,12 @@ var render = function() {
                           attrs: { src: "../img/avatars/maciek.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(30)
+                        _vm._m(39)
                       ]
                     )
                   ]),
                   _vm._v(" "),
-                  _vm._m(31),
+                  _vm._m(40),
                   _vm._v(" "),
                   _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
                     _c(
@@ -98077,7 +98265,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/stachu.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(32)
+                        _vm._m(41)
                       ]
                     )
                   ]),
@@ -98092,7 +98280,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Durmaj.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(33)
+                        _vm._m(42)
                       ]
                     )
                   ]),
@@ -98107,12 +98295,12 @@ var render = function() {
                           attrs: { src: "../img/avatars/Krzysiek.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(34)
+                        _vm._m(43)
                       ]
                     )
                   ]),
                   _vm._v(" "),
-                  _vm._m(35),
+                  _vm._m(44),
                   _vm._v(" "),
                   _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
                     _c(
@@ -98124,7 +98312,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/grzybek.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(36)
+                        _vm._m(45)
                       ]
                     )
                   ]),
@@ -98139,7 +98327,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Arek.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(37)
+                        _vm._m(46)
                       ]
                     )
                   ]),
@@ -98154,7 +98342,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Iza.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(38)
+                        _vm._m(47)
                       ]
                     )
                   ]),
@@ -98169,7 +98357,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Pato.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(39)
+                        _vm._m(48)
                       ]
                     )
                   ]),
@@ -98184,7 +98372,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Bodzio.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(40)
+                        _vm._m(49)
                       ]
                     )
                   ])
@@ -98194,7 +98382,7 @@ var render = function() {
                   _vm._v("Sekcja Techniczna")
                 ]),
                 _vm._v(" "),
-                _vm._m(41),
+                _vm._m(50),
                 _vm._v(" "),
                 _c("div", { staticClass: "row" }, [
                   _c(
@@ -98210,7 +98398,7 @@ var render = function() {
                             attrs: { src: "../img/avatars/Ruszczyk.jpg" }
                           }),
                           _vm._v(" "),
-                          _vm._m(42)
+                          _vm._m(51)
                         ]
                       )
                     ]
@@ -98228,7 +98416,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/dawid_c.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(43)
+                        _vm._m(52)
                       ]
                     )
                   ]),
@@ -98243,7 +98431,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Iza.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(44)
+                        _vm._m(53)
                       ]
                     )
                   ]),
@@ -98258,7 +98446,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Pato.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(45)
+                        _vm._m(54)
                       ]
                     )
                   ]),
@@ -98273,7 +98461,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Durmaj.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(46)
+                        _vm._m(55)
                       ]
                     )
                   ]),
@@ -98288,7 +98476,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Kamil.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(47)
+                        _vm._m(56)
                       ]
                     )
                   ]),
@@ -98301,97 +98489,6 @@ var render = function() {
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
                           attrs: { src: "../img/avatars/Krzysiek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(48)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _vm._m(49),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/grzybek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(50)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _vm._m(51),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/czarek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(52)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Arek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(53)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Konrad.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(54)
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("h1", { staticClass: "text-uppercase pb-2" }, [
-                  _vm._v("Sekcja Fotografii&Filmów")
-                ]),
-                _vm._v(" "),
-                _vm._m(55),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _vm._m(56),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Wojteko.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(57)
@@ -98399,20 +98496,7 @@ var render = function() {
                     )
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/grzybek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(58)
-                      ]
-                    )
-                  ]),
+                  _vm._m(58),
                   _vm._v(" "),
                   _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
                     _c(
@@ -98421,7 +98505,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Krzysiek.jpg" }
+                          attrs: { src: "../img/avatars/grzybek.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(59)
@@ -98438,7 +98522,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Kamil.jpg" }
+                          attrs: { src: "../img/avatars/czarek.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(61)
@@ -98453,10 +98537,114 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Klaudia.jpg" }
+                          attrs: { src: "../img/avatars/Arek.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(62)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Konrad.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(63)
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                  _vm._v("Sekcja Fotografii&Filmów")
+                ]),
+                _vm._v(" "),
+                _vm._m(64),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _vm._m(65),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Wojteko.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(66)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/grzybek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(67)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Krzysiek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(68)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(69),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Kamil.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(70)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Klaudia.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(71)
                       ]
                     )
                   ])
@@ -98496,28 +98684,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Krzysztof Trybuszewski")]),
+      _c("span", [_vm._v("Marcin Ruszczyk")]),
       _vm._v(" "),
       _c("span", { staticClass: "member-title" }, [_vm._v("Prezes Zarządu")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-3 col-xs-12 text-center" }, [
-      _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
-        _c("img", {
-          staticClass: "img-fluid rounded-circle",
-          attrs: { src: "https://avatars.io/facebook/kewin.galuszka/large" }
-        }),
-        _vm._v(" "),
-        _c("figcaption", { staticClass: "caption" }, [
-          _c("span", [_vm._v("Kewin Gałuszka")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "member-title" }, [_vm._v("Wiceprezes")])
-        ])
-      ])
     ])
   },
   function() {
@@ -98535,7 +98704,17 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Jakub Grzybek")]),
+      _c("span", [_vm._v("Cezary Drabowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek zarządu")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Konrad Fligier")]),
       _vm._v(" "),
       _c("span", { staticClass: "member-title" }, [_vm._v("ds Klubu")])
     ])
@@ -98545,9 +98724,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Sandra Mrzygłód")]),
+      _c("span", [_vm._v("Maciej Jurkowski")]),
       _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("ds Promocji")])
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek zarządu")])
     ])
   },
   function() {
@@ -98626,22 +98805,40 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-      _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
-        _c("img", {
-          staticClass: "img-fluid rounded-circle",
-          attrs: {
-            src:
-              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-3.jpg"
-          }
-        }),
-        _vm._v(" "),
-        _c("figcaption", { staticClass: "caption" }, [
-          _c("span", [_vm._v("Imię i Nazwisko")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-        ])
-      ])
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Kalina Bartoszewicz")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Michał Koziołek")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Weronika Bihl")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Klaudia Szlichta")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
     ])
   },
   function() {
@@ -98660,134 +98857,92 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-12 col-xs-12 text-center" }, [
-        _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
-          _c("img", {
-            staticClass: "img-fluid rounded-circle",
-            attrs: {
-              src:
-                "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-4.jpg"
-            }
-          }),
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Kewin Gałuszka")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Przewodzniczący")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Klaudia Szlichta")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Kalina Bartoszewicz")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+      _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
+        _c("img", {
+          staticClass: "img-fluid rounded-circle",
+          attrs: {
+            src:
+              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg"
+          }
+        }),
+        _vm._v(" "),
+        _c("figcaption", { staticClass: "caption" }, [
+          _c("span", [_vm._v("Angelika Dzwonek")]),
           _vm._v(" "),
-          _c("figcaption", { staticClass: "caption" }, [
-            _c("span", [_vm._v("Rafał Dąbrowski")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "member-title" }, [
-              _vm._v("Przewodzniczący")
-            ])
-          ])
+          _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
         ])
-      ]),
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Mateusz Bienkiewicz")]),
       _vm._v(" "),
-      _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Dawid Trzebiński")]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-        _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
-          _c("img", {
-            staticClass: "img-fluid rounded-circle",
-            attrs: {
-              src:
-                "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg"
-            }
-          }),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+      _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
+        _c("img", {
+          staticClass: "img-fluid rounded-circle",
+          attrs: {
+            src:
+              "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg"
+          }
+        }),
+        _vm._v(" "),
+        _c("figcaption", { staticClass: "caption" }, [
+          _c("span", [_vm._v("Weronika Łokaj")]),
           _vm._v(" "),
-          _c("figcaption", { staticClass: "caption" }, [
-            _c("span", [_vm._v("Imię i Nazwisko")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-        _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
-          _c("img", {
-            staticClass: "img-fluid rounded-circle",
-            attrs: {
-              src:
-                "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg"
-            }
-          }),
-          _vm._v(" "),
-          _c("figcaption", { staticClass: "caption" }, [
-            _c("span", [_vm._v("Imię i Nazwisko")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-        _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
-          _c("img", {
-            staticClass: "img-fluid rounded-circle",
-            attrs: {
-              src:
-                "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg"
-            }
-          }),
-          _vm._v(" "),
-          _c("figcaption", { staticClass: "caption" }, [
-            _c("span", [_vm._v("Imię i Nazwisko")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-        _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
-          _c("img", {
-            staticClass: "img-fluid rounded-circle",
-            attrs: {
-              src:
-                "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg"
-            }
-          }),
-          _vm._v(" "),
-          _c("figcaption", { staticClass: "caption" }, [
-            _c("span", [_vm._v("Imię i Nazwisko")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-        _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
-          _c("img", {
-            staticClass: "img-fluid rounded-circle",
-            attrs: {
-              src:
-                "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg"
-            }
-          }),
-          _vm._v(" "),
-          _c("figcaption", { staticClass: "caption" }, [
-            _c("span", [_vm._v("Imię i Nazwisko")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-        _c("figure", { staticClass: "member avatar mx-auto d-block" }, [
-          _c("img", {
-            staticClass: "img-fluid rounded-circle",
-            attrs: {
-              src:
-                "https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg"
-            }
-          }),
-          _vm._v(" "),
-          _c("figcaption", { staticClass: "caption" }, [
-            _c("span", [_vm._v("Imię i Nazwisko")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-          ])
+          _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
         ])
       ])
     ])
@@ -98809,7 +98964,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Sandra Mrzygłód")]),
+      _c("span", [_vm._v("Stanisław Markowski")]),
       _vm._v(" "),
       _c("span", { staticClass: "member-title" }, [_vm._v("Przewodznicząca")])
     ])
@@ -98839,7 +98994,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Olga Piekarczyk")]),
+      _c("span", [_vm._v("Sandra Mrzygłód")]),
       _vm._v(" "),
       _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
     ])
@@ -121262,8 +121417,8 @@ if (false) {}
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var C_Laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
-/* harmony import */ var C_Laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(C_Laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var C_Users_kamil_zmijowski_Desktop_laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
+/* harmony import */ var C_Users_kamil_zmijowski_Desktop_laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(C_Users_kamil_zmijowski_Desktop_laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vee_validate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vee-validate */ "./node_modules/vee-validate/dist/vee-validate.esm.js");
 /* harmony import */ var awesome_phonenumber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! awesome-phonenumber */ "./node_modules/awesome-phonenumber/index.js");
 /* harmony import */ var awesome_phonenumber__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(awesome_phonenumber__WEBPACK_IMPORTED_MODULE_2__);
@@ -121275,7 +121430,7 @@ var phoneNumber = {
     return "".concat(field, " nie jest prawid\u0142owym numerem telefonu");
   },
   validate: function validate(value) {
-    return new C_Laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a(function (resolve) {
+    return new C_Users_kamil_zmijowski_Desktop_laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a(function (resolve) {
       var phone = new awesome_phonenumber__WEBPACK_IMPORTED_MODULE_2___default.a(value);
       resolve({
         valid: phone.isValid()
@@ -121366,8 +121521,8 @@ function auth(router) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Interceptors; });
-/* harmony import */ var C_Laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
-/* harmony import */ var C_Laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(C_Laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var C_Users_kamil_zmijowski_Desktop_laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
+/* harmony import */ var C_Users_kamil_zmijowski_Desktop_laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(C_Users_kamil_zmijowski_Desktop_laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _http_comon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../http-comon */ "./resources/assets/js/http-comon.js");
 /* harmony import */ var _store_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../store/index */ "./resources/assets/js/store/index.js");
 
@@ -121394,7 +121549,7 @@ function Interceptors(router) {
       router.push('/login');
     }
 
-    return C_Laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a.reject(error);
+    return C_Users_kamil_zmijowski_Desktop_laravel_BajerCms_node_modules_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a.reject(error);
   });
 }
 
@@ -121735,8 +121890,8 @@ var mutations = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Laravel\BajerCms\resources\assets\js\app.js */"./resources/assets/js/app.js");
-module.exports = __webpack_require__(/*! C:\Laravel\BajerCms\resources\assets\sass\app.scss */"./resources/assets/sass/app.scss");
+__webpack_require__(/*! C:\Users\kamil.zmijowski\Desktop\laravel\BajerCms\resources\assets\js\app.js */"./resources/assets/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\kamil.zmijowski\Desktop\laravel\BajerCms\resources\assets\sass\app.scss */"./resources/assets/sass/app.scss");
 
 
 /***/ }),

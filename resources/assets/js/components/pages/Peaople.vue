@@ -13,25 +13,15 @@
                             <div class="col-md-12 col-xs-12 text-center mb-4">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         :src="'../img/avatars/Krzysiek.jpg'">
+                                         :src="'../img/avatars/Ruszczyk.jpg'">
                                     <figcaption class="caption">
-                                        <span>Krzysztof Trybuszewski</span>
+                                        <span>Marcin Ruszczyk</span>
                                         <span class="member-title">Prezes Zarządu</span>
                                     </figcaption>
                                 </figure>
                             </div>
                             <div class="clearfix hidden-xs mb-4"></div>
                             <!--new line -->
-                            <div class="col-md-3 col-xs-12 text-center">
-                                <figure class="member avatar mx-auto d-block">
-                                    <img class="img-fluid rounded-circle"
-                                         src="https://avatars.io/facebook/kewin.galuszka/large">
-                                    <figcaption class="caption">
-                                        <span>Kewin Gałuszka</span>
-                                        <span class="member-title">Wiceprezes</span>
-                                    </figcaption>
-                                </figure>
-                            </div>
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
@@ -42,12 +32,24 @@
                                     </figcaption>
                                 </figure>
                             </div>
+
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         :src="'../img/avatars/grzybek.jpg'">
+                                         :src="'../img/avatars/czarek.jpg'">
                                     <figcaption class="caption">
-                                        <span>Jakub Grzybek</span>
+                                        <span>Cezary Drabowski</span>
+                                        <span class="member-title">Członek zarządu</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-md-3 col-xs-12 text-center">
+                                <figure class="member avatar mx-auto d-block">
+                                    <img class="img-fluid rounded-circle"
+                                         :src="'../img/avatars/konrad.jpg'">
+                                    <figcaption class="caption">
+                                        <span>Konrad Fligier</span>
                                         <span class="member-title">ds Klubu</span>
                                     </figcaption>
                                 </figure>
@@ -55,10 +57,10 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         :src="'../img/avatars/sandra.jpg'">
+                                         :src="'../img/avatars/jurkowski.jpg'">
                                     <figcaption class="caption">
-                                        <span>Sandra Mrzygłód</span>
-                                        <span class="member-title">ds Promocji</span>
+                                        <span>Maciej Jurkowski</span>
+                                        <span class="member-title">Członek zarządu</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -140,14 +142,44 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-3.jpg">
+                                             :src="'../img/avatars/kalina.jpg'">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Kalina Bartoszewicz</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
                                 </div>
-                            </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/koziolek.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Michał Koziołek</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/WeronikaB.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Weronika Bihl</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/Klaudia.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Klaudia Szlichta</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                        </div>
 
                             <h1 class="text-uppercase pb-2">Sekcja Współpracy z biznesem</h1>
                             <div class="mr-1 text-justify">
@@ -160,9 +192,9 @@
                                 <div class="col-md-12 col-xs-12 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-4.jpg">
+                                             :src="'../img/avatars/kewin.jpg'">
                                         <figcaption class="caption">
-                                            <span>Rafał Dąbrowski</span>
+                                            <span>Kewin Gałuszka</span>
                                             <span class="member-title">Przewodzniczący</span>
                                         </figcaption>
                                     </figure>
@@ -172,9 +204,19 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg">
+                                             :src="'../img/avatars/Klaudia.jpg'">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Klaudia Szlichta</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/kalina.jpg'">
+                                        <figcaption class="caption">
+                                            <span>Kalina Bartoszewicz</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
@@ -184,7 +226,7 @@
                                         <img class="img-fluid rounded-circle"
                                              src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Angelika Dzwonek</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
@@ -192,9 +234,9 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg">
+                                             :src="'../img/avatars/mateuszB.jpg'">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Mateusz Bienkiewicz</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
@@ -202,9 +244,9 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg">
+                                             :src="'../img/avatars/DawidT2.jpg'">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Dawid Trzebiński</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
@@ -212,19 +254,9 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg">
+                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg">
                                         <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
-                                            <span class="member-title">Członek</span>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="col-md-2 col-xs-9 text-center">
-                                    <figure class="member avatar mx-auto d-block">
-                                        <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg">
-                                        <figcaption class="caption">
-                                            <span>Imię i Nazwisko</span>
+                                            <span>Weronika Łokaj</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
@@ -242,9 +274,9 @@
                                 <div class="col-md-12 col-xs-12 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/sandra.jpg'">
+                                             :src="'../img/avatars/stachu.jpg'">
                                         <figcaption class="caption">
-                                            <span>Sandra Mrzygłód</span>
+                                            <span>Stanisław Markowski</span>
                                             <span class="member-title">Przewodznicząca</span>
                                         </figcaption>
                                     </figure>
@@ -274,9 +306,9 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/Olga.jpg'">
+                                             :src="'../img/avatars/sandra.jpg'">
                                         <figcaption class="caption">
-                                            <span>Olga Piekarczyk</span>
+                                            <span>Sandra Mrzygłód</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
