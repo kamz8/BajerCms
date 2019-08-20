@@ -97109,7 +97109,7 @@ var render = function() {
                           [
                             _c("img", {
                               staticClass: "img-fluid rounded-circle",
-                              attrs: { src: "../img/avatars/czarek.jpg" }
+                              attrs: { src: "../img/avatars/Czarek.jpg" }
                             }),
                             _vm._v(" "),
                             _vm._m(3)
@@ -97147,7 +97147,7 @@ var render = function() {
                           [
                             _c("img", {
                               staticClass: "img-fluid rounded-circle",
-                              attrs: { src: "../img/avatars/konrad.jpg" }
+                              attrs: { src: "../img/avatars/Konrad.jpg" }
                             }),
                             _vm._v(" "),
                             _vm._m(5)
@@ -97743,7 +97743,7 @@ var render = function() {
                     [
                       _c("img", {
                         staticClass: "img-fluid rounded-circle",
-                        attrs: { src: "../img/avatars/czarek.jpg" }
+                        attrs: { src: "../img/avatars/Czarek.jpg" }
                       }),
                       _vm._v(" "),
                       _vm._m(3)
@@ -97758,7 +97758,7 @@ var render = function() {
                     [
                       _c("img", {
                         staticClass: "img-fluid rounded-circle",
-                        attrs: { src: "../img/avatars/konrad.jpg" }
+                        attrs: { src: "../img/avatars/Konrad.jpg" }
                       }),
                       _vm._v(" "),
                       _vm._m(4)
@@ -97820,7 +97820,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/kasia.jpg" }
+                          attrs: { src: "../img/avatars/Kasia.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(8)
@@ -97835,7 +97835,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/czarek.jpg" }
+                          attrs: { src: "../img/avatars/Czarek.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(9)
@@ -97895,7 +97895,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/bajerAnon.png" }
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
                         }),
                         _vm._v(" "),
                         _vm._m(13)
@@ -97925,7 +97925,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/bajerAnon.png" }
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
                         }),
                         _vm._v(" "),
                         _vm._m(15)
@@ -97999,7 +97999,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/bajerAnon.png" }
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
                         }),
                         _vm._v(" "),
                         _vm._m(20)
@@ -98014,7 +98014,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/bajerAnon.png" }
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
                         }),
                         _vm._v(" "),
                         _vm._m(21)
@@ -98029,7 +98029,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/bajerAnon.png" }
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
                         }),
                         _vm._v(" "),
                         _vm._m(22)
@@ -98044,7 +98044,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/DawidT2.jpg" }
+                          attrs: { src: "../img/avatars/DawidTrzebinski.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(23)
@@ -98059,7 +98059,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/bajerAnon.png" }
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
                         }),
                         _vm._v(" "),
                         _vm._m(24)
@@ -98085,7 +98085,7 @@ var render = function() {
                         [
                           _c("img", {
                             staticClass: "img-fluid rounded-circle",
-                            attrs: { src: "../img/avatars/stachu.jpg" }
+                            attrs: { src: "../img/avatars/Stachu.jpg" }
                           }),
                           _vm._v(" "),
                           _vm._m(26)
@@ -98118,7 +98118,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/czarek.jpg" }
+                          attrs: { src: "../img/avatars/Czarek.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(28)
@@ -98133,7 +98133,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/sandra.jpg" }
+                          attrs: { src: "../img/avatars/Sandra.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(29)
@@ -98163,7 +98163,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/wojteko.jpg" }
+                          attrs: { src: "../img/avatars/Wojtas.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(31)
@@ -98178,7 +98178,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/bajerAnon.png" }
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
                         }),
                         _vm._v(" "),
                         _vm._m(32)
@@ -98193,7 +98193,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/DawidT2.jpg" }
+                          attrs: { src: "../img/avatars/DawidTrzebinski.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(33)
@@ -98237,7 +98237,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/chmielu.jpg" }
+                          attrs: { src: "../img/avatars/Chmielu.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(36)
@@ -98267,7 +98267,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/maciek.jpg" }
+                          attrs: { src: "../img/avatars/Maciek.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(38)
@@ -98297,7 +98297,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/stachu.jpg" }
+                          attrs: { src: "../img/avatars/Stachu.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(40)
@@ -98357,7 +98357,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/grzybek.jpg" }
+                          attrs: { src: "../img/avatars/Grzybek.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(44)
@@ -98461,7 +98461,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/dawid_c.jpg" }
+                          attrs: { src: "../img/avatars/Chmielu.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(51)
@@ -98566,7 +98566,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/grzybek.jpg" }
+                          attrs: { src: "../img/avatars/Grzybek.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(58)
@@ -98581,7 +98581,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/bajerAnon.png" }
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
                         }),
                         _vm._v(" "),
                         _vm._m(59)
@@ -98596,7 +98596,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/czarek.jpg" }
+                          attrs: { src: "../img/avatars/Czarek.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(60)
@@ -98670,7 +98670,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Wojteko.jpg" }
+                          attrs: { src: "../img/avatars/Wojtas.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(65)
@@ -98685,7 +98685,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/grzybek.jpg" }
+                          attrs: { src: "../img/avatars/Grzybek.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(66)
@@ -98715,7 +98715,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/bajerAnon.png" }
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
                         }),
                         _vm._v(" "),
                         _vm._m(68)

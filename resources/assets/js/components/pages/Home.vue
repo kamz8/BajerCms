@@ -48,7 +48,7 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         :src="'../img/avatars/czarek.jpg'">
+                                         :src="'../img/avatars/Czarek.jpg'">
                                     <figcaption class="caption">
                                         <span>Cezary Dobrakowski</span>
                                         <span class="member-title">Członek zarządu</span>
@@ -68,7 +68,7 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         :src="'../img/avatars/konrad.jpg'">
+                                         :src="'../img/avatars/Konrad.jpg'">
                                     <figcaption class="caption">
                                         <span>Konrad Fligier</span>
                                         <span class="member-title">ds Klubu</span>

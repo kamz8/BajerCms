@@ -36,7 +36,7 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         :src="'../img/avatars/czarek.jpg'">
+                                         :src="'../img/avatars/Czarek.jpg'">
                                     <figcaption class="caption">
                                         <span>Cezary Dobrakowski</span>
                                         <span class="member-title">Członek zarządu</span>
@@ -47,7 +47,7 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         :src="'../img/avatars/konrad.jpg'">
+                                         :src="'../img/avatars/Konrad.jpg'">
                                     <figcaption class="caption">
                                         <span>Konrad Fligier</span>
                                         <span class="member-title">ds Klubu</span>
@@ -91,7 +91,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/kasia.jpg'">
+                                             :src="'../img/avatars/Kasia.jpg'">
                                         <figcaption class="caption">
                                             <span>Katarzyna Szybalska</span>
                                             <span class="member-title">Członek</span>
@@ -101,7 +101,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/czarek.jpg'">
+                                             :src="'../img/avatars/Czarek.jpg'">
                                         <figcaption class="caption">
                                             <span>Cezary Dobrakowski</span>
                                             <span class="member-title">Członek</span>
@@ -142,7 +142,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/bajerAnon.png'">
+                                             :src="'../img/avatars/BajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Kalina Bartoszewicz</span>
                                             <span class="member-title">Członek</span>
@@ -162,7 +162,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/bajerAnon.png'">
+                                             :src="'../img/avatars/BajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Weronika Bihl</span>
                                             <span class="member-title">Członek</span>
@@ -214,7 +214,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/bajerAnon.png'">
+                                             :src="'../img/avatars/BajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Kalina Bartoszewicz</span>
                                             <span class="member-title">Członek</span>
@@ -224,7 +224,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/bajerAnon.png'">
+                                             :src="'../img/avatars/BajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Angelika Dzwonek</span>
                                             <span class="member-title">Członek</span>
@@ -234,7 +234,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/bajerAnon.png'">
+                                             :src="'../img/avatars/BajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Mateusz Bienkiewicz</span>
                                             <span class="member-title">Członek</span>
@@ -244,7 +244,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/DawidT2.jpg'">
+                                             :src="'../img/avatars/DawidTrzebinski.jpg'">
                                         <figcaption class="caption">
                                             <span>Dawid Trzebiński</span>
                                             <span class="member-title">Członek</span>
@@ -254,7 +254,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/bajerAnon.png'">
+                                             :src="'../img/avatars/BajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Weronika Łokaj</span>
                                             <span class="member-title">Członek</span>
@@ -274,7 +274,7 @@
                                 <div class="col-md-12 col-xs-12 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/stachu.jpg'">
+                                             :src="'../img/avatars/Stachu.jpg'">
                                         <figcaption class="caption">
                                             <span>Stanisław Markowski</span>
                                             <span class="member-title">Przewodniczący</span>
@@ -296,7 +296,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/czarek.jpg'">
+                                             :src="'../img/avatars/Czarek.jpg'">
                                         <figcaption class="caption">
                                             <span>Cezary Dobrakowski</span>
                                             <span class="member-title">Członek</span>
@@ -306,7 +306,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/sandra.jpg'">
+                                             :src="'../img/avatars/Sandra.jpg'">
                                         <figcaption class="caption">
                                             <span>Sandra Mrzygłód</span>
                                             <span class="member-title">Członek</span>
@@ -326,7 +326,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/wojteko.jpg'">
+                                             :src="'../img/avatars/Wojtas.jpg'">
                                         <figcaption class="caption">
                                             <span>Wojciech Obuchowski</span>
                                             <span class="member-title">Członek</span>
@@ -336,7 +336,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/bajerAnon.png'">
+                                             :src="'../img/avatars/BajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Weronika Łokaj</span>
                                             <span class="member-title">Członek</span>
@@ -346,7 +346,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/DawidT2.jpg'">
+                                             :src="'../img/avatars/DawidTrzebinski.jpg'">
                                         <figcaption class="caption">
                                             <span>Dawid Trzebiński</span>
                                             <span class="member-title">Członek</span>
@@ -380,7 +380,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/chmielu.jpg'">
+                                             :src="'../img/avatars/Chmielu.jpg'">
                                         <figcaption class="caption">
                                             <span>Dawid Chmiel</span>
                                             <span class="member-title">Członek</span>
@@ -400,7 +400,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/maciek.jpg'">
+                                             :src="'../img/avatars/Maciek.jpg'">
                                         <figcaption class="caption">
                                             <span>Maciej Macko</span>
                                             <span class="member-title">Członek</span>
@@ -420,7 +420,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/stachu.jpg'">
+                                             :src="'../img/avatars/Stachu.jpg'">
                                         <figcaption class="caption">
                                             <span>Staszek Markowski</span>
                                             <span class="member-title">Członek</span>
@@ -460,7 +460,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/grzybek.jpg'">
+                                             :src="'../img/avatars/Grzybek.jpg'">
                                         <figcaption class="caption">
                                             <span>Jakub Grzybek</span>
                                             <span class="member-title">Członek</span>
@@ -565,7 +565,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/dawid_c.jpg'">
+                                             :src="'../img/avatars/Chmielu.jpg'">
                                         <figcaption class="caption">
                                             <span>Dawid Chmiel</span>
                                             <span class="member-title">Członek</span>
@@ -635,7 +635,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/grzybek.jpg'">
+                                             :src="'../img/avatars/Grzybek.jpg'">
                                         <figcaption class="caption">
                                             <span>Jakub Grzybek</span>
                                             <span class="member-title">Członek</span>
@@ -645,7 +645,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/bajerAnon.png'">
+                                             :src="'../img/avatars/BajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Weronika Łokaj</span>
                                             <span class="member-title">Członek</span>
@@ -655,7 +655,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/czarek.jpg'">
+                                             :src="'../img/avatars/Czarek.jpg'">
                                         <figcaption class="caption">
                                             <span>Cezary Dobrakowski</span>
                                             <span class="member-title">Członek</span>
@@ -710,7 +710,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/Wojteko.jpg'">
+                                             :src="'../img/avatars/Wojtas.jpg'">
                                         <figcaption class="caption">
                                             <span>Wojtek Obuchowski</span>
                                             <span class="member-title">Członek</span>
@@ -720,7 +720,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/grzybek.jpg'">
+                                             :src="'../img/avatars/Grzybek.jpg'">
                                         <figcaption class="caption">
                                             <span>Jakub Grzybek</span>
                                             <span class="member-title">Członek</span>
@@ -740,7 +740,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/bajerAnon.png'">
+                                             :src="'../img/avatars/BajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Karolina Wierdak</span>
                                             <span class="member-title">Członek</span>
