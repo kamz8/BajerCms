@@ -8,11 +8,11 @@
                         <h1 class="text-uppercase pb-2">o klubie</h1>
                         <div class="mr-1 text-justify">
                             <p>
-                                Jesteśmy <strong>agendą kultury</strong>, która zajmuje się organizacją imprez tanecznych, koncertów, aktywności sportowych oraz innych inicjatyw kulturalno-rozrywkowych dla studentów. Ponadto bardzo aktywnie współpracujemy z innymi organizacjami zapewniając na wydarzeniach oprawę muzyczną i zaplecze techniczne. Jeżeli idąc przez kampus uczelni słyszycie muzykę, widzicie tańczących ludzi tam na pewno nas spotkacie.
-                                W tym roku Klub Studencki Bajer świętuje <strong> jubileusz 40-lecia </strong> działalności przy Politechnice Wrocławskiej. Jako jedna z nielicznych organizacji działających przy Politechnice możemy się pochwalić tak długą tradycją funkcjonowania.
+                                Jesteśmy <strong>agendą kultury</strong>, która zajmuje się organizacją imprez tanecznych, koncertów, aktywności sportowych oraz innych inicjatyw kulturalno-rozrywkowych dla studentów. Ponadto bardzo aktywnie współpracujemy z innymi organizacjami, zapewniając na wydarzeniach oprawę muzyczną i zaplecze techniczne. Jeżeli, idąc przez kampus uczelni, słyszycie muzykę, widzicie tańczących ludzi, to tam na pewno nas spotkacie.
+                                W tym roku Klub Studencki Bajer świętuje <strong>jubileusz 40-lecia</strong> działalności przy Politechnice Wrocławskiej. Jako jedna z nielicznych organizacji działających przy Politechnice możemy się pochwalić tak długą tradycją funkcjonowania.
                             </p>
                             <p>
-                                Wydarzenia odbywają się w siedzibie naszego klubu, w <strong> Domu Studenckim T-15 </strong>na osiedlu akademickim Wittigowo.
+                                Wydarzenia odbywają się w siedzibie naszego klubu, w <strong>Domu Studenckim T-15</strong> na osiedlu akademickim Wittigowo.
                                 Również ze względu na stale rosnące zainteresowanie coraz częściej organizowane działalności przenosimy poza mury akademika,
                                 w miejsca, gdzie możemy zaprosić jeszcze więcej studentów.
                                 Zapraszamy do stałego śledzenia naszych mediów społecznościowych, zamieszczamy tam wszystkie informacje na temat planowanych inicjatyw.
@@ -36,9 +36,9 @@
                             <div class="col-md-12 col-xs-12 text-center mb-4">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         :src="'../img/avatars/Krzysiek.jpg'">
+                                         :src="'../img/avatars/Ruszczyk.jpg'">
                                     <figcaption class="caption">
-                                        <span>Krzysztof Trybuszewski</span>
+                                        <span>Marcin Ruszczyk</span>
                                         <span class="member-title">Prezes Zarządu</span>
                                     </figcaption>
                                 </figure>
@@ -48,10 +48,10 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         src="https://avatars.io/facebook/kewin.galuszka/large">
+                                         :src="'../img/avatars/czarek.jpg'">
                                     <figcaption class="caption">
-                                        <span>Kewin Gałuszka</span>
-                                        <span class="member-title">Wiceprezes</span>
+                                        <span>Cezary Dobrakowski</span>
+                                        <span class="member-title">Członek zarządu</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -68,9 +68,9 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         :src="'../img/avatars/grzybek.jpg'">
+                                         :src="'../img/avatars/konrad.jpg'">
                                     <figcaption class="caption">
-                                        <span>Jakub Grzybek</span>
+                                        <span>Konrad Fligier</span>
                                         <span class="member-title">ds Klubu</span>
                                     </figcaption>
                                 </figure>
@@ -78,10 +78,10 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         :src="'../img/avatars/sandra.jpg'">
+                                         :src="'../img/avatars/Jurkowski.jpg'">
                                     <figcaption class="caption">
-                                        <span>Sandra Mrzygłód</span>
-                                        <span class="member-title">ds Promocji</span>
+                                        <span>Maciej Jurkowksi</span>
+                                        <span class="member-title">Członek zarządu</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -105,7 +105,7 @@
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12 col-md-6 visible-sm-inline-block">
-                        <p class="m-0">Zobaczcie naszą nie powtarzalną imprezową składankę. </p>
+                        <p class="m-0">Zobaczcie naszą niepowtarzalną imprezową składankę. </p>
                     </div>
                     <div class="col-12 col-md-4 offset-md-2">
                         <span class="bajerfont bajer-2x mr-2 mb-2 d-block d-md-inline mb-md-0 text-center">#AleBajer</span>

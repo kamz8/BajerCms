@@ -23,7 +23,7 @@ When we create new page - you copy of template below and name as NameOfPage
                                     <b-form-group id="exampleInputGroup1"
                                                   label="Adres email:"
                                                   label-for="exampleInput1"
-                                                  description="Potrzebujemy twojego adresu email, żeby się z tobą skontaktować"
+                                                  description="Potrzebujemy Twojego adresu email, żeby się z Tobą skontaktować"
                                                   >
                                         <b-form-input id="exampleInput1"
                                                       type="email"
@@ -38,7 +38,7 @@ When we create new page - you copy of template below and name as NameOfPage
                                     <b-form-group id="exampleInputGroup2"
                                                   label="Imię i nazwisko:"
                                                   label-for="exampleInput2"
-                                                  description="Chcemy wiedzieć kto do nas piszę">
+                                                  description="Chcemy wiedzieć, kto do nas pisze">
                                         <b-form-input id="exampleInput2"
                                                       type="text"
                                                       v-model="contactForm.nameAndSurname"

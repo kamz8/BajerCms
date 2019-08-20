@@ -12,7 +12,7 @@
                                   Klub można wynająć na wydarzenia takie jak: imprezy okolicznościowe, uroczystości obchodzone przez Organizatora, koncerty, szkolenia, konferencje, warsztaty tematyczne, wykłady lub inne tego typu spotkania.
                                   Informujemy Was również, że osoba prywatna wyrażająca chęć wynajmu sali musi mieć powiązanie z Politechniką Wrocławską (posiadanie aktualnego statusu studenta, pracownika).
                                   Koszt wynajmu jest uzależniony od terminu planowanego wydarzenia.
-                                  Zachęcamy do zapoznania się z regulaminem wynajmów oraz kontaktu z Nami.
+                                  Zachęcamy do zapoznania się z regulaminem wynajmów oraz kontaktu z nami.
                                 </p>
                                 <p>
                                   Regulamin dostępny jest pod <a target="_blank" href="../documents/Regulamin_wynajem.pdf">tym linkiem</a>.

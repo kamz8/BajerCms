@@ -38,7 +38,7 @@
                                     <img class="img-fluid rounded-circle"
                                          :src="'../img/avatars/czarek.jpg'">
                                     <figcaption class="caption">
-                                        <span>Cezary Drabowski</span>
+                                        <span>Cezary Dobrakowski</span>
                                         <span class="member-title">Członek zarządu</span>
                                     </figcaption>
                                 </figure>
@@ -70,7 +70,7 @@
                             <h1 class="text-uppercase pb-2">Sekcja finansowa</h1>
                             <div class="mr-1 text-justify">
                                 <p>
-                                    Działacze sekcji finansowej są odpowiedzialni za dokumenty oraz dopilnowanie wszystkich formalności związanych z wydarzeniami. Formułują Oni oficjalne pisma
+                                    Działacze sekcji finansowej są odpowiedzialni za dokumenty oraz dopilnowanie wszystkich formalności związanych z wydarzeniami. Formułują oni oficjalne pisma
                                     i przestrzegają terminów składania dokumentów.
                                     To właśnie sekcja finansowa dba o to, by hajs się zgadzał.
                                 </p>
@@ -81,8 +81,8 @@
                                         <img class="img-fluid rounded-circle"
                                              :src="'../img/avatars/Daria.jpg'">
                                         <figcaption class="caption">
-                                            <span>Daria Jaworska</span>
-                                            <span class="member-title">Przewodznicząca</span>
+                                            <span>Daria Jaworowska</span>
+                                            <span class="member-title">Przewodnicząca</span>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -142,7 +142,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/kalina.jpg'">
+                                             :src="'../img/avatars/bajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Kalina Bartoszewicz</span>
                                             <span class="member-title">Członek</span>
@@ -152,7 +152,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/koziolek.jpg'">
+                                             :src="'../img/avatars/Koziołek.jpg'">
                                         <figcaption class="caption">
                                             <span>Michał Koziołek</span>
                                             <span class="member-title">Członek</span>
@@ -162,7 +162,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/WeronikaB.jpg'">
+                                             :src="'../img/avatars/bajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Weronika Bihl</span>
                                             <span class="member-title">Członek</span>
@@ -195,7 +195,7 @@
                                              :src="'../img/avatars/kewin.jpg'">
                                         <figcaption class="caption">
                                             <span>Kewin Gałuszka</span>
-                                            <span class="member-title">Przewodzniczący</span>
+                                            <span class="member-title">Przewodniczący</span>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -214,7 +214,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/kalina.jpg'">
+                                             :src="'../img/avatars/bajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Kalina Bartoszewicz</span>
                                             <span class="member-title">Członek</span>
@@ -224,7 +224,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-7.jpg">
+                                             :src="'../img/avatars/bajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Angelika Dzwonek</span>
                                             <span class="member-title">Członek</span>
@@ -234,7 +234,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/mateuszB.jpg'">
+                                             :src="'../img/avatars/bajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Mateusz Bienkiewicz</span>
                                             <span class="member-title">Członek</span>
@@ -254,7 +254,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg">
+                                             :src="'../img/avatars/bajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Weronika Łokaj</span>
                                             <span class="member-title">Członek</span>
@@ -266,7 +266,7 @@
                             <h1 class="text-uppercase pb-2">Sekcja Promocji</h1>
                             <div class="mr-1 text-justify">
                                 <p>
-                                    Nie ma imprezy bez ludzi, a o ich liczną obecność na wydarzeniach dbają członkowie Sekcji promocji. Dla działaczy tej sekcji Facebook czy Instagram nie mają żadnych tajemnic. To odpowiednie miejsce dla osób otwartych na ludzi i kreatywnych.
+                                    Nie ma imprezy bez ludzi, a o ich liczną obecność na wydarzeniach dbają członkowie sekcji promocji. Dla działaczy tej sekcji Facebook czy Instagram nie mają żadnych tajemnic. To odpowiednie miejsce dla osób otwartych na ludzi i kreatywnych.
                                 </p>
                             </div>
 
@@ -277,7 +277,7 @@
                                              :src="'../img/avatars/stachu.jpg'">
                                         <figcaption class="caption">
                                             <span>Stanisław Markowski</span>
-                                            <span class="member-title">Przewodznicząca</span>
+                                            <span class="member-title">Przewodniczący</span>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -336,19 +336,9 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://cdn.lolwot.com/wp-content/uploads/2016/05/10-surprising-facts-you-never-knew-about-looney-tunes-5.jpg">
+                                             :src="'../img/avatars/bajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Weronika Łokaj</span>
-                                            <span class="member-title">Członek</span>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="col-md-2 col-xs-9 text-center">
-                                    <figure class="member avatar mx-auto d-block">
-                                        <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/stachu.jpg'">
-                                        <figcaption class="caption">
-                                            <span>Staszek Markowski</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>
@@ -381,7 +371,7 @@
                                              :src="'../img/avatars/Kamil.jpg'">
                                         <figcaption class="caption">
                                             <span>Kamil Żmijowski</span>
-                                            <span class="member-title">Przewodzniczący</span>
+                                            <span class="member-title">Przewodniczący</span>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -420,7 +410,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg">
+                                             :src="'../img/avatars/Koziołek.jpg'">
                                         <figcaption class="caption">
                                             <span>Michał Koziołek</span>
                                             <span class="member-title">Członek</span>
@@ -460,7 +450,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg">
+                                             :src="'../img/avatars/Kewin.jpg'">
                                         <figcaption class="caption">
                                             <span>Kewin Gałuszka</span>
                                             <span class="member-title">Członek</span>
@@ -566,7 +556,7 @@
                                              :src="'../img/avatars/Ruszczyk.jpg'">
                                         <figcaption class="caption">
                                             <span>Marcin Ruszczyk</span>
-                                            <span class="member-title">Przewodzniczący</span>
+                                            <span class="member-title">Przewodniczący</span>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -635,7 +625,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg/240px-The_Spirit_of_43-Donald_Duck%2C_cropped_version.jpg">
+                                             :src="'../img/avatars/Kewin.jpg'">
                                         <figcaption class="caption">
                                             <span>Kewin Gałuszka</span>
                                             <span class="member-title">Członek</span>
@@ -655,7 +645,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://vignette.wikia.nocookie.net/kaczor-donald-czasopisma/images/a/a2/Pluto.jpeg/revision/latest?cb=20120925145019&path-prefix=pl">
+                                             :src="'../img/avatars/bajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Weronika Łokaj</span>
                                             <span class="member-title">Członek</span>
@@ -709,10 +699,10 @@
                                 <div class="col-md-12 col-xs-12 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://vignette.wikia.nocookie.net/kaczordonald/images/d/d4/Daisy.jpg/revision/latest?cb=20121016181244&path-prefix=pl">
+                                             :src="'../img/avatars/JulkaM.jpg'">
                                         <figcaption class="caption">
                                             <span>Julka Musiał</span>
-                                            <span class="member-title">Przewodzniczący</span>
+                                            <span class="member-title">Przewodniczący</span>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -750,7 +740,7 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             src="https://vignette.wikia.nocookie.net/kaczor-donald-czasopisma/images/a/a2/Pluto.jpeg/revision/latest?cb=20120925145019&path-prefix=pl">
+                                             :src="'../img/avatars/bajerAnon.png'">
                                         <figcaption class="caption">
                                             <span>Karolina Wierdak</span>
                                             <span class="member-title">Członek</span>
