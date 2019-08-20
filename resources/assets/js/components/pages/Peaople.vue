@@ -57,7 +57,7 @@
                             <div class="col-md-3 col-xs-12 text-center">
                                 <figure class="member avatar mx-auto d-block">
                                     <img class="img-fluid rounded-circle"
-                                         :src="'../img/avatars/jurkowski.jpg'">
+                                         :src="'../img/avatars/Jurkowski.jpg'">
                                     <figcaption class="caption">
                                         <span>Maciej Jurkowski</span>
                                         <span class="member-title">Członek zarządu</span>
@@ -192,7 +192,7 @@
                                 <div class="col-md-12 col-xs-12 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/kewin.jpg'">
+                                             :src="'../img/avatars/Kewin.jpg'">
                                         <figcaption class="caption">
                                             <span>Kewin Gałuszka</span>
                                             <span class="member-title">Przewodniczący</span>

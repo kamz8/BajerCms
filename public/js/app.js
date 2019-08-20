@@ -97773,7 +97773,7 @@ var render = function() {
                     [
                       _c("img", {
                         staticClass: "img-fluid rounded-circle",
-                        attrs: { src: "../img/avatars/jurkowski.jpg" }
+                        attrs: { src: "../img/avatars/Jurkowski.jpg" }
                       }),
                       _vm._v(" "),
                       _vm._m(5)
@@ -97966,7 +97966,7 @@ var render = function() {
                         [
                           _c("img", {
                             staticClass: "img-fluid rounded-circle",
-                            attrs: { src: "../img/avatars/kewin.jpg" }
+                            attrs: { src: "../img/avatars/Kewin.jpg" }
                           }),
                           _vm._v(" "),
                           _vm._m(18)
