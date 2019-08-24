@@ -184,7 +184,7 @@
                             <h1 class="text-uppercase pb-2">Sekcja Współpracy z biznesem</h1>
                             <div class="mr-1 text-justify">
                                 <p>
-                                    Prowadzisz swój własny biznes i szukasz organizacji, która wypromuje twoją firmę wśród studentów? Nie mogłeś trafić lepiej. Członkowie Sekcji Współpracy z biznesem zajmują się nawiązywaniem kontaktów z różnymi przedsiębiorstwami i ustalaniem warunków współpracy.
+                                    Prowadzisz swój własny biznes i szukasz organizacji, która wypromuje Twoją firmę wśród studentów? Nie mogłeś trafić lepiej. Członkowie sekcji współpracy z biznesem zajmują się nawiązywaniem kontaktów z różnymi przedsiębiorstwami i ustalaniem warunków współpracy.
                                 </p>
                             </div>
 

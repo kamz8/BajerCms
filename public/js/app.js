@@ -6170,10 +6170,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/pages/Peaople.vue":
-/*!********************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/pages/Peaople.vue ***!
-  \********************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/pages/People.vue":
+/*!*******************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/pages/People.vue ***!
+  \*******************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -38263,6 +38263,25 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-192ad5c4\",\"scoped\":true,\"sourceMap\":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/pages/People.vue":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"optionsId":"0","vue":true,"id":"data-v-192ad5c4","scoped":true,"sourceMap":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/pages/People.vue ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-1beaadb8\",\"scoped\":true,\"sourceMap\":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/page-part/Avatar/SocialLink.vue":
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"optionsId":"0","vue":true,"id":"data-v-1beaadb8","scoped":true,"sourceMap":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/page-part/Avatar/SocialLink.vue ***!
@@ -38390,25 +38409,6 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 // module
 exports.push([module.i, "\n.hue[data-v-4c8a45da] {\n    -webkit-animation: hue-data-v-4c8a45da 1s infinite;\n}\n@-webkit-keyframes hue-data-v-4c8a45da {\n0%, 100%  { -webkit-filter: hue-rotate(0deg);\n}\n40% { -webkit-filter: hue-rotate(90deg);\n}\n60% { -webkit-filter: hue-rotate(180deg);\n}\n80% { -webkit-filter: hue-rotate(90deg);\n}\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-4e8bfdb2\",\"scoped\":true,\"sourceMap\":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/pages/Peaople.vue":
-/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"optionsId":"0","vue":true,"id":"data-v-4e8bfdb2","scoped":true,"sourceMap":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/pages/Peaople.vue ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -96039,6 +96039,1846 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-192ad5c4\",\"hasScoped\":true,\"optionsId\":\"0\",\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/pages/People.vue":
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-192ad5c4","hasScoped":true,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/pages/People.vue ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c("v-header", {
+        staticStyle: { "background-position-y": "-90px" },
+        attrs: {
+          scrollTo: "#ekipa",
+          vtitle: "Ekipa",
+          coverImg: "../img/zespol2.jpg"
+        }
+      }),
+      _vm._v(" "),
+      _c("section", { staticClass: "content-box", attrs: { id: "ekipa" } }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("article", { staticClass: "col-md-12 text-center" }, [
+              _c("h2", { staticClass: "text-uppercase pb-1" }, [
+                _vm._v("Zarząd")
+              ]),
+              _vm._v(" "),
+              _vm._m(0),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c(
+                  "div",
+                  { staticClass: "col-md-12 col-xs-12 text-center mb-4" },
+                  [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Ruszczyk.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(1)
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-3 col-xs-12 text-center" }, [
+                  _c(
+                    "figure",
+                    { staticClass: "member avatar mx-auto d-block" },
+                    [
+                      _c("img", {
+                        staticClass: "img-fluid rounded-circle",
+                        attrs: { src: "../img/avatars/Daria.jpg" }
+                      }),
+                      _vm._v(" "),
+                      _vm._m(2)
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-3 col-xs-12 text-center" }, [
+                  _c(
+                    "figure",
+                    { staticClass: "member avatar mx-auto d-block" },
+                    [
+                      _c("img", {
+                        staticClass: "img-fluid rounded-circle",
+                        attrs: { src: "../img/avatars/Czarek.jpg" }
+                      }),
+                      _vm._v(" "),
+                      _vm._m(3)
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-3 col-xs-12 text-center" }, [
+                  _c(
+                    "figure",
+                    { staticClass: "member avatar mx-auto d-block" },
+                    [
+                      _c("img", {
+                        staticClass: "img-fluid rounded-circle",
+                        attrs: { src: "../img/avatars/Konrad.jpg" }
+                      }),
+                      _vm._v(" "),
+                      _vm._m(4)
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-3 col-xs-12 text-center" }, [
+                  _c(
+                    "figure",
+                    { staticClass: "member avatar mx-auto d-block" },
+                    [
+                      _c("img", {
+                        staticClass: "img-fluid rounded-circle",
+                        attrs: { src: "../img/avatars/Jurkowski.jpg" }
+                      }),
+                      _vm._v(" "),
+                      _vm._m(5)
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "clearfix hidden-xs mb-6" }),
+              _vm._v(" "),
+              _c("div", { staticClass: "container" }, [
+                _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                  _vm._v("Sekcja finansowa")
+                ]),
+                _vm._v(" "),
+                _vm._m(6),
+                _vm._v(" "),
+                _c("div", { staticClass: "row mx-auto" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "figure",
+                        { staticClass: "member avatar mx-auto d-block" },
+                        [
+                          _c("img", {
+                            staticClass: "img-fluid rounded-circle",
+                            attrs: { src: "../img/avatars/Daria.jpg" }
+                          }),
+                          _vm._v(" "),
+                          _vm._m(7)
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Kasia.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(8)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Czarek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(9)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Ruszczyk.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(10)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Bania.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(11)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Jurkowski.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(12)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(13)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Koziołek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(14)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(15)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Klaudia.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(16)
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                  _vm._v("Sekcja Współpracy z biznesem")
+                ]),
+                _vm._v(" "),
+                _vm._m(17),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "figure",
+                        { staticClass: "member avatar mx-auto d-block" },
+                        [
+                          _c("img", {
+                            staticClass: "img-fluid rounded-circle",
+                            attrs: { src: "../img/avatars/Kewin.jpg" }
+                          }),
+                          _vm._v(" "),
+                          _vm._m(18)
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Klaudia.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(19)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(20)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(21)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(22)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/DawidTrzebinski.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(23)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(24)
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                  _vm._v("Sekcja Promocji")
+                ]),
+                _vm._v(" "),
+                _vm._m(25),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "figure",
+                        { staticClass: "member avatar mx-auto d-block" },
+                        [
+                          _c("img", {
+                            staticClass: "img-fluid rounded-circle",
+                            attrs: { src: "../img/avatars/Stachu.jpg" }
+                          }),
+                          _vm._v(" "),
+                          _vm._m(26)
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Kamil.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(27)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Czarek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(28)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Sandra.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(29)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Ruszczyk.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(30)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Wojtas.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(31)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(32)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/DawidTrzebinski.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(33)
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                  _vm._v("Sekcja DJ-ska")
+                ]),
+                _vm._v(" "),
+                _vm._m(34),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "figure",
+                        { staticClass: "member avatar mx-auto d-block" },
+                        [
+                          _c("img", {
+                            staticClass: "img-fluid rounded-circle",
+                            attrs: { src: "../img/avatars/Kamil.jpg" }
+                          }),
+                          _vm._v(" "),
+                          _vm._m(35)
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Chmielu.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(36)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Ruszczyk.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(37)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Maciek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(38)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Koziołek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(39)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Stachu.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(40)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Durmaj.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(41)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Krzysiek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(42)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Kewin.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(43)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Grzybek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(44)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Arek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(45)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Iza.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(46)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Pato.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(47)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Bodzio.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(48)
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                  _vm._v("Sekcja Techniczna")
+                ]),
+                _vm._v(" "),
+                _vm._m(49),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "figure",
+                        { staticClass: "member avatar mx-auto d-block" },
+                        [
+                          _c("img", {
+                            staticClass: "img-fluid rounded-circle",
+                            attrs: { src: "../img/avatars/Ruszczyk.jpg" }
+                          }),
+                          _vm._v(" "),
+                          _vm._m(50)
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Chmielu.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(51)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Iza.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(52)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Pato.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(53)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Durmaj.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(54)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Kamil.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(55)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Krzysiek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(56)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Kewin.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(57)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Grzybek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(58)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(59)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Czarek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(60)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Arek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(61)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Konrad.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(62)
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", { staticClass: "text-uppercase pb-2" }, [
+                  _vm._v("Sekcja Fotografii&Filmów")
+                ]),
+                _vm._v(" "),
+                _vm._m(63),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "figure",
+                        { staticClass: "member avatar mx-auto d-block" },
+                        [
+                          _c("img", {
+                            staticClass: "img-fluid rounded-circle",
+                            attrs: { src: "../img/avatars/JulkaM.jpg" }
+                          }),
+                          _vm._v(" "),
+                          _vm._m(64)
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Wojtas.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(65)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Grzybek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(66)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Krzysiek.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(67)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(68)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Kamil.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(69)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Klaudia.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(70)
+                      ]
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "mb-lg-4 mb-md-3 mb-sm-2 text-center text-light font-weight-light",
+        staticStyle: { "font-size": "24px" }
+      },
+      [
+        _c("p", [
+          _vm._v(
+            "Nasza grupa to kreatywni ludzie, dla których nie ma rzeczy niemożliwych."
+          )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Marcin Ruszczyk")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Prezes Zarządu")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Daria Jaworowska")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Skarbnik")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Cezary Dobrakowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek zarządu")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Konrad Fligier")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("ds Klubu")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Maciej Jurkowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek zarządu")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mr-1 text-justify" }, [
+      _c("p", [
+        _vm._v(
+          "\n                                    Działacze sekcji finansowej są odpowiedzialni za dokumenty oraz dopilnowanie wszystkich formalności związanych z wydarzeniami. Formułują oni oficjalne pisma\n                                    i przestrzegają terminów składania dokumentów.\n                                    To właśnie sekcja finansowa dba o to, by hajs się zgadzał.\n                                "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Daria Jaworowska")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Przewodnicząca")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Katarzyna Szybalska")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Cezary Dobrakowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Marcin Ruszczyk")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Oliwia Bańkowska")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Maciej Jurkowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Kalina Bartoszewicz")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Michał Koziołek")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Weronika Bihl")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Klaudia Szlichta")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mr-1 text-justify" }, [
+      _c("p", [
+        _vm._v(
+          "\n                                    Prowadzisz swój własny biznes i szukasz organizacji, która wypromuje Twoją firmę wśród studentów? Nie mogłeś trafić lepiej. Członkowie sekcji współpracy z biznesem zajmują się nawiązywaniem kontaktów z różnymi przedsiębiorstwami i ustalaniem warunków współpracy.\n                                "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Kewin Gałuszka")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Przewodniczący")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Klaudia Szlichta")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Kalina Bartoszewicz")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Angelika Dzwonek")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Mateusz Bienkiewicz")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Dawid Trzebiński")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Weronika Łokaj")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mr-1 text-justify" }, [
+      _c("p", [
+        _vm._v(
+          "\n                                    Nie ma imprezy bez ludzi, a o ich liczną obecność na wydarzeniach dbają członkowie sekcji promocji. Dla działaczy tej sekcji Facebook czy Instagram nie mają żadnych tajemnic. To odpowiednie miejsce dla osób otwartych na ludzi i kreatywnych.\n                                "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Stanisław Markowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Przewodniczący")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Kamil Żmijowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Cezary Dobrakowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Sandra Mrzygłód")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Marcin Ruszczyk")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Wojciech Obuchowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Weronika Łokaj")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Dawid Trzebiński")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mr-1 text-justify" }, [
+      _c("p", [
+        _vm._v(
+          "\n                                    Na żadnej imprezie nie może zabraknąć dobrego DJ-a, a w Bajerze ich nie brakuje. Ich zadaniem jest nie tylko prowadzenie imprez oraz zapewnienie oprawy muzycznej, ale także doskonalenie swoich umiejętności. Dzięki temu ich występy na wydarzeniach są zawsze profesjonalne, a parkiet rozgrzany jest do czerwoności.\n                                "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Kamil Żmijowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Przewodniczący")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Dawid Chmiel")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Marcin Ruszczyk")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Maciej Macko")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Michał Koziołek")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Staszek Markowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Dawid Durmaj")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Krzysztof Trybuszewski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Kewin Gałuszka")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Jakub Grzybek")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Arkadiusz Szeląg")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Izabela Popławska")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Michał Podgóreczny")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Artur Pieńkowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mr-1 text-justify" }, [
+      _c("p", [
+        _vm._v(
+          "\n                                    Są tu osoby odpowiedzialne za oświetlenie i nagłośnienie w czasie naszych wydarzeń oraz dbanie o sprzęt (montaż, transport, naprawy). Przykładają uwagę do najmniejszych szczegółów (jak odpowiednie składanie kabli), aby wyposażenie klubu było\n                                    w jak najlepszym stanie, a wydarzenia przebiegały bez jakichkolwiek usterek.\n                                "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Marcin Ruszczyk")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Przewodniczący")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Dawid Chmiel")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Izabela Popławska")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Michał Podgóreczny")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Dawid Durmaj")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Kamil Żmijowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Krzysztof Trybuszewski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Kewin Gałuszka")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Jakub Grzybek")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Weronika Łokaj")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Cezary Dobrakowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Arkadiusz Szeląg")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Konrad Fligier")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mr-1 text-justify" }, [
+      _c("p", [
+        _vm._v(
+          "\n                                    Nasze wydarzenia cieszą się dużym zainteresowaniem, a ich uczestnicy chętnie je wspominają. Członkowie tej sekcji upamiętniają chwile pełne świetnej zabawy, muzyki i tańca. Samodzielnie zajmują się obróbką zdjęć oraz produkcją  filmów.\n                                "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Julka Musiał")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Przewodniczący")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Wojtek Obuchowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Jakub Grzybek")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Krzysztof Trybuszewski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Karolina Wierdak")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Kamil Żmijowski")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Klaudia Szlichta")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  }
+]
+render._withStripped = true
+
+if (false) {}
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-1beaadb8\",\"hasScoped\":true,\"optionsId\":\"0\",\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/page-part/Avatar/SocialLink.vue":
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-1beaadb8","hasScoped":true,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/page-part/Avatar/SocialLink.vue ***!
@@ -97654,1846 +99494,6 @@ var staticRenderFns = [
         ])
       ]
     )
-  }
-]
-render._withStripped = true
-
-if (false) {}
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-4e8bfdb2\",\"hasScoped\":true,\"optionsId\":\"0\",\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/pages/Peaople.vue":
-/*!**************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-4e8bfdb2","hasScoped":true,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/pages/Peaople.vue ***!
-  \**************************************************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("v-header", {
-        staticStyle: { "background-position-y": "-90px" },
-        attrs: {
-          scrollTo: "#ekipa",
-          vtitle: "Ekipa",
-          coverImg: "../img/zespol2.jpg"
-        }
-      }),
-      _vm._v(" "),
-      _c("section", { staticClass: "content-box", attrs: { id: "ekipa" } }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("article", { staticClass: "col-md-12 text-center" }, [
-              _c("h2", { staticClass: "text-uppercase pb-1" }, [
-                _vm._v("Zarząd")
-              ]),
-              _vm._v(" "),
-              _vm._m(0),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c(
-                  "div",
-                  { staticClass: "col-md-12 col-xs-12 text-center mb-4" },
-                  [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Ruszczyk.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(1)
-                      ]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-xs-12 text-center" }, [
-                  _c(
-                    "figure",
-                    { staticClass: "member avatar mx-auto d-block" },
-                    [
-                      _c("img", {
-                        staticClass: "img-fluid rounded-circle",
-                        attrs: { src: "../img/avatars/Daria.jpg" }
-                      }),
-                      _vm._v(" "),
-                      _vm._m(2)
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-xs-12 text-center" }, [
-                  _c(
-                    "figure",
-                    { staticClass: "member avatar mx-auto d-block" },
-                    [
-                      _c("img", {
-                        staticClass: "img-fluid rounded-circle",
-                        attrs: { src: "../img/avatars/Czarek.jpg" }
-                      }),
-                      _vm._v(" "),
-                      _vm._m(3)
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-xs-12 text-center" }, [
-                  _c(
-                    "figure",
-                    { staticClass: "member avatar mx-auto d-block" },
-                    [
-                      _c("img", {
-                        staticClass: "img-fluid rounded-circle",
-                        attrs: { src: "../img/avatars/Konrad.jpg" }
-                      }),
-                      _vm._v(" "),
-                      _vm._m(4)
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-xs-12 text-center" }, [
-                  _c(
-                    "figure",
-                    { staticClass: "member avatar mx-auto d-block" },
-                    [
-                      _c("img", {
-                        staticClass: "img-fluid rounded-circle",
-                        attrs: { src: "../img/avatars/Jurkowski.jpg" }
-                      }),
-                      _vm._v(" "),
-                      _vm._m(5)
-                    ]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "clearfix hidden-xs mb-6" }),
-              _vm._v(" "),
-              _c("div", { staticClass: "container" }, [
-                _c("h1", { staticClass: "text-uppercase pb-2" }, [
-                  _vm._v("Sekcja finansowa")
-                ]),
-                _vm._v(" "),
-                _vm._m(6),
-                _vm._v(" "),
-                _c("div", { staticClass: "row mx-auto" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-md-12 col-xs-12 text-center" },
-                    [
-                      _c(
-                        "figure",
-                        { staticClass: "member avatar mx-auto d-block" },
-                        [
-                          _c("img", {
-                            staticClass: "img-fluid rounded-circle",
-                            attrs: { src: "../img/avatars/Daria.jpg" }
-                          }),
-                          _vm._v(" "),
-                          _vm._m(7)
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Kasia.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(8)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Czarek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(9)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Ruszczyk.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(10)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Bania.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(11)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Jurkowski.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(12)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/BajerAnon.png" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(13)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Koziołek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(14)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/BajerAnon.png" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(15)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Klaudia.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(16)
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("h1", { staticClass: "text-uppercase pb-2" }, [
-                  _vm._v("Sekcja Współpracy z biznesem")
-                ]),
-                _vm._v(" "),
-                _vm._m(17),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-md-12 col-xs-12 text-center" },
-                    [
-                      _c(
-                        "figure",
-                        { staticClass: "member avatar mx-auto d-block" },
-                        [
-                          _c("img", {
-                            staticClass: "img-fluid rounded-circle",
-                            attrs: { src: "../img/avatars/Kewin.jpg" }
-                          }),
-                          _vm._v(" "),
-                          _vm._m(18)
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Klaudia.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(19)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/BajerAnon.png" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(20)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/BajerAnon.png" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(21)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/BajerAnon.png" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(22)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/DawidTrzebinski.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(23)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/BajerAnon.png" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(24)
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("h1", { staticClass: "text-uppercase pb-2" }, [
-                  _vm._v("Sekcja Promocji")
-                ]),
-                _vm._v(" "),
-                _vm._m(25),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-md-12 col-xs-12 text-center" },
-                    [
-                      _c(
-                        "figure",
-                        { staticClass: "member avatar mx-auto d-block" },
-                        [
-                          _c("img", {
-                            staticClass: "img-fluid rounded-circle",
-                            attrs: { src: "../img/avatars/Stachu.jpg" }
-                          }),
-                          _vm._v(" "),
-                          _vm._m(26)
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Kamil.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(27)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Czarek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(28)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Sandra.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(29)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Ruszczyk.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(30)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Wojtas.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(31)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/BajerAnon.png" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(32)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/DawidTrzebinski.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(33)
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("h1", { staticClass: "text-uppercase pb-2" }, [
-                  _vm._v("Sekcja DJ-ska")
-                ]),
-                _vm._v(" "),
-                _vm._m(34),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-md-12 col-xs-12 text-center" },
-                    [
-                      _c(
-                        "figure",
-                        { staticClass: "member avatar mx-auto d-block" },
-                        [
-                          _c("img", {
-                            staticClass: "img-fluid rounded-circle",
-                            attrs: { src: "../img/avatars/Kamil.jpg" }
-                          }),
-                          _vm._v(" "),
-                          _vm._m(35)
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Chmielu.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(36)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Ruszczyk.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(37)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Maciek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(38)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Koziołek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(39)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Stachu.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(40)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Durmaj.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(41)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Krzysiek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(42)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Kewin.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(43)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Grzybek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(44)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Arek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(45)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Iza.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(46)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Pato.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(47)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Bodzio.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(48)
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("h1", { staticClass: "text-uppercase pb-2" }, [
-                  _vm._v("Sekcja Techniczna")
-                ]),
-                _vm._v(" "),
-                _vm._m(49),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-md-12 col-xs-12 text-center" },
-                    [
-                      _c(
-                        "figure",
-                        { staticClass: "member avatar mx-auto d-block" },
-                        [
-                          _c("img", {
-                            staticClass: "img-fluid rounded-circle",
-                            attrs: { src: "../img/avatars/Ruszczyk.jpg" }
-                          }),
-                          _vm._v(" "),
-                          _vm._m(50)
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Chmielu.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(51)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Iza.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(52)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Pato.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(53)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Durmaj.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(54)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Kamil.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(55)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Krzysiek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(56)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Kewin.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(57)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Grzybek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(58)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/BajerAnon.png" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(59)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Czarek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(60)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Arek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(61)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Konrad.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(62)
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("h1", { staticClass: "text-uppercase pb-2" }, [
-                  _vm._v("Sekcja Fotografii&Filmów")
-                ]),
-                _vm._v(" "),
-                _vm._m(63),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-md-12 col-xs-12 text-center" },
-                    [
-                      _c(
-                        "figure",
-                        { staticClass: "member avatar mx-auto d-block" },
-                        [
-                          _c("img", {
-                            staticClass: "img-fluid rounded-circle",
-                            attrs: { src: "../img/avatars/JulkaM.jpg" }
-                          }),
-                          _vm._v(" "),
-                          _vm._m(64)
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "clearfix hidden-xs mb-4" }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Wojtas.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(65)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Grzybek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(66)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Krzysiek.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(67)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/BajerAnon.png" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(68)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Kamil.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(69)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Klaudia.jpg" }
-                        }),
-                        _vm._v(" "),
-                        _vm._m(70)
-                      ]
-                    )
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ])
-    ],
-    1
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "mb-lg-4 mb-md-3 mb-sm-2 text-center text-light font-weight-light",
-        staticStyle: { "font-size": "24px" }
-      },
-      [
-        _c("p", [
-          _vm._v(
-            "Nasza grupa to kreatywni ludzie, dla których nie ma rzeczy niemożliwych."
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Marcin Ruszczyk")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Prezes Zarządu")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Daria Jaworowska")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Skarbnik")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Cezary Dobrakowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek zarządu")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Konrad Fligier")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("ds Klubu")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Maciej Jurkowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek zarządu")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mr-1 text-justify" }, [
-      _c("p", [
-        _vm._v(
-          "\n                                    Działacze sekcji finansowej są odpowiedzialni za dokumenty oraz dopilnowanie wszystkich formalności związanych z wydarzeniami. Formułują oni oficjalne pisma\n                                    i przestrzegają terminów składania dokumentów.\n                                    To właśnie sekcja finansowa dba o to, by hajs się zgadzał.\n                                "
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Daria Jaworowska")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Przewodnicząca")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Katarzyna Szybalska")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Cezary Dobrakowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Marcin Ruszczyk")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Oliwia Bańkowska")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Maciej Jurkowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Kalina Bartoszewicz")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Michał Koziołek")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Weronika Bihl")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Klaudia Szlichta")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mr-1 text-justify" }, [
-      _c("p", [
-        _vm._v(
-          "\n                                    Prowadzisz swój własny biznes i szukasz organizacji, która wypromuje twoją firmę wśród studentów? Nie mogłeś trafić lepiej. Członkowie Sekcji Współpracy z biznesem zajmują się nawiązywaniem kontaktów z różnymi przedsiębiorstwami i ustalaniem warunków współpracy.\n                                "
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Kewin Gałuszka")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Przewodniczący")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Klaudia Szlichta")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Kalina Bartoszewicz")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Angelika Dzwonek")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Mateusz Bienkiewicz")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Dawid Trzebiński")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Weronika Łokaj")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mr-1 text-justify" }, [
-      _c("p", [
-        _vm._v(
-          "\n                                    Nie ma imprezy bez ludzi, a o ich liczną obecność na wydarzeniach dbają członkowie sekcji promocji. Dla działaczy tej sekcji Facebook czy Instagram nie mają żadnych tajemnic. To odpowiednie miejsce dla osób otwartych na ludzi i kreatywnych.\n                                "
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Stanisław Markowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Przewodniczący")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Kamil Żmijowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Cezary Dobrakowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Sandra Mrzygłód")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Marcin Ruszczyk")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Wojciech Obuchowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Weronika Łokaj")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Dawid Trzebiński")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mr-1 text-justify" }, [
-      _c("p", [
-        _vm._v(
-          "\n                                    Na żadnej imprezie nie może zabraknąć dobrego DJ-a, a w Bajerze ich nie brakuje. Ich zadaniem jest nie tylko prowadzenie imprez oraz zapewnienie oprawy muzycznej, ale także doskonalenie swoich umiejętności. Dzięki temu ich występy na wydarzeniach są zawsze profesjonalne, a parkiet rozgrzany jest do czerwoności.\n                                "
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Kamil Żmijowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Przewodniczący")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Dawid Chmiel")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Marcin Ruszczyk")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Maciej Macko")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Michał Koziołek")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Staszek Markowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Dawid Durmaj")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Krzysztof Trybuszewski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Kewin Gałuszka")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Jakub Grzybek")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Arkadiusz Szeląg")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Izabela Popławska")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Michał Podgóreczny")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Artur Pieńkowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mr-1 text-justify" }, [
-      _c("p", [
-        _vm._v(
-          "\n                                    Są tu osoby odpowiedzialne za oświetlenie i nagłośnienie w czasie naszych wydarzeń oraz dbanie o sprzęt (montaż, transport, naprawy). Przykładają uwagę do najmniejszych szczegółów (jak odpowiednie składanie kabli), aby wyposażenie klubu było\n                                    w jak najlepszym stanie, a wydarzenia przebiegały bez jakichkolwiek usterek.\n                                "
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Marcin Ruszczyk")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Przewodniczący")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Dawid Chmiel")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Izabela Popławska")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Michał Podgóreczny")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Dawid Durmaj")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Kamil Żmijowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Krzysztof Trybuszewski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Kewin Gałuszka")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Jakub Grzybek")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Weronika Łokaj")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Cezary Dobrakowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Arkadiusz Szeląg")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Konrad Fligier")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mr-1 text-justify" }, [
-      _c("p", [
-        _vm._v(
-          "\n                                    Nasze wydarzenia cieszą się dużym zainteresowaniem, a ich uczestnicy chętnie je wspominają. Członkowie tej sekcji upamiętniają chwile pełne świetnej zabawy, muzyki i tańca. Samodzielnie zajmują się obróbką zdjęć oraz produkcją  filmów.\n                                "
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Julka Musiał")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Przewodniczący")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Wojtek Obuchowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Jakub Grzybek")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Krzysztof Trybuszewski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Karolina Wierdak")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Kamil Żmijowski")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Klaudia Szlichta")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
-    ])
   }
 ]
 render._withStripped = true
@@ -105039,6 +105039,27 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-192ad5c4\",\"scoped\":true,\"sourceMap\":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/pages/People.vue":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"optionsId":"0","vue":true,"id":"data-v-192ad5c4","scoped":true,"sourceMap":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/pages/People.vue ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/style-compiler?{"optionsId":"0","vue":true,"id":"data-v-192ad5c4","scoped":true,"sourceMap":false}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./People.vue */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-192ad5c4\",\"scoped\":true,\"sourceMap\":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/pages/People.vue");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("cc3bfafa", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-1beaadb8\",\"scoped\":true,\"sourceMap\":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/page-part/Avatar/SocialLink.vue":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"optionsId":"0","vue":true,"id":"data-v-1beaadb8","scoped":true,"sourceMap":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/page-part/Avatar/SocialLink.vue ***!
@@ -105181,27 +105202,6 @@ if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = __webpack_require__(/*! ../../../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
 var update = add("1f364a3c", content, false, {});
-// Hot Module Replacement
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-4e8bfdb2\",\"scoped\":true,\"sourceMap\":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/pages/Peaople.vue":
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"optionsId":"0","vue":true,"id":"data-v-4e8bfdb2","scoped":true,"sourceMap":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/pages/Peaople.vue ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(/*! !../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/style-compiler?{"optionsId":"0","vue":true,"id":"data-v-4e8bfdb2","scoped":true,"sourceMap":false}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Peaople.vue */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-4e8bfdb2\",\"scoped\":true,\"sourceMap\":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/pages/Peaople.vue");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__(/*! ../../../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
-var update = add("cf1cb4ae", content, false, {});
 // Hot Module Replacement
 if(false) {}
 
@@ -121242,22 +121242,22 @@ if (false) {}
 
 /***/ }),
 
-/***/ "./resources/assets/js/components/pages/Peaople.vue":
-/*!**********************************************************!*\
-  !*** ./resources/assets/js/components/pages/Peaople.vue ***!
-  \**********************************************************/
+/***/ "./resources/assets/js/components/pages/People.vue":
+/*!*********************************************************!*\
+  !*** ./resources/assets/js/components/pages/People.vue ***!
+  \*********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Peaople_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !babel-loader!../../../../../node_modules/vue-loader/lib/selector?type=script&index=0!./Peaople.vue */ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/pages/Peaople.vue");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_template_compiler_index_id_data_v_4e8bfdb2_hasScoped_true_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Peaople_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-4e8bfdb2","hasScoped":true,"optionsId":"0","buble":{"transforms":{}}}!../../../../../node_modules/vue-loader/lib/selector?type=template&index=0!./Peaople.vue */ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-4e8bfdb2\",\"hasScoped\":true,\"optionsId\":\"0\",\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/pages/Peaople.vue");
+/* harmony import */ var _babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_People_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !babel-loader!../../../../../node_modules/vue-loader/lib/selector?type=script&index=0!./People.vue */ "./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/pages/People.vue");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_template_compiler_index_id_data_v_192ad5c4_hasScoped_true_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_People_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-192ad5c4","hasScoped":true,"optionsId":"0","buble":{"transforms":{}}}!../../../../../node_modules/vue-loader/lib/selector?type=template&index=0!./People.vue */ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-192ad5c4\",\"hasScoped\":true,\"optionsId\":\"0\",\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/pages/People.vue");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_component_normalizer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/component-normalizer */ "./node_modules/vue-loader/lib/runtime/component-normalizer.js");
 var disposed = false
 function injectStyle (context) {
   if (disposed) return
-  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../../node_modules/vue-loader/lib/style-compiler/index?{"optionsId":"0","vue":true,"id":"data-v-4e8bfdb2","scoped":true,"sourceMap":false}!../../../../../node_modules/vue-loader/lib/selector?type=styles&index=0!./Peaople.vue */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-4e8bfdb2\",\"scoped\":true,\"sourceMap\":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/pages/Peaople.vue")
+  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../../node_modules/vue-loader/lib/style-compiler/index?{"optionsId":"0","vue":true,"id":"data-v-192ad5c4","scoped":true,"sourceMap":false}!../../../../../node_modules/vue-loader/lib/selector?type=styles&index=0!./People.vue */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"optionsId\":\"0\",\"vue\":true,\"id\":\"data-v-192ad5c4\",\"scoped\":true,\"sourceMap\":false}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/pages/People.vue")
 }
 /* script */
 
@@ -121269,20 +121269,20 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-4e8bfdb2"
+var __vue_scopeId__ = "data-v-192ad5c4"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 
 var Component = Object(_node_modules_vue_loader_lib_runtime_component_normalizer__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Peaople_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-  _node_modules_vue_loader_lib_template_compiler_index_id_data_v_4e8bfdb2_hasScoped_true_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Peaople_vue__WEBPACK_IMPORTED_MODULE_1__["render"],
-  _node_modules_vue_loader_lib_template_compiler_index_id_data_v_4e8bfdb2_hasScoped_true_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Peaople_vue__WEBPACK_IMPORTED_MODULE_1__["staticRenderFns"],
+  _babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_People_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+  _node_modules_vue_loader_lib_template_compiler_index_id_data_v_192ad5c4_hasScoped_true_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_People_vue__WEBPACK_IMPORTED_MODULE_1__["render"],
+  _node_modules_vue_loader_lib_template_compiler_index_id_data_v_192ad5c4_hasScoped_true_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_People_vue__WEBPACK_IMPORTED_MODULE_1__["staticRenderFns"],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\pages\\Peaople.vue"
+Component.options.__file = "resources\\assets\\js\\components\\pages\\People.vue"
 
 /* hot reload */
 if (false) {}
@@ -121569,21 +121569,30 @@ function middleware(router) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _components_MainTemplate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/MainTemplate */ "./resources/assets/js/components/MainTemplate.vue");
-/* harmony import */ var _components_pages_Custom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/pages/Custom */ "./resources/assets/js/components/pages/Custom.vue");
-/* harmony import */ var _components_auth_AuthMain__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/auth/AuthMain */ "./resources/assets/js/components/auth/AuthMain.vue");
-/* harmony import */ var _store_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store/index */ "./resources/assets/js/store/index.js");
+/* harmony import */ var core_js_modules_es6_array_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es6.array.iterator */ "./node_modules/core-js/modules/es6.array.iterator.js");
+/* harmony import */ var core_js_modules_es6_array_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_array_iterator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es6_promise__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es6.promise */ "./node_modules/core-js/modules/es6.promise.js");
+/* harmony import */ var core_js_modules_es6_promise__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_promise__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es7_promise_finally__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es7.promise.finally */ "./node_modules/core-js/modules/es7.promise.finally.js");
+/* harmony import */ var core_js_modules_es7_promise_finally__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es7_promise_finally__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _components_MainTemplate__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/MainTemplate */ "./resources/assets/js/components/MainTemplate.vue");
+/* harmony import */ var _components_pages_Custom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/pages/Custom */ "./resources/assets/js/components/pages/Custom.vue");
+/* harmony import */ var _components_auth_AuthMain__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/auth/AuthMain */ "./resources/assets/js/components/auth/AuthMain.vue");
+/* harmony import */ var _store_index__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../store/index */ "./resources/assets/js/store/index.js");
 
 
 
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
-var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
+
+
+
+vue__WEBPACK_IMPORTED_MODULE_3___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]);
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]({
   mode: 'history',
   scrollBehavior: function scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
@@ -121597,7 +121606,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   },
   routes: [{
     path: '/',
-    component: _components_MainTemplate__WEBPACK_IMPORTED_MODULE_2__["default"],
+    component: _components_MainTemplate__WEBPACK_IMPORTED_MODULE_5__["default"],
     children: [{
       path: '/',
       name: 'home',
@@ -121609,7 +121618,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     }, {
       path: '/ekipa',
       name: 'people',
-      component: __webpack_require__(/*! ../components/pages/Peaople */ "./resources/assets/js/components/pages/Peaople.vue").default
+      component: __webpack_require__(/*! ../components/pages/People */ "./resources/assets/js/components/pages/People.vue").default
     }, {
       path: '/oferta',
       name: 'offer',
@@ -121625,7 +121634,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     }, {
       path: '/szablon',
       name: 'custom',
-      component: _components_pages_Custom__WEBPACK_IMPORTED_MODULE_3__["default"]
+      component: _components_pages_Custom__WEBPACK_IMPORTED_MODULE_6__["default"]
     }]
     /*    {
           path: '/zarezerwuj-sale',

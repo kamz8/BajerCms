@@ -33,7 +33,7 @@ const router = new VueRouter({
         {
           path: '/ekipa',
           name: 'people',
-          component: require('../components/pages/Peaople').default
+          component: require('../components/pages/People').default
         },
         {
           path: '/oferta',
