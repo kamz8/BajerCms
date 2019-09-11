@@ -6,7 +6,7 @@
                     <div class="row">
                         <article class="col-md-12 text-center">
                             <h2 class="text-uppercase pb-2">Wynajmij salę na własne potrzeby</h2>
-                            <div class="mr-1 text-justify">
+                            <div class="text-justify">
 
                                 <p>
                                   Klub można wynająć na wydarzenia takie jak: imprezy okolicznościowe, uroczystości obchodzone przez Organizatora, koncerty, szkolenia, konferencje, warsztaty tematyczne, wykłady lub inne tego typu spotkania.
@@ -23,7 +23,7 @@
                     <div class="row">
                         <article class="col-md-12 text-center">
                             <h2 class="text-uppercase pb-2">Jak wynająć klub?</h2>
-                            <div class="mr-1 text-justify">
+                            <div class="text-justify">
                                 <h5>Od czego rozpoczynamy wynajmy:</h5>
                                 <ul>
                                     <li>minimum 5 tygodni przed planowanym wydarzeniem należy zgłosić się do przedstawicieli Klubu w celu dokonania rezerwacji</li>
@@ -56,7 +56,7 @@
                     <div class="row">
                         <article class="col-md-12 text-center">
                             <h1 class="text-uppercase pb-2">Najczęściej zadawane pytania</h1>
-                            <div class="mr-1 text-justify">
+                            <div class="text-justify">
                                 <dropdown-cart v-for="faq in faqs" :key="faq.question" :title="faq.question">
                                     {{faq.answer}}
                                 </dropdown-cart>

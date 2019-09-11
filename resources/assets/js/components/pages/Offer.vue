@@ -6,7 +6,7 @@
                 <div class="row">
                     <article class="col-md-12 text-center">
                         <h1 class="text-uppercase pb-2">Poznaj nas bliżej</h1>
-                        <div class="mr-1 text-justify">
+                        <div class="text-justify">
                             <p> <!--treść strony-->
                                 Tutaj pojawi się treść dotycząca ścisłej oferty klubu, sugeruję jednak, żeby nie dublowała się z info, które mamy w sekcji O Klubie, bo będzie to
                                 niepotrzebne powtarzanie treści</p>
@@ -28,8 +28,8 @@
                 </div>
                 <div class="row">
                     <article class="col-md-12 text-center">
-                        <h1 class="text-uppercase pb-2">Dlaczego warto z nami współpracować?</h1>
-                        <div class="mr-1 text-justify">
+                        <h2 class="text-uppercase pb-2">Dlaczego warto z nami współpracować?</h2>
+                        <div class="text-justify">
                             <p>Klub Studencki Bajer funkcjonuje od 40 lat. Formuła naszej działalności ulegała zmianie, odkąd postawiliśmy pierwsze kroki w 1978 roku, jednak za każdym
                                 razem staraliśmy się działać coraz lepiej i nieustannie się rozwijać. Skupiliśmy się na atrakcyjnych imprezach
                                 i innych aktywnościach (np. występy kabaretowe, grille akademickie, koncerty). W takiej formie funkcjonujemy do dziś.</p>

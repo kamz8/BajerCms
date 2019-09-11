@@ -697,7 +697,7 @@
 
 
 
-                            <h1 class="text-uppercase pb-2">Sekcja Fotografii&Filmów</h1>
+                            <h1 class="text-uppercase pb-2">Sekcja Fotografii & Filmów</h1>
                             <div class="mr-1 text-justify">
                                 <p>
                                     Nasze wydarzenia cieszą się dużym zainteresowaniem, a ich uczestnicy chętnie je wspominają. Członkowie tej sekcji upamiętniają chwile pełne świetnej zabawy, muzyki i tańca. Samodzielnie zajmują się obróbką zdjęć oraz produkcją  filmów.
