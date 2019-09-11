@@ -50,7 +50,7 @@
                                          :src="'../img/avatars/Konrad.jpg'">
                                     <figcaption class="caption">
                                         <span>Konrad Fligier</span>
-                                        <span class="member-title">ds Klubu</span>
+                                        <span class="member-title">ds. Klubu</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -353,6 +353,16 @@
                                         </figcaption>
                                     </figure>
                                 </div>
+                                <div class="col-md-2 col-xs-9 text-center">
+                                    <figure class="member avatar mx-auto d-block">
+                                        <img class="img-fluid rounded-circle"
+                                             :src="'../img/avatars/BajerAnon.png'">
+                                        <figcaption class="caption">
+                                            <span>Weronika Bihl</span>
+                                            <span class="member-title">Członek</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
 
                             </div>
 
@@ -368,9 +378,9 @@
                                 <div class="col-md-12 col-xs-12 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/Kamil.jpg'">
+                                             :src="'../img/avatars/Durmaj.jpg'">
                                         <figcaption class="caption">
-                                            <span>Kamil Żmijowski</span>
+                                            <span>Dawid Durmaj</span>
                                             <span class="member-title">Przewodniczący</span>
                                         </figcaption>
                                     </figure>
@@ -430,9 +440,9 @@
                                 <div class="col-md-2 col-xs-9 text-center">
                                     <figure class="member avatar mx-auto d-block">
                                         <img class="img-fluid rounded-circle"
-                                             :src="'../img/avatars/Durmaj.jpg'">
+                                             :src="'../img/avatars/Kamil.jpg'">
                                         <figcaption class="caption">
-                                            <span>Dawid Durmaj</span>
+                                            <span>Kamil Żmijowski</span>
                                             <span class="member-title">Członek</span>
                                         </figcaption>
                                     </figure>

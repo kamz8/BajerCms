@@ -22,7 +22,7 @@
         </div>
         <div class="text-center">
             <p>
-              <carousel v-bind:photos="carouselPhotos[0]"></carousel>
+              <carousel v-bind:photos="carouselPhotos[0]" v-bind:interval="5000"></carousel>
             </p>
         </div>
         <div class="row">

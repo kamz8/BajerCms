@@ -9,7 +9,7 @@
                         <div class="mr-1 text-justify">
                             <p>
                                 Jesteśmy <strong>agendą kultury</strong>, która zajmuje się organizacją imprez tanecznych, koncertów, aktywności sportowych oraz innych inicjatyw kulturalno-rozrywkowych dla studentów. Ponadto bardzo aktywnie współpracujemy z innymi organizacjami, zapewniając na wydarzeniach oprawę muzyczną i zaplecze techniczne. Jeżeli, idąc przez kampus uczelni, słyszycie muzykę, widzicie tańczących ludzi, to tam na pewno nas spotkacie.
-                                W tym roku Klub Studencki Bajer świętuje <strong>jubileusz 40-lecia</strong> działalności przy Politechnice Wrocławskiej. Jako jedna z nielicznych organizacji działających przy Politechnice możemy się pochwalić tak długą tradycją funkcjonowania.
+                                W 2018 roku Klub Studencki Bajer świętował <strong>jubileusz 40-lecia</strong> działalności przy Politechnice Wrocławskiej. Jako jedna z nielicznych organizacji działających przy Politechnice możemy się pochwalić tak długą tradycją funkcjonowania.
                             </p>
                             <p>
                                 Wydarzenia odbywają się w siedzibie naszego klubu, w <strong>Domu Studenckim T-15</strong> na osiedlu akademickim Wittigowo.
@@ -71,7 +71,7 @@
                                          :src="'../img/avatars/Konrad.jpg'">
                                     <figcaption class="caption">
                                         <span>Konrad Fligier</span>
-                                        <span class="member-title">ds Klubu</span>
+                                        <span class="member-title">ds. Klubu</span>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -123,30 +123,24 @@
                     <article class="col-md-12 text-center">
                         <h1 class="text-uppercase pb-4">nasza oferta</h1>
                         <div class="mr-1 text-center ">
-                            <p>
-                                Vivamus bibendum nibh at pretium condimentum. Proin consequat, metus at luctus
-                                hendrerit, arcu sapien aliquam enim, in elementum purus nibh maximus massa. Quisque
-                                ipsum nisl, porttitor quis pretium sed, molestie non est. Pellentesque ac faucibus. </p>
+                            <p>Dobra zabawa nas definiuje i wszystko, co robimy, robimy dla dobrej zabawy.
+                                Nie jesteśmy organizatorami imprez. Jesteśmy pasjonatami. Każdemu naszemu wydarzeniu
+                                nadajemy wyjątkowego, studenckiego charakteru. Zobacz, jak to robimy.</p>
                         </div>
                         <router-link :to="{name:'offer'}" class="btn btn-outline-light text-uppercase center-block m-4">Czytaj dalej</router-link>
                     </article>
                 </div>
-            </div>
-        </section>
-        <section class="content-box">
-            <div class="container">
                 <div class="row">
-                    <article class="col-md-12 text-center">
+                    <article class="col-md-12 text-center mt-5">
                         <h1 class="text-uppercase pb-4 pt-4">Wynajmij salę na własne porzeby</h1>
+                        <p class="mb-0">
+                            <span style="font-size:1.2em" class="text-bold">Już dzisiaj możesz zaplanować swoje wydarzenie w naszym Klubie.</span></p>
                         <p>
-
-                            <span style="font-size:1.2em" class="text-bold">Już dzisiaj możesz zaplanować swoje wydarzenie w naszym Klubie.</span> </br>
-                            Istnieje możliwość wynajęcia sali tanecznej do zorganizowania Waszego prywatnego przedsięwzięcia.
-                            Urodziny, szkolenia, imprezy inauguracyjne, warsztaty, wykłady i prelekcje? Dla nas nie ważny jest powód, oddajemy Klub w Wasze ręce.
-                            Skontaktuj się z Nami. Chętnie odpowiemy na wszystkie Twoje pytania, pomożemy dopełnić formalności, a Ty możesz już zapraszać gości.
-
+                            Istnieje możliwość wynajęcia sali tanecznej do zorganizowania Twojego prywatnego przedsięwzięcia.
+                            Urodziny, szkolenia, imprezy inauguracyjne, warsztaty, wykłady i prelekcje? Dla nas nieważny jest powód, oddajemy Klub w Twoje ręce.
+                            Skontaktuj się z nami. Chętnie odpowiemy na wszystkie Twoje pytania, pomożemy dopełnić formalności, a Ty możesz już zapraszać gości.
                         </p>
-
+            
                         <router-link :to="{name:'offer'}" class="btn btn-success text-uppercase mt-5 mb-4">dowiedz się więcej</router-link>
                     </article>
                 </div>

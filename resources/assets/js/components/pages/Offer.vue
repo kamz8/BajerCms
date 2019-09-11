@@ -10,7 +10,6 @@
                             <p> <!--treść strony-->
                                 Tutaj pojawi się treść dotycząca ścisłej oferty klubu, sugeruję jednak, żeby nie dublowała się z info, które mamy w sekcji O Klubie, bo będzie to
                                 niepotrzebne powtarzanie treści</p>
-                            <p>Zgodnie z koncepcją na trello - paragraf będzie odpowiadać na pytanie: "co możemy zaoferować?"</p>
                             <p>
                                 Przedstawiłem już (na slacku, na spotkaniu) wstępny zestaw informacji, który można tu zawrzeć, czyli: parametry naszej sali, opis używanego
                                 nagłośnienia, oświetlenia, wsparcie techniczne przy organizacji... czyli wiadomości bardziej konkretne niż piękny elaborat w sekcji O Klubie,

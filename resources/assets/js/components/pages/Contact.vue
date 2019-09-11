@@ -92,28 +92,24 @@ When we create new page - you copy of template below and name as NameOfPage
                     <article class="col-md-12 text-center">
                         <h1 class="text-uppercase pb-2">Zarząd</h1>
                         <div class="row mr-1 text-justify justify-content-center">
-                            <div class="col-3">
-                                <avatar
-                                        name="Krzysztof Trybuszewski"
-                                        memberType="Prezes"
-                                        avatar-img="../img/avatars/Krzysiek.jpg"
-                                        phone="507663376"
-                                        email="k.trybuszewski@gmail.com">
-
-                                </avatar>
-
-                            </div>
-                            <div class="w-100"></div>
                             <div class="col-md-3 col-12">
                                 <avatar
-                                        name="Kewin Gałuszka"
-                                        memberType="Wiceprezes"
-                                        avatar-img="https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/29512965_1811477688922722_2049135657625410550_n.jpg?_nc_cat=0&oh=896e186689551adb8020a4ae30039ea3&oe=5C5E26DC"
-                                        phone="530913009"
-                                        email="kewin.galuszka@gmail.com">
+                                        name="Marcin Ruszczyk"
+                                        memberType="Prezes"
+                                        avatar-img="../img/avatars/Ruszczyk.jpg"
+                                        phone="503461713"
+                                        email="mar.ruszczyk@gmail.com">
 
                                 </avatar>
-
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <avatar
+                                        name="Konrad Fligier"
+                                        memberType="ds. Klubu"
+                                        avatar-img="../img/avatars/Konrad.jpg"
+                                        phone="795483823"
+                                        email="konradfligier@gmail.com">
+                                </avatar>
                             </div>
                             <div class="col-md-3 col-12">
                                 <avatar
@@ -128,25 +124,23 @@ When we create new page - you copy of template below and name as NameOfPage
                             </div>
                             <div class="col-md-3 col-12">
                                 <avatar
-                                        name="Jakub Grzybek"
-                                        memberType="ds. Klubu"
-                                        avatar-img="../img/avatars/grzybek.jpg"
-                                        phone="660358343"
-                                        email="kuba.grzybek@gmail.com">
+                                        name="Maciej Jurkowski"
+                                        memberType="Członek zarządu"
+                                        avatar-img="../img/avatars/Jurkowski.jpg"
+                                        phone="609019523"
+                                        email="maciej.jurk@gmail.com">
 
                                 </avatar>
 
                             </div>
                             <div class="col-md-3 col-12">
                                 <avatar
-                                        name="Sandra Mrzygłód"
-                                        memberType="ds. Promocji"
-                                        avatar-img="../img/avatars/sandra.jpg"
-                                        phone="669228089"
-                                        email="sandra.mrzyglod.564@gmail.com">
-
+                                        name="Cezary Dobrakowski"
+                                        memberType="Członek zarządu"
+                                        avatar-img="../img/avatars/Czarek.jpg"
+                                        phone="512116164"
+                                        email="czarekd@gmail.com ">
                                 </avatar>
-
                             </div>
                         </div>
                     </article>
@@ -159,21 +153,16 @@ When we create new page - you copy of template below and name as NameOfPage
                     <article class="col-md-12 text-center">
                         <h1 class="text-uppercase pb-2">DJE</h1>
                         <div class="row mr-1 text-justify justify-content-left">
-                            <div class="col-3 ">
+                            <div class="col-md-6 col-xs-12 col-lg-3">
                                 <avatar
-                                  name="DJ Kamz"
-                                  memberType="Przewdoniczący sekcji DJ-skiej"
-                                  avatar-img="../img/avatars/kamil.jpg"
-                                  phone="668751336"
-                                  email="kamzil2@gmail.com">
-                                    <social-link type="facebook" href="https://www.facebook.com/kamzdj/" />
-                                    <social-link type="instagram" href="https://www.instagram.com/djkamz/" />
-                                    <social-link type="spotify" href="https://open.spotify.com/artist/4OpowxAJqCRvswnbe9af1m?si=4EWYhiHaQjetgbujj6FOyw" />
-                                    <social-link type="mixclude" href="https://www.mixcloud.com/potentialdifference/" />
-                                    <social-link type="youtube" href="https://www.youtube.com/channel/UCvLSoIwN5iUh25cL92ctPlw" />
+                                  name="#DawidOOs"
+                                  memberType="Przewodniczący sekcji DJ-skiej"
+                                  avatar-img="../img/avatars/Durmaj.jpg"
+                                  phone="782297030"
+                                  email="dawid.durmaj@hotmail.com">
                                 </avatar>
                             </div>
-                            <div class="col-3 ">
+                            <div class="col-md-6 col-xs-12 col-lg-3">
                                 <avatar
                                         name="DJ Criss"
                                         avatar-img="../img/avatars/Krzysiek.jpg"
@@ -182,18 +171,17 @@ When we create new page - you copy of template below and name as NameOfPage
                                     <social-link type="facebook" href="https://www.facebook.com/DJ.CR1SS" />
                                 </avatar>
                             </div>
-                            <div class="col-3 ">
+                            <div class="col-md-6 col-xs-12 col-lg-3">
                                 <avatar
                                         name="DJ MichaelUp"
                                         avatar-img="../img/avatars/Pato.jpg"
-                                        phone=""
-                                        email="">
+                                        phone="785086883"
+                                        email="michal.podgoreczny@gmail.com">
                                     <social-link type="facebook" href="https://www.facebook.com/michaelupbeats" />
                                     <social-link type="instagram" href="https://www.instagram.com/michaelupx01" />
-
                                 </avatar>
                             </div>
-                            <div class="col-3 ">
+                            <div class="col-md-6 col-xs-12 col-lg-3">
                                 <avatar
                                         name="DJ Chmielu"
                                         avatar-img="../img/avatars/Chmielu.jpg"
@@ -202,33 +190,31 @@ When we create new page - you copy of template below and name as NameOfPage
                                     <social-link type="facebook" href="../img/djchmielu.jpg" />
                                 </avatar>
                             </div>
-                            <div class="col-3 ">
+                            <div class="col-md-6 col-xs-12 col-lg-3">
                                 <avatar
                                         name="Dj Rykon"
                                         avatar-img="../img/avatars/Ruszczyk.jpg"
-                                        email="mar.ruszczyk@gmail.com"
-                                phone="503461713">
-
-                                </avatar>
-
-                            </div>
-                            <div class="col-3 ">
-                                <avatar
-                                        name="Dj Macko"
-                                        avatar-img="../img/avatars/maciek.jpg"
                                         email="mar.ruszczyk@gmail.com"
                                         phone="503461713">
 
                                 </avatar>
 
                             </div>
-                            <div class="col-3 ">
+                            <div class="col-md-6 col-xs-12 col-lg-3">
+                                <avatar
+                                        name="Dj Macko"
+                                        avatar-img="../img/avatars/Maciek.jpg"
+                                        email="maciek.macko97@gmail.com"
+                                        phone="698148971">
+                                </avatar>
+                            </div>
+                            <div class="col-md-6 col-xs-12 col-lg-3">
                                 <avatar
                                         name="Dj Bodzio"
-                                        avatar-img="../img/avatars/bodzio.jpg">
-
+                                        avatar-img="../img/avatars/Bodzio.jpg"
+                                        email="arpienk@gmail.com"
+                                        phone="729549552">
                                 </avatar>
-
                             </div>
                         </div>
                     </article>
@@ -244,17 +230,17 @@ When we create new page - you copy of template below and name as NameOfPage
                             <div class="col-3 ">
                                 <avatar
                                         name="Julia Musiał"
-                                        avatar-img="https://thumbs.dreamstime.com/b/braka-placeholder-profilu-ikona-90197997.jpg"
-                                        phone="775125856"
-                                        email=""
+                                        avatar-img="../img/avatars/JulkaM.jpg"
+                                        phone="533185454"
+                                        email="julia.musial97@gmail.com"
                                 />
                             </div>
                             <div class="col-3 ">
                                 <avatar
                                         name="Wojtek Obuchowski"
-                                        avatar-img="../img/avatars/Wojteko.jpg"
-                                        phone=""
-                                        email="">
+                                        avatar-img="../img/avatars/Wojtas.jpg"
+                                        phone="533527423"
+                                        email="obuchowski.wojciech@gmail.com">
                                     <social-link type="facebook" href="https://www.facebook.com/W.Obuchowski1FOTO"></social-link>
                                 </avatar>
 
@@ -263,8 +249,8 @@ When we create new page - you copy of template below and name as NameOfPage
                                 <avatar
                                         name="Kamil Żmijowski"
                                         avatar-img="../img/avatars/kamil.jpg"
-                                        phone=""
-                                        email="">
+                                        phone="668751336"
+                                        email="kamzil2@gmail.com">
                                     <social-link type="facebook" href="https://www.facebook.com/kzmijowski"></social-link>
                                 </avatar>
 

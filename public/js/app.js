@@ -5920,20 +5920,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -6225,12 +6211,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 // import FacebookEvents from "../util/FacbookEvents";
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -6327,7 +6307,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Offer",
@@ -6348,6 +6327,16 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _page_part_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../page-part/Header */ "./resources/assets/js/components/page-part/Header.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -38691,7 +38680,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -38767,7 +38756,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -38824,7 +38813,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -38995,7 +38984,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -96462,7 +96451,11 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("div", { staticClass: "subfooter text-center text-md-right" }, [
         _c("div", { staticClass: "container" }, [
-          _c("span", [_vm._v("© Bajer 2018 | Created by Kamil Żmijowski")])
+          _c("span", [
+            _vm._v(
+              "© Bajer 2018 | Created by Kamil Żmijowski & Stanisław Markowski"
+            )
+          ])
         ])
       ])
     ])
@@ -97011,6 +97004,21 @@ var render = function() {
                         _vm._m(33)
                       ]
                     )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/BajerAnon.png" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(34)
+                      ]
+                    )
                   ])
                 ]),
                 _vm._v(" "),
@@ -97018,7 +97026,7 @@ var render = function() {
                   _vm._v("Sekcja DJ-ska")
                 ]),
                 _vm._v(" "),
-                _vm._m(34),
+                _vm._m(35),
                 _vm._v(" "),
                 _c("div", { staticClass: "row" }, [
                   _c(
@@ -97031,10 +97039,10 @@ var render = function() {
                         [
                           _c("img", {
                             staticClass: "img-fluid rounded-circle",
-                            attrs: { src: "../img/avatars/Kamil.jpg" }
+                            attrs: { src: "../img/avatars/Durmaj.jpg" }
                           }),
                           _vm._v(" "),
-                          _vm._m(35)
+                          _vm._m(36)
                         ]
                       )
                     ]
@@ -97052,7 +97060,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Chmielu.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(36)
+                        _vm._m(37)
                       ]
                     )
                   ]),
@@ -97067,7 +97075,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Ruszczyk.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(37)
+                        _vm._m(38)
                       ]
                     )
                   ]),
@@ -97082,7 +97090,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Maciek.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(38)
+                        _vm._m(39)
                       ]
                     )
                   ]),
@@ -97097,7 +97105,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Koziołek.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(39)
+                        _vm._m(40)
                       ]
                     )
                   ]),
@@ -97112,21 +97120,6 @@ var render = function() {
                           attrs: { src: "../img/avatars/Stachu.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(40)
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
-                    _c(
-                      "figure",
-                      { staticClass: "member avatar mx-auto d-block" },
-                      [
-                        _c("img", {
-                          staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Durmaj.jpg" }
-                        }),
-                        _vm._v(" "),
                         _vm._m(41)
                       ]
                     )
@@ -97139,7 +97132,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Krzysiek.jpg" }
+                          attrs: { src: "../img/avatars/Kamil.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(42)
@@ -97154,7 +97147,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Kewin.jpg" }
+                          attrs: { src: "../img/avatars/Krzysiek.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(43)
@@ -97169,7 +97162,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Grzybek.jpg" }
+                          attrs: { src: "../img/avatars/Kewin.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(44)
@@ -97184,7 +97177,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Arek.jpg" }
+                          attrs: { src: "../img/avatars/Grzybek.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(45)
@@ -97199,7 +97192,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Iza.jpg" }
+                          attrs: { src: "../img/avatars/Arek.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(46)
@@ -97214,7 +97207,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Pato.jpg" }
+                          attrs: { src: "../img/avatars/Iza.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(47)
@@ -97229,10 +97222,25 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "img-fluid rounded-circle",
-                          attrs: { src: "../img/avatars/Bodzio.jpg" }
+                          attrs: { src: "../img/avatars/Pato.jpg" }
                         }),
                         _vm._v(" "),
                         _vm._m(48)
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-2 col-xs-9 text-center" }, [
+                    _c(
+                      "figure",
+                      { staticClass: "member avatar mx-auto d-block" },
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid rounded-circle",
+                          attrs: { src: "../img/avatars/Bodzio.jpg" }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(49)
                       ]
                     )
                   ])
@@ -97242,7 +97250,7 @@ var render = function() {
                   _vm._v("Sekcja Techniczna")
                 ]),
                 _vm._v(" "),
-                _vm._m(49),
+                _vm._m(50),
                 _vm._v(" "),
                 _c("div", { staticClass: "row" }, [
                   _c(
@@ -97258,7 +97266,7 @@ var render = function() {
                             attrs: { src: "../img/avatars/Ruszczyk.jpg" }
                           }),
                           _vm._v(" "),
-                          _vm._m(50)
+                          _vm._m(51)
                         ]
                       )
                     ]
@@ -97276,7 +97284,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Chmielu.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(51)
+                        _vm._m(52)
                       ]
                     )
                   ]),
@@ -97291,7 +97299,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Iza.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(52)
+                        _vm._m(53)
                       ]
                     )
                   ]),
@@ -97306,7 +97314,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Pato.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(53)
+                        _vm._m(54)
                       ]
                     )
                   ]),
@@ -97321,7 +97329,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Durmaj.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(54)
+                        _vm._m(55)
                       ]
                     )
                   ]),
@@ -97336,7 +97344,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Kamil.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(55)
+                        _vm._m(56)
                       ]
                     )
                   ]),
@@ -97351,7 +97359,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Krzysiek.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(56)
+                        _vm._m(57)
                       ]
                     )
                   ]),
@@ -97366,7 +97374,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Kewin.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(57)
+                        _vm._m(58)
                       ]
                     )
                   ]),
@@ -97381,7 +97389,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Grzybek.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(58)
+                        _vm._m(59)
                       ]
                     )
                   ]),
@@ -97396,7 +97404,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/BajerAnon.png" }
                         }),
                         _vm._v(" "),
-                        _vm._m(59)
+                        _vm._m(60)
                       ]
                     )
                   ]),
@@ -97411,7 +97419,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Czarek.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(60)
+                        _vm._m(61)
                       ]
                     )
                   ]),
@@ -97426,7 +97434,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Arek.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(61)
+                        _vm._m(62)
                       ]
                     )
                   ]),
@@ -97441,7 +97449,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Konrad.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(62)
+                        _vm._m(63)
                       ]
                     )
                   ])
@@ -97451,7 +97459,7 @@ var render = function() {
                   _vm._v("Sekcja Fotografii&Filmów")
                 ]),
                 _vm._v(" "),
-                _vm._m(63),
+                _vm._m(64),
                 _vm._v(" "),
                 _c("div", { staticClass: "row" }, [
                   _c(
@@ -97467,7 +97475,7 @@ var render = function() {
                             attrs: { src: "../img/avatars/JulkaM.jpg" }
                           }),
                           _vm._v(" "),
-                          _vm._m(64)
+                          _vm._m(65)
                         ]
                       )
                     ]
@@ -97485,7 +97493,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Wojtas.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(65)
+                        _vm._m(66)
                       ]
                     )
                   ]),
@@ -97500,7 +97508,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Grzybek.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(66)
+                        _vm._m(67)
                       ]
                     )
                   ]),
@@ -97515,7 +97523,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Krzysiek.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(67)
+                        _vm._m(68)
                       ]
                     )
                   ]),
@@ -97530,7 +97538,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/BajerAnon.png" }
                         }),
                         _vm._v(" "),
-                        _vm._m(68)
+                        _vm._m(69)
                       ]
                     )
                   ]),
@@ -97545,7 +97553,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Kamil.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(69)
+                        _vm._m(70)
                       ]
                     )
                   ]),
@@ -97560,7 +97568,7 @@ var render = function() {
                           attrs: { src: "../img/avatars/Klaudia.jpg" }
                         }),
                         _vm._v(" "),
-                        _vm._m(70)
+                        _vm._m(71)
                       ]
                     )
                   ])
@@ -97632,7 +97640,7 @@ var staticRenderFns = [
     return _c("figcaption", { staticClass: "caption" }, [
       _c("span", [_vm._v("Konrad Fligier")]),
       _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("ds Klubu")])
+      _c("span", { staticClass: "member-title" }, [_vm._v("ds. Klubu")])
     ])
   },
   function() {
@@ -97935,6 +97943,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("figcaption", { staticClass: "caption" }, [
+      _c("span", [_vm._v("Weronika Bihl")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "mr-1 text-justify" }, [
       _c("p", [
         _vm._v(
@@ -97948,7 +97966,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Kamil Żmijowski")]),
+      _c("span", [_vm._v("Dawid Durmaj")]),
       _vm._v(" "),
       _c("span", { staticClass: "member-title" }, [_vm._v("Przewodniczący")])
     ])
@@ -98008,7 +98026,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("figcaption", { staticClass: "caption" }, [
-      _c("span", [_vm._v("Dawid Durmaj")]),
+      _c("span", [_vm._v("Kamil Żmijowski")]),
       _vm._v(" "),
       _c("span", { staticClass: "member-title" }, [_vm._v("Członek")])
     ])
@@ -98776,22 +98794,20 @@ var render = function() {
                 [
                   _c(
                     "div",
-                    { staticClass: "col-3" },
+                    { staticClass: "col-md-3 col-12" },
                     [
                       _c("avatar", {
                         attrs: {
-                          name: "Krzysztof Trybuszewski",
+                          name: "Marcin Ruszczyk",
                           memberType: "Prezes",
-                          "avatar-img": "../img/avatars/Krzysiek.jpg",
-                          phone: "507663376",
-                          email: "k.trybuszewski@gmail.com"
+                          "avatar-img": "../img/avatars/Ruszczyk.jpg",
+                          phone: "503461713",
+                          email: "mar.ruszczyk@gmail.com"
                         }
                       })
                     ],
                     1
                   ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "w-100" }),
                   _vm._v(" "),
                   _c(
                     "div",
@@ -98799,12 +98815,11 @@ var render = function() {
                     [
                       _c("avatar", {
                         attrs: {
-                          name: "Kewin Gałuszka",
-                          memberType: "Wiceprezes",
-                          "avatar-img":
-                            "https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/29512965_1811477688922722_2049135657625410550_n.jpg?_nc_cat=0&oh=896e186689551adb8020a4ae30039ea3&oe=5C5E26DC",
-                          phone: "530913009",
-                          email: "kewin.galuszka@gmail.com"
+                          name: "Konrad Fligier",
+                          memberType: "ds. Klubu",
+                          "avatar-img": "../img/avatars/Konrad.jpg",
+                          phone: "795483823",
+                          email: "konradfligier@gmail.com"
                         }
                       })
                     ],
@@ -98834,11 +98849,11 @@ var render = function() {
                     [
                       _c("avatar", {
                         attrs: {
-                          name: "Jakub Grzybek",
-                          memberType: "ds. Klubu",
-                          "avatar-img": "../img/avatars/grzybek.jpg",
-                          phone: "660358343",
-                          email: "kuba.grzybek@gmail.com"
+                          name: "Maciej Jurkowski",
+                          memberType: "Członek zarządu",
+                          "avatar-img": "../img/avatars/Jurkowski.jpg",
+                          phone: "609019523",
+                          email: "maciej.jurk@gmail.com"
                         }
                       })
                     ],
@@ -98851,11 +98866,11 @@ var render = function() {
                     [
                       _c("avatar", {
                         attrs: {
-                          name: "Sandra Mrzygłód",
-                          memberType: "ds. Promocji",
-                          "avatar-img": "../img/avatars/sandra.jpg",
-                          phone: "669228089",
-                          email: "sandra.mrzyglod.564@gmail.com"
+                          name: "Cezary Dobrakowski",
+                          memberType: "Członek zarządu",
+                          "avatar-img": "../img/avatars/Czarek.jpg",
+                          phone: "512116164",
+                          email: "czarekd@gmail.com "
                         }
                       })
                     ],
@@ -98880,67 +98895,24 @@ var render = function() {
                 [
                   _c(
                     "div",
-                    { staticClass: "col-3 " },
+                    { staticClass: "col-md-6 col-xs-12 col-lg-3" },
                     [
-                      _c(
-                        "avatar",
-                        {
-                          attrs: {
-                            name: "DJ Kamz",
-                            memberType: "Przewdoniczący sekcji DJ-skiej",
-                            "avatar-img": "../img/avatars/kamil.jpg",
-                            phone: "668751336",
-                            email: "kamzil2@gmail.com"
-                          }
-                        },
-                        [
-                          _c("social-link", {
-                            attrs: {
-                              type: "facebook",
-                              href: "https://www.facebook.com/kamzdj/"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("social-link", {
-                            attrs: {
-                              type: "instagram",
-                              href: "https://www.instagram.com/djkamz/"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("social-link", {
-                            attrs: {
-                              type: "spotify",
-                              href:
-                                "https://open.spotify.com/artist/4OpowxAJqCRvswnbe9af1m?si=4EWYhiHaQjetgbujj6FOyw"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("social-link", {
-                            attrs: {
-                              type: "mixclude",
-                              href:
-                                "https://www.mixcloud.com/potentialdifference/"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("social-link", {
-                            attrs: {
-                              type: "youtube",
-                              href:
-                                "https://www.youtube.com/channel/UCvLSoIwN5iUh25cL92ctPlw"
-                            }
-                          })
-                        ],
-                        1
-                      )
+                      _c("avatar", {
+                        attrs: {
+                          name: "#DawidOOs",
+                          memberType: "Przewodniczący sekcji DJ-skiej",
+                          "avatar-img": "../img/avatars/Durmaj.jpg",
+                          phone: "782297030",
+                          email: "dawid.durmaj@hotmail.com"
+                        }
+                      })
                     ],
                     1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
-                    { staticClass: "col-3 " },
+                    { staticClass: "col-md-6 col-xs-12 col-lg-3" },
                     [
                       _c(
                         "avatar",
@@ -98968,7 +98940,7 @@ var render = function() {
                   _vm._v(" "),
                   _c(
                     "div",
-                    { staticClass: "col-3 " },
+                    { staticClass: "col-md-6 col-xs-12 col-lg-3" },
                     [
                       _c(
                         "avatar",
@@ -98976,8 +98948,8 @@ var render = function() {
                           attrs: {
                             name: "DJ MichaelUp",
                             "avatar-img": "../img/avatars/Pato.jpg",
-                            phone: "",
-                            email: ""
+                            phone: "785086883",
+                            email: "michal.podgoreczny@gmail.com"
                           }
                         },
                         [
@@ -99003,7 +98975,7 @@ var render = function() {
                   _vm._v(" "),
                   _c(
                     "div",
-                    { staticClass: "col-3 " },
+                    { staticClass: "col-md-6 col-xs-12 col-lg-3" },
                     [
                       _c(
                         "avatar",
@@ -99031,7 +99003,7 @@ var render = function() {
                   _vm._v(" "),
                   _c(
                     "div",
-                    { staticClass: "col-3 " },
+                    { staticClass: "col-md-6 col-xs-12 col-lg-3" },
                     [
                       _c("avatar", {
                         attrs: {
@@ -99047,14 +99019,14 @@ var render = function() {
                   _vm._v(" "),
                   _c(
                     "div",
-                    { staticClass: "col-3 " },
+                    { staticClass: "col-md-6 col-xs-12 col-lg-3" },
                     [
                       _c("avatar", {
                         attrs: {
                           name: "Dj Macko",
-                          "avatar-img": "../img/avatars/maciek.jpg",
-                          email: "mar.ruszczyk@gmail.com",
-                          phone: "503461713"
+                          "avatar-img": "../img/avatars/Maciek.jpg",
+                          email: "maciek.macko97@gmail.com",
+                          phone: "698148971"
                         }
                       })
                     ],
@@ -99063,12 +99035,14 @@ var render = function() {
                   _vm._v(" "),
                   _c(
                     "div",
-                    { staticClass: "col-3 " },
+                    { staticClass: "col-md-6 col-xs-12 col-lg-3" },
                     [
                       _c("avatar", {
                         attrs: {
                           name: "Dj Bodzio",
-                          "avatar-img": "../img/avatars/bodzio.jpg"
+                          "avatar-img": "../img/avatars/Bodzio.jpg",
+                          email: "arpienk@gmail.com",
+                          phone: "729549552"
                         }
                       })
                     ],
@@ -99103,10 +99077,9 @@ var render = function() {
                         _c("avatar", {
                           attrs: {
                             name: "Julia Musiał",
-                            "avatar-img":
-                              "https://thumbs.dreamstime.com/b/braka-placeholder-profilu-ikona-90197997.jpg",
-                            phone: "775125856",
-                            email: ""
+                            "avatar-img": "../img/avatars/JulkaM.jpg",
+                            phone: "533185454",
+                            email: "julia.musial97@gmail.com"
                           }
                         })
                       ],
@@ -99122,9 +99095,9 @@ var render = function() {
                           {
                             attrs: {
                               name: "Wojtek Obuchowski",
-                              "avatar-img": "../img/avatars/Wojteko.jpg",
-                              phone: "",
-                              email: ""
+                              "avatar-img": "../img/avatars/Wojtas.jpg",
+                              phone: "533527423",
+                              email: "obuchowski.wojciech@gmail.com"
                             }
                           },
                           [
@@ -99152,8 +99125,8 @@ var render = function() {
                             attrs: {
                               name: "Kamil Żmijowski",
                               "avatar-img": "../img/avatars/kamil.jpg",
-                              phone: "",
-                              email: ""
+                              phone: "668751336",
+                              email: "kamzil2@gmail.com"
                             }
                           },
                           [
@@ -99590,38 +99563,40 @@ var render = function() {
                 ],
                 1
               )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "article",
+                { staticClass: "col-md-12 text-center mt-5" },
+                [
+                  _c("h1", { staticClass: "text-uppercase pb-4 pt-4" }, [
+                    _vm._v("Wynajmij salę na własne porzeby")
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(9),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                            Istnieje możliwość wynajęcia sali tanecznej do zorganizowania Twojego prywatnego przedsięwzięcia.\n                            Urodziny, szkolenia, imprezy inauguracyjne, warsztaty, wykłady i prelekcje? Dla nas nieważny jest powód, oddajemy Klub w Twoje ręce.\n                            Skontaktuj się z nami. Chętnie odpowiemy na wszystkie Twoje pytania, pomożemy dopełnić formalności, a Ty możesz już zapraszać gości.\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "btn btn-success text-uppercase mt-5 mb-4",
+                      attrs: { to: { name: "offer" } }
+                    },
+                    [_vm._v("dowiedz się więcej")]
+                  )
+                ],
+                1
+              )
             ])
           ])
         ]
-      ),
-      _vm._v(" "),
-      _c("section", { staticClass: "content-box" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "article",
-              { staticClass: "col-md-12 text-center" },
-              [
-                _c("h1", { staticClass: "text-uppercase pb-4 pt-4" }, [
-                  _vm._v("Wynajmij salę na własne porzeby")
-                ]),
-                _vm._v(" "),
-                _vm._m(9),
-                _vm._v(" "),
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "btn btn-success text-uppercase mt-5 mb-4",
-                    attrs: { to: { name: "offer" } }
-                  },
-                  [_vm._v("dowiedz się więcej")]
-                )
-              ],
-              1
-            )
-          ])
-        ])
-      ])
+      )
     ],
     1
   )
@@ -99636,7 +99611,7 @@ var staticRenderFns = [
         _vm._v("\n                                Jesteśmy "),
         _c("strong", [_vm._v("agendą kultury")]),
         _vm._v(
-          ", która zajmuje się organizacją imprez tanecznych, koncertów, aktywności sportowych oraz innych inicjatyw kulturalno-rozrywkowych dla studentów. Ponadto bardzo aktywnie współpracujemy z innymi organizacjami, zapewniając na wydarzeniach oprawę muzyczną i zaplecze techniczne. Jeżeli, idąc przez kampus uczelni, słyszycie muzykę, widzicie tańczących ludzi, to tam na pewno nas spotkacie.\n                                W tym roku Klub Studencki Bajer świętuje "
+          ", która zajmuje się organizacją imprez tanecznych, koncertów, aktywności sportowych oraz innych inicjatyw kulturalno-rozrywkowych dla studentów. Ponadto bardzo aktywnie współpracujemy z innymi organizacjami, zapewniając na wydarzeniach oprawę muzyczną i zaplecze techniczne. Jeżeli, idąc przez kampus uczelni, słyszycie muzykę, widzicie tańczących ludzi, to tam na pewno nas spotkacie.\n                                W 2018 roku Klub Studencki Bajer świętował "
         ),
         _c("strong", [_vm._v("jubileusz 40-lecia")]),
         _vm._v(
@@ -99712,7 +99687,7 @@ var staticRenderFns = [
     return _c("figcaption", { staticClass: "caption" }, [
       _c("span", [_vm._v("Konrad Fligier")]),
       _vm._v(" "),
-      _c("span", { staticClass: "member-title" }, [_vm._v("ds Klubu")])
+      _c("span", { staticClass: "member-title" }, [_vm._v("ds. Klubu")])
     ])
   },
   function() {
@@ -99793,7 +99768,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "mr-1 text-center " }, [
       _c("p", [
         _vm._v(
-          "\n                                Vivamus bibendum nibh at pretium condimentum. Proin consequat, metus at luctus\n                                hendrerit, arcu sapien aliquam enim, in elementum purus nibh maximus massa. Quisque\n                                ipsum nisl, porttitor quis pretium sed, molestie non est. Pellentesque ac faucibus. "
+          "Dobra zabawa nas definiuje i wszystko, co robimy, robimy dla dobrej zabawy.\n                                Nie jesteśmy organizatorami imprez. Jesteśmy pasjonatami. Każdemu naszemu wydarzeniu\n                                nadajemy wyjątkowego, studenckiego charakteru. Zobacz, jak to robimy."
         )
       ])
     ])
@@ -99802,7 +99777,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("p", [
+    return _c("p", { staticClass: "mb-0" }, [
       _c(
         "span",
         { staticClass: "text-bold", staticStyle: { "font-size": "1.2em" } },
@@ -99811,11 +99786,6 @@ var staticRenderFns = [
             "Już dzisiaj możesz zaplanować swoje wydarzenie w naszym Klubie."
           )
         ]
-      ),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(
-        "\n                            Istnieje możliwość wynajęcia sali tanecznej do zorganizowania Waszego prywatnego przedsięwzięcia.\n                            Urodziny, szkolenia, imprezy inauguracyjne, warsztaty, wykłady i prelekcje? Dla nas nie ważny jest powód, oddajemy Klub w Wasze ręce.\n                            Skontaktuj się z Nami. Chętnie odpowiemy na wszystkie Twoje pytania, pomożemy dopełnić formalności, a Ty możesz już zapraszać gości.\n\n                        "
       )
     ])
   }
@@ -100253,7 +100223,11 @@ var render = function() {
           _c("div", { staticClass: "text-center" }, [
             _c(
               "p",
-              [_c("carousel", { attrs: { photos: _vm.carouselPhotos[0] } })],
+              [
+                _c("carousel", {
+                  attrs: { photos: _vm.carouselPhotos[0], interval: 5000 }
+                })
+              ],
               1
             )
           ]),
@@ -100836,12 +100810,6 @@ var staticRenderFns = [
                 _c("p", [
                   _vm._v(
                     "\n                            Tutaj pojawi się treść dotycząca ścisłej oferty klubu, sugeruję jednak, żeby nie dublowała się z info, które mamy w sekcji O Klubie, bo będzie to\n                            niepotrzebne powtarzanie treści"
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    'Zgodnie z koncepcją na trello - paragraf będzie odpowiadać na pytanie: "co możemy zaoferować?"'
                   )
                 ]),
                 _vm._v(" "),

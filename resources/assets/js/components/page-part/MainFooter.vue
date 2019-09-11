@@ -32,7 +32,7 @@
         </footer>
         <div class="subfooter text-center text-md-right">
             <div class="container">
-                <span>&copy; Bajer 2018 | Created by Kamil Żmijowski</span>
+                <span>&copy; Bajer 2018 | Created by Kamil Żmijowski & Stanisław Markowski</span>
             </div>
         </div>
     </div>
