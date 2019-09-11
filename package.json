@@ -39,6 +39,7 @@
     "gijgo": "^1.9.6",
     "jsonwebtoken": "^8.2.1",
     "laravel-echo": "^1.3.5",
+    "leaflet": "^1.5.1",
     "moment": "^2.22.0",
     "moment-calendar": "0.0.4",
     "pusher": "^1.5.1",
@@ -55,7 +56,6 @@
     "vue-social": "^1.0.1",
     "vue-sweetalert2": "^1.6.3",
     "vue-truncate-filter": "^1.1.7",
-    "vue2-google-maps": "^0.10.2",
     "vuejs-datepicker": "^1.3.0"
   },
   "browserslist": [

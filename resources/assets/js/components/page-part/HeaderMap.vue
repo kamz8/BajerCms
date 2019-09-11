@@ -1,95 +1,59 @@
 <template>
-    <header id="mainHeader" class="cover-heading overlay" ref="mainHeader" style="400px">
-        <gmap-map
-                :center="center"
-                :zoom="16"
-                style="width:100%;  height: 400px;"
-                class="map"
-        >
-            <GmapMarker
-                    :key="index"
-                    v-for="(m, index) in markers"
-                    :position="m.position"
-                    :clickable="true"
-                    :draggable="true"
-                    @click="center=m.position"
-            />
-        </gmap-map>
-<!--        <div class="container mx-auto mh-100">
-            <div class="row">
-                <div class="col-lg-8 mx-auto pt-5 pb-5">
-                    <div class="logo">
-                        <h1>{{vtitle}}</h1>
-                    </div>
-                    <a href="#" class="btn btn-circle align-text-bottom mt-4" v-scroll-to="scrollTo">
-                        <i class="fa fa-2x fa-angle-double-down"></i>
-                    </a>
-                </div>
-            </div>
-        </div>-->
-    </header>
+  <header id="mainHeader" class="cover-heading overlay" ref="mainHeader">
+    <div id="mapid"></div>
+  </header>
 </template>
 
 <script>
-    export default {
-        name: "header-map",
-        props: ['vtitle','scrollTo','coverImg'],
-      data() {
-        return {
-          // default to Montreal to keep it simple
-          // change this to whatever makes sense
-          center: { lat: 51.1031429, lng: 17.0844891 },
-          markers: [],
-          places: [],
-          currentPlace: null
-        };
-      },
+  import L from 'leaflet';
 
-      mounted() {
-        this.addMarker();
-      },
+  export default {
+    name: "header-map",
+    props: ['vtitle', 'scrollTo', 'coverImg'],
+    data() {
+      return {
+        marker: {lat: 51.10320, lng: 17.08451},
+        map: null
+      };
+    },
 
-      methods: {
-        // receives a place object via the autocomplete component
-        setPlace(place) {
-          this.currentPlace = place;
-        },
-        addMarker() {
-          if (this.center) {
-            const marker = {
-              lat: this.center.lat,
-              lng: this.center.lng
-            };
-            this.markers.push({ position: marker });
-            this.places.push(this.center);
-            this.center = marker;
-            this.currentPlace = null;
-          }
-        },
-      }
+    mounted() {
+      this.map = L.map('mapid').setView([this.marker.lat, this.marker.lng], 16);
+      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        subdomains: ['a', 'b', 'c']
+      }).addTo(this.map);
+      L.marker([this.marker.lat, this.marker.lng]).addTo(this.map);
     }
+  }
 </script>
 
 <style scoped>
-    header.cover-heading{
-        display: table;
-        width: 100%;
-        height: 400px;
-        padding: 80px 0;
-        text-align: center;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0);
-        background-position: center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-    .cover-heading > .container{
-        min-height: 400px;
-    }
-    .map{
-        position: absolute;
-        top: 0;
-    }
+  header.cover-heading {
+    display: table;
+    width: 100%;
+    height: 400px;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .cover-heading > .container {
+    min-height: 400px;
+  }
+  
+  .map {
+    position: absolute;
+    top: 0;
+  }
+  
+  #mapid {
+    height: 400px;
+  }
 </style>
