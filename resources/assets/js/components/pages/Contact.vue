@@ -43,7 +43,7 @@ When we create new page - you copy of template below and name as NameOfPage
                                   type="text"
                                   v-model="contactForm.nameAndSurname"
                                   name="name"
-                                  v-validate="'required|min:5'"
+                                  v-validate="'required|min:1'"
                                   placeholder="Wpisz swoje imię i nazwisko *"
                                   :class="{'is-invalid': errors.has('name') }">
                     </b-form-input>
@@ -56,7 +56,7 @@ When we create new page - you copy of template below and name as NameOfPage
                     <b-form-input id="exampleInput2"
                                   type="text"
                                   v-model="contactForm.phone"
-                                  v-validate="'required|phoneNumber'"
+                                  v-validate="'phoneNumber'"
                                   name="phone"
                                   placeholder="Wpisz swój numer telefonu zaczynający się od +48"
                                   :class="{'is-invalid': errors.has('phone') }">
@@ -69,7 +69,7 @@ When we create new page - you copy of template below and name as NameOfPage
                                 :description="errors.first('message')">
                     
                     <b-form-textarea id="message"
-                                     v-model.trim="contactForm.message"
+                                     v-model="contactForm.message"
                                      placeholder="Napisz w jakiej sprawie chcesz się z nami skontaktować"
                                      name="message"
                                      :rows="4"
@@ -325,7 +325,7 @@ When we create new page - you copy of template below and name as NameOfPage
               console.log(error.request)
               switch (error.request.status) {
                 case 429:
-                  this.$swal('Zbyt dużo prób!', 'Możesz wysłać tylko jedną wiadomość na 10 minut. Jeśli już musisz poczekaj 10 minut i spróbuj ponownie ', 'warning')
+                  this.$swal('Zbyt dużo prób!', 'Możesz wysłać tylko jedną wiadomość na 10 minut. Jeśli już musisz poczekaj 10 minut i spróbuj ponownie', 'warning')
                   break
 
                 default:
