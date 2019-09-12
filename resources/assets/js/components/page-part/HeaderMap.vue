@@ -1,5 +1,5 @@
 <template>
-  <header id="mainHeader" class="cover-heading overlay" ref="mainHeader">
+  <header id="mainHeader" class="cover-heading overlay pb-0" ref="mainHeader">
     <div id="mapid"></div>
   </header>
 </template>
@@ -33,7 +33,7 @@
     display: table;
     width: 100%;
     height: 400px;
-    padding: 80px 0;
+    padding: 74px 0;
     text-align: center;
     color: #fff;
     background-color: rgba(0, 0, 0, 0);

@@ -104,14 +104,14 @@
         <section class="spotify">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
-                    <div class="col-12 col-md-5">
+                    <div class="col-12 col-md-5 col-lg-6">
                         <p class="m-0 text-center text-md-left">Zobaczcie naszą niepowtarzalną imprezową składankę. </p>
                     </div>
-                    <div class="col-12 col-md-3 text-center text-md-right">
+                    <div class="col-12 col-md-3 col-lg-3 text-center text-md-right">
                         <span class="bajerfont bajer-2x d-block">#AleBajer</span>
                     </div>
-                    <div class="col-12 col-md-4 text-center text-md-left">
-                        <a href="https://open.spotify.com/playlist/7x0EzxGOPef8DH4sh3zEoo" target="_blank" class="btn btn-md btn-outline-light w-100 text-light text-uppercase btn-lg-space">zobacz playlistę</a>
+                    <div class="col-12 col-md-4 col-lg-3 text-center text-md-left">
+                        <a href="https://open.spotify.com/playlist/7x0EzxGOPef8DH4sh3zEoo" target="_blank" class="btn btn-md btn-outline-light text-light text-uppercase btn-lg-space">zobacz playlistę</a>
                     </div>
                 </div>
             </div>

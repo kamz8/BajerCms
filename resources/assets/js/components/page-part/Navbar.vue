@@ -77,7 +77,7 @@ nav.sticky{
     z-index: 10;
 }
     #mainHeader{
-        margin-top: -92px;
+        margin-top: -74px;
     }
     .bg-gray{
         background-color: rgba(33, 33, 33, 0.8) !important;
