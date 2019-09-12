@@ -21,6 +21,10 @@ body {
     overflow-x: hidden;
 }
 
+.spotify {
+    height: 200px;
+}
+
 .bajerfont {
     font-family: "Candice", "Segoe UI", Fallback;
 }
@@ -226,16 +230,8 @@ footer + .subfooter{
         font-size: 20px;
     }
 
-    .spotify {
-        height: 200px;
-    }
-
-    .spotify p {
-        font-size: 12px;
-    }
-
     .spotify .bajerfont.bajer-2x {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     footer.footer {
@@ -257,6 +253,7 @@ footer + .subfooter{
         padding: 4rem 0;
         min-height: initial;
     }
+
     .spotify {
         height: 100px;
     }

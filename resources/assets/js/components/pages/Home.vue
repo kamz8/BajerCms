@@ -80,7 +80,7 @@
                                     <img class="img-fluid rounded-circle"
                                          :src="'../img/avatars/Jurkowski.jpg'">
                                     <figcaption class="caption">
-                                        <span>Maciej Jurkowksi</span>
+                                        <span>Maciej Jurkowski</span>
                                         <span class="member-title">Członek zarządu</span>
                                     </figcaption>
                                 </figure>
@@ -104,15 +104,14 @@
         <section class="spotify">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
-                    <div class="col-12 col-md-6 visible-sm-inline-block">
-                        <p class="m-0">Zobaczcie naszą niepowtarzalną imprezową składankę. </p>
+                    <div class="col-12 col-md-5">
+                        <p class="m-0 text-center text-md-left">Zobaczcie naszą niepowtarzalną imprezową składankę. </p>
                     </div>
-                    <div class="col-12 col-md-4 offset-md-2">
-                        <span class="bajerfont bajer-2x mr-2 mb-2 d-block d-md-inline mb-md-0 text-center">#AleBajer</span>
-                        <a href="https://open.spotify.com/playlist/7x0EzxGOPef8DH4sh3zEoo" target="_blank" class="btn btn-md btn-outline-light text-light text-uppercase btn-lg-space d-none d-sm-inline btn-lg-space"
-                           style="margin-top: -10px;">zobacz playlistę</a>
-                        <a href="https://open.spotify.com/playlist/7x0EzxGOPef8DH4sh3zEoo" target="_blank" class="btn btn-sm btn-outline-light text-light text-uppercase d-block d-sm-none"
-                           style="font-size: 12px">zobacz playlistę</a>
+                    <div class="col-12 col-md-3 text-center text-md-right">
+                        <span class="bajerfont bajer-2x d-block">#AleBajer</span>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-left">
+                        <a href="https://open.spotify.com/playlist/7x0EzxGOPef8DH4sh3zEoo" target="_blank" class="btn btn-md btn-outline-light w-100 text-light text-uppercase btn-lg-space">zobacz playlistę</a>
                     </div>
                 </div>
             </div>
