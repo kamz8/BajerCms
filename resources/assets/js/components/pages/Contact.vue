@@ -251,7 +251,7 @@ When we create new page - you copy of template below and name as NameOfPage
               <div class="col-md-6 col-xs-12 col-lg-3">
                 <avatar
                   name="Kamil Żmijowski"
-                  avatar-img="../img/avatars/kamil.jpg"
+                  avatar-img="../img/avatars/Kamil.jpg"
                   phone="668751336"
                   email="kamzil2@gmail.com">
                   <social-link type="facebook" href="https://www.facebook.com/kzmijowski"></social-link>
