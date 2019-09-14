@@ -6,6 +6,9 @@
 
 <script>
   import L from 'leaflet';
+  import elementResizeEvent from 'element-resize-event';
+  import {CHANGE_HEADER_HEIGHT} from '../../store/index';
+  import {mapMutations} from 'vuex';
 
   export default {
     name: "header-map",
@@ -16,14 +19,34 @@
         map: null
       };
     },
-
     mounted() {
+      const mainHeader = document.getElementById('mainHeader');
+      this.changeHeaderHeight(mainHeader.offsetHeight)
+      elementResizeEvent(mainHeader, this.headerHeightChangeListener)
+      
       this.map = L.map('mapid').setView([this.marker.lat, this.marker.lng], 16);
       L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
         subdomains: ['a', 'b', 'c']
       }).addTo(this.map);
       L.marker([this.marker.lat, this.marker.lng]).addTo(this.map);
+    },
+    computed: {
+      headerHeight: function () {
+        return this.$store.state.headerHeight;
+      }
+    },
+    methods: {
+      ...mapMutations({
+        changeHeaderHeight: CHANGE_HEADER_HEIGHT
+      }),
+      headerHeightChangeListener: function () {
+        const mainHeader = document.getElementById('mainHeader');
+        const headerHeight = this.headerHeight;
+        if (mainHeader.offsetHeight !== headerHeight) {
+          this.changeHeaderHeight(mainHeader.offsetHeight);
+        }
+      }
     }
   }
 </script>

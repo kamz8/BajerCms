@@ -19,6 +19,7 @@ import middleware from './middleware/middleware'
 import VeeValidate from 'vee-validate';
 import pl from 'vee-validate/dist/locale/pl';
 import VueSweetalert2 from 'vue-sweetalert2';
+import Vuex from 'vuex';
 
 
 
@@ -36,6 +37,7 @@ Vue.use(VueSweetalert2);
 Vue.use(VeeValidate,{
   locale: 'pl'});
 VeeValidate.Validator.localize('pl', pl);
+Vue.use(Vuex);
 
 //set settings for scroll animation plugin
 Vue.use(VueScrollTo, {
