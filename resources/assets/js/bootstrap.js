@@ -1,3 +1,4 @@
+/* eslint-disable */
 window._ = require('lodash');
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -6,9 +7,9 @@ window._ = require('lodash');
  */
 
 try {
-    window.$ = window.jQuery = require('jquery');
+  window.$ = window.jQuery = require('jquery');
 
-    require('bootstrap-sass');
+  require('bootstrap-sass');
 } catch (e) {}
 
 /**
@@ -27,12 +28,12 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  * a simple convenience so we don't have to attach every token manually.
  */
 
-let token = document.head.querySelector('meta[name="csrf-token"]');
+const token = document.head.querySelector('meta[name="csrf-token"]');
 
 if (token) {
-    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
 } else {
-    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+  console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
 /**
@@ -41,13 +42,13 @@ if (token) {
  * allows your team to easily build robust real-time Procfile applications.
  */
 
-/*window.Pusher = require('pusher-js');
+/* window.Pusher = require('pusher-js');
 // Enable pusher logging - don't include this in production
 Pusher.logToConsole = true;
 
 var channel = pusher.subscribe('my-channel');
 channel.bind('my-event', function(data) {
     alert(data.message);
-});*/
+}); */
 
-window.axios = axios
+window.axios = axios;

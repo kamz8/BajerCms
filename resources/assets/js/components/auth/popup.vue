@@ -1,34 +1,35 @@
 <template>
-    <div class="spiner h-100 justify-content-center align-items-center">
-        <div class="">
-            <i class="fa fa-spinner fa-spin align-self-center"></i>
-        </div>
+  <div class="spiner h-100 justify-content-center align-items-center">
+    <div class="">
+      <i class="fa fa-spinner fa-spin align-self-center" />
     </div>
+  </div>
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
-  export default {
-    name: "popup",
-      created() {
-        // window.opener.console.log('ala')
-        let code = this.$route.query.code
-        this.$store.dispatch('socialLogin',{provider: 'facebook',code:code})
-        // this.$store.commit('LOGGED')
-        // window.opener.logged = true
-      },
-    computed: {
-      ...mapGetters({
-        logged: 'logged',
-      })
+import { mapGetters } from 'vuex';
+
+export default {
+  name: 'Popup',
+  computed: {
+    ...mapGetters({
+      logged: 'logged',
+    }),
+  },
+  watch: {
+    logged() {
+      // window.close()
+      this.$router.push({ path: '/', force: true });
     },
-    watch: {
-      logged () {
-        // window.close()
-        this.$router.push({path: '/',force: true})
-      }
-    }
-  }
+  },
+  created() {
+    // window.opener.console.log('ala')
+    const { code } = this.$route.query;
+    this.$store.dispatch('socialLogin', { provider: 'facebook', code });
+    // this.$store.commit('LOGGED')
+    // window.opener.logged = true
+  },
+};
 </script>
 
 <style scoped>

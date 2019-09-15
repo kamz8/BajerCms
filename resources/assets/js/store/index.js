@@ -1,6 +1,6 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import auth from './modules/auth'
+import Vue from 'vue';
+import Vuex from 'vuex';
+import auth from './modules/auth';
 
 Vue.use(Vuex);
 
@@ -9,14 +9,14 @@ export const CHANGE_HEADER_HEIGHT = 'CHANGE_HEADER_HEIGHT';
 
 export default new Vuex.Store({
   state: {
-    headerHeight: 10
+    headerHeight: 10,
   },
   mutations: {
-    [CHANGE_HEADER_HEIGHT] (state, newHeight) {
+    [CHANGE_HEADER_HEIGHT](state, newHeight) {
       state.headerHeight = newHeight;
-    }
+    },
   },
   modules: {
-    auth
-  }
-})
+    auth,
+  },
+});

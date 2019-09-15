@@ -1,19 +1,23 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import MainTemplate from '../components/MainTemplate'
-import Custom from '../components/pages/Custom'
-import AuthMain from '../components/auth/AuthMain'
-import store from '../store/index'
-Vue.use(VueRouter)
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import MainTemplate from '../components/MainTemplate';
+import Custom from '../components/pages/Custom';
+import Home from '../components/pages/home';
+import About from '../components/pages/About';
+import People from '../components/pages/People';
+import Offer from '../components/pages/Offer';
+import Booking from '../components/pages/Booking';
+import Contact from '../components/pages/Contact';
+
+Vue.use(VueRouter);
 
 const router = new VueRouter({
   mode: 'history',
-  scrollBehavior (to, from, savedPosition) {
+  scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
-      return savedPosition
-    } else {
-      return { x: 0, y: 0 }
+      return savedPosition;
     }
+    return { x: 0, y: 0 };
   },
   routes: [
     {
@@ -23,41 +27,41 @@ const router = new VueRouter({
         {
           path: '/',
           name: 'home',
-          component: require('../components/pages/Home').default
+          component: Home,
         },
         {
           path: '/o-klubie',
           name: 'about',
-          component: require('../components/pages/About').default
+          component: About,
         },
         {
           path: '/ekipa',
           name: 'people',
-          component: require('../components/pages/People').default
+          component: People,
         },
         {
           path: '/oferta',
           name: 'offer',
-          component: require('../components/pages/Offer').default
+          component: Offer,
         },
         {
           path: '/wynajmy',
           name: 'booking-info',
-          component: require('../components/pages/Booking').default
+          component: Booking,
         },
         {
           path: '/kontakt',
           name: 'contact',
-          component: require('../components/pages/Contact').default
+          component: Contact,
         },
         {
           path: '/szablon',
           name: 'custom',
-          component: Custom
-        }
-      ]
-    }
-/*    {
+          component: Custom,
+        },
+      ],
+    },
+    /*    {
       path: '/zarezerwuj-sale',
       name: 'booking',
       component: require('../components/pages/BookingMain').default
@@ -101,9 +105,9 @@ const router = new VueRouter({
       path: '/auth/facebook/callback',
       name: 'socialAuth',
       component: require('../components/auth/popup').default
-    }*/
+    } */
   ],
 });
 
 
-export default router
+export default router;

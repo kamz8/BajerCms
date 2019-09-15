@@ -1,39 +1,44 @@
 <template>
-    <main class="overlay">
-        <navbar></navbar>
-        <article>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 mx-auto pt-4 pb-3">
-                        <h1 class="text-center">Zarezerwuj Salę</h1>
-                    </div>
-
-                </div>
-            </div>
-
-        </article>
-        <div id="container">
-            <form action="">
-                <img src="http://bit.ly/2tlJLoz"><br>
-                <input type="text" value="@AmJustSam"><br>
-                <input type="password"><br>
-                <input type="submit" value="SIGN IN"><br>
-                <span><a href="#">Forgot Password?</a></span>
-            </form>
+  <main class="overlay">
+    <navbar />
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mx-auto pt-4 pb-3">
+            <h1 class="text-center">
+              Zarezerwuj Salę
+            </h1>
+          </div>
         </div>
-    </main>
-
-
+      </div>
+    </article>
+    <div id="container">
+      <form action="">
+        <img src="http://bit.ly/2tlJLoz"><br>
+        <input
+          type="text"
+          value="@AmJustSam"
+        ><br>
+        <input type="password"><br>
+        <input
+          type="submit"
+          value="SIGN IN"
+        ><br>
+        <span><a href="#">Forgot Password?</a></span>
+      </form>
+    </div>
+  </main>
 </template>
 
 <script>
-    import navbar from '../page-part/Navbar'
-  export default {
-    name: "draggeble",
-    components: {
-      navbar
-    }
-  }
+import navbar from '../page-part/Navbar';
+
+export default {
+  name: 'Draggeble',
+  components: {
+    navbar,
+  },
+};
 </script>
 
 <style>

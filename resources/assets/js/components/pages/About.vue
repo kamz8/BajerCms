@@ -1,11 +1,20 @@
 <template>
   <div>
-    <v-header scrollTo="#onas" vtitle="O Klubie" coverImg="./img/bg_oklubie.jpg"></v-header>
-    <section id="onas" class="content-box">
+    <v-header
+      scroll-to="#onas"
+      vtitle="O Klubie"
+      cover-img="./img/bg_oklubie.jpg"
+    />
+    <section
+      id="onas"
+      class="content-box"
+    >
       <div class="container">
         <div class="row">
           <article class="col-md-12 text-center">
-            <h1 class="text-uppercase pb-2">O klubie</h1>
+            <h1 class="text-uppercase pb-2">
+              O klubie
+            </h1>
             <p>
               Jesteśmy <strong>agendą kultury</strong>, która zajmuje się organizacją imprez tanecznych, koncertów,
               aktywności sportowych oraz innych inicjatyw kulturalno-rozrywkowych dla studentów. Ponadto bardzo
@@ -21,9 +30,12 @@
           </article>
         </div>
         <div class="text-center">
-            <p>
-              <carousel v-bind:photos="carouselPhotos[0]" v-bind:interval="5000"></carousel>
-            </p>
+          <p>
+            <carousel
+              :photos="carouselPhotos[0]"
+              :interval="5000"
+            />
+          </p>
         </div>
         <div class="row">
           <article class="col-md-12 text-center">
@@ -38,15 +50,38 @@
             </p>
             <div class="social-icons text-center mt-3 mb-3">
               <ul class="social-network social-circle text-dark">
-                <li class="mb-2"><a href="https://www.facebook.com/Klub.Studencki.Bajer/" class="Facebook"
-                                    title="Facebook"
-                                    target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/klub.studencki.bajer/" class="Instagram" title="Instagram"
-                       target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://www.snapchat.com/add/ksbajer" class="Snapchat" title="Snapchat"
-                       target="_blank"><i class="fa fa-snapchat-ghost"></i></a></li>
-                <li><a href="https://open.spotify.com/user/klubstudenckibajer?si=ri5LY5koQrKIG5bkSbEi1w"
-                       class="Spotify" title="Spotify" target="_blank"><i class="fa fa-spotify"></i></a></li>
+                <li class="mb-2">
+                  <a
+                    href="https://www.facebook.com/Klub.Studencki.Bajer/"
+                    class="Facebook"
+                    title="Facebook"
+                    target="_blank"
+                  ><i class="fa fa-facebook" /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/klub.studencki.bajer/"
+                    class="Instagram"
+                    title="Instagram"
+                    target="_blank"
+                  ><i class="fa fa-instagram" /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.snapchat.com/add/ksbajer"
+                    class="Snapchat"
+                    title="Snapchat"
+                    target="_blank"
+                  ><i class="fa fa-snapchat-ghost" /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://open.spotify.com/user/klubstudenckibajer?si=ri5LY5koQrKIG5bkSbEi1w"
+                    class="Spotify"
+                    title="Spotify"
+                    target="_blank"
+                  ><i class="fa fa-spotify" /></a>
+                </li>
               </ul>
             </div>
             <p>
@@ -58,9 +93,27 @@
           </article>
         </div>
         <div class="row">
-          <div class="col-sm mb-3"><img alt="Archiwalne zdjęcie" :src="'./img/archived/1.jpg'" class="img-fluid"/></div>
-          <div class="col-sm mb-3"><img alt="Archiwalne zdjęcie" :src="'./img/archived/2.jpg'" class="img-fluid"/></div>
-          <div class="col-sm mb-3"><img alt="Archiwalne zdjęcie" :src="'./img/archived/3.jpg'" class="img-fluid"/></div>
+          <div class="col-sm mb-3">
+            <img
+              alt="Archiwalne zdjęcie"
+              :src="'./img/archived/1.jpg'"
+              class="img-fluid"
+            >
+          </div>
+          <div class="col-sm mb-3">
+            <img
+              alt="Archiwalne zdjęcie"
+              :src="'./img/archived/2.jpg'"
+              class="img-fluid"
+            >
+          </div>
+          <div class="col-sm mb-3">
+            <img
+              alt="Archiwalne zdjęcie"
+              :src="'./img/archived/3.jpg'"
+              class="img-fluid"
+            >
+          </div>
         </div>
         <div class="row">
           <article class="col-md-12 text-center">
@@ -81,72 +134,72 @@
 </template>
 
 <script>
-  import vHeader from '../page-part/Header'
-  import Carousel from '../page-part/Carousel'
+import vHeader from '../page-part/Header';
+import Carousel from '../page-part/Carousel';
 
-  export default {
-    name: "about",
-    components: {
-      vHeader,
-      Carousel
-    },
-    data: function () {
-      return {
-        carouselPhotos: [
-          [
-            {
-              src: './img/about-us-carousels/bajeroland-2018.jpg',
-              text: 'Festiwal kolorów, Bajeroland 2018'
-            },
-            {
-              src: './img/about-us-carousels/oboz-2018-2.jpg',
-              text: 'Tańce integracyjne, Obóz Studentów PWr 2018'
-            },
-            {
-              src: './img/about-us-carousels/pijama-party-2016.jpg',
-              text: 'Bitwa na poduszki, Pijama Party 2016'
-            },
-            {
-              src: './img/about-us-carousels/chillout-z-santanderem-2017.jpg',
-              text: 'Wsparcie muzyczne i animacje, Chillout z Santanderem 2017'
-            },
-            {
-              src: './img/about-us-carousels/letni-chamski-podryw-2016.jpg',
-              text: 'Koncert Letniego Chamskiego Podrywu 2016'
-            },
-            {
-              src: './img/about-us-carousels/bajeroland-2019.jpg',
-              text: 'Scena główna, Bajeroland 2019'
-            },
-            {
-              src: './img/about-us-carousels/lanserki-2018.jpg',
-              text: 'Zdjęcie promujące Andrzejki Lanserki 2018'
-            },
-            {
-              src: './img/about-us-carousels/oboz-2018.jpg',
-              text: 'Warsztaty DJskie, Obóz Studentów PWr 2018'
-            },
-            {
-              src: './img/about-us-carousels/DAS-2018-jesien.jpg',
-              text: 'Tańce integracyjne, Dni Aktywności Studenckiej 2018'
-            },
-            {
-              src: './img/about-us-carousels/cztery-wesela-i-bajer-2018.jpg',
-              text: 'Impreza w Strefie Kultury Studenckiej, Cztery Wesela i Bajer 2018'
-            },
-            {
-              src: './img/about-us-carousels/chlopaki-z-natury-2018.jpg',
-              text: 'Koncert Chłopaków z Natury 2018'
-            },
-            {
-              src: './img/about-us-carousels/lanserki-2017.jpg',
-              text: 'Andrzejki Lanserki 2017'
-            }
-          ]
-        ]
-      }
-    }
-  }
+export default {
+  name: 'About',
+  components: {
+    vHeader,
+    Carousel,
+  },
+  data() {
+    return {
+      carouselPhotos: [
+        [
+          {
+            src: './img/about-us-carousels/bajeroland-2018.jpg',
+            text: 'Festiwal kolorów, Bajeroland 2018',
+          },
+          {
+            src: './img/about-us-carousels/oboz-2018-2.jpg',
+            text: 'Tańce integracyjne, Obóz Studentów PWr 2018',
+          },
+          {
+            src: './img/about-us-carousels/pijama-party-2016.jpg',
+            text: 'Bitwa na poduszki, Pijama Party 2016',
+          },
+          {
+            src: './img/about-us-carousels/chillout-z-santanderem-2017.jpg',
+            text: 'Wsparcie muzyczne i animacje, Chillout z Santanderem 2017',
+          },
+          {
+            src: './img/about-us-carousels/letni-chamski-podryw-2016.jpg',
+            text: 'Koncert Letniego Chamskiego Podrywu 2016',
+          },
+          {
+            src: './img/about-us-carousels/bajeroland-2019.jpg',
+            text: 'Scena główna, Bajeroland 2019',
+          },
+          {
+            src: './img/about-us-carousels/lanserki-2018.jpg',
+            text: 'Zdjęcie promujące Andrzejki Lanserki 2018',
+          },
+          {
+            src: './img/about-us-carousels/oboz-2018.jpg',
+            text: 'Warsztaty DJskie, Obóz Studentów PWr 2018',
+          },
+          {
+            src: './img/about-us-carousels/DAS-2018-jesien.jpg',
+            text: 'Tańce integracyjne, Dni Aktywności Studenckiej 2018',
+          },
+          {
+            src: './img/about-us-carousels/cztery-wesela-i-bajer-2018.jpg',
+            text: 'Impreza w Strefie Kultury Studenckiej, Cztery Wesela i Bajer 2018',
+          },
+          {
+            src: './img/about-us-carousels/chlopaki-z-natury-2018.jpg',
+            text: 'Koncert Chłopaków z Natury 2018',
+          },
+          {
+            src: './img/about-us-carousels/lanserki-2017.jpg',
+            text: 'Andrzejki Lanserki 2017',
+          },
+        ],
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped>

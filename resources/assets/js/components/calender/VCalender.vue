@@ -1,209 +1,240 @@
 <template>
-    <div class="calender-main">
-        <header class="calender-header">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p class="mx-auto">
-                        <i class="fa fa-arrow-left pr-4 prev-month" @click="prevMonth"></i>
-                        <span class="text-capitalize">{{MonthName}}</span>
-                        <i class="fa fa-arrow-right pl-4 next-month" @click="nextMonth"></i>
-                    </p>
-
-                </div>
-            </div>
-        </header>
-        <div class="calender-body glass">
-            <div class="weeks">
-                <div class="vc-row">
-                    <div class="vc-col week text-center " v-for="dayOfWeek in daysOfWeek"><p>{{dayOfWeek}}.</p></div>
-                </div>
-            </div>
-            <div class="dates">
-                <div class="vc-row events-week" v-for="week in currentDates">
-                    <div class="vc-col day-cell" v-for="(day, i) in week"
-                         :class="{'today' : day.isToday,
-                         'not-cur-month' : !day.isCurMonth}"
-                    @click="showAddModal()">
-                        <p class="day-number">{{day.monthDay}}</p>
-                        <div class="event-box">
-                            <p class="event-item" v-for="(event, n) in day.events"
-                               :class="{
+  <div class="calender-main">
+    <header class="calender-header">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="mx-auto">
+            <i
+              class="fa fa-arrow-left pr-4 prev-month"
+              @click="prevMonth"
+            />
+            <span class="text-capitalize">{{ MonthName }}</span>
+            <i
+              class="fa fa-arrow-right pl-4 next-month"
+              @click="nextMonth"
+            />
+          </p>
+        </div>
+      </div>
+    </header>
+    <div class="calender-body glass">
+      <div class="weeks">
+        <div class="vc-row">
+          <div
+            v-for="(dayOfWeek, index) in daysOfWeek"
+            :key="index"
+            class="vc-col week text-center "
+          >
+            <p>{{ dayOfWeek }}.</p>
+          </div>
+        </div>
+      </div>
+      <div class="dates">
+        <div
+          v-for="(week, index) in currentDates"
+          :key="index"
+          class="vc-row events-week"
+        >
+          <div
+            v-for="(day, i) in week"
+            :key="i"
+            class="vc-col day-cell"
+            :class="{'today' : day.isToday,
+                     'not-cur-month' : !day.isCurMonth}"
+            @click="showAddModal()"
+          >
+            <p class="day-number">
+              {{ day.monthDay }}
+            </p>
+            <div class="event-box">
+              <p
+                v-for="(event, n) in day.events"
+                :id="'event-'+event.id"
+                :key="n"
+                class="event-item"
+                :class="{
                   'bg-danger': !event.accepted,
                   'bg-info': event.accepted,
                   'd-none': n>1
-                  }"
-                               :v-click-outside="showMore = false"
-                               @click.stop="eventClick(event,$event)" :id="'event-'+event.id" >
-                                {{formatTime(event.start_date)+" "+ event.title}}
-                                <show-event :popoverTrigger="showMore" :event="event"
-                                            :target="'event-'+event.id" />
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
+                }"
+                :v-click-outside="showMore = false"
+                @click.stop="eventClick(event,$event)"
+              >
+                {{ formatTime(event.start_date)+" "+ event.title }}
+                <show-event
+                  :popover-trigger="showMore"
+                  :event="event"
+                  :target="'event-'+event.id"
+                />
+              </p>
             </div>
-            <a href="#" @click.prevent="showAddModal()" v-show="isLogged" class="btn btn-danger btn-circle add-event">
-                <i class="fa fa-plus"></i>
-            </a>
+          </div>
         </div>
-        <add-event :modal-show.sync="modalShow"></add-event>
+      </div>
+      <a
+        v-show="isLogged"
+        href="#"
+        class="btn btn-danger btn-circle add-event"
+        @click.prevent="showAddModal()"
+      >
+        <i class="fa fa-plus" />
+      </a>
     </div>
+    <add-event :modal-show.sync="modalShow" />
+  </div>
 </template>
 
 <script>
-  import moment from "moment"
-  import ShowEvent from "./ShowEvent";
-  import ClickOutside from 'vue-click-outside'
-  import AddEvent from "./AddEvent";
-  import { mapGetters } from 'vuex'
-  export default {
-    name: "vue-calender",
-    components: {
-      AddEvent,
-      ShowEvent
+import moment from 'moment';
+import ClickOutside from 'vue-click-outside';
+import { mapGetters } from 'vuex';
+import ShowEvent from './ShowEvent';
+import AddEvent from './AddEvent';
+
+export default {
+  name: 'VueCalender',
+  components: {
+    AddEvent,
+    ShowEvent,
+  },
+  // do not forget this section
+  directives: {
+    ClickOutside,
+  },
+  props: {
+    events: {
+      type: Array,
+      // eslint-disable-next-line vue/require-valid-default-prop
+      default: [],
     },
-    // do not forget this section
-    directives: {
-      ClickOutside
+    locale: {
+      type: String,
+      default: 'pl',
     },
-    props: {
-      events: {
-        default: []
+  },
+  data() {
+    return {
+      monthName: '',
+      daysOfWeek: null, // ['Pon.', 'Wt.', 'Śr.', 'Czw.', 'Pt.', 'Sob.', 'Niedz.'],
+      isLismit: true,
+      eventLimit: 3,
+      selectedEvent: null,
+      showMore: false,
+      modalShow: false,
+      morePos: {
+        top: 0,
+        left: 0,
       },
-      locale: {
-        default: 'pl'
+      selectDay: {},
+      currentDate: moment.utc(moment(), 'YYYY-MM-DD'),
+    };
+  },
+  computed: {
+    currentDates() {
+      return this.getCalendar();
+    },
+
+    /**
+     * @return {string}
+     */
+    MonthName() {
+      return moment(this.currentDate).locale(this.locale).format('MMMM YYYY');
+    },
+    ...mapGetters({
+      isLogged: 'logged',
+    }),
+  },
+  created() {
+    moment.locale(this.locale);
+    this.daysOfWeek = moment.weekdaysShort(true);
+  },
+  mounted() {
+    this.popupItem = this.$el;
+  },
+  methods: {
+    getCalendar() {
+      // calculate 2d-array of each month
+      // first day of this month
+      const now = moment.utc(moment(), 'YYYY-MM-DD'); // today
+      const current = moment(this.currentDate).utc();
+      // return first day of this month
+      const startDate = current.subtract(1, 'month').endOf('month').day('Monday');
+      const endDate = moment(current).add(1, 'month').endOf('month').day(7);
+
+      // begin date of this table may be some day of last month
+      // startDate.setDate(startDate.getDate() - curWeekDay)
+
+      const calendar = [];
+
+      for (let perWeek = 0; perWeek < 6; perWeek++) {
+        const week = [];
+        for (let perDay = 0; perDay < 7; perDay++) {
+          week.push({
+            monthDay: startDate.date(),
+            isToday: now.format('YYYY-MM-DD') === startDate.format('YYYY-MM-DD'),
+            isCurMonth: startDate.month() === this.currentDate.month(),
+            weekDay: startDate.weekday(),
+            date: startDate,
+            events: this.slotEvents(startDate),
+          });
+          startDate.add(1, 'day');
+        }
+
+        calendar.push(week);
+        if (startDate.isSameOrAfter(endDate)) break;
+      }
+      return calendar;
+    },
+    slotEvents(date) {
+      return this.events.filter((event) => {
+        const startDate = moment(event.start_date);
+
+        return date.format('YYYY-MM-DD') === startDate.format('YYYY-MM-DD');
+      });
+    },
+    isStart(eventDate, date) {
+      return eventDate.toString() === date.toString();
+    },
+    isEnd(eventDate, date) {
+      const ed = moment(eventDate);
+      return ed.toString() === moment(date).toString();
+    },
+    nextMonth() {
+      const nextMonth = moment.utc(this.currentDate, 'YYYY-MM-DD').add(1, 'month');
+      this.currentDate = nextMonth;
+      this.$emit('nextMonth', {
+        nextMonth,
+      });
+    },
+
+    prevMonth() {
+      const prevMonth = moment.utc(this.currentDate, 'YYYY-MM-DD').subtract(1, 'month');
+      this.currentDate = prevMonth;
+      this.$emit('prevMonth', {
+        prevMonth,
+      });
+    },
+    eventClick(event) {
+      this.$root.$emit('bv::hide::popover');
+      this.selectedEvent = event;
+      this.showMore = !this.showMore;
+    },
+    formatTime(time) {
+      if (time) {
+        return moment(time).format('HH:mm');
+      }
+      return '';
+    },
+    showAddModal() {
+      if (this.isLogged) {
+        this.$root.$emit('bv::show::modal', 'modal-add');
+      } else {
+        this.$emit('notAuth');
       }
     },
-    data() {
-      return {
-        monthName: '',
-        daysOfWeek: null, // ['Pon.', 'Wt.', 'Śr.', 'Czw.', 'Pt.', 'Sob.', 'Niedz.'],
-        isLismit: true,
-        eventLimit: 3,
-        selectedEvent: null,
-        showMore: false,
-        modalShow: false,
-        morePos: {
-          top: 0,
-          left: 0
-        },
-        selectDay: {},
-        currentDate: moment.utc(moment(), "YYYY-MM-DD"),
-      }
-    },
-    methods: {
-      getCalendar() {
-        // calculate 2d-array of each month
-        // first day of this month
-        let now = moment.utc(moment(), "YYYY-MM-DD") // today
-        var current = moment(this.currentDate).utc()
-        // return first day of this month
-        let startDate = current.subtract(1, 'month').endOf('month').day("Monday")
-        let endDate = moment(current).add(1, 'month').endOf('month').day(7)
-        let curWeekDay = startDate.date()
+  },
 
-        // begin date of this table may be some day of last month
-        // startDate.setDate(startDate.getDate() - curWeekDay)
-
-        let calendar = []
-        let isFinal = false
-
-        for (let perWeek = 0; perWeek < 6; perWeek++) {
-
-          let week = []
-          for (let perDay = 0; perDay < 7; perDay++) {
-            week.push({
-              monthDay: startDate.date(),
-              isToday: now.format('YYYY-MM-DD') === startDate.format('YYYY-MM-DD'),
-              isCurMonth: startDate.month() === this.currentDate.month(),
-              weekDay: startDate.weekday(),
-              date: startDate,
-              events: this.slotEvents(startDate)
-            })
-            startDate.add(1, 'day')
-
-          }
-
-          calendar.push(week)
-          if (startDate.isSameOrAfter(endDate)) break
-        }
-        return calendar
-      },
-      slotEvents(date) {
-        return this.events.filter(event => {
-          let startDate = moment(event.start_date)
-
-          if (date.format('YYYY-MM-DD') === startDate.format('YYYY-MM-DD')) {
-            return event
-          }
-        })
-      },
-      isStart(eventDate, date) {
-        return eventDate.toString() === date.toString()
-      },
-      isEnd(eventDate, date) {
-        let ed = new moment(eventDate)
-        return ed.toString() === moment(date).toString()
-      },
-      nextMonth() {
-        this.currentDate = moment.utc(this.currentDate, "YYYY-MM-DD").add(1, 'month')
-        this.$emit('nextMonth', {
-          currentDate: currentDate
-        })
-      },
-
-      prevMonth() {
-        let current = this.currentDate.format()
-        this.currentDate = moment.utc(this.currentDate, "YYYY-MM-DD").subtract(1, 'month')
-        this.$emit('prevMonth', {
-          currentDate: currentDate
-        })
-      },
-      eventClick(event) {
-        this.$root.$emit('bv::hide::popover')
-        this.selectedEvent = event
-        this.showMore = !this.showMore
-      },
-      formatTime: function (time) {
-        if (time) {
-          return moment(time).format('HH:mm')
-        }
-        return ''
-      },
-      showAddModal: function () {
-        if (this.isLogged) {
-          this.$root.$emit('bv::show::modal', 'modal-add')
-        } else {
-          this.$emit('notAuth')
-        }
-      },
-    },
-    computed: {
-      currentDates() {
-        return this.getCalendar()
-      },
-
-      /**
-       * @return {string}
-       */
-      MonthName() {
-        return moment(this.currentDate).locale(this.locale).format('MMMM YYYY');
-      },
-      ...mapGetters({
-        isLogged: 'logged'
-      }),
-    },
-
-    created() {
-      moment.locale(this.locale)
-      this.daysOfWeek = moment.weekdaysShort(true)
-    },
-    mounted() {
-      this.popupItem = this.$el
-    },
-
-  }
+};
 </script>
 
 <style lang="scss" scoped>

@@ -1,83 +1,107 @@
 <template>
-    <div class="form-control d-flex flex-row">
-        <div class="flex-column">
-            <datepicker v-model="start_date" :language="config.language" :format="customFormatter" input-class="dateinput flex-items-middle"></datepicker>
-        </div>
-        <div class="flex-column">
-            <select class="hour-select" v-model="hour_start">
-                <option v-for="i in (0, 24)">{{i-1}}:00</option>
-            </select>
-        </div>
-
-        <div class="flex-column"><span class="separator flex-items-middle">-</span></div>
-        <div class="flex-column">
-            <datepicker v-model="end_date" :language="config.language" :format="customFormatter" input-class="dateinput"></datepicker>
-
-        </div>
-        <div class="flex-column">
-            <select class="hour-select flex-items-middle" v-model="hour_end">
-                <option v-for="i in (0, 24)" :disabled="ifHourBefore(i)">{{i-1}}:00</option>
-            </select>
-        </div>
-
+  <div class="form-control d-flex flex-row">
+    <div class="flex-column">
+      <datepicker
+        v-model="start_date"
+        :language="config.language"
+        :format="customFormatter"
+        input-class="dateinput flex-items-middle"
+      />
     </div>
+    <div class="flex-column">
+      <select
+        v-model="hour_start"
+        class="hour-select"
+      >
+        <option
+          v-for="i in (0, 24)"
+          :key="i"
+        >
+          {{ i-1 }}:00
+        </option>
+      </select>
+    </div>
+
+    <div class="flex-column">
+      <span class="separator flex-items-middle">-</span>
+    </div>
+    <div class="flex-column">
+      <datepicker
+        v-model="end_date"
+        :language="config.language"
+        :format="customFormatter"
+        input-class="dateinput"
+      />
+    </div>
+    <div class="flex-column">
+      <select
+        v-model="hour_end"
+        class="hour-select flex-items-middle"
+      >
+        <option
+          v-for="i in (0, 24)"
+          :key="i"
+          :disabled="ifHourBefore(i)"
+        >
+          {{ i-1 }}:00
+        </option>
+      </select>
+    </div>
+  </div>
 </template>
 
 <script>
-  import moment from "moment";
-  import Datepicker from 'vuejs-datepicker';
-  import {pl} from 'vuejs-datepicker/dist/locale'
-  export default {
-    name: "daterange",
-    props: ['modalShow'],
-    components:{
-      Datepicker,
-    },
-    props: {
-      value: {}
-    },
-    data() {
-      return {
-        hour_start: '',
-        hour_end: '',
-        end_date: null,
-        start_date: null,
-        config: {
-          language: pl,
-          // https://momentjs.com/docs/#/displaying/
-          useCurrent: false,
-        }
-      }
-    },
-    methods: {
-      getCurrentHour() {
-        return moment().hour().toString() + ':00'
+import moment from 'moment';
+import Datepicker from 'vuejs-datepicker';
+import { pl } from 'vuejs-datepicker/dist/locale';
+
+export default {
+  name: 'Daterange',
+  components: {
+    Datepicker,
+  },
+  data() {
+    return {
+      hour_start: '',
+      hour_end: '',
+      end_date: null,
+      start_date: null,
+      config: {
+        language: pl,
+        // https://momentjs.com/docs/#/displaying/
+        useCurrent: false,
       },
-      ifHourBefore(hour){
-        return moment().isBefore(hour+':00', 'hour')
-      },
-      updateRenge() {
-        let startDate = moment(this.start_date).format('YYYY-MM-DD') + ' ' + this.hour_start+':00'
-        let endDate = moment(this.end_date).format('YYYY-MM-DD') + ' ' + this.hour_end+':00'
-        this.$emit('input',{
-          startDate: startDate,
-          endDate: endDate
-        })
-      },
-      customFormatter(date) {
-        return moment(date).format('Do MMMM YYYY');
-      }
+    };
+  },
+  mounted() {
+    this.start_date = new Date();
+    this.end_date = new Date();
+    this.hour_start = this.getCurrentHour();
+    this.hour_end = `${moment().add(1, 'hour').hour().toString()}:00`;
+  },
+  updated() {
+    this.updateRenge();
+  },
+  methods: {
+    getCurrentHour() {
+      return `${moment().hour().toString()}:00`;
     },
-    mounted () {
-      this.start_date = new Date()
-      this.end_date = new Date()
-      this.hour_start = this.getCurrentHour()
-      this.hour_end = moment().add(1,'hour').hour().toString() + ':00'
-      },
-    updated() {
-      this.updateRenge()
-    }
-  }
+    ifHourBefore(hour) {
+      return moment().isBefore(`${hour}:00`, 'hour');
+    },
+    updateRenge() {
+      const startDate = `${moment(this.start_date).format('YYYY-MM-DD')} ${this.hour_start}:00`;
+      const endDate = `${moment(this.end_date).format('YYYY-MM-DD')} ${this.hour_end}:00`;
+      this.$emit('input', {
+        startDate,
+        endDate,
+      });
+    },
+    customFormatter(date) {
+      return moment(date).format('Do MMMM YYYY');
+    },
+  },
+};
 </script>
 
 <style>

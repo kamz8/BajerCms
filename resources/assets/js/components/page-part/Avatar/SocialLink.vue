@@ -1,25 +1,28 @@
 <template>
-    <a class="social-icons" :href="href" target="_blank"><i class="fa" :class="'fa-'+type"></i> </a>
+  <a
+    class="social-icons"
+    :href="href"
+    target="_blank"
+  ><i
+    class="fa"
+    :class="'fa-'+type"
+  /> </a>
 </template>
 
 <script>
-  export default {
-    name: "social-link",
-    props: {
-      type: {
-        default: {
-          type: String,
-          default: ''
-        }
-      },
-      href: {
-        default: {
-          type: String,
-          default: ''
-        }
-      }
-    }
-  }
+export default {
+  name: 'SocialLink',
+  props: {
+    type: {
+      type: String,
+      default: ''
+    },
+    href: {
+      type: String,
+      default: ''
+    },
+  },
+};
 </script>
 
 <style scoped>

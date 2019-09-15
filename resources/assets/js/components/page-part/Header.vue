@@ -1,13 +1,22 @@
 <template>
-  <header id="mainHeader" class="cover-heading overlay" ref="mainHeader" :style="'background-image: url('+coverImg+')'">
+  <header
+    id="mainHeader"
+    ref="mainHeader"
+    class="cover-heading overlay"
+    :style="'background-image: url('+coverImg+')'"
+  >
     <div class="container mx-auto mh-100">
       <div class="row">
         <div class="col-lg-8 mx-auto pt-5 pb-5">
           <div class="logo">
-            <h1>{{vtitle}}</h1>
+            <h1>{{ vtitle }}</h1>
           </div>
-          <a href="#onas" class="btn btn-circle align-text-bottom mt-4" v-scroll-to="scrollTo">
-            <i class="fa fa-2x fa-angle-double-down"></i>
+          <a
+            v-scroll-to="scrollTo"
+            href="#onas"
+            class="btn btn-circle align-text-bottom mt-4"
+          >
+            <i class="fa fa-2x fa-angle-double-down" />
           </a>
         </div>
       </div>
@@ -16,36 +25,49 @@
 </template>
 
 <script>
-  import elementResizeEvent from 'element-resize-event';
-  import {CHANGE_HEADER_HEIGHT} from '../../store/index';
-  import {mapMutations} from 'vuex';
+import elementResizeEvent from 'element-resize-event';
+import { mapMutations } from 'vuex';
+import { CHANGE_HEADER_HEIGHT } from '../../store/index';
 
-  export default {
-    name: "header",
-    props: ['vtitle', 'scrollTo', 'coverImg'],
-    mounted: function () {
-      const mainHeader = document.getElementById('mainHeader');
-      this.changeHeaderHeight(mainHeader.offsetHeight)
-      elementResizeEvent(mainHeader, this.headerHeightChangeListener)
+export default {
+  name: 'Header',
+  props: {
+    coverImg: {
+      type: String,
+      default: ''
     },
-    computed: {
-      headerHeight: function () {
-        return this.$store.state.headerHeight;
-      }
+    vtitle: {
+      type: String,
+      default: ''
     },
-    methods: {
-      ...mapMutations({
-        changeHeaderHeight: CHANGE_HEADER_HEIGHT
-      }),
-      headerHeightChangeListener: function () {
-        const mainHeader = document.getElementById('mainHeader');
-        const headerHeight = this.headerHeight;
-        if (mainHeader.offsetHeight !== headerHeight) {
-          this.changeHeaderHeight(mainHeader.offsetHeight);
-        }
-      }
+    scrollTo: {
+      type: String,
+      default: ''
     }
-  }
+  },
+  computed: {
+    headerHeight() {
+      return this.$store.state.headerHeight;
+    },
+  },
+  mounted() {
+    const mainHeader = document.getElementById('mainHeader');
+    this.changeHeaderHeight(mainHeader.offsetHeight);
+    elementResizeEvent(mainHeader, this.headerHeightChangeListener);
+  },
+  methods: {
+    ...mapMutations({
+      changeHeaderHeight: CHANGE_HEADER_HEIGHT,
+    }),
+    headerHeightChangeListener() {
+      const mainHeader = document.getElementById('mainHeader');
+      const { headerHeight } = this;
+      if (mainHeader.offsetHeight !== headerHeight) {
+        this.changeHeaderHeight(mainHeader.offsetHeight);
+      }
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -63,7 +85,7 @@
     -o-background-size: cover;
     background-size: cover;
   }
-  
+
   .cover-heading > .container {
     min-height: 400px;
   }

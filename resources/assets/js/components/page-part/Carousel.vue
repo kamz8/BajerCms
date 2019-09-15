@@ -13,12 +13,13 @@
           @sliding-end="onSlideEnd"
         >
           <!-- Text slides with image -->
-          <b-carousel-slide v-for="photo in photos"
-                            caption=""
-                            v-bind:text="photo.text"
-                            v-bind:key="photo.src"
-                            text-tag="p"
-                            content-visible-up="md"
+          <b-carousel-slide
+            v-for="photo in photos"
+            :key="photo.src"
+            caption=""
+            :text="photo.text"
+            text-tag="p"
+            content-visible-up="md"
           >
             <img
               slot="img"
@@ -27,9 +28,11 @@
               :alt="photo.text"
             >
           </b-carousel-slide>
-        
         </b-carousel>
-        <span class="d-md-none" style="font-size: 0.8rem">{{photos[slide].text}}</span>
+        <span
+          class="d-md-none"
+          style="font-size: 0.8rem"
+        >{{ photos[slide].text }}</span>
       </div>
     </div>
   </div>
@@ -37,33 +40,33 @@
 
 <script>
 
-  export default {
-    name: 'Carousel',
-    props: {
-      interval: {
-        type: Number,
-        default: 4000
-      },
-      photos: {
-        type: Array,
-        required: true
-      }
+export default {
+  name: 'Carousel',
+  props: {
+    interval: {
+      type: Number,
+      default: 4000,
     },
-    data() {
-      return {
-        slide: 0,
-        sliding: null
-      }
+    photos: {
+      type: Array,
+      required: true,
     },
-    methods: {
-      onSlideStart(slide) {
-        this.sliding = true
-      },
-      onSlideEnd(slide) {
-        this.sliding = false
-      }
-    }
-  }
+  },
+  data() {
+    return {
+      slide: 0,
+      sliding: null,
+    };
+  },
+  methods: {
+    onSlideStart() {
+      this.sliding = true;
+    },
+    onSlideEnd() {
+      this.sliding = false;
+    },
+  },
+};
 </script>
 
 <style scoped>
